@@ -1,6 +1,6 @@
 # weather_japan
 
-This is a weather forecast package inside Japan.
+A [Dart package](https://pub.dev/packages/weather_japan) of weather forecast inside Japan.
 
 The forecast source is [天気予報 API（livedoor 天気互換）](https://weather.tsukumijima.net/) that uses the data from [気象庁](https://www.jma.go.jp/jma/index.html).
 
