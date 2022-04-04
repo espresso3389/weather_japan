@@ -4,7 +4,7 @@ version: 0.1.0
 homepage: https://github.com/espresso3389/weather_japan
 
 environment:
-  sdk: '>=2.17.0-265.0.dev <3.0.0'
+  sdk: ">=2.12.0 <3.0.0"
 
 # dependencies:
 #   path: ^1.8.0
