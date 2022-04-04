@@ -1,5 +1,5 @@
 name: lookup
-description: geocoding_test
+description: lookup
 publish_to: 'none'
 
 environment:

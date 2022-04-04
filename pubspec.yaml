@@ -1,7 +1,7 @@
 name: weather_japan
-description: A starting point for Dart libraries or applications.
-version: 1.0.0
-# homepage: https://www.example.com
+description: A weather forecast package inside Japan.
+version: 0.1.0
+homepage: https://github.com/espresso3389/weather_japan
 
 environment:
   sdk: '>=2.17.0-265.0.dev <3.0.0'
