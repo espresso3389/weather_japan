@@ -4,18 +4,17 @@ import 'package:path/path.dart' as path;
 
 import 'package:http/http.dart' as http;
 import 'package:synchronized/synchronized.dart';
-
 import 'package:topojson/topojson.dart';
-import 'package:weather_japan/src/areas.dart';
 
-import 'area.dart';
+import 'weather_area.dart';
+import 'weather_areas.dart';
 
 /// Find an area that contains the specified point by [lat],[lng].
 ///
 /// During the process, the function may download area data and they can be cached
 /// if you explicitly specify [cacheDirectory];
 /// otherwise the function will download them each time it requires the data.
-Future<Area?> findArea(
+Future<WeatherArea?> findArea(
     {required double lng, required double lat, String? cacheDirectory}) async {
   for (final kv
       in areas.entries.where((kv) => kv.value.isPointInsideArea(lng, lat))) {

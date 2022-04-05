@@ -2,11 +2,17 @@ import 'dart:convert';
 
 import 'package:http/http.dart' as http;
 
-import 'area_detection.dart';
+import 'weather_area_detection.dart';
 
+/// Weather information.
 class Weather {
+  /// When the information is published.
   final DateTime publicTime;
+
+  /// Publishing office.
   final String publishingOffice;
+
+  /// Link to the JMA (気象庁)'s weather information web page.
   final String link;
   final WeatherDescription description;
   final List<WeatherForecast> forecasts;
@@ -54,9 +60,16 @@ class Weather {
         Uri.parse('https://weather.tsukumijima.net/api/forecast/city/$code'));
     return Weather.fromMap(jsonDecode(utf8.decode(json.bodyBytes)));
   }
+
+  @override
+  String toString() {
+    return 'Weather(publicTime: $publicTime, publishingOffice: $publishingOffice, link: $link, description: $description, forecasts: $forecasts, location: $location)';
+  }
 }
 
+/// Weather description.
 class WeatherDescription {
+  /// When the information is published.
   final DateTime publicTime;
   final String text;
   const WeatherDescription({
@@ -70,6 +83,10 @@ class WeatherDescription {
       text: map['text'],
     );
   }
+
+  @override
+  String toString() =>
+      'WeatherDescription(publicTime: $publicTime, text: $text)';
 }
 
 class WeatherForecast {
@@ -79,7 +96,7 @@ class WeatherForecast {
   final WeatherForecastDetail detail;
   final WeatherForecastTemperature temperature;
 
-  /// 4 elements array that contains chance-of-rain of 0-6, 6-12, 12-18, 18-24 ranges.
+  /// 4 elements array that contains chance-of-rain (降水確率) of 0-6, 6-12, 12-18, 18-24 ranges.
   List<int?> chanceOfRain;
 
   final WeatherForecastImage image;
@@ -115,6 +132,11 @@ class WeatherForecast {
 
   static int? _parsePercentage(dynamic p) =>
       p is String ? int.tryParse(p.split('%')[0]) : null;
+
+  @override
+  String toString() {
+    return 'WeatherForecast(date: $date, dateLabel: $dateLabel, telop: $telop, detail: $detail, temperature: $temperature, chanceOfRain: $chanceOfRain, image: $image)';
+  }
 }
 
 class WeatherForecastDetail {
@@ -135,6 +157,10 @@ class WeatherForecastDetail {
       wave: map['wave'],
     );
   }
+
+  @override
+  String toString() =>
+      'WeatherForecastDetail(weather: $weather, wind: $wind, wave: $wave)';
 }
 
 class WeatherForecastTemperature {
@@ -163,12 +189,25 @@ class WeatherForecastTemperature {
 
   static double? _parseDouble(String? s) =>
       s != null ? double.tryParse(s) : null;
+
+  @override
+  String toString() {
+    return 'WeatherForecastTemperature(minCelsius: $minCelsius, maxCelsius: $maxCelsius, minFahrenheit: $minFahrenheit, maxFahrenheit: $maxFahrenheit)';
+  }
 }
 
+/// Weather icon data.
 class WeatherForecastImage {
+  /// Brief description for the image.
   final String title;
+
+  /// Currently, SVG image URL.
   final String url;
+
+  /// Image width.
   final int width;
+
+  /// Image height.
   final int height;
 
   const WeatherForecastImage({
@@ -185,6 +224,11 @@ class WeatherForecastImage {
       width: map['width'],
       height: map['height'],
     );
+  }
+
+  @override
+  String toString() {
+    return 'WeatherForecastImage(title: $title, url: $url, width: $width, height: $height)';
   }
 }
 
@@ -208,6 +252,11 @@ class WeatherLocation {
       district: map['district'],
       city: map['city'],
     );
+  }
+
+  @override
+  String toString() {
+    return 'WeatherLocation(area: $area, prefecture: $prefecture, district: $district, city: $city)';
   }
 }
 

@@ -1,8 +1,8 @@
-import 'area.dart';
+import 'weather_area.dart';
 
 const areas = {
 // 0110000: 札幌市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0110000.html
-  '0110000': Area(
+  '0110000': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016010', // 石狩地方
@@ -16,7 +16,7 @@ const areas = {
     ],
   ),
 // 0120200: 函館市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0120200.html
-  '0120200': Area(
+  '0120200': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '017000', // 渡島・檜山地方 (函館地方気象台)
     class10: '017010', // 渡島地方
@@ -31,7 +31,7 @@ const areas = {
   ),
 
 // 0120300: 小樽市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0120300.html
-  '0120300': Area(
+  '0120300': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016030', // 後志地方
@@ -46,7 +46,7 @@ const areas = {
   ),
 
 // 0120400: 旭川市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0120400.html
-  '0120400': Area(
+  '0120400': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '012000', // 上川・留萌地方 (旭川地方気象台)
     class10: '012010', // 上川地方
@@ -61,7 +61,7 @@ const areas = {
   ),
 
 // 0120500: 室蘭市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0120500.html
-  '0120500': Area(
+  '0120500': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '015000', // 胆振・日高地方 (室蘭地方気象台)
     class10: '015010', // 胆振地方
@@ -76,7 +76,7 @@ const areas = {
   ),
 
 // 0120601: 釧路市釧路: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0120601.html
-  '0120601': Area(
+  '0120601': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '014100', // 釧路・根室地方 (釧路地方気象台)
     class10: '014020', // 釧路地方
@@ -91,7 +91,7 @@ const areas = {
   ),
 
 // 0120602: 釧路市阿寒: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0120602.html
-  '0120602': Area(
+  '0120602': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '014100', // 釧路・根室地方 (釧路地方気象台)
     class10: '014020', // 釧路地方
@@ -106,7 +106,7 @@ const areas = {
   ),
 
 // 0120603: 釧路市音別: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0120603.html
-  '0120603': Area(
+  '0120603': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '014100', // 釧路・根室地方 (釧路地方気象台)
     class10: '014020', // 釧路地方
@@ -121,7 +121,7 @@ const areas = {
   ),
 
 // 0120700: 帯広市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0120700.html
-  '0120700': Area(
+  '0120700': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '014030', // 十勝地方 (帯広測候所)
     class10: '014030', // 十勝地方
@@ -136,7 +136,7 @@ const areas = {
   ),
 
 // 0120801: 北見市北見: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0120801.html
-  '0120801': Area(
+  '0120801': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '013000', // 網走・北見・紋別地方 (網走地方気象台)
     class10: '013020', // 北見地方
@@ -151,7 +151,7 @@ const areas = {
   ),
 
 // 0120802: 北見市常呂: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0120802.html
-  '0120802': Area(
+  '0120802': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '013000', // 網走・北見・紋別地方 (網走地方気象台)
     class10: '013010', // 網走地方
@@ -165,7 +165,7 @@ const areas = {
     ],
   ),
 // 0120900: 夕張市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0120900.html
-  '0120900': Area(
+  '0120900': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016020', // 空知地方
@@ -179,7 +179,7 @@ const areas = {
     ],
   ),
 // 0121000: 岩見沢市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0121000.html
-  '0121000': Area(
+  '0121000': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016020', // 空知地方
@@ -194,7 +194,7 @@ const areas = {
   ),
 
 // 0121100: 網走市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0121100.html
-  '0121100': Area(
+  '0121100': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '013000', // 網走・北見・紋別地方 (網走地方気象台)
     class10: '013010', // 網走地方
@@ -208,7 +208,7 @@ const areas = {
     ],
   ),
 // 0121200: 留萌市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0121200.html
-  '0121200': Area(
+  '0121200': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '012000', // 上川・留萌地方 (旭川地方気象台)
     class10: '012020', // 留萌地方
@@ -223,7 +223,7 @@ const areas = {
   ),
 
 // 0121300: 苫小牧市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0121300.html
-  '0121300': Area(
+  '0121300': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '015000', // 胆振・日高地方 (室蘭地方気象台)
     class10: '015010', // 胆振地方
@@ -238,7 +238,7 @@ const areas = {
   ),
 
 // 0121400: 稚内市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0121400.html
-  '0121400': Area(
+  '0121400': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '011000', // 宗谷地方 (稚内地方気象台)
     class10: '011000', // 宗谷地方
@@ -252,7 +252,7 @@ const areas = {
     ],
   ),
 // 0121500: 美唄市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0121500.html
-  '0121500': Area(
+  '0121500': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016020', // 空知地方
@@ -266,7 +266,7 @@ const areas = {
     ],
   ),
 // 0121600: 芦別市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0121600.html
-  '0121600': Area(
+  '0121600': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016020', // 空知地方
@@ -280,7 +280,7 @@ const areas = {
     ],
   ),
 // 0121700: 江別市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0121700.html
-  '0121700': Area(
+  '0121700': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016010', // 石狩地方
@@ -295,7 +295,7 @@ const areas = {
   ),
 
 // 0121800: 赤平市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0121800.html
-  '0121800': Area(
+  '0121800': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016020', // 空知地方
@@ -309,7 +309,7 @@ const areas = {
     ],
   ),
 // 0121900: 紋別市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0121900.html
-  '0121900': Area(
+  '0121900': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '013000', // 網走・北見・紋別地方 (網走地方気象台)
     class10: '013030', // 紋別地方
@@ -323,7 +323,7 @@ const areas = {
     ],
   ),
 // 0122000: 士別市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0122000.html
-  '0122000': Area(
+  '0122000': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '012000', // 上川・留萌地方 (旭川地方気象台)
     class10: '012010', // 上川地方
@@ -338,7 +338,7 @@ const areas = {
   ),
 
 // 0122100: 名寄市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0122100.html
-  '0122100': Area(
+  '0122100': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '012000', // 上川・留萌地方 (旭川地方気象台)
     class10: '012010', // 上川地方
@@ -353,7 +353,7 @@ const areas = {
   ),
 
 // 0122200: 三笠市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0122200.html
-  '0122200': Area(
+  '0122200': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016020', // 空知地方
@@ -367,7 +367,7 @@ const areas = {
     ],
   ),
 // 0122300: 根室市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0122300.html
-  '0122300': Area(
+  '0122300': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '014100', // 釧路・根室地方 (釧路地方気象台)
     class10: '014010', // 根室地方
@@ -382,7 +382,7 @@ const areas = {
   ),
 
 // 0122400: 千歳市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0122400.html
-  '0122400': Area(
+  '0122400': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016010', // 石狩地方
@@ -396,7 +396,7 @@ const areas = {
     ],
   ),
 // 0122500: 滝川市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0122500.html
-  '0122500': Area(
+  '0122500': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016020', // 空知地方
@@ -411,7 +411,7 @@ const areas = {
   ),
 
 // 0122600: 砂川市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0122600.html
-  '0122600': Area(
+  '0122600': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016020', // 空知地方
@@ -426,7 +426,7 @@ const areas = {
   ),
 
 // 0122700: 歌志内市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0122700.html
-  '0122700': Area(
+  '0122700': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016020', // 空知地方
@@ -440,7 +440,7 @@ const areas = {
     ],
   ),
 // 0122800: 深川市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0122800.html
-  '0122800': Area(
+  '0122800': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016020', // 空知地方
@@ -455,7 +455,7 @@ const areas = {
   ),
 
 // 0122900: 富良野市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0122900.html
-  '0122900': Area(
+  '0122900': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '012000', // 上川・留萌地方 (旭川地方気象台)
     class10: '012010', // 上川地方
@@ -469,7 +469,7 @@ const areas = {
     ],
   ),
 // 0123000: 登別市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0123000.html
-  '0123000': Area(
+  '0123000': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '015000', // 胆振・日高地方 (室蘭地方気象台)
     class10: '015010', // 胆振地方
@@ -484,7 +484,7 @@ const areas = {
   ),
 
 // 0123100: 恵庭市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0123100.html
-  '0123100': Area(
+  '0123100': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016010', // 石狩地方
@@ -498,7 +498,7 @@ const areas = {
     ],
   ),
 // 0123301: 伊達市伊達: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0123301.html
-  '0123301': Area(
+  '0123301': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '015000', // 胆振・日高地方 (室蘭地方気象台)
     class10: '015010', // 胆振地方
@@ -513,7 +513,7 @@ const areas = {
   ),
 
 // 0123302: 伊達市大滝: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0123302.html
-  '0123302': Area(
+  '0123302': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '015000', // 胆振・日高地方 (室蘭地方気象台)
     class10: '015010', // 胆振地方
@@ -528,7 +528,7 @@ const areas = {
   ),
 
 // 0123400: 北広島市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0123400.html
-  '0123400': Area(
+  '0123400': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016010', // 石狩地方
@@ -542,7 +542,7 @@ const areas = {
     ],
   ),
 // 0123500: 石狩市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0123500.html
-  '0123500': Area(
+  '0123500': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016010', // 石狩地方
@@ -556,7 +556,7 @@ const areas = {
     ],
   ),
 // 0123600: 北斗市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0123600.html
-  '0123600': Area(
+  '0123600': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '017000', // 渡島・檜山地方 (函館地方気象台)
     class10: '017010', // 渡島地方
@@ -570,7 +570,7 @@ const areas = {
     ],
   ),
 // 0130300: 当別町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0130300.html
-  '0130300': Area(
+  '0130300': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016010', // 石狩地方
@@ -585,7 +585,7 @@ const areas = {
   ),
 
 // 0130400: 新篠津村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0130400.html
-  '0130400': Area(
+  '0130400': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016010', // 石狩地方
@@ -599,7 +599,7 @@ const areas = {
     ],
   ),
 // 0133100: 松前町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0133100.html
-  '0133100': Area(
+  '0133100': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '017000', // 渡島・檜山地方 (函館地方気象台)
     class10: '017010', // 渡島地方
@@ -614,7 +614,7 @@ const areas = {
   ),
 
 // 0133200: 福島町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0133200.html
-  '0133200': Area(
+  '0133200': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '017000', // 渡島・檜山地方 (函館地方気象台)
     class10: '017010', // 渡島地方
@@ -629,7 +629,7 @@ const areas = {
   ),
 
 // 0133300: 知内町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0133300.html
-  '0133300': Area(
+  '0133300': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '017000', // 渡島・檜山地方 (函館地方気象台)
     class10: '017010', // 渡島地方
@@ -644,7 +644,7 @@ const areas = {
   ),
 
 // 0133400: 木古内町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0133400.html
-  '0133400': Area(
+  '0133400': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '017000', // 渡島・檜山地方 (函館地方気象台)
     class10: '017010', // 渡島地方
@@ -658,7 +658,7 @@ const areas = {
     ],
   ),
 // 0133700: 七飯町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0133700.html
-  '0133700': Area(
+  '0133700': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '017000', // 渡島・檜山地方 (函館地方気象台)
     class10: '017010', // 渡島地方
@@ -673,7 +673,7 @@ const areas = {
   ),
 
 // 0134300: 鹿部町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0134300.html
-  '0134300': Area(
+  '0134300': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '017000', // 渡島・檜山地方 (函館地方気象台)
     class10: '017010', // 渡島地方
@@ -687,7 +687,7 @@ const areas = {
     ],
   ),
 // 0134500: 森町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0134500.html
-  '0134500': Area(
+  '0134500': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '017000', // 渡島・檜山地方 (函館地方気象台)
     class10: '017010', // 渡島地方
@@ -702,7 +702,7 @@ const areas = {
   ),
 
 // 0134601: 八雲町八雲: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0134601.html
-  '0134601': Area(
+  '0134601': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '017000', // 渡島・檜山地方 (函館地方気象台)
     class10: '017010', // 渡島地方
@@ -717,7 +717,7 @@ const areas = {
   ),
 
 // 0134602: 八雲町熊石: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0134602.html
-  '0134602': Area(
+  '0134602': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '017000', // 渡島・檜山地方 (函館地方気象台)
     class10: '017020', // 檜山地方
@@ -732,7 +732,7 @@ const areas = {
   ),
 
 // 0134700: 長万部町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0134700.html
-  '0134700': Area(
+  '0134700': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '017000', // 渡島・檜山地方 (函館地方気象台)
     class10: '017010', // 渡島地方
@@ -746,7 +746,7 @@ const areas = {
     ],
   ),
 // 0136100: 江差町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0136100.html
-  '0136100': Area(
+  '0136100': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '017000', // 渡島・檜山地方 (函館地方気象台)
     class10: '017020', // 檜山地方
@@ -761,7 +761,7 @@ const areas = {
   ),
 
 // 0136200: 上ノ国町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0136200.html
-  '0136200': Area(
+  '0136200': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '017000', // 渡島・檜山地方 (函館地方気象台)
     class10: '017020', // 檜山地方
@@ -776,7 +776,7 @@ const areas = {
   ),
 
 // 0136300: 厚沢部町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0136300.html
-  '0136300': Area(
+  '0136300': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '017000', // 渡島・檜山地方 (函館地方気象台)
     class10: '017020', // 檜山地方
@@ -790,7 +790,7 @@ const areas = {
     ],
   ),
 // 0136400: 乙部町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0136400.html
-  '0136400': Area(
+  '0136400': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '017000', // 渡島・檜山地方 (函館地方気象台)
     class10: '017020', // 檜山地方
@@ -804,7 +804,7 @@ const areas = {
     ],
   ),
 // 0136700: 奥尻町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0136700.html
-  '0136700': Area(
+  '0136700': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '017000', // 渡島・檜山地方 (函館地方気象台)
     class10: '017020', // 檜山地方
@@ -819,7 +819,7 @@ const areas = {
   ),
 
 // 0137000: 今金町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0137000.html
-  '0137000': Area(
+  '0137000': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '017000', // 渡島・檜山地方 (函館地方気象台)
     class10: '017020', // 檜山地方
@@ -834,7 +834,7 @@ const areas = {
   ),
 
 // 0137100: せたな町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0137100.html
-  '0137100': Area(
+  '0137100': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '017000', // 渡島・檜山地方 (函館地方気象台)
     class10: '017020', // 檜山地方
@@ -849,7 +849,7 @@ const areas = {
   ),
 
 // 0139100: 島牧村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0139100.html
-  '0139100': Area(
+  '0139100': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016030', // 後志地方
@@ -863,7 +863,7 @@ const areas = {
     ],
   ),
 // 0139200: 寿都町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0139200.html
-  '0139200': Area(
+  '0139200': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016030', // 後志地方
@@ -873,7 +873,7 @@ const areas = {
   ),
 
 // 0139300: 黒松内町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0139300.html
-  '0139300': Area(
+  '0139300': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016030', // 後志地方
@@ -887,7 +887,7 @@ const areas = {
     ],
   ),
 // 0139400: 蘭越町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0139400.html
-  '0139400': Area(
+  '0139400': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016030', // 後志地方
@@ -902,7 +902,7 @@ const areas = {
   ),
 
 // 0139500: ニセコ町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0139500.html
-  '0139500': Area(
+  '0139500': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016030', // 後志地方
@@ -917,7 +917,7 @@ const areas = {
   ),
 
 // 0139600: 真狩村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0139600.html
-  '0139600': Area(
+  '0139600': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016030', // 後志地方
@@ -931,7 +931,7 @@ const areas = {
     ],
   ),
 // 0139700: 留寿都村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0139700.html
-  '0139700': Area(
+  '0139700': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016030', // 後志地方
@@ -945,7 +945,7 @@ const areas = {
     ],
   ),
 // 0139800: 喜茂別町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0139800.html
-  '0139800': Area(
+  '0139800': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016030', // 後志地方
@@ -960,7 +960,7 @@ const areas = {
   ),
 
 // 0139900: 京極町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0139900.html
-  '0139900': Area(
+  '0139900': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016030', // 後志地方
@@ -974,7 +974,7 @@ const areas = {
     ],
   ),
 // 0140000: 倶知安町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0140000.html
-  '0140000': Area(
+  '0140000': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016030', // 後志地方
@@ -989,7 +989,7 @@ const areas = {
   ),
 
 // 0140100: 共和町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0140100.html
-  '0140100': Area(
+  '0140100': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016030', // 後志地方
@@ -1003,7 +1003,7 @@ const areas = {
     ],
   ),
 // 0140200: 岩内町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0140200.html
-  '0140200': Area(
+  '0140200': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016030', // 後志地方
@@ -1018,7 +1018,7 @@ const areas = {
   ),
 
 // 0140300: 泊村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0140300.html
-  '0140300': Area(
+  '0140300': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016030', // 後志地方
@@ -1032,7 +1032,7 @@ const areas = {
     ],
   ),
 // 0140400: 神恵内村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0140400.html
-  '0140400': Area(
+  '0140400': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016030', // 後志地方
@@ -1046,7 +1046,7 @@ const areas = {
     ],
   ),
 // 0140500: 積丹町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0140500.html
-  '0140500': Area(
+  '0140500': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016030', // 後志地方
@@ -1060,7 +1060,7 @@ const areas = {
     ],
   ),
 // 0140600: 古平町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0140600.html
-  '0140600': Area(
+  '0140600': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016030', // 後志地方
@@ -1074,7 +1074,7 @@ const areas = {
     ],
   ),
 // 0140700: 仁木町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0140700.html
-  '0140700': Area(
+  '0140700': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016030', // 後志地方
@@ -1088,7 +1088,7 @@ const areas = {
     ],
   ),
 // 0140800: 余市町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0140800.html
-  '0140800': Area(
+  '0140800': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016030', // 後志地方
@@ -1103,7 +1103,7 @@ const areas = {
   ),
 
 // 0140900: 赤井川村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0140900.html
-  '0140900': Area(
+  '0140900': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016030', // 後志地方
@@ -1118,7 +1118,7 @@ const areas = {
   ),
 
 // 0142300: 南幌町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0142300.html
-  '0142300': Area(
+  '0142300': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016020', // 空知地方
@@ -1132,7 +1132,7 @@ const areas = {
     ],
   ),
 // 0142400: 奈井江町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0142400.html
-  '0142400': Area(
+  '0142400': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016020', // 空知地方
@@ -1146,7 +1146,7 @@ const areas = {
     ],
   ),
 // 0142500: 上砂川町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0142500.html
-  '0142500': Area(
+  '0142500': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016020', // 空知地方
@@ -1156,7 +1156,7 @@ const areas = {
   ),
 
 // 0142700: 由仁町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0142700.html
-  '0142700': Area(
+  '0142700': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016020', // 空知地方
@@ -1170,7 +1170,7 @@ const areas = {
     ],
   ),
 // 0142800: 長沼町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0142800.html
-  '0142800': Area(
+  '0142800': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016020', // 空知地方
@@ -1184,7 +1184,7 @@ const areas = {
     ],
   ),
 // 0142900: 栗山町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0142900.html
-  '0142900': Area(
+  '0142900': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016020', // 空知地方
@@ -1199,7 +1199,7 @@ const areas = {
   ),
 
 // 0143000: 月形町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0143000.html
-  '0143000': Area(
+  '0143000': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016020', // 空知地方
@@ -1213,7 +1213,7 @@ const areas = {
     ],
   ),
 // 0143100: 浦臼町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0143100.html
-  '0143100': Area(
+  '0143100': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016020', // 空知地方
@@ -1228,7 +1228,7 @@ const areas = {
   ),
 
 // 0143200: 新十津川町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0143200.html
-  '0143200': Area(
+  '0143200': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016020', // 空知地方
@@ -1242,7 +1242,7 @@ const areas = {
     ],
   ),
 // 0143300: 妹背牛町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0143300.html
-  '0143300': Area(
+  '0143300': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016020', // 空知地方
@@ -1256,7 +1256,7 @@ const areas = {
     ],
   ),
 // 0143400: 秩父別町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0143400.html
-  '0143400': Area(
+  '0143400': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016020', // 空知地方
@@ -1271,7 +1271,7 @@ const areas = {
   ),
 
 // 0143600: 雨竜町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0143600.html
-  '0143600': Area(
+  '0143600': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016020', // 空知地方
@@ -1285,7 +1285,7 @@ const areas = {
     ],
   ),
 // 0143700: 北竜町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0143700.html
-  '0143700': Area(
+  '0143700': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016020', // 空知地方
@@ -1300,7 +1300,7 @@ const areas = {
   ),
 
 // 0143800: 沼田町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0143800.html
-  '0143800': Area(
+  '0143800': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '016000', // 石狩・空知・後志地方 (札幌管区気象台)
     class10: '016020', // 空知地方
@@ -1314,7 +1314,7 @@ const areas = {
     ],
   ),
 // 0145200: 鷹栖町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0145200.html
-  '0145200': Area(
+  '0145200': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '012000', // 上川・留萌地方 (旭川地方気象台)
     class10: '012010', // 上川地方
@@ -1328,7 +1328,7 @@ const areas = {
     ],
   ),
 // 0145300: 東神楽町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0145300.html
-  '0145300': Area(
+  '0145300': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '012000', // 上川・留萌地方 (旭川地方気象台)
     class10: '012010', // 上川地方
@@ -1342,7 +1342,7 @@ const areas = {
     ],
   ),
 // 0145400: 当麻町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0145400.html
-  '0145400': Area(
+  '0145400': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '012000', // 上川・留萌地方 (旭川地方気象台)
     class10: '012010', // 上川地方
@@ -1357,7 +1357,7 @@ const areas = {
   ),
 
 // 0145500: 比布町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0145500.html
-  '0145500': Area(
+  '0145500': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '012000', // 上川・留萌地方 (旭川地方気象台)
     class10: '012010', // 上川地方
@@ -1371,7 +1371,7 @@ const areas = {
     ],
   ),
 // 0145600: 愛別町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0145600.html
-  '0145600': Area(
+  '0145600': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '012000', // 上川・留萌地方 (旭川地方気象台)
     class10: '012010', // 上川地方
@@ -1385,7 +1385,7 @@ const areas = {
     ],
   ),
 // 0145700: 上川町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0145700.html
-  '0145700': Area(
+  '0145700': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '012000', // 上川・留萌地方 (旭川地方気象台)
     class10: '012010', // 上川地方
@@ -1399,7 +1399,7 @@ const areas = {
     ],
   ),
 // 0145800: 東川町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0145800.html
-  '0145800': Area(
+  '0145800': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '012000', // 上川・留萌地方 (旭川地方気象台)
     class10: '012010', // 上川地方
@@ -1413,7 +1413,7 @@ const areas = {
     ],
   ),
 // 0145900: 美瑛町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0145900.html
-  '0145900': Area(
+  '0145900': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '012000', // 上川・留萌地方 (旭川地方気象台)
     class10: '012010', // 上川地方
@@ -1422,7 +1422,7 @@ const areas = {
     bbox: [142.32035277566, 43.4176202789528, 142.912043606227, 43.66894777492],
   ),
 // 0146000: 上富良野町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0146000.html
-  '0146000': Area(
+  '0146000': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '012000', // 上川・留萌地方 (旭川地方気象台)
     class10: '012010', // 上川地方
@@ -1436,7 +1436,7 @@ const areas = {
     ],
   ),
 // 0146100: 中富良野町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0146100.html
-  '0146100': Area(
+  '0146100': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '012000', // 上川・留萌地方 (旭川地方気象台)
     class10: '012010', // 上川地方
@@ -1450,7 +1450,7 @@ const areas = {
     ],
   ),
 // 0146200: 南富良野町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0146200.html
-  '0146200': Area(
+  '0146200': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '012000', // 上川・留萌地方 (旭川地方気象台)
     class10: '012010', // 上川地方
@@ -1465,7 +1465,7 @@ const areas = {
   ),
 
 // 0146300: 占冠村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0146300.html
-  '0146300': Area(
+  '0146300': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '012000', // 上川・留萌地方 (旭川地方気象台)
     class10: '012010', // 上川地方
@@ -1479,7 +1479,7 @@ const areas = {
     ],
   ),
 // 0146400: 和寒町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0146400.html
-  '0146400': Area(
+  '0146400': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '012000', // 上川・留萌地方 (旭川地方気象台)
     class10: '012010', // 上川地方
@@ -1494,7 +1494,7 @@ const areas = {
   ),
 
 // 0146500: 剣淵町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0146500.html
-  '0146500': Area(
+  '0146500': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '012000', // 上川・留萌地方 (旭川地方気象台)
     class10: '012010', // 上川地方
@@ -1509,7 +1509,7 @@ const areas = {
   ),
 
 // 0146800: 下川町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0146800.html
-  '0146800': Area(
+  '0146800': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '012000', // 上川・留萌地方 (旭川地方気象台)
     class10: '012010', // 上川地方
@@ -1523,7 +1523,7 @@ const areas = {
     ],
   ),
 // 0146900: 美深町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0146900.html
-  '0146900': Area(
+  '0146900': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '012000', // 上川・留萌地方 (旭川地方気象台)
     class10: '012010', // 上川地方
@@ -1537,7 +1537,7 @@ const areas = {
     ],
   ),
 // 0147000: 音威子府村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0147000.html
-  '0147000': Area(
+  '0147000': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '012000', // 上川・留萌地方 (旭川地方気象台)
     class10: '012010', // 上川地方
@@ -1552,7 +1552,7 @@ const areas = {
   ),
 
 // 0147100: 中川町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0147100.html
-  '0147100': Area(
+  '0147100': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '012000', // 上川・留萌地方 (旭川地方気象台)
     class10: '012010', // 上川地方
@@ -1566,7 +1566,7 @@ const areas = {
     ],
   ),
 // 0147200: 幌加内町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0147200.html
-  '0147200': Area(
+  '0147200': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '012000', // 上川・留萌地方 (旭川地方気象台)
     class10: '012010', // 上川地方
@@ -1581,7 +1581,7 @@ const areas = {
   ),
 
 // 0148100: 増毛町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0148100.html
-  '0148100': Area(
+  '0148100': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '012000', // 上川・留萌地方 (旭川地方気象台)
     class10: '012020', // 留萌地方
@@ -1595,7 +1595,7 @@ const areas = {
     ],
   ),
 // 0148200: 小平町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0148200.html
-  '0148200': Area(
+  '0148200': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '012000', // 上川・留萌地方 (旭川地方気象台)
     class10: '012020', // 留萌地方
@@ -1610,7 +1610,7 @@ const areas = {
   ),
 
 // 0148300: 苫前町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0148300.html
-  '0148300': Area(
+  '0148300': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '012000', // 上川・留萌地方 (旭川地方気象台)
     class10: '012020', // 留萌地方
@@ -1620,7 +1620,7 @@ const areas = {
   ),
 
 // 0148401: 羽幌町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0148401.html
-  '0148401': Area(
+  '0148401': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '012000', // 上川・留萌地方 (旭川地方気象台)
     class10: '012020', // 留萌地方
@@ -1634,7 +1634,7 @@ const areas = {
     ],
   ),
 // 0148402: 羽幌町天売焼尻: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0148402.html
-  '0148402': Area(
+  '0148402': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '012000', // 上川・留萌地方 (旭川地方気象台)
     class10: '012020', // 留萌地方
@@ -1648,7 +1648,7 @@ const areas = {
     ],
   ),
 // 0148500: 初山別村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0148500.html
-  '0148500': Area(
+  '0148500': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '012000', // 上川・留萌地方 (旭川地方気象台)
     class10: '012020', // 留萌地方
@@ -1663,7 +1663,7 @@ const areas = {
   ),
 
 // 0148600: 遠別町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0148600.html
-  '0148600': Area(
+  '0148600': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '012000', // 上川・留萌地方 (旭川地方気象台)
     class10: '012020', // 留萌地方
@@ -1677,7 +1677,7 @@ const areas = {
     ],
   ),
 // 0148700: 天塩町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0148700.html
-  '0148700': Area(
+  '0148700': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '012000', // 上川・留萌地方 (旭川地方気象台)
     class10: '012020', // 留萌地方
@@ -1692,7 +1692,7 @@ const areas = {
   ),
 
 // 0151100: 猿払村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0151100.html
-  '0151100': Area(
+  '0151100': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '011000', // 宗谷地方 (稚内地方気象台)
     class10: '011000', // 宗谷地方
@@ -1707,7 +1707,7 @@ const areas = {
   ),
 
 // 0151200: 浜頓別町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0151200.html
-  '0151200': Area(
+  '0151200': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '011000', // 宗谷地方 (稚内地方気象台)
     class10: '011000', // 宗谷地方
@@ -1721,7 +1721,7 @@ const areas = {
     ],
   ),
 // 0151300: 中頓別町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0151300.html
-  '0151300': Area(
+  '0151300': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '011000', // 宗谷地方 (稚内地方気象台)
     class10: '011000', // 宗谷地方
@@ -1735,7 +1735,7 @@ const areas = {
     ],
   ),
 // 0151400: 枝幸町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0151400.html
-  '0151400': Area(
+  '0151400': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '011000', // 宗谷地方 (稚内地方気象台)
     class10: '011000', // 宗谷地方
@@ -1750,7 +1750,7 @@ const areas = {
   ),
 
 // 0151600: 豊富町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0151600.html
-  '0151600': Area(
+  '0151600': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '011000', // 宗谷地方 (稚内地方気象台)
     class10: '011000', // 宗谷地方
@@ -1764,7 +1764,7 @@ const areas = {
     ],
   ),
 // 0151700: 礼文町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0151700.html
-  '0151700': Area(
+  '0151700': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '011000', // 宗谷地方 (稚内地方気象台)
     class10: '011000', // 宗谷地方
@@ -1779,7 +1779,7 @@ const areas = {
   ),
 
 // 0151800: 利尻町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0151800.html
-  '0151800': Area(
+  '0151800': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '011000', // 宗谷地方 (稚内地方気象台)
     class10: '011000', // 宗谷地方
@@ -1793,7 +1793,7 @@ const areas = {
     ],
   ),
 // 0151900: 利尻富士町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0151900.html
-  '0151900': Area(
+  '0151900': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '011000', // 宗谷地方 (稚内地方気象台)
     class10: '011000', // 宗谷地方
@@ -1808,7 +1808,7 @@ const areas = {
   ),
 
 // 0152000: 幌延町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0152000.html
-  '0152000': Area(
+  '0152000': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '011000', // 宗谷地方 (稚内地方気象台)
     class10: '011000', // 宗谷地方
@@ -1822,7 +1822,7 @@ const areas = {
     ],
   ),
 // 0154300: 美幌町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0154300.html
-  '0154300': Area(
+  '0154300': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '013000', // 網走・北見・紋別地方 (網走地方気象台)
     class10: '013010', // 網走地方
@@ -1837,7 +1837,7 @@ const areas = {
   ),
 
 // 0154400: 津別町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0154400.html
-  '0154400': Area(
+  '0154400': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '013000', // 網走・北見・紋別地方 (網走地方気象台)
     class10: '013010', // 網走地方
@@ -1852,7 +1852,7 @@ const areas = {
   ),
 
 // 0154500: 斜里町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0154500.html
-  '0154500': Area(
+  '0154500': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '013000', // 網走・北見・紋別地方 (網走地方気象台)
     class10: '013010', // 網走地方
@@ -1866,7 +1866,7 @@ const areas = {
     ],
   ),
 // 0154600: 清里町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0154600.html
-  '0154600': Area(
+  '0154600': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '013000', // 網走・北見・紋別地方 (網走地方気象台)
     class10: '013010', // 網走地方
@@ -1880,7 +1880,7 @@ const areas = {
     ],
   ),
 // 0154700: 小清水町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0154700.html
-  '0154700': Area(
+  '0154700': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '013000', // 網走・北見・紋別地方 (網走地方気象台)
     class10: '013010', // 網走地方
@@ -1895,7 +1895,7 @@ const areas = {
   ),
 
 // 0154900: 訓子府町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0154900.html
-  '0154900': Area(
+  '0154900': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '013000', // 網走・北見・紋別地方 (網走地方気象台)
     class10: '013020', // 北見地方
@@ -1909,7 +1909,7 @@ const areas = {
     ],
   ),
 // 0155000: 置戸町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0155000.html
-  '0155000': Area(
+  '0155000': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '013000', // 網走・北見・紋別地方 (網走地方気象台)
     class10: '013020', // 北見地方
@@ -1924,7 +1924,7 @@ const areas = {
   ),
 
 // 0155200: 佐呂間町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0155200.html
-  '0155200': Area(
+  '0155200': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '013000', // 網走・北見・紋別地方 (網走地方気象台)
     class10: '013010', // 網走地方
@@ -1939,7 +1939,7 @@ const areas = {
   ),
 
 // 0155500: 遠軽町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0155500.html
-  '0155500': Area(
+  '0155500': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '013000', // 網走・北見・紋別地方 (網走地方気象台)
     class10: '013030', // 紋別地方
@@ -1953,7 +1953,7 @@ const areas = {
     ],
   ),
 // 0155900: 湧別町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0155900.html
-  '0155900': Area(
+  '0155900': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '013000', // 網走・北見・紋別地方 (網走地方気象台)
     class10: '013030', // 紋別地方
@@ -1967,7 +1967,7 @@ const areas = {
     ],
   ),
 // 0156000: 滝上町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0156000.html
-  '0156000': Area(
+  '0156000': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '013000', // 網走・北見・紋別地方 (網走地方気象台)
     class10: '013030', // 紋別地方
@@ -1981,7 +1981,7 @@ const areas = {
     ],
   ),
 // 0156100: 興部町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0156100.html
-  '0156100': Area(
+  '0156100': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '013000', // 網走・北見・紋別地方 (網走地方気象台)
     class10: '013030', // 紋別地方
@@ -1995,7 +1995,7 @@ const areas = {
     ],
   ),
 // 0156200: 西興部村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0156200.html
-  '0156200': Area(
+  '0156200': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '013000', // 網走・北見・紋別地方 (網走地方気象台)
     class10: '013030', // 紋別地方
@@ -2010,7 +2010,7 @@ const areas = {
   ),
 
 // 0156300: 雄武町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0156300.html
-  '0156300': Area(
+  '0156300': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '013000', // 網走・北見・紋別地方 (網走地方気象台)
     class10: '013030', // 紋別地方
@@ -2024,7 +2024,7 @@ const areas = {
     ],
   ),
 // 0156400: 大空町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0156400.html
-  '0156400': Area(
+  '0156400': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '013000', // 網走・北見・紋別地方 (網走地方気象台)
     class10: '013010', // 網走地方
@@ -2039,7 +2039,7 @@ const areas = {
   ),
 
 // 0157100: 豊浦町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0157100.html
-  '0157100': Area(
+  '0157100': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '015000', // 胆振・日高地方 (室蘭地方気象台)
     class10: '015010', // 胆振地方
@@ -2053,7 +2053,7 @@ const areas = {
     ],
   ),
 // 0157500: 壮瞥町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0157500.html
-  '0157500': Area(
+  '0157500': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '015000', // 胆振・日高地方 (室蘭地方気象台)
     class10: '015010', // 胆振地方
@@ -2068,7 +2068,7 @@ const areas = {
   ),
 
 // 0157800: 白老町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0157800.html
-  '0157800': Area(
+  '0157800': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '015000', // 胆振・日高地方 (室蘭地方気象台)
     class10: '015010', // 胆振地方
@@ -2083,7 +2083,7 @@ const areas = {
   ),
 
 // 0158100: 厚真町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0158100.html
-  '0158100': Area(
+  '0158100': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '015000', // 胆振・日高地方 (室蘭地方気象台)
     class10: '015010', // 胆振地方
@@ -2097,7 +2097,7 @@ const areas = {
     ],
   ),
 // 0158400: 洞爺湖町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0158400.html
-  '0158400': Area(
+  '0158400': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '015000', // 胆振・日高地方 (室蘭地方気象台)
     class10: '015010', // 胆振地方
@@ -2111,7 +2111,7 @@ const areas = {
     ],
   ),
 // 0158500: 安平町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0158500.html
-  '0158500': Area(
+  '0158500': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '015000', // 胆振・日高地方 (室蘭地方気象台)
     class10: '015010', // 胆振地方
@@ -2125,7 +2125,7 @@ const areas = {
     ],
   ),
 // 0158600: むかわ町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0158600.html
-  '0158600': Area(
+  '0158600': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '015000', // 胆振・日高地方 (室蘭地方気象台)
     class10: '015010', // 胆振地方
@@ -2140,7 +2140,7 @@ const areas = {
   ),
 
 // 0160101: 日高町日高: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0160101.html
-  '0160101': Area(
+  '0160101': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '015000', // 胆振・日高地方 (室蘭地方気象台)
     class10: '015020', // 日高地方
@@ -2154,7 +2154,7 @@ const areas = {
     ],
   ),
 // 0160102: 日高町門別: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0160102.html
-  '0160102': Area(
+  '0160102': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '015000', // 胆振・日高地方 (室蘭地方気象台)
     class10: '015020', // 日高地方
@@ -2169,7 +2169,7 @@ const areas = {
   ),
 
 // 0160200: 平取町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0160200.html
-  '0160200': Area(
+  '0160200': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '015000', // 胆振・日高地方 (室蘭地方気象台)
     class10: '015020', // 日高地方
@@ -2183,7 +2183,7 @@ const areas = {
     ],
   ),
 // 0160400: 新冠町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0160400.html
-  '0160400': Area(
+  '0160400': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '015000', // 胆振・日高地方 (室蘭地方気象台)
     class10: '015020', // 日高地方
@@ -2198,7 +2198,7 @@ const areas = {
   ),
 
 // 0160700: 浦河町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0160700.html
-  '0160700': Area(
+  '0160700': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '015000', // 胆振・日高地方 (室蘭地方気象台)
     class10: '015020', // 日高地方
@@ -2212,7 +2212,7 @@ const areas = {
     ],
   ),
 // 0160800: 様似町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0160800.html
-  '0160800': Area(
+  '0160800': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '015000', // 胆振・日高地方 (室蘭地方気象台)
     class10: '015020', // 日高地方
@@ -2226,7 +2226,7 @@ const areas = {
     ],
   ),
 // 0160900: えりも町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0160900.html
-  '0160900': Area(
+  '0160900': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '015000', // 胆振・日高地方 (室蘭地方気象台)
     class10: '015020', // 日高地方
@@ -2240,7 +2240,7 @@ const areas = {
     ],
   ),
 // 0161000: 新ひだか町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0161000.html
-  '0161000': Area(
+  '0161000': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '015000', // 胆振・日高地方 (室蘭地方気象台)
     class10: '015020', // 日高地方
@@ -2254,7 +2254,7 @@ const areas = {
     ],
   ),
 // 0163100: 音更町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0163100.html
-  '0163100': Area(
+  '0163100': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '014030', // 十勝地方 (帯広測候所)
     class10: '014030', // 十勝地方
@@ -2268,7 +2268,7 @@ const areas = {
     ],
   ),
 // 0163200: 士幌町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0163200.html
-  '0163200': Area(
+  '0163200': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '014030', // 十勝地方 (帯広測候所)
     class10: '014030', // 十勝地方
@@ -2282,7 +2282,7 @@ const areas = {
     ],
   ),
 // 0163300: 上士幌町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0163300.html
-  '0163300': Area(
+  '0163300': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '014030', // 十勝地方 (帯広測候所)
     class10: '014030', // 十勝地方
@@ -2297,7 +2297,7 @@ const areas = {
   ),
 
 // 0163400: 鹿追町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0163400.html
-  '0163400': Area(
+  '0163400': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '014030', // 十勝地方 (帯広測候所)
     class10: '014030', // 十勝地方
@@ -2312,7 +2312,7 @@ const areas = {
   ),
 
 // 0163500: 新得町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0163500.html
-  '0163500': Area(
+  '0163500': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '014030', // 十勝地方 (帯広測候所)
     class10: '014030', // 十勝地方
@@ -2326,7 +2326,7 @@ const areas = {
     ],
   ),
 // 0163600: 清水町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0163600.html
-  '0163600': Area(
+  '0163600': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '014030', // 十勝地方 (帯広測候所)
     class10: '014030', // 十勝地方
@@ -2341,7 +2341,7 @@ const areas = {
   ),
 
 // 0163700: 芽室町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0163700.html
-  '0163700': Area(
+  '0163700': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '014030', // 十勝地方 (帯広測候所)
     class10: '014030', // 十勝地方
@@ -2356,7 +2356,7 @@ const areas = {
   ),
 
 // 0163800: 中札内村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0163800.html
-  '0163800': Area(
+  '0163800': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '014030', // 十勝地方 (帯広測候所)
     class10: '014030', // 十勝地方
@@ -2370,7 +2370,7 @@ const areas = {
     ],
   ),
 // 0163900: 更別村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0163900.html
-  '0163900': Area(
+  '0163900': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '014030', // 十勝地方 (帯広測候所)
     class10: '014030', // 十勝地方
@@ -2384,7 +2384,7 @@ const areas = {
     ],
   ),
 // 0164100: 大樹町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0164100.html
-  '0164100': Area(
+  '0164100': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '014030', // 十勝地方 (帯広測候所)
     class10: '014030', // 十勝地方
@@ -2399,7 +2399,7 @@ const areas = {
   ),
 
 // 0164200: 広尾町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0164200.html
-  '0164200': Area(
+  '0164200': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '014030', // 十勝地方 (帯広測候所)
     class10: '014030', // 十勝地方
@@ -2413,7 +2413,7 @@ const areas = {
     ],
   ),
 // 0164300: 幕別町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0164300.html
-  '0164300': Area(
+  '0164300': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '014030', // 十勝地方 (帯広測候所)
     class10: '014030', // 十勝地方
@@ -2428,7 +2428,7 @@ const areas = {
   ),
 
 // 0164400: 池田町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0164400.html
-  '0164400': Area(
+  '0164400': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '014030', // 十勝地方 (帯広測候所)
     class10: '014030', // 十勝地方
@@ -2442,7 +2442,7 @@ const areas = {
     ],
   ),
 // 0164500: 豊頃町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0164500.html
-  '0164500': Area(
+  '0164500': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '014030', // 十勝地方 (帯広測候所)
     class10: '014030', // 十勝地方
@@ -2457,7 +2457,7 @@ const areas = {
   ),
 
 // 0164600: 本別町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0164600.html
-  '0164600': Area(
+  '0164600': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '014030', // 十勝地方 (帯広測候所)
     class10: '014030', // 十勝地方
@@ -2471,7 +2471,7 @@ const areas = {
     ],
   ),
 // 0164700: 足寄町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0164700.html
-  '0164700': Area(
+  '0164700': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '014030', // 十勝地方 (帯広測候所)
     class10: '014030', // 十勝地方
@@ -2486,7 +2486,7 @@ const areas = {
   ),
 
 // 0164800: 陸別町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0164800.html
-  '0164800': Area(
+  '0164800': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '014030', // 十勝地方 (帯広測候所)
     class10: '014030', // 十勝地方
@@ -2501,7 +2501,7 @@ const areas = {
   ),
 
 // 0164900: 浦幌町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0164900.html
-  '0164900': Area(
+  '0164900': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '014030', // 十勝地方 (帯広測候所)
     class10: '014030', // 十勝地方
@@ -2516,7 +2516,7 @@ const areas = {
   ),
 
 // 0166100: 釧路町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0166100.html
-  '0166100': Area(
+  '0166100': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '014100', // 釧路・根室地方 (釧路地方気象台)
     class10: '014020', // 釧路地方
@@ -2530,7 +2530,7 @@ const areas = {
     ],
   ),
 // 0166200: 厚岸町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0166200.html
-  '0166200': Area(
+  '0166200': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '014100', // 釧路・根室地方 (釧路地方気象台)
     class10: '014020', // 釧路地方
@@ -2545,7 +2545,7 @@ const areas = {
   ),
 
 // 0166300: 浜中町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0166300.html
-  '0166300': Area(
+  '0166300': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '014100', // 釧路・根室地方 (釧路地方気象台)
     class10: '014020', // 釧路地方
@@ -2560,7 +2560,7 @@ const areas = {
   ),
 
 // 0166400: 標茶町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0166400.html
-  '0166400': Area(
+  '0166400': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '014100', // 釧路・根室地方 (釧路地方気象台)
     class10: '014020', // 釧路地方
@@ -2574,7 +2574,7 @@ const areas = {
     ],
   ),
 // 0166500: 弟子屈町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0166500.html
-  '0166500': Area(
+  '0166500': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '014100', // 釧路・根室地方 (釧路地方気象台)
     class10: '014020', // 釧路地方
@@ -2589,7 +2589,7 @@ const areas = {
   ),
 
 // 0166700: 鶴居村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0166700.html
-  '0166700': Area(
+  '0166700': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '014100', // 釧路・根室地方 (釧路地方気象台)
     class10: '014020', // 釧路地方
@@ -2603,7 +2603,7 @@ const areas = {
     ],
   ),
 // 0166800: 白糠町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0166800.html
-  '0166800': Area(
+  '0166800': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '014100', // 釧路・根室地方 (釧路地方気象台)
     class10: '014020', // 釧路地方
@@ -2618,7 +2618,7 @@ const areas = {
   ),
 
 // 0169100: 別海町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0169100.html
-  '0169100': Area(
+  '0169100': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '014100', // 釧路・根室地方 (釧路地方気象台)
     class10: '014010', // 根室地方
@@ -2633,7 +2633,7 @@ const areas = {
   ),
 
 // 0169200: 中標津町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0169200.html
-  '0169200': Area(
+  '0169200': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '014100', // 釧路・根室地方 (釧路地方気象台)
     class10: '014010', // 根室地方
@@ -2647,7 +2647,7 @@ const areas = {
     ],
   ),
 // 0169300: 標津町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0169300.html
-  '0169300': Area(
+  '0169300': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '014100', // 釧路・根室地方 (釧路地方気象台)
     class10: '014010', // 根室地方
@@ -2662,7 +2662,7 @@ const areas = {
   ),
 
 // 0169400: 羅臼町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0169400.html
-  '0169400': Area(
+  '0169400': WeatherArea(
     center: '010100', // 北海道地方 (札幌管区気象台)
     office: '014100', // 釧路・根室地方 (釧路地方気象台)
     class10: '014010', // 根室地方
@@ -2676,7 +2676,7 @@ const areas = {
     ],
   ),
 // 0220100: 青森市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0220100.html
-  '0220100': Area(
+  '0220100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '020000', // 青森県 (青森地方気象台)
     class10: '020010', // 津軽
@@ -2691,7 +2691,7 @@ const areas = {
   ),
 
 // 0220200: 弘前市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0220200.html
-  '0220200': Area(
+  '0220200': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '020000', // 青森県 (青森地方気象台)
     class10: '020010', // 津軽
@@ -2706,7 +2706,7 @@ const areas = {
   ),
 
 // 0220300: 八戸市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0220300.html
-  '0220300': Area(
+  '0220300': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '020000', // 青森県 (青森地方気象台)
     class10: '020030', // 三八上北
@@ -2720,7 +2720,7 @@ const areas = {
     ],
   ),
 // 0220400: 黒石市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0220400.html
-  '0220400': Area(
+  '0220400': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '020000', // 青森県 (青森地方気象台)
     class10: '020010', // 津軽
@@ -2735,7 +2735,7 @@ const areas = {
   ),
 
 // 0220500: 五所川原市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0220500.html
-  '0220500': Area(
+  '0220500': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '020000', // 青森県 (青森地方気象台)
     class10: '020010', // 津軽
@@ -2749,7 +2749,7 @@ const areas = {
     ],
   ),
 // 0220600: 十和田市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0220600.html
-  '0220600': Area(
+  '0220600': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '020000', // 青森県 (青森地方気象台)
     class10: '020030', // 三八上北
@@ -2764,7 +2764,7 @@ const areas = {
   ),
 
 // 0220700: 三沢市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0220700.html
-  '0220700': Area(
+  '0220700': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '020000', // 青森県 (青森地方気象台)
     class10: '020030', // 三八上北
@@ -2779,7 +2779,7 @@ const areas = {
   ),
 
 // 0220800: むつ市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0220800.html
-  '0220800': Area(
+  '0220800': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '020000', // 青森県 (青森地方気象台)
     class10: '020020', // 下北
@@ -2794,7 +2794,7 @@ const areas = {
   ),
 
 // 0220900: つがる市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0220900.html
-  '0220900': Area(
+  '0220900': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '020000', // 青森県 (青森地方気象台)
     class10: '020010', // 津軽
@@ -2808,7 +2808,7 @@ const areas = {
     ],
   ),
 // 0221000: 平川市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0221000.html
-  '0221000': Area(
+  '0221000': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '020000', // 青森県 (青森地方気象台)
     class10: '020010', // 津軽
@@ -2823,7 +2823,7 @@ const areas = {
   ),
 
 // 0230100: 平内町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0230100.html
-  '0230100': Area(
+  '0230100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '020000', // 青森県 (青森地方気象台)
     class10: '020010', // 津軽
@@ -2838,7 +2838,7 @@ const areas = {
   ),
 
 // 0230300: 今別町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0230300.html
-  '0230300': Area(
+  '0230300': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '020000', // 青森県 (青森地方気象台)
     class10: '020010', // 津軽
@@ -2852,7 +2852,7 @@ const areas = {
     ],
   ),
 // 0230400: 蓬田村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0230400.html
-  '0230400': Area(
+  '0230400': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '020000', // 青森県 (青森地方気象台)
     class10: '020010', // 津軽
@@ -2867,7 +2867,7 @@ const areas = {
   ),
 
 // 0230700: 外ヶ浜町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0230700.html
-  '0230700': Area(
+  '0230700': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '020000', // 青森県 (青森地方気象台)
     class10: '020010', // 津軽
@@ -2882,7 +2882,7 @@ const areas = {
   ),
 
 // 0232100: 鰺ヶ沢町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0232100.html
-  '0232100': Area(
+  '0232100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '020000', // 青森県 (青森地方気象台)
     class10: '020010', // 津軽
@@ -2896,7 +2896,7 @@ const areas = {
     ],
   ),
 // 0232300: 深浦町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0232300.html
-  '0232300': Area(
+  '0232300': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '020000', // 青森県 (青森地方気象台)
     class10: '020010', // 津軽
@@ -2911,7 +2911,7 @@ const areas = {
   ),
 
 // 0234300: 西目屋村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0234300.html
-  '0234300': Area(
+  '0234300': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '020000', // 青森県 (青森地方気象台)
     class10: '020010', // 津軽
@@ -2925,7 +2925,7 @@ const areas = {
     ],
   ),
 // 0236100: 藤崎町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0236100.html
-  '0236100': Area(
+  '0236100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '020000', // 青森県 (青森地方気象台)
     class10: '020010', // 津軽
@@ -2940,7 +2940,7 @@ const areas = {
   ),
 
 // 0236200: 大鰐町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0236200.html
-  '0236200': Area(
+  '0236200': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '020000', // 青森県 (青森地方気象台)
     class10: '020010', // 津軽
@@ -2955,7 +2955,7 @@ const areas = {
   ),
 
 // 0236700: 田舎館村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0236700.html
-  '0236700': Area(
+  '0236700': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '020000', // 青森県 (青森地方気象台)
     class10: '020010', // 津軽
@@ -2969,7 +2969,7 @@ const areas = {
     ],
   ),
 // 0238100: 板柳町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0238100.html
-  '0238100': Area(
+  '0238100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '020000', // 青森県 (青森地方気象台)
     class10: '020010', // 津軽
@@ -2984,7 +2984,7 @@ const areas = {
   ),
 
 // 0238400: 鶴田町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0238400.html
-  '0238400': Area(
+  '0238400': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '020000', // 青森県 (青森地方気象台)
     class10: '020010', // 津軽
@@ -2998,7 +2998,7 @@ const areas = {
     ],
   ),
 // 0238700: 中泊町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0238700.html
-  '0238700': Area(
+  '0238700': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '020000', // 青森県 (青森地方気象台)
     class10: '020010', // 津軽
@@ -3013,7 +3013,7 @@ const areas = {
   ),
 
 // 0240100: 野辺地町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0240100.html
-  '0240100': Area(
+  '0240100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '020000', // 青森県 (青森地方気象台)
     class10: '020030', // 三八上北
@@ -3028,7 +3028,7 @@ const areas = {
   ),
 
 // 0240200: 七戸町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0240200.html
-  '0240200': Area(
+  '0240200': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '020000', // 青森県 (青森地方気象台)
     class10: '020030', // 三八上北
@@ -3042,7 +3042,7 @@ const areas = {
     ],
   ),
 // 0240500: 六戸町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0240500.html
-  '0240500': Area(
+  '0240500': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '020000', // 青森県 (青森地方気象台)
     class10: '020030', // 三八上北
@@ -3056,7 +3056,7 @@ const areas = {
     ],
   ),
 // 0240600: 横浜町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0240600.html
-  '0240600': Area(
+  '0240600': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '020000', // 青森県 (青森地方気象台)
     class10: '020030', // 三八上北
@@ -3070,7 +3070,7 @@ const areas = {
     ],
   ),
 // 0240800: 東北町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0240800.html
-  '0240800': Area(
+  '0240800': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '020000', // 青森県 (青森地方気象台)
     class10: '020030', // 三八上北
@@ -3085,7 +3085,7 @@ const areas = {
   ),
 
 // 0241100: 六ヶ所村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0241100.html
-  '0241100': Area(
+  '0241100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '020000', // 青森県 (青森地方気象台)
     class10: '020030', // 三八上北
@@ -3099,7 +3099,7 @@ const areas = {
     ],
   ),
 // 0241200: おいらせ町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0241200.html
-  '0241200': Area(
+  '0241200': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '020000', // 青森県 (青森地方気象台)
     class10: '020030', // 三八上北
@@ -3114,7 +3114,7 @@ const areas = {
   ),
 
 // 0242300: 大間町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0242300.html
-  '0242300': Area(
+  '0242300': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '020000', // 青森県 (青森地方気象台)
     class10: '020020', // 下北
@@ -3129,7 +3129,7 @@ const areas = {
   ),
 
 // 0242400: 東通村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0242400.html
-  '0242400': Area(
+  '0242400': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '020000', // 青森県 (青森地方気象台)
     class10: '020020', // 下北
@@ -3143,7 +3143,7 @@ const areas = {
     ],
   ),
 // 0242500: 風間浦村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0242500.html
-  '0242500': Area(
+  '0242500': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '020000', // 青森県 (青森地方気象台)
     class10: '020020', // 下北
@@ -3158,7 +3158,7 @@ const areas = {
   ),
 
 // 0242600: 佐井村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0242600.html
-  '0242600': Area(
+  '0242600': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '020000', // 青森県 (青森地方気象台)
     class10: '020020', // 下北
@@ -3172,7 +3172,7 @@ const areas = {
     ],
   ),
 // 0244100: 三戸町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0244100.html
-  '0244100': Area(
+  '0244100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '020000', // 青森県 (青森地方気象台)
     class10: '020030', // 三八上北
@@ -3187,7 +3187,7 @@ const areas = {
   ),
 
 // 0244200: 五戸町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0244200.html
-  '0244200': Area(
+  '0244200': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '020000', // 青森県 (青森地方気象台)
     class10: '020030', // 三八上北
@@ -3202,7 +3202,7 @@ const areas = {
   ),
 
 // 0244300: 田子町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0244300.html
-  '0244300': Area(
+  '0244300': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '020000', // 青森県 (青森地方気象台)
     class10: '020030', // 三八上北
@@ -3217,7 +3217,7 @@ const areas = {
   ),
 
 // 0244500: 南部町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0244500.html
-  '0244500': Area(
+  '0244500': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '020000', // 青森県 (青森地方気象台)
     class10: '020030', // 三八上北
@@ -3232,7 +3232,7 @@ const areas = {
   ),
 
 // 0244600: 階上町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0244600.html
-  '0244600': Area(
+  '0244600': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '020000', // 青森県 (青森地方気象台)
     class10: '020030', // 三八上北
@@ -3246,7 +3246,7 @@ const areas = {
     ],
   ),
 // 0245000: 新郷村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0245000.html
-  '0245000': Area(
+  '0245000': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '020000', // 青森県 (青森地方気象台)
     class10: '020030', // 三八上北
@@ -3261,7 +3261,7 @@ const areas = {
   ),
 
 // 0320100: 盛岡市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0320100.html
-  '0320100': Area(
+  '0320100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '030000', // 岩手県 (盛岡地方気象台)
     class10: '030010', // 内陸
@@ -3276,7 +3276,7 @@ const areas = {
   ),
 
 // 0320200: 宮古市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0320200.html
-  '0320200': Area(
+  '0320200': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '030000', // 岩手県 (盛岡地方気象台)
     class10: '030020', // 沿岸北部
@@ -3291,7 +3291,7 @@ const areas = {
   ),
 
 // 0320300: 大船渡市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0320300.html
-  '0320300': Area(
+  '0320300': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '030000', // 岩手県 (盛岡地方気象台)
     class10: '030030', // 沿岸南部
@@ -3305,7 +3305,7 @@ const areas = {
     ],
   ),
 // 0320500: 花巻市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0320500.html
-  '0320500': Area(
+  '0320500': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '030000', // 岩手県 (盛岡地方気象台)
     class10: '030010', // 内陸
@@ -3315,7 +3315,7 @@ const areas = {
   ),
 
 // 0320600: 北上市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0320600.html
-  '0320600': Area(
+  '0320600': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '030000', // 岩手県 (盛岡地方気象台)
     class10: '030010', // 内陸
@@ -3330,7 +3330,7 @@ const areas = {
   ),
 
 // 0320700: 久慈市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0320700.html
-  '0320700': Area(
+  '0320700': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '030000', // 岩手県 (盛岡地方気象台)
     class10: '030020', // 沿岸北部
@@ -3344,7 +3344,7 @@ const areas = {
     ],
   ),
 // 0320800: 遠野市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0320800.html
-  '0320800': Area(
+  '0320800': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '030000', // 岩手県 (盛岡地方気象台)
     class10: '030010', // 内陸
@@ -3359,7 +3359,7 @@ const areas = {
   ),
 
 // 0320900: 一関市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0320900.html
-  '0320900': Area(
+  '0320900': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '030000', // 岩手県 (盛岡地方気象台)
     class10: '030010', // 内陸
@@ -3374,7 +3374,7 @@ const areas = {
   ),
 
 // 0321000: 陸前高田市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0321000.html
-  '0321000': Area(
+  '0321000': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '030000', // 岩手県 (盛岡地方気象台)
     class10: '030030', // 沿岸南部
@@ -3388,7 +3388,7 @@ const areas = {
     ],
   ),
 // 0321100: 釜石市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0321100.html
-  '0321100': Area(
+  '0321100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '030000', // 岩手県 (盛岡地方気象台)
     class10: '030030', // 沿岸南部
@@ -3403,7 +3403,7 @@ const areas = {
   ),
 
 // 0321300: 二戸市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0321300.html
-  '0321300': Area(
+  '0321300': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '030000', // 岩手県 (盛岡地方気象台)
     class10: '030010', // 内陸
@@ -3417,7 +3417,7 @@ const areas = {
     ],
   ),
 // 0321400: 八幡平市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0321400.html
-  '0321400': Area(
+  '0321400': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '030000', // 岩手県 (盛岡地方気象台)
     class10: '030010', // 内陸
@@ -3432,7 +3432,7 @@ const areas = {
   ),
 
 // 0321500: 奥州市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0321500.html
-  '0321500': Area(
+  '0321500': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '030000', // 岩手県 (盛岡地方気象台)
     class10: '030010', // 内陸
@@ -3447,7 +3447,7 @@ const areas = {
   ),
 
 // 0321600: 滝沢市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0321600.html
-  '0321600': Area(
+  '0321600': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '030000', // 岩手県 (盛岡地方気象台)
     class10: '030010', // 内陸
@@ -3462,7 +3462,7 @@ const areas = {
   ),
 
 // 0330100: 雫石町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0330100.html
-  '0330100': Area(
+  '0330100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '030000', // 岩手県 (盛岡地方気象台)
     class10: '030010', // 内陸
@@ -3477,7 +3477,7 @@ const areas = {
   ),
 
 // 0330200: 葛巻町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0330200.html
-  '0330200': Area(
+  '0330200': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '030000', // 岩手県 (盛岡地方気象台)
     class10: '030010', // 内陸
@@ -3492,7 +3492,7 @@ const areas = {
   ),
 
 // 0330300: 岩手町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0330300.html
-  '0330300': Area(
+  '0330300': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '030000', // 岩手県 (盛岡地方気象台)
     class10: '030010', // 内陸
@@ -3501,7 +3501,7 @@ const areas = {
     bbox: [141.1226267831, 39.8340879726819, 141.43424722393, 40.0806874412725],
   ),
 // 0332100: 紫波町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0332100.html
-  '0332100': Area(
+  '0332100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '030000', // 岩手県 (盛岡地方気象台)
     class10: '030010', // 内陸
@@ -3516,7 +3516,7 @@ const areas = {
   ),
 
 // 0332200: 矢巾町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0332200.html
-  '0332200': Area(
+  '0332200': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '030000', // 岩手県 (盛岡地方気象台)
     class10: '030010', // 内陸
@@ -3531,7 +3531,7 @@ const areas = {
   ),
 
 // 0336600: 西和賀町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0336600.html
-  '0336600': Area(
+  '0336600': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '030000', // 岩手県 (盛岡地方気象台)
     class10: '030010', // 内陸
@@ -3546,7 +3546,7 @@ const areas = {
   ),
 
 // 0338100: 金ケ崎町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0338100.html
-  '0338100': Area(
+  '0338100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '030000', // 岩手県 (盛岡地方気象台)
     class10: '030010', // 内陸
@@ -3560,7 +3560,7 @@ const areas = {
     ],
   ),
 // 0340200: 平泉町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0340200.html
-  '0340200': Area(
+  '0340200': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '030000', // 岩手県 (盛岡地方気象台)
     class10: '030010', // 内陸
@@ -3575,7 +3575,7 @@ const areas = {
   ),
 
 // 0344100: 住田町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0344100.html
-  '0344100': Area(
+  '0344100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '030000', // 岩手県 (盛岡地方気象台)
     class10: '030030', // 沿岸南部
@@ -3589,7 +3589,7 @@ const areas = {
     ],
   ),
 // 0346100: 大槌町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0346100.html
-  '0346100': Area(
+  '0346100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '030000', // 岩手県 (盛岡地方気象台)
     class10: '030030', // 沿岸南部
@@ -3604,7 +3604,7 @@ const areas = {
   ),
 
 // 0348200: 山田町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0348200.html
-  '0348200': Area(
+  '0348200': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '030000', // 岩手県 (盛岡地方気象台)
     class10: '030020', // 沿岸北部
@@ -3619,7 +3619,7 @@ const areas = {
   ),
 
 // 0348300: 岩泉町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0348300.html
-  '0348300': Area(
+  '0348300': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '030000', // 岩手県 (盛岡地方気象台)
     class10: '030020', // 沿岸北部
@@ -3634,7 +3634,7 @@ const areas = {
   ),
 
 // 0348400: 田野畑村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0348400.html
-  '0348400': Area(
+  '0348400': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '030000', // 岩手県 (盛岡地方気象台)
     class10: '030020', // 沿岸北部
@@ -3648,7 +3648,7 @@ const areas = {
     ],
   ),
 // 0348500: 普代村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0348500.html
-  '0348500': Area(
+  '0348500': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '030000', // 岩手県 (盛岡地方気象台)
     class10: '030020', // 沿岸北部
@@ -3663,7 +3663,7 @@ const areas = {
   ),
 
 // 0350100: 軽米町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0350100.html
-  '0350100': Area(
+  '0350100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '030000', // 岩手県 (盛岡地方気象台)
     class10: '030010', // 内陸
@@ -3678,7 +3678,7 @@ const areas = {
   ),
 
 // 0350300: 野田村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0350300.html
-  '0350300': Area(
+  '0350300': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '030000', // 岩手県 (盛岡地方気象台)
     class10: '030020', // 沿岸北部
@@ -3693,7 +3693,7 @@ const areas = {
   ),
 
 // 0350600: 九戸村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0350600.html
-  '0350600': Area(
+  '0350600': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '030000', // 岩手県 (盛岡地方気象台)
     class10: '030010', // 内陸
@@ -3707,7 +3707,7 @@ const areas = {
     ],
   ),
 // 0350700: 洋野町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0350700.html
-  '0350700': Area(
+  '0350700': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '030000', // 岩手県 (盛岡地方気象台)
     class10: '030020', // 沿岸北部
@@ -3722,7 +3722,7 @@ const areas = {
   ),
 
 // 0352400: 一戸町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0352400.html
-  '0352400': Area(
+  '0352400': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '030000', // 岩手県 (盛岡地方気象台)
     class10: '030010', // 内陸
@@ -3737,7 +3737,7 @@ const areas = {
   ),
 
 // 0410001: 仙台市東部: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0410001.html
-  '0410001': Area(
+  '0410001': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '040000', // 宮城県 (仙台管区気象台)
     class10: '040010', // 東部
@@ -3751,7 +3751,7 @@ const areas = {
     ],
   ),
 // 0410002: 仙台市西部: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0410002.html
-  '0410002': Area(
+  '0410002': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '040000', // 宮城県 (仙台管区気象台)
     class10: '040020', // 西部
@@ -3766,7 +3766,7 @@ const areas = {
   ),
 
 // 0420200: 石巻市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0420200.html
-  '0420200': Area(
+  '0420200': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '040000', // 宮城県 (仙台管区気象台)
     class10: '040010', // 東部
@@ -3781,7 +3781,7 @@ const areas = {
   ),
 
 // 0420300: 塩竈市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0420300.html
-  '0420300': Area(
+  '0420300': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '040000', // 宮城県 (仙台管区気象台)
     class10: '040010', // 東部
@@ -3795,7 +3795,7 @@ const areas = {
     ],
   ),
 // 0420500: 気仙沼市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0420500.html
-  '0420500': Area(
+  '0420500': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '040000', // 宮城県 (仙台管区気象台)
     class10: '040010', // 東部
@@ -3810,7 +3810,7 @@ const areas = {
   ),
 
 // 0420600: 白石市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0420600.html
-  '0420600': Area(
+  '0420600': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '040000', // 宮城県 (仙台管区気象台)
     class10: '040020', // 西部
@@ -3825,7 +3825,7 @@ const areas = {
   ),
 
 // 0420700: 名取市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0420700.html
-  '0420700': Area(
+  '0420700': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '040000', // 宮城県 (仙台管区気象台)
     class10: '040010', // 東部
@@ -3839,7 +3839,7 @@ const areas = {
     ],
   ),
 // 0420800: 角田市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0420800.html
-  '0420800': Area(
+  '0420800': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '040000', // 宮城県 (仙台管区気象台)
     class10: '040010', // 東部
@@ -3854,7 +3854,7 @@ const areas = {
   ),
 
 // 0420900: 多賀城市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0420900.html
-  '0420900': Area(
+  '0420900': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '040000', // 宮城県 (仙台管区気象台)
     class10: '040010', // 東部
@@ -3869,7 +3869,7 @@ const areas = {
   ),
 
 // 0421100: 岩沼市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0421100.html
-  '0421100': Area(
+  '0421100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '040000', // 宮城県 (仙台管区気象台)
     class10: '040010', // 東部
@@ -3884,7 +3884,7 @@ const areas = {
   ),
 
 // 0421200: 登米市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0421200.html
-  '0421200': Area(
+  '0421200': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '040000', // 宮城県 (仙台管区気象台)
     class10: '040010', // 東部
@@ -3898,7 +3898,7 @@ const areas = {
     ],
   ),
 // 0421301: 栗原市東部: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0421301.html
-  '0421301': Area(
+  '0421301': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '040000', // 宮城県 (仙台管区気象台)
     class10: '040010', // 東部
@@ -3913,7 +3913,7 @@ const areas = {
   ),
 
 // 0421302: 栗原市西部: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0421302.html
-  '0421302': Area(
+  '0421302': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '040000', // 宮城県 (仙台管区気象台)
     class10: '040020', // 西部
@@ -3928,7 +3928,7 @@ const areas = {
   ),
 
 // 0421400: 東松島市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0421400.html
-  '0421400': Area(
+  '0421400': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '040000', // 宮城県 (仙台管区気象台)
     class10: '040010', // 東部
@@ -3942,7 +3942,7 @@ const areas = {
     ],
   ),
 // 0421501: 大崎市東部: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0421501.html
-  '0421501': Area(
+  '0421501': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '040000', // 宮城県 (仙台管区気象台)
     class10: '040010', // 東部
@@ -3957,7 +3957,7 @@ const areas = {
   ),
 
 // 0421502: 大崎市西部: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0421502.html
-  '0421502': Area(
+  '0421502': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '040000', // 宮城県 (仙台管区気象台)
     class10: '040020', // 西部
@@ -3972,7 +3972,7 @@ const areas = {
   ),
 
 // 0421600: 富谷市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0421600.html
-  '0421600': Area(
+  '0421600': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '040000', // 宮城県 (仙台管区気象台)
     class10: '040010', // 東部
@@ -3986,7 +3986,7 @@ const areas = {
     ],
   ),
 // 0430100: 蔵王町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0430100.html
-  '0430100': Area(
+  '0430100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '040000', // 宮城県 (仙台管区気象台)
     class10: '040020', // 西部
@@ -4001,7 +4001,7 @@ const areas = {
   ),
 
 // 0430200: 七ヶ宿町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0430200.html
-  '0430200': Area(
+  '0430200': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '040000', // 宮城県 (仙台管区気象台)
     class10: '040020', // 西部
@@ -4016,7 +4016,7 @@ const areas = {
   ),
 
 // 0432100: 大河原町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0432100.html
-  '0432100': Area(
+  '0432100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '040000', // 宮城県 (仙台管区気象台)
     class10: '040010', // 東部
@@ -4030,7 +4030,7 @@ const areas = {
     ],
   ),
 // 0432200: 村田町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0432200.html
-  '0432200': Area(
+  '0432200': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '040000', // 宮城県 (仙台管区気象台)
     class10: '040010', // 東部
@@ -4045,7 +4045,7 @@ const areas = {
   ),
 
 // 0432300: 柴田町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0432300.html
-  '0432300': Area(
+  '0432300': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '040000', // 宮城県 (仙台管区気象台)
     class10: '040010', // 東部
@@ -4060,7 +4060,7 @@ const areas = {
   ),
 
 // 0432400: 川崎町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0432400.html
-  '0432400': Area(
+  '0432400': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '040000', // 宮城県 (仙台管区気象台)
     class10: '040020', // 西部
@@ -4074,7 +4074,7 @@ const areas = {
     ],
   ),
 // 0434100: 丸森町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0434100.html
-  '0434100': Area(
+  '0434100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '040000', // 宮城県 (仙台管区気象台)
     class10: '040010', // 東部
@@ -4089,7 +4089,7 @@ const areas = {
   ),
 
 // 0436100: 亘理町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0436100.html
-  '0436100': Area(
+  '0436100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '040000', // 宮城県 (仙台管区気象台)
     class10: '040010', // 東部
@@ -4104,7 +4104,7 @@ const areas = {
   ),
 
 // 0436200: 山元町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0436200.html
-  '0436200': Area(
+  '0436200': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '040000', // 宮城県 (仙台管区気象台)
     class10: '040010', // 東部
@@ -4118,7 +4118,7 @@ const areas = {
     ],
   ),
 // 0440100: 松島町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0440100.html
-  '0440100': Area(
+  '0440100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '040000', // 宮城県 (仙台管区気象台)
     class10: '040010', // 東部
@@ -4133,7 +4133,7 @@ const areas = {
   ),
 
 // 0440400: 七ヶ浜町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0440400.html
-  '0440400': Area(
+  '0440400': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '040000', // 宮城県 (仙台管区気象台)
     class10: '040010', // 東部
@@ -4148,7 +4148,7 @@ const areas = {
   ),
 
 // 0440600: 利府町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0440600.html
-  '0440600': Area(
+  '0440600': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '040000', // 宮城県 (仙台管区気象台)
     class10: '040010', // 東部
@@ -4163,7 +4163,7 @@ const areas = {
   ),
 
 // 0442101: 大和町東部: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0442101.html
-  '0442101': Area(
+  '0442101': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '040000', // 宮城県 (仙台管区気象台)
     class10: '040010', // 東部
@@ -4177,7 +4177,7 @@ const areas = {
     ],
   ),
 // 0442102: 大和町西部: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0442102.html
-  '0442102': Area(
+  '0442102': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '040000', // 宮城県 (仙台管区気象台)
     class10: '040020', // 西部
@@ -4192,7 +4192,7 @@ const areas = {
   ),
 
 // 0442200: 大郷町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0442200.html
-  '0442200': Area(
+  '0442200': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '040000', // 宮城県 (仙台管区気象台)
     class10: '040010', // 東部
@@ -4207,7 +4207,7 @@ const areas = {
   ),
 
 // 0442400: 大衡村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0442400.html
-  '0442400': Area(
+  '0442400': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '040000', // 宮城県 (仙台管区気象台)
     class10: '040020', // 西部
@@ -4221,7 +4221,7 @@ const areas = {
     ],
   ),
 // 0444400: 色麻町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0444400.html
-  '0444400': Area(
+  '0444400': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '040000', // 宮城県 (仙台管区気象台)
     class10: '040020', // 西部
@@ -4236,7 +4236,7 @@ const areas = {
   ),
 
 // 0444500: 加美町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0444500.html
-  '0444500': Area(
+  '0444500': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '040000', // 宮城県 (仙台管区気象台)
     class10: '040020', // 西部
@@ -4251,7 +4251,7 @@ const areas = {
   ),
 
 // 0450100: 涌谷町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0450100.html
-  '0450100': Area(
+  '0450100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '040000', // 宮城県 (仙台管区気象台)
     class10: '040010', // 東部
@@ -4265,7 +4265,7 @@ const areas = {
     ],
   ),
 // 0450500: 美里町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0450500.html
-  '0450500': Area(
+  '0450500': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '040000', // 宮城県 (仙台管区気象台)
     class10: '040010', // 東部
@@ -4280,7 +4280,7 @@ const areas = {
   ),
 
 // 0458100: 女川町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0458100.html
-  '0458100': Area(
+  '0458100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '040000', // 宮城県 (仙台管区気象台)
     class10: '040010', // 東部
@@ -4295,7 +4295,7 @@ const areas = {
   ),
 
 // 0460600: 南三陸町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0460600.html
-  '0460600': Area(
+  '0460600': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '040000', // 宮城県 (仙台管区気象台)
     class10: '040010', // 東部
@@ -4309,7 +4309,7 @@ const areas = {
     ],
   ),
 // 0520100: 秋田市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0520100.html
-  '0520100': Area(
+  '0520100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '050000', // 秋田県 (秋田地方気象台)
     class10: '050010', // 沿岸
@@ -4323,7 +4323,7 @@ const areas = {
     ],
   ),
 // 0520200: 能代市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0520200.html
-  '0520200': Area(
+  '0520200': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '050000', // 秋田県 (秋田地方気象台)
     class10: '050010', // 沿岸
@@ -4338,7 +4338,7 @@ const areas = {
   ),
 
 // 0520300: 横手市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0520300.html
-  '0520300': Area(
+  '0520300': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '050000', // 秋田県 (秋田地方気象台)
     class10: '050020', // 内陸
@@ -4352,7 +4352,7 @@ const areas = {
     ],
   ),
 // 0520400: 大館市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0520400.html
-  '0520400': Area(
+  '0520400': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '050000', // 秋田県 (秋田地方気象台)
     class10: '050020', // 内陸
@@ -4367,7 +4367,7 @@ const areas = {
   ),
 
 // 0520600: 男鹿市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0520600.html
-  '0520600': Area(
+  '0520600': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '050000', // 秋田県 (秋田地方気象台)
     class10: '050010', // 沿岸
@@ -4382,7 +4382,7 @@ const areas = {
   ),
 
 // 0520700: 湯沢市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0520700.html
-  '0520700': Area(
+  '0520700': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '050000', // 秋田県 (秋田地方気象台)
     class10: '050020', // 内陸
@@ -4396,7 +4396,7 @@ const areas = {
     ],
   ),
 // 0520900: 鹿角市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0520900.html
-  '0520900': Area(
+  '0520900': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '050000', // 秋田県 (秋田地方気象台)
     class10: '050020', // 内陸
@@ -4411,7 +4411,7 @@ const areas = {
   ),
 
 // 0521000: 由利本荘市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0521000.html
-  '0521000': Area(
+  '0521000': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '050000', // 秋田県 (秋田地方気象台)
     class10: '050010', // 沿岸
@@ -4425,7 +4425,7 @@ const areas = {
     ],
   ),
 // 0521100: 潟上市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0521100.html
-  '0521100': Area(
+  '0521100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '050000', // 秋田県 (秋田地方気象台)
     class10: '050010', // 沿岸
@@ -4440,7 +4440,7 @@ const areas = {
   ),
 
 // 0521200: 大仙市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0521200.html
-  '0521200': Area(
+  '0521200': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '050000', // 秋田県 (秋田地方気象台)
     class10: '050020', // 内陸
@@ -4454,7 +4454,7 @@ const areas = {
     ],
   ),
 // 0521300: 北秋田市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0521300.html
-  '0521300': Area(
+  '0521300': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '050000', // 秋田県 (秋田地方気象台)
     class10: '050020', // 内陸
@@ -4469,7 +4469,7 @@ const areas = {
   ),
 
 // 0521400: にかほ市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0521400.html
-  '0521400': Area(
+  '0521400': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '050000', // 秋田県 (秋田地方気象台)
     class10: '050010', // 沿岸
@@ -4484,7 +4484,7 @@ const areas = {
   ),
 
 // 0521500: 仙北市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0521500.html
-  '0521500': Area(
+  '0521500': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '050000', // 秋田県 (秋田地方気象台)
     class10: '050020', // 内陸
@@ -4499,7 +4499,7 @@ const areas = {
   ),
 
 // 0530300: 小坂町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0530300.html
-  '0530300': Area(
+  '0530300': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '050000', // 秋田県 (秋田地方気象台)
     class10: '050020', // 内陸
@@ -4514,7 +4514,7 @@ const areas = {
   ),
 
 // 0532700: 上小阿仁村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0532700.html
-  '0532700': Area(
+  '0532700': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '050000', // 秋田県 (秋田地方気象台)
     class10: '050020', // 内陸
@@ -4529,7 +4529,7 @@ const areas = {
   ),
 
 // 0534600: 藤里町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0534600.html
-  '0534600': Area(
+  '0534600': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '050000', // 秋田県 (秋田地方気象台)
     class10: '050010', // 沿岸
@@ -4544,7 +4544,7 @@ const areas = {
   ),
 
 // 0534800: 三種町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0534800.html
-  '0534800': Area(
+  '0534800': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '050000', // 秋田県 (秋田地方気象台)
     class10: '050010', // 沿岸
@@ -4559,7 +4559,7 @@ const areas = {
   ),
 
 // 0534900: 八峰町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0534900.html
-  '0534900': Area(
+  '0534900': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '050000', // 秋田県 (秋田地方気象台)
     class10: '050010', // 沿岸
@@ -4574,7 +4574,7 @@ const areas = {
   ),
 
 // 0536100: 五城目町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0536100.html
-  '0536100': Area(
+  '0536100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '050000', // 秋田県 (秋田地方気象台)
     class10: '050010', // 沿岸
@@ -4589,7 +4589,7 @@ const areas = {
   ),
 
 // 0536300: 八郎潟町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0536300.html
-  '0536300': Area(
+  '0536300': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '050000', // 秋田県 (秋田地方気象台)
     class10: '050010', // 沿岸
@@ -4604,7 +4604,7 @@ const areas = {
   ),
 
 // 0536600: 井川町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0536600.html
-  '0536600': Area(
+  '0536600': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '050000', // 秋田県 (秋田地方気象台)
     class10: '050010', // 沿岸
@@ -4618,7 +4618,7 @@ const areas = {
     ],
   ),
 // 0536800: 大潟村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0536800.html
-  '0536800': Area(
+  '0536800': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '050000', // 秋田県 (秋田地方気象台)
     class10: '050010', // 沿岸
@@ -4633,7 +4633,7 @@ const areas = {
   ),
 
 // 0543400: 美郷町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0543400.html
-  '0543400': Area(
+  '0543400': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '050000', // 秋田県 (秋田地方気象台)
     class10: '050020', // 内陸
@@ -4648,7 +4648,7 @@ const areas = {
   ),
 
 // 0546300: 羽後町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0546300.html
-  '0546300': Area(
+  '0546300': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '050000', // 秋田県 (秋田地方気象台)
     class10: '050020', // 内陸
@@ -4663,7 +4663,7 @@ const areas = {
   ),
 
 // 0546400: 東成瀬村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0546400.html
-  '0546400': Area(
+  '0546400': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '050000', // 秋田県 (秋田地方気象台)
     class10: '050020', // 内陸
@@ -4678,7 +4678,7 @@ const areas = {
   ),
 
 // 0620100: 山形市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0620100.html
-  '0620100': Area(
+  '0620100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '060000', // 山形県 (山形地方気象台)
     class10: '060010', // 村山
@@ -4693,7 +4693,7 @@ const areas = {
   ),
 
 // 0620200: 米沢市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0620200.html
-  '0620200': Area(
+  '0620200': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '060000', // 山形県 (山形地方気象台)
     class10: '060020', // 置賜
@@ -4708,7 +4708,7 @@ const areas = {
   ),
 
 // 0620300: 鶴岡市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0620300.html
-  '0620300': Area(
+  '0620300': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '060000', // 山形県 (山形地方気象台)
     class10: '060030', // 庄内
@@ -4723,7 +4723,7 @@ const areas = {
   ),
 
 // 0620400: 酒田市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0620400.html
-  '0620400': Area(
+  '0620400': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '060000', // 山形県 (山形地方気象台)
     class10: '060030', // 庄内
@@ -4737,7 +4737,7 @@ const areas = {
     ],
   ),
 // 0620500: 新庄市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0620500.html
-  '0620500': Area(
+  '0620500': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '060000', // 山形県 (山形地方気象台)
     class10: '060040', // 最上
@@ -4752,7 +4752,7 @@ const areas = {
   ),
 
 // 0620600: 寒河江市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0620600.html
-  '0620600': Area(
+  '0620600': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '060000', // 山形県 (山形地方気象台)
     class10: '060010', // 村山
@@ -4767,7 +4767,7 @@ const areas = {
   ),
 
 // 0620700: 上山市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0620700.html
-  '0620700': Area(
+  '0620700': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '060000', // 山形県 (山形地方気象台)
     class10: '060010', // 村山
@@ -4782,7 +4782,7 @@ const areas = {
   ),
 
 // 0620800: 村山市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0620800.html
-  '0620800': Area(
+  '0620800': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '060000', // 山形県 (山形地方気象台)
     class10: '060010', // 村山
@@ -4797,7 +4797,7 @@ const areas = {
   ),
 
 // 0620900: 長井市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0620900.html
-  '0620900': Area(
+  '0620900': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '060000', // 山形県 (山形地方気象台)
     class10: '060020', // 置賜
@@ -4811,7 +4811,7 @@ const areas = {
     ],
   ),
 // 0621000: 天童市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0621000.html
-  '0621000': Area(
+  '0621000': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '060000', // 山形県 (山形地方気象台)
     class10: '060010', // 村山
@@ -4826,7 +4826,7 @@ const areas = {
   ),
 
 // 0621100: 東根市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0621100.html
-  '0621100': Area(
+  '0621100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '060000', // 山形県 (山形地方気象台)
     class10: '060010', // 村山
@@ -4841,7 +4841,7 @@ const areas = {
   ),
 
 // 0621200: 尾花沢市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0621200.html
-  '0621200': Area(
+  '0621200': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '060000', // 山形県 (山形地方気象台)
     class10: '060010', // 村山
@@ -4855,7 +4855,7 @@ const areas = {
     ],
   ),
 // 0621300: 南陽市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0621300.html
-  '0621300': Area(
+  '0621300': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '060000', // 山形県 (山形地方気象台)
     class10: '060020', // 置賜
@@ -4869,7 +4869,7 @@ const areas = {
     ],
   ),
 // 0630100: 山辺町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0630100.html
-  '0630100': Area(
+  '0630100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '060000', // 山形県 (山形地方気象台)
     class10: '060010', // 村山
@@ -4884,7 +4884,7 @@ const areas = {
   ),
 
 // 0630200: 中山町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0630200.html
-  '0630200': Area(
+  '0630200': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '060000', // 山形県 (山形地方気象台)
     class10: '060010', // 村山
@@ -4898,7 +4898,7 @@ const areas = {
     ],
   ),
 // 0632100: 河北町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0632100.html
-  '0632100': Area(
+  '0632100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '060000', // 山形県 (山形地方気象台)
     class10: '060010', // 村山
@@ -4913,7 +4913,7 @@ const areas = {
   ),
 
 // 0632200: 西川町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0632200.html
-  '0632200': Area(
+  '0632200': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '060000', // 山形県 (山形地方気象台)
     class10: '060010', // 村山
@@ -4928,7 +4928,7 @@ const areas = {
   ),
 
 // 0632300: 朝日町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0632300.html
-  '0632300': Area(
+  '0632300': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '060000', // 山形県 (山形地方気象台)
     class10: '060010', // 村山
@@ -4942,7 +4942,7 @@ const areas = {
     ],
   ),
 // 0632400: 大江町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0632400.html
-  '0632400': Area(
+  '0632400': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '060000', // 山形県 (山形地方気象台)
     class10: '060010', // 村山
@@ -4957,7 +4957,7 @@ const areas = {
   ),
 
 // 0634100: 大石田町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0634100.html
-  '0634100': Area(
+  '0634100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '060000', // 山形県 (山形地方気象台)
     class10: '060010', // 村山
@@ -4972,7 +4972,7 @@ const areas = {
   ),
 
 // 0636100: 金山町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0636100.html
-  '0636100': Area(
+  '0636100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '060000', // 山形県 (山形地方気象台)
     class10: '060040', // 最上
@@ -4986,7 +4986,7 @@ const areas = {
     ],
   ),
 // 0636200: 最上町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0636200.html
-  '0636200': Area(
+  '0636200': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '060000', // 山形県 (山形地方気象台)
     class10: '060040', // 最上
@@ -5001,7 +5001,7 @@ const areas = {
   ),
 
 // 0636300: 舟形町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0636300.html
-  '0636300': Area(
+  '0636300': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '060000', // 山形県 (山形地方気象台)
     class10: '060040', // 最上
@@ -5015,7 +5015,7 @@ const areas = {
     ],
   ),
 // 0636400: 真室川町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0636400.html
-  '0636400': Area(
+  '0636400': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '060000', // 山形県 (山形地方気象台)
     class10: '060040', // 最上
@@ -5030,7 +5030,7 @@ const areas = {
   ),
 
 // 0636500: 大蔵村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0636500.html
-  '0636500': Area(
+  '0636500': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '060000', // 山形県 (山形地方気象台)
     class10: '060040', // 最上
@@ -5045,7 +5045,7 @@ const areas = {
   ),
 
 // 0636600: 鮭川村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0636600.html
-  '0636600': Area(
+  '0636600': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '060000', // 山形県 (山形地方気象台)
     class10: '060040', // 最上
@@ -5059,7 +5059,7 @@ const areas = {
     ],
   ),
 // 0636700: 戸沢村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0636700.html
-  '0636700': Area(
+  '0636700': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '060000', // 山形県 (山形地方気象台)
     class10: '060040', // 最上
@@ -5073,7 +5073,7 @@ const areas = {
     ],
   ),
 // 0638100: 高畠町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0638100.html
-  '0638100': Area(
+  '0638100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '060000', // 山形県 (山形地方気象台)
     class10: '060020', // 置賜
@@ -5088,7 +5088,7 @@ const areas = {
   ),
 
 // 0638200: 川西町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0638200.html
-  '0638200': Area(
+  '0638200': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '060000', // 山形県 (山形地方気象台)
     class10: '060020', // 置賜
@@ -5102,7 +5102,7 @@ const areas = {
     ],
   ),
 // 0640100: 小国町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0640100.html
-  '0640100': Area(
+  '0640100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '060000', // 山形県 (山形地方気象台)
     class10: '060020', // 置賜
@@ -5117,7 +5117,7 @@ const areas = {
   ),
 
 // 0640200: 白鷹町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0640200.html
-  '0640200': Area(
+  '0640200': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '060000', // 山形県 (山形地方気象台)
     class10: '060020', // 置賜
@@ -5132,7 +5132,7 @@ const areas = {
   ),
 
 // 0640300: 飯豊町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0640300.html
-  '0640300': Area(
+  '0640300': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '060000', // 山形県 (山形地方気象台)
     class10: '060020', // 置賜
@@ -5146,7 +5146,7 @@ const areas = {
     ],
   ),
 // 0642600: 三川町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0642600.html
-  '0642600': Area(
+  '0642600': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '060000', // 山形県 (山形地方気象台)
     class10: '060030', // 庄内
@@ -5160,7 +5160,7 @@ const areas = {
     ],
   ),
 // 0642800: 庄内町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0642800.html
-  '0642800': Area(
+  '0642800': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '060000', // 山形県 (山形地方気象台)
     class10: '060030', // 庄内
@@ -5175,7 +5175,7 @@ const areas = {
   ),
 
 // 0646100: 遊佐町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0646100.html
-  '0646100': Area(
+  '0646100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '060000', // 山形県 (山形地方気象台)
     class10: '060030', // 庄内
@@ -5189,7 +5189,7 @@ const areas = {
     ],
   ),
 // 0720100: 福島市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0720100.html
-  '0720100': Area(
+  '0720100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070010', // 中通り
@@ -5204,7 +5204,7 @@ const areas = {
   ),
 
 // 0720200: 会津若松市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0720200.html
-  '0720200': Area(
+  '0720200': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070030', // 会津
@@ -5218,7 +5218,7 @@ const areas = {
     ],
   ),
 // 0720301: 郡山市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0720301.html
-  '0720301': Area(
+  '0720301': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070010', // 中通り
@@ -5233,7 +5233,7 @@ const areas = {
   ),
 
 // 0720302: 郡山市湖南: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0720302.html
-  '0720302': Area(
+  '0720302': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070030', // 会津
@@ -5248,7 +5248,7 @@ const areas = {
   ),
 
 // 0720400: いわき市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0720400.html
-  '0720400': Area(
+  '0720400': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070020', // 浜通り
@@ -5262,7 +5262,7 @@ const areas = {
     ],
   ),
 // 0720500: 白河市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0720500.html
-  '0720500': Area(
+  '0720500': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070010', // 中通り
@@ -5276,7 +5276,7 @@ const areas = {
     ],
   ),
 // 0720700: 須賀川市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0720700.html
-  '0720700': Area(
+  '0720700': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070010', // 中通り
@@ -5291,7 +5291,7 @@ const areas = {
   ),
 
 // 0720800: 喜多方市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0720800.html
-  '0720800': Area(
+  '0720800': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070030', // 会津
@@ -5305,7 +5305,7 @@ const areas = {
     ],
   ),
 // 0720900: 相馬市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0720900.html
-  '0720900': Area(
+  '0720900': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070020', // 浜通り
@@ -5320,7 +5320,7 @@ const areas = {
   ),
 
 // 0721000: 二本松市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0721000.html
-  '0721000': Area(
+  '0721000': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070010', // 中通り
@@ -5335,7 +5335,7 @@ const areas = {
   ),
 
 // 0721100: 田村市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0721100.html
-  '0721100': Area(
+  '0721100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070010', // 中通り
@@ -5349,7 +5349,7 @@ const areas = {
     ],
   ),
 // 0721200: 南相馬市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0721200.html
-  '0721200': Area(
+  '0721200': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070020', // 浜通り
@@ -5363,7 +5363,7 @@ const areas = {
     ],
   ),
 // 0721300: 伊達市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0721300.html
-  '0721300': Area(
+  '0721300': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070010', // 中通り
@@ -5378,7 +5378,7 @@ const areas = {
   ),
 
 // 0721400: 本宮市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0721400.html
-  '0721400': Area(
+  '0721400': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070010', // 中通り
@@ -5392,7 +5392,7 @@ const areas = {
     ],
   ),
 // 0730100: 桑折町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0730100.html
-  '0730100': Area(
+  '0730100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070010', // 中通り
@@ -5407,7 +5407,7 @@ const areas = {
   ),
 
 // 0730300: 国見町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0730300.html
-  '0730300': Area(
+  '0730300': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070010', // 中通り
@@ -5421,7 +5421,7 @@ const areas = {
     ],
   ),
 // 0730800: 川俣町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0730800.html
-  '0730800': Area(
+  '0730800': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070010', // 中通り
@@ -5436,7 +5436,7 @@ const areas = {
   ),
 
 // 0732200: 大玉村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0732200.html
-  '0732200': Area(
+  '0732200': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070010', // 中通り
@@ -5451,7 +5451,7 @@ const areas = {
   ),
 
 // 0734200: 鏡石町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0734200.html
-  '0734200': Area(
+  '0734200': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070010', // 中通り
@@ -5465,7 +5465,7 @@ const areas = {
     ],
   ),
 // 0734401: 天栄村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0734401.html
-  '0734401': Area(
+  '0734401': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070010', // 中通り
@@ -5480,7 +5480,7 @@ const areas = {
   ),
 
 // 0734402: 天栄村湯本: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0734402.html
-  '0734402': Area(
+  '0734402': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070030', // 会津
@@ -5494,7 +5494,7 @@ const areas = {
     ],
   ),
 // 0736200: 下郷町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0736200.html
-  '0736200': Area(
+  '0736200': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070030', // 会津
@@ -5509,7 +5509,7 @@ const areas = {
   ),
 
 // 0736400: 檜枝岐村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0736400.html
-  '0736400': Area(
+  '0736400': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070030', // 会津
@@ -5523,7 +5523,7 @@ const areas = {
     ],
   ),
 // 0736700: 只見町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0736700.html
-  '0736700': Area(
+  '0736700': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070030', // 会津
@@ -5538,7 +5538,7 @@ const areas = {
   ),
 
 // 0736800: 南会津町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0736800.html
-  '0736800': Area(
+  '0736800': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070030', // 会津
@@ -5553,7 +5553,7 @@ const areas = {
   ),
 
 // 0740200: 北塩原村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0740200.html
-  '0740200': Area(
+  '0740200': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070030', // 会津
@@ -5567,7 +5567,7 @@ const areas = {
     ],
   ),
 // 0740500: 西会津町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0740500.html
-  '0740500': Area(
+  '0740500': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070030', // 会津
@@ -5581,7 +5581,7 @@ const areas = {
     ],
   ),
 // 0740700: 磐梯町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0740700.html
-  '0740700': Area(
+  '0740700': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070030', // 会津
@@ -5596,7 +5596,7 @@ const areas = {
   ),
 
 // 0740800: 猪苗代町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0740800.html
-  '0740800': Area(
+  '0740800': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070030', // 会津
@@ -5610,7 +5610,7 @@ const areas = {
     ],
   ),
 // 0742100: 会津坂下町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0742100.html
-  '0742100': Area(
+  '0742100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070030', // 会津
@@ -5625,7 +5625,7 @@ const areas = {
   ),
 
 // 0742200: 湯川村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0742200.html
-  '0742200': Area(
+  '0742200': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070030', // 会津
@@ -5639,7 +5639,7 @@ const areas = {
     ],
   ),
 // 0742300: 柳津町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0742300.html
-  '0742300': Area(
+  '0742300': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070030', // 会津
@@ -5654,7 +5654,7 @@ const areas = {
   ),
 
 // 0744400: 三島町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0744400.html
-  '0744400': Area(
+  '0744400': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070030', // 会津
@@ -5669,7 +5669,7 @@ const areas = {
   ),
 
 // 0744500: 金山町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0744500.html
-  '0744500': Area(
+  '0744500': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070030', // 会津
@@ -5683,7 +5683,7 @@ const areas = {
     ],
   ),
 // 0744600: 昭和村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0744600.html
-  '0744600': Area(
+  '0744600': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070030', // 会津
@@ -5692,7 +5692,7 @@ const areas = {
     bbox: [139.516291245045, 37.20640289188, 139.746369805222, 37.394279306345],
   ),
 // 0744700: 会津美里町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0744700.html
-  '0744700': Area(
+  '0744700': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070030', // 会津
@@ -5707,7 +5707,7 @@ const areas = {
   ),
 
 // 0746100: 西郷村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0746100.html
-  '0746100': Area(
+  '0746100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070010', // 中通り
@@ -5721,7 +5721,7 @@ const areas = {
     ],
   ),
 // 0746400: 泉崎村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0746400.html
-  '0746400': Area(
+  '0746400': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070010', // 中通り
@@ -5736,7 +5736,7 @@ const areas = {
   ),
 
 // 0746500: 中島村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0746500.html
-  '0746500': Area(
+  '0746500': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070010', // 中通り
@@ -5750,7 +5750,7 @@ const areas = {
     ],
   ),
 // 0746600: 矢吹町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0746600.html
-  '0746600': Area(
+  '0746600': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070010', // 中通り
@@ -5765,7 +5765,7 @@ const areas = {
   ),
 
 // 0748100: 棚倉町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0748100.html
-  '0748100': Area(
+  '0748100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070010', // 中通り
@@ -5780,7 +5780,7 @@ const areas = {
   ),
 
 // 0748200: 矢祭町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0748200.html
-  '0748200': Area(
+  '0748200': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070010', // 中通り
@@ -5794,7 +5794,7 @@ const areas = {
     ],
   ),
 // 0748300: 塙町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0748300.html
-  '0748300': Area(
+  '0748300': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070010', // 中通り
@@ -5808,7 +5808,7 @@ const areas = {
     ],
   ),
 // 0748400: 鮫川村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0748400.html
-  '0748400': Area(
+  '0748400': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070010', // 中通り
@@ -5823,7 +5823,7 @@ const areas = {
   ),
 
 // 0750100: 石川町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0750100.html
-  '0750100': Area(
+  '0750100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070010', // 中通り
@@ -5837,7 +5837,7 @@ const areas = {
     ],
   ),
 // 0750200: 玉川村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0750200.html
-  '0750200': Area(
+  '0750200': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070010', // 中通り
@@ -5852,7 +5852,7 @@ const areas = {
   ),
 
 // 0750300: 平田村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0750300.html
-  '0750300': Area(
+  '0750300': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070010', // 中通り
@@ -5866,7 +5866,7 @@ const areas = {
     ],
   ),
 // 0750400: 浅川町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0750400.html
-  '0750400': Area(
+  '0750400': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070010', // 中通り
@@ -5881,7 +5881,7 @@ const areas = {
   ),
 
 // 0750500: 古殿町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0750500.html
-  '0750500': Area(
+  '0750500': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070010', // 中通り
@@ -5895,7 +5895,7 @@ const areas = {
     ],
   ),
 // 0752100: 三春町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0752100.html
-  '0752100': Area(
+  '0752100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070010', // 中通り
@@ -5910,7 +5910,7 @@ const areas = {
   ),
 
 // 0752200: 小野町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0752200.html
-  '0752200': Area(
+  '0752200': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070010', // 中通り
@@ -5925,7 +5925,7 @@ const areas = {
   ),
 
 // 0754100: 広野町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0754100.html
-  '0754100': Area(
+  '0754100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070020', // 浜通り
@@ -5939,7 +5939,7 @@ const areas = {
     ],
   ),
 // 0754200: 楢葉町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0754200.html
-  '0754200': Area(
+  '0754200': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070020', // 浜通り
@@ -5953,7 +5953,7 @@ const areas = {
     ],
   ),
 // 0754300: 富岡町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0754300.html
-  '0754300': Area(
+  '0754300': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070020', // 浜通り
@@ -5968,7 +5968,7 @@ const areas = {
   ),
 
 // 0754400: 川内村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0754400.html
-  '0754400': Area(
+  '0754400': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070020', // 浜通り
@@ -5982,7 +5982,7 @@ const areas = {
     ],
   ),
 // 0754500: 大熊町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0754500.html
-  '0754500': Area(
+  '0754500': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070020', // 浜通り
@@ -5997,7 +5997,7 @@ const areas = {
   ),
 
 // 0754600: 双葉町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0754600.html
-  '0754600': Area(
+  '0754600': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070020', // 浜通り
@@ -6011,7 +6011,7 @@ const areas = {
     ],
   ),
 // 0754700: 浪江町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0754700.html
-  '0754700': Area(
+  '0754700': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070020', // 浜通り
@@ -6026,7 +6026,7 @@ const areas = {
   ),
 
 // 0754800: 葛尾村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0754800.html
-  '0754800': Area(
+  '0754800': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070020', // 浜通り
@@ -6040,7 +6040,7 @@ const areas = {
     ],
   ),
 // 0756100: 新地町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0756100.html
-  '0756100': Area(
+  '0756100': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070020', // 浜通り
@@ -6050,7 +6050,7 @@ const areas = {
   ),
 
 // 0756400: 飯舘村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0756400.html
-  '0756400': Area(
+  '0756400': WeatherArea(
     center: '010200', // 東北地方 (仙台管区気象台)
     office: '070000', // 福島県 (福島地方気象台)
     class10: '070020', // 浜通り
@@ -6064,7 +6064,7 @@ const areas = {
     ],
   ),
 // 0820100: 水戸市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0820100.html
-  '0820100': Area(
+  '0820100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080010', // 北部
@@ -6079,7 +6079,7 @@ const areas = {
   ),
 
 // 0820200: 日立市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0820200.html
-  '0820200': Area(
+  '0820200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080010', // 北部
@@ -6093,7 +6093,7 @@ const areas = {
     ],
   ),
 // 0820300: 土浦市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0820300.html
-  '0820300': Area(
+  '0820300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080020', // 南部
@@ -6108,7 +6108,7 @@ const areas = {
   ),
 
 // 0820400: 古河市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0820400.html
-  '0820400': Area(
+  '0820400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080020', // 南部
@@ -6123,7 +6123,7 @@ const areas = {
   ),
 
 // 0820500: 石岡市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0820500.html
-  '0820500': Area(
+  '0820500': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080020', // 南部
@@ -6137,7 +6137,7 @@ const areas = {
     ],
   ),
 // 0820700: 結城市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0820700.html
-  '0820700': Area(
+  '0820700': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080020', // 南部
@@ -6151,7 +6151,7 @@ const areas = {
     ],
   ),
 // 0820800: 龍ケ崎市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0820800.html
-  '0820800': Area(
+  '0820800': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080020', // 南部
@@ -6165,7 +6165,7 @@ const areas = {
     ],
   ),
 // 0821000: 下妻市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0821000.html
-  '0821000': Area(
+  '0821000': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080020', // 南部
@@ -6180,7 +6180,7 @@ const areas = {
   ),
 
 // 0821100: 常総市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0821100.html
-  '0821100': Area(
+  '0821100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080020', // 南部
@@ -6194,7 +6194,7 @@ const areas = {
     ],
   ),
 // 0821200: 常陸太田市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0821200.html
-  '0821200': Area(
+  '0821200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080010', // 北部
@@ -6209,7 +6209,7 @@ const areas = {
   ),
 
 // 0821400: 高萩市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0821400.html
-  '0821400': Area(
+  '0821400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080010', // 北部
@@ -6224,7 +6224,7 @@ const areas = {
   ),
 
 // 0821500: 北茨城市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0821500.html
-  '0821500': Area(
+  '0821500': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080010', // 北部
@@ -6238,7 +6238,7 @@ const areas = {
     ],
   ),
 // 0821600: 笠間市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0821600.html
-  '0821600': Area(
+  '0821600': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080010', // 北部
@@ -6253,7 +6253,7 @@ const areas = {
   ),
 
 // 0821700: 取手市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0821700.html
-  '0821700': Area(
+  '0821700': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080020', // 南部
@@ -6267,7 +6267,7 @@ const areas = {
     ],
   ),
 // 0821900: 牛久市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0821900.html
-  '0821900': Area(
+  '0821900': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080020', // 南部
@@ -6282,7 +6282,7 @@ const areas = {
   ),
 
 // 0822000: つくば市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0822000.html
-  '0822000': Area(
+  '0822000': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080020', // 南部
@@ -6297,7 +6297,7 @@ const areas = {
   ),
 
 // 0822100: ひたちなか市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0822100.html
-  '0822100': Area(
+  '0822100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080010', // 北部
@@ -6311,7 +6311,7 @@ const areas = {
     ],
   ),
 // 0822200: 鹿嶋市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0822200.html
-  '0822200': Area(
+  '0822200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080020', // 南部
@@ -6325,7 +6325,7 @@ const areas = {
     ],
   ),
 // 0822300: 潮来市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0822300.html
-  '0822300': Area(
+  '0822300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080020', // 南部
@@ -6340,7 +6340,7 @@ const areas = {
   ),
 
 // 0822400: 守谷市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0822400.html
-  '0822400': Area(
+  '0822400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080020', // 南部
@@ -6355,7 +6355,7 @@ const areas = {
   ),
 
 // 0822500: 常陸大宮市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0822500.html
-  '0822500': Area(
+  '0822500': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080010', // 北部
@@ -6369,7 +6369,7 @@ const areas = {
     ],
   ),
 // 0822600: 那珂市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0822600.html
-  '0822600': Area(
+  '0822600': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080010', // 北部
@@ -6384,7 +6384,7 @@ const areas = {
   ),
 
 // 0822700: 筑西市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0822700.html
-  '0822700': Area(
+  '0822700': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080020', // 南部
@@ -6398,7 +6398,7 @@ const areas = {
     ],
   ),
 // 0822800: 坂東市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0822800.html
-  '0822800': Area(
+  '0822800': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080020', // 南部
@@ -6413,7 +6413,7 @@ const areas = {
   ),
 
 // 0822900: 稲敷市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0822900.html
-  '0822900': Area(
+  '0822900': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080020', // 南部
@@ -6428,7 +6428,7 @@ const areas = {
   ),
 
 // 0823000: かすみがうら市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0823000.html
-  '0823000': Area(
+  '0823000': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080020', // 南部
@@ -6443,7 +6443,7 @@ const areas = {
   ),
 
 // 0823100: 桜川市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0823100.html
-  '0823100': Area(
+  '0823100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080020', // 南部
@@ -6457,7 +6457,7 @@ const areas = {
     ],
   ),
 // 0823200: 神栖市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0823200.html
-  '0823200': Area(
+  '0823200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080020', // 南部
@@ -6472,7 +6472,7 @@ const areas = {
   ),
 
 // 0823300: 行方市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0823300.html
-  '0823300': Area(
+  '0823300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080020', // 南部
@@ -6486,7 +6486,7 @@ const areas = {
     ],
   ),
 // 0823400: 鉾田市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0823400.html
-  '0823400': Area(
+  '0823400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080020', // 南部
@@ -6501,7 +6501,7 @@ const areas = {
   ),
 
 // 0823500: つくばみらい市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0823500.html
-  '0823500': Area(
+  '0823500': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080020', // 南部
@@ -6515,7 +6515,7 @@ const areas = {
     ],
   ),
 // 0823600: 小美玉市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0823600.html
-  '0823600': Area(
+  '0823600': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080010', // 北部
@@ -6530,7 +6530,7 @@ const areas = {
   ),
 
 // 0830200: 茨城町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0830200.html
-  '0830200': Area(
+  '0830200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080010', // 北部
@@ -6544,7 +6544,7 @@ const areas = {
     ],
   ),
 // 0830900: 大洗町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0830900.html
-  '0830900': Area(
+  '0830900': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080010', // 北部
@@ -6559,7 +6559,7 @@ const areas = {
   ),
 
 // 0831000: 城里町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0831000.html
-  '0831000': Area(
+  '0831000': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080010', // 北部
@@ -6573,7 +6573,7 @@ const areas = {
     ],
   ),
 // 0834100: 東海村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0834100.html
-  '0834100': Area(
+  '0834100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080010', // 北部
@@ -6588,7 +6588,7 @@ const areas = {
   ),
 
 // 0836400: 大子町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0836400.html
-  '0836400': Area(
+  '0836400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080010', // 北部
@@ -6602,7 +6602,7 @@ const areas = {
     ],
   ),
 // 0844200: 美浦村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0844200.html
-  '0844200': Area(
+  '0844200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080020', // 南部
@@ -6617,7 +6617,7 @@ const areas = {
   ),
 
 // 0844300: 阿見町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0844300.html
-  '0844300': Area(
+  '0844300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080020', // 南部
@@ -6631,7 +6631,7 @@ const areas = {
     ],
   ),
 // 0844700: 河内町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0844700.html
-  '0844700': Area(
+  '0844700': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080020', // 南部
@@ -6646,7 +6646,7 @@ const areas = {
   ),
 
 // 0852100: 八千代町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0852100.html
-  '0852100': Area(
+  '0852100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080020', // 南部
@@ -6661,7 +6661,7 @@ const areas = {
   ),
 
 // 0854200: 五霞町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0854200.html
-  '0854200': Area(
+  '0854200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080020', // 南部
@@ -6675,7 +6675,7 @@ const areas = {
     ],
   ),
 // 0854600: 境町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0854600.html
-  '0854600': Area(
+  '0854600': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080020', // 南部
@@ -6689,7 +6689,7 @@ const areas = {
     ],
   ),
 // 0856400: 利根町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0856400.html
-  '0856400': Area(
+  '0856400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '080000', // 茨城県 (水戸地方気象台)
     class10: '080020', // 南部
@@ -6704,7 +6704,7 @@ const areas = {
   ),
 
 // 0920100: 宇都宮市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0920100.html
-  '0920100': Area(
+  '0920100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '090000', // 栃木県 (宇都宮地方気象台)
     class10: '090010', // 南部
@@ -6718,7 +6718,7 @@ const areas = {
     ],
   ),
 // 0920200: 足利市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0920200.html
-  '0920200': Area(
+  '0920200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '090000', // 栃木県 (宇都宮地方気象台)
     class10: '090010', // 南部
@@ -6733,7 +6733,7 @@ const areas = {
   ),
 
 // 0920300: 栃木市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0920300.html
-  '0920300': Area(
+  '0920300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '090000', // 栃木県 (宇都宮地方気象台)
     class10: '090010', // 南部
@@ -6747,7 +6747,7 @@ const areas = {
     ],
   ),
 // 0920400: 佐野市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0920400.html
-  '0920400': Area(
+  '0920400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '090000', // 栃木県 (宇都宮地方気象台)
     class10: '090010', // 南部
@@ -6762,7 +6762,7 @@ const areas = {
   ),
 
 // 0920500: 鹿沼市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0920500.html
-  '0920500': Area(
+  '0920500': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '090000', // 栃木県 (宇都宮地方気象台)
     class10: '090010', // 南部
@@ -6777,7 +6777,7 @@ const areas = {
   ),
 
 // 0920601: 日光市今市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0920601.html
-  '0920601': Area(
+  '0920601': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '090000', // 栃木県 (宇都宮地方気象台)
     class10: '090020', // 北部
@@ -6786,7 +6786,7 @@ const areas = {
     bbox: [139.560961, 36.616365170816, 139.852784423662, 36.859807],
   ),
 // 0920602: 日光市日光: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0920602.html
-  '0920602': Area(
+  '0920602': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '090000', // 栃木県 (宇都宮地方気象台)
     class10: '090020', // 北部
@@ -6796,7 +6796,7 @@ const areas = {
   ),
 
 // 0920603: 日光市藤原: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0920603.html
-  '0920603': Area(
+  '0920603': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '090000', // 栃木県 (宇都宮地方気象台)
     class10: '090020', // 北部
@@ -6805,7 +6805,7 @@ const areas = {
     bbox: [139.610268, 36.767228, 139.823350194956, 37.0919023331262],
   ),
 // 0920604: 日光市足尾: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0920604.html
-  '0920604': Area(
+  '0920604': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '090000', // 栃木県 (宇都宮地方気象台)
     class10: '090020', // 北部
@@ -6815,7 +6815,7 @@ const areas = {
   ),
 
 // 0920605: 日光市栗山: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0920605.html
-  '0920605': Area(
+  '0920605': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '090000', // 栃木県 (宇都宮地方気象台)
     class10: '090020', // 北部
@@ -6824,7 +6824,7 @@ const areas = {
     bbox: [139.348526082613, 36.807321, 139.698697, 37.015989972859],
   ),
 // 0920800: 小山市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0920800.html
-  '0920800': Area(
+  '0920800': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '090000', // 栃木県 (宇都宮地方気象台)
     class10: '090010', // 南部
@@ -6839,7 +6839,7 @@ const areas = {
   ),
 
 // 0920900: 真岡市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0920900.html
-  '0920900': Area(
+  '0920900': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '090000', // 栃木県 (宇都宮地方気象台)
     class10: '090010', // 南部
@@ -6854,7 +6854,7 @@ const areas = {
   ),
 
 // 0921000: 大田原市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0921000.html
-  '0921000': Area(
+  '0921000': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '090000', // 栃木県 (宇都宮地方気象台)
     class10: '090020', // 北部
@@ -6868,7 +6868,7 @@ const areas = {
     ],
   ),
 // 0921100: 矢板市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0921100.html
-  '0921100': Area(
+  '0921100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '090000', // 栃木県 (宇都宮地方気象台)
     class10: '090020', // 北部
@@ -6882,7 +6882,7 @@ const areas = {
     ],
   ),
 // 0921300: 那須塩原市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0921300.html
-  '0921300': Area(
+  '0921300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '090000', // 栃木県 (宇都宮地方気象台)
     class10: '090020', // 北部
@@ -6897,7 +6897,7 @@ const areas = {
   ),
 
 // 0921400: さくら市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0921400.html
-  '0921400': Area(
+  '0921400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '090000', // 栃木県 (宇都宮地方気象台)
     class10: '090010', // 南部
@@ -6911,7 +6911,7 @@ const areas = {
     ],
   ),
 // 0921500: 那須烏山市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0921500.html
-  '0921500': Area(
+  '0921500': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '090000', // 栃木県 (宇都宮地方気象台)
     class10: '090010', // 南部
@@ -6926,7 +6926,7 @@ const areas = {
   ),
 
 // 0921600: 下野市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0921600.html
-  '0921600': Area(
+  '0921600': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '090000', // 栃木県 (宇都宮地方気象台)
     class10: '090010', // 南部
@@ -6940,7 +6940,7 @@ const areas = {
     ],
   ),
 // 0930100: 上三川町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0930100.html
-  '0930100': Area(
+  '0930100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '090000', // 栃木県 (宇都宮地方気象台)
     class10: '090010', // 南部
@@ -6955,7 +6955,7 @@ const areas = {
   ),
 
 // 0934200: 益子町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0934200.html
-  '0934200': Area(
+  '0934200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '090000', // 栃木県 (宇都宮地方気象台)
     class10: '090010', // 南部
@@ -6970,7 +6970,7 @@ const areas = {
   ),
 
 // 0934300: 茂木町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0934300.html
-  '0934300': Area(
+  '0934300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '090000', // 栃木県 (宇都宮地方気象台)
     class10: '090010', // 南部
@@ -6985,7 +6985,7 @@ const areas = {
   ),
 
 // 0934400: 市貝町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0934400.html
-  '0934400': Area(
+  '0934400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '090000', // 栃木県 (宇都宮地方気象台)
     class10: '090010', // 南部
@@ -6999,7 +6999,7 @@ const areas = {
     ],
   ),
 // 0934500: 芳賀町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0934500.html
-  '0934500': Area(
+  '0934500': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '090000', // 栃木県 (宇都宮地方気象台)
     class10: '090010', // 南部
@@ -7013,7 +7013,7 @@ const areas = {
     ],
   ),
 // 0936100: 壬生町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0936100.html
-  '0936100': Area(
+  '0936100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '090000', // 栃木県 (宇都宮地方気象台)
     class10: '090010', // 南部
@@ -7028,7 +7028,7 @@ const areas = {
   ),
 
 // 0936400: 野木町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0936400.html
-  '0936400': Area(
+  '0936400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '090000', // 栃木県 (宇都宮地方気象台)
     class10: '090010', // 南部
@@ -7042,7 +7042,7 @@ const areas = {
     ],
   ),
 // 0938400: 塩谷町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0938400.html
-  '0938400': Area(
+  '0938400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '090000', // 栃木県 (宇都宮地方気象台)
     class10: '090020', // 北部
@@ -7057,7 +7057,7 @@ const areas = {
   ),
 
 // 0938600: 高根沢町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0938600.html
-  '0938600': Area(
+  '0938600': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '090000', // 栃木県 (宇都宮地方気象台)
     class10: '090010', // 南部
@@ -7072,7 +7072,7 @@ const areas = {
   ),
 
 // 0940700: 那須町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0940700.html
-  '0940700': Area(
+  '0940700': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '090000', // 栃木県 (宇都宮地方気象台)
     class10: '090020', // 北部
@@ -7086,7 +7086,7 @@ const areas = {
     ],
   ),
 // 0941100: 那珂川町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/0941100.html
-  '0941100': Area(
+  '0941100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '090000', // 栃木県 (宇都宮地方気象台)
     class10: '090010', // 南部
@@ -7100,7 +7100,7 @@ const areas = {
     ],
   ),
 // 1020100: 前橋市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1020100.html
-  '1020100': Area(
+  '1020100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '100000', // 群馬県 (前橋地方気象台)
     class10: '100010', // 南部
@@ -7115,7 +7115,7 @@ const areas = {
   ),
 
 // 1020200: 高崎市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1020200.html
-  '1020200': Area(
+  '1020200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '100000', // 群馬県 (前橋地方気象台)
     class10: '100010', // 南部
@@ -7129,7 +7129,7 @@ const areas = {
     ],
   ),
 // 1020300: 桐生市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1020300.html
-  '1020300': Area(
+  '1020300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '100000', // 群馬県 (前橋地方気象台)
     class10: '100010', // 南部
@@ -7144,7 +7144,7 @@ const areas = {
   ),
 
 // 1020400: 伊勢崎市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1020400.html
-  '1020400': Area(
+  '1020400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '100000', // 群馬県 (前橋地方気象台)
     class10: '100010', // 南部
@@ -7159,7 +7159,7 @@ const areas = {
   ),
 
 // 1020500: 太田市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1020500.html
-  '1020500': Area(
+  '1020500': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '100000', // 群馬県 (前橋地方気象台)
     class10: '100010', // 南部
@@ -7173,7 +7173,7 @@ const areas = {
     ],
   ),
 // 1020600: 沼田市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1020600.html
-  '1020600': Area(
+  '1020600': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '100000', // 群馬県 (前橋地方気象台)
     class10: '100020', // 北部
@@ -7188,7 +7188,7 @@ const areas = {
   ),
 
 // 1020700: 館林市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1020700.html
-  '1020700': Area(
+  '1020700': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '100000', // 群馬県 (前橋地方気象台)
     class10: '100010', // 南部
@@ -7202,7 +7202,7 @@ const areas = {
     ],
   ),
 // 1020800: 渋川市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1020800.html
-  '1020800': Area(
+  '1020800': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '100000', // 群馬県 (前橋地方気象台)
     class10: '100010', // 南部
@@ -7217,7 +7217,7 @@ const areas = {
   ),
 
 // 1020900: 藤岡市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1020900.html
-  '1020900': Area(
+  '1020900': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '100000', // 群馬県 (前橋地方気象台)
     class10: '100010', // 南部
@@ -7231,7 +7231,7 @@ const areas = {
     ],
   ),
 // 1021000: 富岡市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1021000.html
-  '1021000': Area(
+  '1021000': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '100000', // 群馬県 (前橋地方気象台)
     class10: '100010', // 南部
@@ -7246,7 +7246,7 @@ const areas = {
   ),
 
 // 1021100: 安中市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1021100.html
-  '1021100': Area(
+  '1021100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '100000', // 群馬県 (前橋地方気象台)
     class10: '100010', // 南部
@@ -7261,7 +7261,7 @@ const areas = {
   ),
 
 // 1021200: みどり市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1021200.html
-  '1021200': Area(
+  '1021200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '100000', // 群馬県 (前橋地方気象台)
     class10: '100010', // 南部
@@ -7275,7 +7275,7 @@ const areas = {
     ],
   ),
 // 1034400: 榛東村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1034400.html
-  '1034400': Area(
+  '1034400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '100000', // 群馬県 (前橋地方気象台)
     class10: '100010', // 南部
@@ -7290,7 +7290,7 @@ const areas = {
   ),
 
 // 1034500: 吉岡町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1034500.html
-  '1034500': Area(
+  '1034500': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '100000', // 群馬県 (前橋地方気象台)
     class10: '100010', // 南部
@@ -7304,7 +7304,7 @@ const areas = {
     ],
   ),
 // 1036600: 上野村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1036600.html
-  '1036600': Area(
+  '1036600': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '100000', // 群馬県 (前橋地方気象台)
     class10: '100010', // 南部
@@ -7319,7 +7319,7 @@ const areas = {
   ),
 
 // 1036700: 神流町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1036700.html
-  '1036700': Area(
+  '1036700': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '100000', // 群馬県 (前橋地方気象台)
     class10: '100010', // 南部
@@ -7333,7 +7333,7 @@ const areas = {
     ],
   ),
 // 1038200: 下仁田町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1038200.html
-  '1038200': Area(
+  '1038200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '100000', // 群馬県 (前橋地方気象台)
     class10: '100010', // 南部
@@ -7348,7 +7348,7 @@ const areas = {
   ),
 
 // 1038300: 南牧村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1038300.html
-  '1038300': Area(
+  '1038300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '100000', // 群馬県 (前橋地方気象台)
     class10: '100010', // 南部
@@ -7363,7 +7363,7 @@ const areas = {
   ),
 
 // 1038400: 甘楽町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1038400.html
-  '1038400': Area(
+  '1038400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '100000', // 群馬県 (前橋地方気象台)
     class10: '100010', // 南部
@@ -7377,7 +7377,7 @@ const areas = {
     ],
   ),
 // 1042100: 中之条町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1042100.html
-  '1042100': Area(
+  '1042100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '100000', // 群馬県 (前橋地方気象台)
     class10: '100020', // 北部
@@ -7392,7 +7392,7 @@ const areas = {
   ),
 
 // 1042400: 長野原町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1042400.html
-  '1042400': Area(
+  '1042400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '100000', // 群馬県 (前橋地方気象台)
     class10: '100020', // 北部
@@ -7406,7 +7406,7 @@ const areas = {
     ],
   ),
 // 1042500: 嬬恋村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1042500.html
-  '1042500': Area(
+  '1042500': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '100000', // 群馬県 (前橋地方気象台)
     class10: '100020', // 北部
@@ -7421,7 +7421,7 @@ const areas = {
   ),
 
 // 1042600: 草津町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1042600.html
-  '1042600': Area(
+  '1042600': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '100000', // 群馬県 (前橋地方気象台)
     class10: '100020', // 北部
@@ -7436,7 +7436,7 @@ const areas = {
   ),
 
 // 1042800: 高山村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1042800.html
-  '1042800': Area(
+  '1042800': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '100000', // 群馬県 (前橋地方気象台)
     class10: '100020', // 北部
@@ -7450,7 +7450,7 @@ const areas = {
     ],
   ),
 // 1042900: 東吾妻町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1042900.html
-  '1042900': Area(
+  '1042900': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '100000', // 群馬県 (前橋地方気象台)
     class10: '100020', // 北部
@@ -7464,7 +7464,7 @@ const areas = {
     ],
   ),
 // 1044300: 片品村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1044300.html
-  '1044300': Area(
+  '1044300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '100000', // 群馬県 (前橋地方気象台)
     class10: '100020', // 北部
@@ -7479,7 +7479,7 @@ const areas = {
   ),
 
 // 1044400: 川場村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1044400.html
-  '1044400': Area(
+  '1044400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '100000', // 群馬県 (前橋地方気象台)
     class10: '100020', // 北部
@@ -7493,7 +7493,7 @@ const areas = {
     ],
   ),
 // 1044800: 昭和村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1044800.html
-  '1044800': Area(
+  '1044800': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '100000', // 群馬県 (前橋地方気象台)
     class10: '100020', // 北部
@@ -7508,7 +7508,7 @@ const areas = {
   ),
 
 // 1044900: みなかみ町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1044900.html
-  '1044900': Area(
+  '1044900': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '100000', // 群馬県 (前橋地方気象台)
     class10: '100020', // 北部
@@ -7523,7 +7523,7 @@ const areas = {
   ),
 
 // 1046400: 玉村町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1046400.html
-  '1046400': Area(
+  '1046400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '100000', // 群馬県 (前橋地方気象台)
     class10: '100010', // 南部
@@ -7537,7 +7537,7 @@ const areas = {
     ],
   ),
 // 1052100: 板倉町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1052100.html
-  '1052100': Area(
+  '1052100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '100000', // 群馬県 (前橋地方気象台)
     class10: '100010', // 南部
@@ -7551,7 +7551,7 @@ const areas = {
     ],
   ),
 // 1052200: 明和町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1052200.html
-  '1052200': Area(
+  '1052200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '100000', // 群馬県 (前橋地方気象台)
     class10: '100010', // 南部
@@ -7566,7 +7566,7 @@ const areas = {
   ),
 
 // 1052300: 千代田町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1052300.html
-  '1052300': Area(
+  '1052300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '100000', // 群馬県 (前橋地方気象台)
     class10: '100010', // 南部
@@ -7580,7 +7580,7 @@ const areas = {
     ],
   ),
 // 1052400: 大泉町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1052400.html
-  '1052400': Area(
+  '1052400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '100000', // 群馬県 (前橋地方気象台)
     class10: '100010', // 南部
@@ -7590,7 +7590,7 @@ const areas = {
   ),
 
 // 1052500: 邑楽町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1052500.html
-  '1052500': Area(
+  '1052500': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '100000', // 群馬県 (前橋地方気象台)
     class10: '100010', // 南部
@@ -7605,7 +7605,7 @@ const areas = {
   ),
 
 // 1110000: さいたま市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1110000.html
-  '1110000': Area(
+  '1110000': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110010', // 南部
@@ -7619,7 +7619,7 @@ const areas = {
     ],
   ),
 // 1120100: 川越市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1120100.html
-  '1120100': Area(
+  '1120100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110010', // 南部
@@ -7633,7 +7633,7 @@ const areas = {
     ],
   ),
 // 1120200: 熊谷市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1120200.html
-  '1120200': Area(
+  '1120200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110020', // 北部
@@ -7648,7 +7648,7 @@ const areas = {
   ),
 
 // 1120300: 川口市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1120300.html
-  '1120300': Area(
+  '1120300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110010', // 南部
@@ -7663,7 +7663,7 @@ const areas = {
   ),
 
 // 1120600: 行田市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1120600.html
-  '1120600': Area(
+  '1120600': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110020', // 北部
@@ -7678,7 +7678,7 @@ const areas = {
   ),
 
 // 1120700: 秩父市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1120700.html
-  '1120700': Area(
+  '1120700': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110030', // 秩父地方
@@ -7693,7 +7693,7 @@ const areas = {
   ),
 
 // 1120800: 所沢市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1120800.html
-  '1120800': Area(
+  '1120800': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110010', // 南部
@@ -7708,7 +7708,7 @@ const areas = {
   ),
 
 // 1120900: 飯能市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1120900.html
-  '1120900': Area(
+  '1120900': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110010', // 南部
@@ -7723,7 +7723,7 @@ const areas = {
   ),
 
 // 1121000: 加須市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1121000.html
-  '1121000': Area(
+  '1121000': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110020', // 北部
@@ -7737,7 +7737,7 @@ const areas = {
     ],
   ),
 // 1121100: 本庄市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1121100.html
-  '1121100': Area(
+  '1121100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110020', // 北部
@@ -7752,7 +7752,7 @@ const areas = {
   ),
 
 // 1121200: 東松山市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1121200.html
-  '1121200': Area(
+  '1121200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110020', // 北部
@@ -7767,7 +7767,7 @@ const areas = {
   ),
 
 // 1121400: 春日部市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1121400.html
-  '1121400': Area(
+  '1121400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110010', // 南部
@@ -7781,7 +7781,7 @@ const areas = {
     ],
   ),
 // 1121500: 狭山市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1121500.html
-  '1121500': Area(
+  '1121500': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110010', // 南部
@@ -7796,7 +7796,7 @@ const areas = {
   ),
 
 // 1121600: 羽生市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1121600.html
-  '1121600': Area(
+  '1121600': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110020', // 北部
@@ -7811,7 +7811,7 @@ const areas = {
   ),
 
 // 1121700: 鴻巣市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1121700.html
-  '1121700': Area(
+  '1121700': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110020', // 北部
@@ -7825,7 +7825,7 @@ const areas = {
     ],
   ),
 // 1121800: 深谷市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1121800.html
-  '1121800': Area(
+  '1121800': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110020', // 北部
@@ -7840,7 +7840,7 @@ const areas = {
   ),
 
 // 1121900: 上尾市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1121900.html
-  '1121900': Area(
+  '1121900': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110010', // 南部
@@ -7855,7 +7855,7 @@ const areas = {
   ),
 
 // 1122100: 草加市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1122100.html
-  '1122100': Area(
+  '1122100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110010', // 南部
@@ -7869,7 +7869,7 @@ const areas = {
     ],
   ),
 // 1122200: 越谷市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1122200.html
-  '1122200': Area(
+  '1122200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110010', // 南部
@@ -7884,7 +7884,7 @@ const areas = {
   ),
 
 // 1122300: 蕨市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1122300.html
-  '1122300': Area(
+  '1122300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110010', // 南部
@@ -7899,7 +7899,7 @@ const areas = {
   ),
 
 // 1122400: 戸田市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1122400.html
-  '1122400': Area(
+  '1122400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110010', // 南部
@@ -7913,7 +7913,7 @@ const areas = {
     ],
   ),
 // 1122500: 入間市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1122500.html
-  '1122500': Area(
+  '1122500': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110010', // 南部
@@ -7928,7 +7928,7 @@ const areas = {
   ),
 
 // 1122700: 朝霞市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1122700.html
-  '1122700': Area(
+  '1122700': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110010', // 南部
@@ -7943,7 +7943,7 @@ const areas = {
   ),
 
 // 1122800: 志木市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1122800.html
-  '1122800': Area(
+  '1122800': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110010', // 南部
@@ -7957,7 +7957,7 @@ const areas = {
     ],
   ),
 // 1122900: 和光市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1122900.html
-  '1122900': Area(
+  '1122900': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110010', // 南部
@@ -7972,7 +7972,7 @@ const areas = {
   ),
 
 // 1123000: 新座市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1123000.html
-  '1123000': Area(
+  '1123000': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110010', // 南部
@@ -7987,7 +7987,7 @@ const areas = {
   ),
 
 // 1123100: 桶川市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1123100.html
-  '1123100': Area(
+  '1123100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110010', // 南部
@@ -8001,7 +8001,7 @@ const areas = {
     ],
   ),
 // 1123200: 久喜市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1123200.html
-  '1123200': Area(
+  '1123200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110020', // 北部
@@ -8016,7 +8016,7 @@ const areas = {
   ),
 
 // 1123300: 北本市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1123300.html
-  '1123300': Area(
+  '1123300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110010', // 南部
@@ -8031,7 +8031,7 @@ const areas = {
   ),
 
 // 1123400: 八潮市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1123400.html
-  '1123400': Area(
+  '1123400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110010', // 南部
@@ -8045,7 +8045,7 @@ const areas = {
     ],
   ),
 // 1123500: 富士見市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1123500.html
-  '1123500': Area(
+  '1123500': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110010', // 南部
@@ -8060,7 +8060,7 @@ const areas = {
   ),
 
 // 1123700: 三郷市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1123700.html
-  '1123700': Area(
+  '1123700': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110010', // 南部
@@ -8075,7 +8075,7 @@ const areas = {
   ),
 
 // 1123800: 蓮田市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1123800.html
-  '1123800': Area(
+  '1123800': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110010', // 南部
@@ -8089,7 +8089,7 @@ const areas = {
     ],
   ),
 // 1123900: 坂戸市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1123900.html
-  '1123900': Area(
+  '1123900': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110010', // 南部
@@ -8104,7 +8104,7 @@ const areas = {
   ),
 
 // 1124000: 幸手市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1124000.html
-  '1124000': Area(
+  '1124000': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110010', // 南部
@@ -8119,7 +8119,7 @@ const areas = {
   ),
 
 // 1124100: 鶴ヶ島市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1124100.html
-  '1124100': Area(
+  '1124100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110010', // 南部
@@ -8133,7 +8133,7 @@ const areas = {
     ],
   ),
 // 1124200: 日高市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1124200.html
-  '1124200': Area(
+  '1124200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110010', // 南部
@@ -8148,7 +8148,7 @@ const areas = {
   ),
 
 // 1124300: 吉川市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1124300.html
-  '1124300': Area(
+  '1124300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110010', // 南部
@@ -8163,7 +8163,7 @@ const areas = {
   ),
 
 // 1124500: ふじみ野市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1124500.html
-  '1124500': Area(
+  '1124500': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110010', // 南部
@@ -8177,7 +8177,7 @@ const areas = {
     ],
   ),
 // 1124600: 白岡市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1124600.html
-  '1124600': Area(
+  '1124600': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110010', // 南部
@@ -8192,7 +8192,7 @@ const areas = {
   ),
 
 // 1130100: 伊奈町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1130100.html
-  '1130100': Area(
+  '1130100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110010', // 南部
@@ -8207,7 +8207,7 @@ const areas = {
   ),
 
 // 1132400: 三芳町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1132400.html
-  '1132400': Area(
+  '1132400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110010', // 南部
@@ -8221,7 +8221,7 @@ const areas = {
     ],
   ),
 // 1132600: 毛呂山町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1132600.html
-  '1132600': Area(
+  '1132600': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110010', // 南部
@@ -8236,7 +8236,7 @@ const areas = {
   ),
 
 // 1132700: 越生町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1132700.html
-  '1132700': Area(
+  '1132700': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110010', // 南部
@@ -8251,7 +8251,7 @@ const areas = {
   ),
 
 // 1134100: 滑川町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1134100.html
-  '1134100': Area(
+  '1134100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110020', // 北部
@@ -8265,7 +8265,7 @@ const areas = {
     ],
   ),
 // 1134200: 嵐山町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1134200.html
-  '1134200': Area(
+  '1134200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110020', // 北部
@@ -8280,7 +8280,7 @@ const areas = {
   ),
 
 // 1134300: 小川町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1134300.html
-  '1134300': Area(
+  '1134300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110020', // 北部
@@ -8295,7 +8295,7 @@ const areas = {
   ),
 
 // 1134600: 川島町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1134600.html
-  '1134600': Area(
+  '1134600': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110010', // 南部
@@ -8309,7 +8309,7 @@ const areas = {
     ],
   ),
 // 1134700: 吉見町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1134700.html
-  '1134700': Area(
+  '1134700': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110020', // 北部
@@ -8324,7 +8324,7 @@ const areas = {
   ),
 
 // 1134800: 鳩山町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1134800.html
-  '1134800': Area(
+  '1134800': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110020', // 北部
@@ -8338,7 +8338,7 @@ const areas = {
     ],
   ),
 // 1134900: ときがわ町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1134900.html
-  '1134900': Area(
+  '1134900': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110020', // 北部
@@ -8353,7 +8353,7 @@ const areas = {
   ),
 
 // 1136100: 横瀬町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1136100.html
-  '1136100': Area(
+  '1136100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110030', // 秩父地方
@@ -8368,7 +8368,7 @@ const areas = {
   ),
 
 // 1136200: 皆野町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1136200.html
-  '1136200': Area(
+  '1136200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110030', // 秩父地方
@@ -8383,7 +8383,7 @@ const areas = {
   ),
 
 // 1136300: 長瀞町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1136300.html
-  '1136300': Area(
+  '1136300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110030', // 秩父地方
@@ -8398,7 +8398,7 @@ const areas = {
   ),
 
 // 1136500: 小鹿野町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1136500.html
-  '1136500': Area(
+  '1136500': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110030', // 秩父地方
@@ -8412,7 +8412,7 @@ const areas = {
     ],
   ),
 // 1136900: 東秩父村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1136900.html
-  '1136900': Area(
+  '1136900': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110020', // 北部
@@ -8427,7 +8427,7 @@ const areas = {
   ),
 
 // 1138100: 美里町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1138100.html
-  '1138100': Area(
+  '1138100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110020', // 北部
@@ -8442,7 +8442,7 @@ const areas = {
   ),
 
 // 1138300: 神川町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1138300.html
-  '1138300': Area(
+  '1138300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110020', // 北部
@@ -8456,7 +8456,7 @@ const areas = {
     ],
   ),
 // 1138500: 上里町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1138500.html
-  '1138500': Area(
+  '1138500': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110020', // 北部
@@ -8471,7 +8471,7 @@ const areas = {
   ),
 
 // 1140800: 寄居町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1140800.html
-  '1140800': Area(
+  '1140800': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110020', // 北部
@@ -8486,7 +8486,7 @@ const areas = {
   ),
 
 // 1144200: 宮代町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1144200.html
-  '1144200': Area(
+  '1144200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110010', // 南部
@@ -8500,7 +8500,7 @@ const areas = {
     ],
   ),
 // 1146400: 杉戸町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1146400.html
-  '1146400': Area(
+  '1146400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110010', // 南部
@@ -8514,7 +8514,7 @@ const areas = {
     ],
   ),
 // 1146500: 松伏町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1146500.html
-  '1146500': Area(
+  '1146500': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '110000', // 埼玉県 (熊谷地方気象台)
     class10: '110010', // 南部
@@ -8529,7 +8529,7 @@ const areas = {
   ),
 
 // 1210000: 千葉市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1210000.html
-  '1210000': Area(
+  '1210000': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120010', // 北西部
@@ -8544,7 +8544,7 @@ const areas = {
   ),
 
 // 1220200: 銚子市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1220200.html
-  '1220200': Area(
+  '1220200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120020', // 北東部
@@ -8558,7 +8558,7 @@ const areas = {
     ],
   ),
 // 1220300: 市川市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1220300.html
-  '1220300': Area(
+  '1220300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120010', // 北西部
@@ -8573,7 +8573,7 @@ const areas = {
   ),
 
 // 1220400: 船橋市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1220400.html
-  '1220400': Area(
+  '1220400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120010', // 北西部
@@ -8588,7 +8588,7 @@ const areas = {
   ),
 
 // 1220500: 館山市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1220500.html
-  '1220500': Area(
+  '1220500': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120030', // 南部
@@ -8602,7 +8602,7 @@ const areas = {
     ],
   ),
 // 1220600: 木更津市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1220600.html
-  '1220600': Area(
+  '1220600': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120030', // 南部
@@ -8617,7 +8617,7 @@ const areas = {
   ),
 
 // 1220700: 松戸市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1220700.html
-  '1220700': Area(
+  '1220700': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120010', // 北西部
@@ -8632,7 +8632,7 @@ const areas = {
   ),
 
 // 1220800: 野田市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1220800.html
-  '1220800': Area(
+  '1220800': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120010', // 北西部
@@ -8646,7 +8646,7 @@ const areas = {
     ],
   ),
 // 1221000: 茂原市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1221000.html
-  '1221000': Area(
+  '1221000': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120020', // 北東部
@@ -8661,7 +8661,7 @@ const areas = {
   ),
 
 // 1221100: 成田市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1221100.html
-  '1221100': Area(
+  '1221100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120010', // 北西部
@@ -8676,7 +8676,7 @@ const areas = {
   ),
 
 // 1221200: 佐倉市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1221200.html
-  '1221200': Area(
+  '1221200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120010', // 北西部
@@ -8690,7 +8690,7 @@ const areas = {
     ],
   ),
 // 1221300: 東金市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1221300.html
-  '1221300': Area(
+  '1221300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120020', // 北東部
@@ -8705,7 +8705,7 @@ const areas = {
   ),
 
 // 1221500: 旭市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1221500.html
-  '1221500': Area(
+  '1221500': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120020', // 北東部
@@ -8720,7 +8720,7 @@ const areas = {
   ),
 
 // 1221600: 習志野市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1221600.html
-  '1221600': Area(
+  '1221600': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120010', // 北西部
@@ -8734,7 +8734,7 @@ const areas = {
     ],
   ),
 // 1221700: 柏市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1221700.html
-  '1221700': Area(
+  '1221700': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120010', // 北西部
@@ -8749,7 +8749,7 @@ const areas = {
   ),
 
 // 1221800: 勝浦市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1221800.html
-  '1221800': Area(
+  '1221800': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120030', // 南部
@@ -8764,7 +8764,7 @@ const areas = {
   ),
 
 // 1221900: 市原市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1221900.html
-  '1221900': Area(
+  '1221900': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120010', // 北西部
@@ -8778,7 +8778,7 @@ const areas = {
     ],
   ),
 // 1222000: 流山市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1222000.html
-  '1222000': Area(
+  '1222000': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120010', // 北西部
@@ -8793,7 +8793,7 @@ const areas = {
   ),
 
 // 1222100: 八千代市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1222100.html
-  '1222100': Area(
+  '1222100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120010', // 北西部
@@ -8808,7 +8808,7 @@ const areas = {
   ),
 
 // 1222200: 我孫子市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1222200.html
-  '1222200': Area(
+  '1222200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120010', // 北西部
@@ -8822,7 +8822,7 @@ const areas = {
     ],
   ),
 // 1222300: 鴨川市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1222300.html
-  '1222300': Area(
+  '1222300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120030', // 南部
@@ -8837,7 +8837,7 @@ const areas = {
   ),
 
 // 1222400: 鎌ケ谷市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1222400.html
-  '1222400': Area(
+  '1222400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120010', // 北西部
@@ -8851,7 +8851,7 @@ const areas = {
     ],
   ),
 // 1222500: 君津市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1222500.html
-  '1222500': Area(
+  '1222500': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120030', // 南部
@@ -8866,7 +8866,7 @@ const areas = {
   ),
 
 // 1222600: 富津市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1222600.html
-  '1222600': Area(
+  '1222600': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120030', // 南部
@@ -8881,7 +8881,7 @@ const areas = {
   ),
 
 // 1222700: 浦安市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1222700.html
-  '1222700': Area(
+  '1222700': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120010', // 北西部
@@ -8896,7 +8896,7 @@ const areas = {
   ),
 
 // 1222800: 四街道市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1222800.html
-  '1222800': Area(
+  '1222800': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120010', // 北西部
@@ -8910,7 +8910,7 @@ const areas = {
     ],
   ),
 // 1222900: 袖ケ浦市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1222900.html
-  '1222900': Area(
+  '1222900': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120030', // 南部
@@ -8925,7 +8925,7 @@ const areas = {
   ),
 
 // 1223000: 八街市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1223000.html
-  '1223000': Area(
+  '1223000': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120010', // 北西部
@@ -8940,7 +8940,7 @@ const areas = {
   ),
 
 // 1223100: 印西市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1223100.html
-  '1223100': Area(
+  '1223100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120010', // 北西部
@@ -8955,7 +8955,7 @@ const areas = {
   ),
 
 // 1223200: 白井市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1223200.html
-  '1223200': Area(
+  '1223200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120010', // 北西部
@@ -8969,7 +8969,7 @@ const areas = {
     ],
   ),
 // 1223300: 富里市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1223300.html
-  '1223300': Area(
+  '1223300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120010', // 北西部
@@ -8983,7 +8983,7 @@ const areas = {
     ],
   ),
 // 1223400: 南房総市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1223400.html
-  '1223400': Area(
+  '1223400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120030', // 南部
@@ -8997,7 +8997,7 @@ const areas = {
     ],
   ),
 // 1223500: 匝瑳市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1223500.html
-  '1223500': Area(
+  '1223500': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120020', // 北東部
@@ -9012,7 +9012,7 @@ const areas = {
   ),
 
 // 1223600: 香取市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1223600.html
-  '1223600': Area(
+  '1223600': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120020', // 北東部
@@ -9021,7 +9021,7 @@ const areas = {
     bbox: [140.42485192038, 35.753465467957, 140.651512633201, 35.958735412909],
   ),
 // 1223700: 山武市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1223700.html
-  '1223700': Area(
+  '1223700': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120020', // 北東部
@@ -9036,7 +9036,7 @@ const areas = {
   ),
 
 // 1223800: いすみ市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1223800.html
-  '1223800': Area(
+  '1223800': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120030', // 南部
@@ -9051,7 +9051,7 @@ const areas = {
   ),
 
 // 1223900: 大網白里市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1223900.html
-  '1223900': Area(
+  '1223900': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120020', // 北東部
@@ -9065,7 +9065,7 @@ const areas = {
     ],
   ),
 // 1232200: 酒々井町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1232200.html
-  '1232200': Area(
+  '1232200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120010', // 北西部
@@ -9080,7 +9080,7 @@ const areas = {
   ),
 
 // 1232900: 栄町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1232900.html
-  '1232900': Area(
+  '1232900': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120010', // 北西部
@@ -9094,7 +9094,7 @@ const areas = {
     ],
   ),
 // 1234200: 神崎町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1234200.html
-  '1234200': Area(
+  '1234200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120020', // 北東部
@@ -9109,7 +9109,7 @@ const areas = {
   ),
 
 // 1234700: 多古町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1234700.html
-  '1234700': Area(
+  '1234700': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120020', // 北東部
@@ -9123,7 +9123,7 @@ const areas = {
     ],
   ),
 // 1234900: 東庄町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1234900.html
-  '1234900': Area(
+  '1234900': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120020', // 北東部
@@ -9138,7 +9138,7 @@ const areas = {
   ),
 
 // 1240300: 九十九里町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1240300.html
-  '1240300': Area(
+  '1240300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120020', // 北東部
@@ -9153,7 +9153,7 @@ const areas = {
   ),
 
 // 1240900: 芝山町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1240900.html
-  '1240900': Area(
+  '1240900': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120020', // 北東部
@@ -9167,7 +9167,7 @@ const areas = {
     ],
   ),
 // 1241000: 横芝光町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1241000.html
-  '1241000': Area(
+  '1241000': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120020', // 北東部
@@ -9181,7 +9181,7 @@ const areas = {
     ],
   ),
 // 1242100: 一宮町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1242100.html
-  '1242100': Area(
+  '1242100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120020', // 北東部
@@ -9196,7 +9196,7 @@ const areas = {
   ),
 
 // 1242200: 睦沢町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1242200.html
-  '1242200': Area(
+  '1242200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120020', // 北東部
@@ -9210,7 +9210,7 @@ const areas = {
     ],
   ),
 // 1242300: 長生村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1242300.html
-  '1242300': Area(
+  '1242300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120020', // 北東部
@@ -9225,7 +9225,7 @@ const areas = {
   ),
 
 // 1242400: 白子町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1242400.html
-  '1242400': Area(
+  '1242400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120020', // 北東部
@@ -9239,7 +9239,7 @@ const areas = {
     ],
   ),
 // 1242600: 長柄町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1242600.html
-  '1242600': Area(
+  '1242600': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120020', // 北東部
@@ -9254,7 +9254,7 @@ const areas = {
   ),
 
 // 1242700: 長南町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1242700.html
-  '1242700': Area(
+  '1242700': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120020', // 北東部
@@ -9268,7 +9268,7 @@ const areas = {
     ],
   ),
 // 1244100: 大多喜町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1244100.html
-  '1244100': Area(
+  '1244100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120030', // 南部
@@ -9283,7 +9283,7 @@ const areas = {
   ),
 
 // 1244300: 御宿町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1244300.html
-  '1244300': Area(
+  '1244300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120030', // 南部
@@ -9297,7 +9297,7 @@ const areas = {
     ],
   ),
 // 1246300: 鋸南町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1246300.html
-  '1246300': Area(
+  '1246300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '120000', // 千葉県 (銚子地方気象台)
     class10: '120030', // 南部
@@ -9312,7 +9312,7 @@ const areas = {
   ),
 
 // 1310100: 千代田区: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1310100.html
-  '1310100': Area(
+  '1310100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9327,7 +9327,7 @@ const areas = {
   ),
 
 // 1310200: 中央区: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1310200.html
-  '1310200': Area(
+  '1310200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9341,7 +9341,7 @@ const areas = {
     ],
   ),
 // 1310300: 港区: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1310300.html
-  '1310300': Area(
+  '1310300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9355,7 +9355,7 @@ const areas = {
     ],
   ),
 // 1310400: 新宿区: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1310400.html
-  '1310400': Area(
+  '1310400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9370,7 +9370,7 @@ const areas = {
   ),
 
 // 1310500: 文京区: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1310500.html
-  '1310500': Area(
+  '1310500': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9385,7 +9385,7 @@ const areas = {
   ),
 
 // 1310600: 台東区: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1310600.html
-  '1310600': Area(
+  '1310600': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9399,7 +9399,7 @@ const areas = {
     ],
   ),
 // 1310700: 墨田区: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1310700.html
-  '1310700': Area(
+  '1310700': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9413,7 +9413,7 @@ const areas = {
     ],
   ),
 // 1310800: 江東区: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1310800.html
-  '1310800': Area(
+  '1310800': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9428,7 +9428,7 @@ const areas = {
   ),
 
 // 1310900: 品川区: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1310900.html
-  '1310900': Area(
+  '1310900': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9442,7 +9442,7 @@ const areas = {
     ],
   ),
 // 1311000: 目黒区: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1311000.html
-  '1311000': Area(
+  '1311000': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9457,7 +9457,7 @@ const areas = {
   ),
 
 // 1311100: 大田区: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1311100.html
-  '1311100': Area(
+  '1311100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9472,7 +9472,7 @@ const areas = {
   ),
 
 // 1311200: 世田谷区: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1311200.html
-  '1311200': Area(
+  '1311200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9486,7 +9486,7 @@ const areas = {
     ],
   ),
 // 1311300: 渋谷区: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1311300.html
-  '1311300': Area(
+  '1311300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9501,7 +9501,7 @@ const areas = {
   ),
 
 // 1311400: 中野区: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1311400.html
-  '1311400': Area(
+  '1311400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9516,7 +9516,7 @@ const areas = {
   ),
 
 // 1311500: 杉並区: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1311500.html
-  '1311500': Area(
+  '1311500': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9531,7 +9531,7 @@ const areas = {
   ),
 
 // 1311600: 豊島区: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1311600.html
-  '1311600': Area(
+  '1311600': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9546,7 +9546,7 @@ const areas = {
   ),
 
 // 1311700: 北区: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1311700.html
-  '1311700': Area(
+  '1311700': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9561,7 +9561,7 @@ const areas = {
   ),
 
 // 1311800: 荒川区: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1311800.html
-  '1311800': Area(
+  '1311800': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9576,7 +9576,7 @@ const areas = {
   ),
 
 // 1311900: 板橋区: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1311900.html
-  '1311900': Area(
+  '1311900': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9591,7 +9591,7 @@ const areas = {
   ),
 
 // 1312000: 練馬区: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1312000.html
-  '1312000': Area(
+  '1312000': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9606,7 +9606,7 @@ const areas = {
   ),
 
 // 1312100: 足立区: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1312100.html
-  '1312100': Area(
+  '1312100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9620,7 +9620,7 @@ const areas = {
     ],
   ),
 // 1312200: 葛飾区: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1312200.html
-  '1312200': Area(
+  '1312200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9635,7 +9635,7 @@ const areas = {
   ),
 
 // 1312300: 江戸川区: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1312300.html
-  '1312300': Area(
+  '1312300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9650,7 +9650,7 @@ const areas = {
   ),
 
 // 1320100: 八王子市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1320100.html
-  '1320100': Area(
+  '1320100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9665,7 +9665,7 @@ const areas = {
   ),
 
 // 1320200: 立川市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1320200.html
-  '1320200': Area(
+  '1320200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9680,7 +9680,7 @@ const areas = {
   ),
 
 // 1320300: 武蔵野市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1320300.html
-  '1320300': Area(
+  '1320300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9695,7 +9695,7 @@ const areas = {
   ),
 
 // 1320400: 三鷹市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1320400.html
-  '1320400': Area(
+  '1320400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9710,7 +9710,7 @@ const areas = {
   ),
 
 // 1320500: 青梅市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1320500.html
-  '1320500': Area(
+  '1320500': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9724,7 +9724,7 @@ const areas = {
     ],
   ),
 // 1320600: 府中市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1320600.html
-  '1320600': Area(
+  '1320600': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9739,7 +9739,7 @@ const areas = {
   ),
 
 // 1320700: 昭島市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1320700.html
-  '1320700': Area(
+  '1320700': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9754,7 +9754,7 @@ const areas = {
   ),
 
 // 1320800: 調布市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1320800.html
-  '1320800': Area(
+  '1320800': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9768,7 +9768,7 @@ const areas = {
     ],
   ),
 // 1320900: 町田市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1320900.html
-  '1320900': Area(
+  '1320900': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9782,7 +9782,7 @@ const areas = {
     ],
   ),
 // 1321000: 小金井市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1321000.html
-  '1321000': Area(
+  '1321000': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9796,7 +9796,7 @@ const areas = {
     ],
   ),
 // 1321100: 小平市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1321100.html
-  '1321100': Area(
+  '1321100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9811,7 +9811,7 @@ const areas = {
   ),
 
 // 1321200: 日野市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1321200.html
-  '1321200': Area(
+  '1321200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9825,7 +9825,7 @@ const areas = {
     ],
   ),
 // 1321300: 東村山市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1321300.html
-  '1321300': Area(
+  '1321300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9840,7 +9840,7 @@ const areas = {
   ),
 
 // 1321400: 国分寺市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1321400.html
-  '1321400': Area(
+  '1321400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9855,7 +9855,7 @@ const areas = {
   ),
 
 // 1321500: 国立市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1321500.html
-  '1321500': Area(
+  '1321500': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9869,7 +9869,7 @@ const areas = {
     ],
   ),
 // 1321800: 福生市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1321800.html
-  '1321800': Area(
+  '1321800': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9884,7 +9884,7 @@ const areas = {
   ),
 
 // 1321900: 狛江市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1321900.html
-  '1321900': Area(
+  '1321900': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9898,7 +9898,7 @@ const areas = {
     ],
   ),
 // 1322000: 東大和市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1322000.html
-  '1322000': Area(
+  '1322000': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9913,7 +9913,7 @@ const areas = {
   ),
 
 // 1322100: 清瀬市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1322100.html
-  '1322100': Area(
+  '1322100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9928,7 +9928,7 @@ const areas = {
   ),
 
 // 1322200: 東久留米市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1322200.html
-  '1322200': Area(
+  '1322200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9942,7 +9942,7 @@ const areas = {
     ],
   ),
 // 1322300: 武蔵村山市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1322300.html
-  '1322300': Area(
+  '1322300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9956,7 +9956,7 @@ const areas = {
     ],
   ),
 // 1322400: 多摩市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1322400.html
-  '1322400': Area(
+  '1322400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9971,7 +9971,7 @@ const areas = {
   ),
 
 // 1322500: 稲城市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1322500.html
-  '1322500': Area(
+  '1322500': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -9986,7 +9986,7 @@ const areas = {
   ),
 
 // 1322700: 羽村市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1322700.html
-  '1322700': Area(
+  '1322700': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -10000,7 +10000,7 @@ const areas = {
     ],
   ),
 // 1322800: あきる野市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1322800.html
-  '1322800': Area(
+  '1322800': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -10014,7 +10014,7 @@ const areas = {
     ],
   ),
 // 1322900: 西東京市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1322900.html
-  '1322900': Area(
+  '1322900': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -10029,7 +10029,7 @@ const areas = {
   ),
 
 // 1330300: 瑞穂町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1330300.html
-  '1330300': Area(
+  '1330300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -10043,7 +10043,7 @@ const areas = {
     ],
   ),
 // 1330500: 日の出町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1330500.html
-  '1330500': Area(
+  '1330500': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -10058,7 +10058,7 @@ const areas = {
   ),
 
 // 1330700: 檜原村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1330700.html
-  '1330700': Area(
+  '1330700': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -10073,7 +10073,7 @@ const areas = {
   ),
 
 // 1330800: 奥多摩町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1330800.html
-  '1330800': Area(
+  '1330800': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130010', // 東京地方
@@ -10087,7 +10087,7 @@ const areas = {
     ],
   ),
 // 1336100: 大島町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1336100.html
-  '1336100': Area(
+  '1336100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130020', // 伊豆諸島北部
@@ -10101,7 +10101,7 @@ const areas = {
     ],
   ),
 // 1336200: 利島村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1336200.html
-  '1336200': Area(
+  '1336200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130020', // 伊豆諸島北部
@@ -10116,7 +10116,7 @@ const areas = {
   ),
 
 // 1336300: 新島村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1336300.html
-  '1336300': Area(
+  '1336300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130020', // 伊豆諸島北部
@@ -10130,7 +10130,7 @@ const areas = {
     ],
   ),
 // 1336400: 神津島村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1336400.html
-  '1336400': Area(
+  '1336400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130020', // 伊豆諸島北部
@@ -10145,7 +10145,7 @@ const areas = {
   ),
 
 // 1338100: 三宅村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1338100.html
-  '1338100': Area(
+  '1338100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130030', // 伊豆諸島南部
@@ -10159,7 +10159,7 @@ const areas = {
     ],
   ),
 // 1338200: 御蔵島村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1338200.html
-  '1338200': Area(
+  '1338200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130030', // 伊豆諸島南部
@@ -10174,7 +10174,7 @@ const areas = {
   ),
 
 // 1340100: 八丈町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1340100.html
-  '1340100': Area(
+  '1340100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130030', // 伊豆諸島南部
@@ -10189,7 +10189,7 @@ const areas = {
   ),
 
 // 1340200: 青ヶ島村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1340200.html
-  '1340200': Area(
+  '1340200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130030', // 伊豆諸島南部
@@ -10203,7 +10203,7 @@ const areas = {
     ],
   ),
 // 1342100: 小笠原村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1342100.html
-  '1342100': Area(
+  '1342100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '130000', // 東京都 (気象庁)
     class10: '130040', // 小笠原諸島
@@ -10217,7 +10217,7 @@ const areas = {
     ],
   ),
 // 1410000: 横浜市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1410000.html
-  '1410000': Area(
+  '1410000': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '140000', // 神奈川県 (横浜地方気象台)
     class10: '140010', // 東部
@@ -10232,7 +10232,7 @@ const areas = {
   ),
 
 // 1413000: 川崎市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1413000.html
-  '1413000': Area(
+  '1413000': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '140000', // 神奈川県 (横浜地方気象台)
     class10: '140010', // 東部
@@ -10246,7 +10246,7 @@ const areas = {
     ],
   ),
 // 1415000: 相模原市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1415000.html
-  '1415000': Area(
+  '1415000': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '140000', // 神奈川県 (横浜地方気象台)
     class10: '140020', // 西部
@@ -10261,7 +10261,7 @@ const areas = {
   ),
 
 // 1420100: 横須賀市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1420100.html
-  '1420100': Area(
+  '1420100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '140000', // 神奈川県 (横浜地方気象台)
     class10: '140010', // 東部
@@ -10275,7 +10275,7 @@ const areas = {
     ],
   ),
 // 1420300: 平塚市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1420300.html
-  '1420300': Area(
+  '1420300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '140000', // 神奈川県 (横浜地方気象台)
     class10: '140010', // 東部
@@ -10290,7 +10290,7 @@ const areas = {
   ),
 
 // 1420400: 鎌倉市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1420400.html
-  '1420400': Area(
+  '1420400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '140000', // 神奈川県 (横浜地方気象台)
     class10: '140010', // 東部
@@ -10304,7 +10304,7 @@ const areas = {
     ],
   ),
 // 1420500: 藤沢市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1420500.html
-  '1420500': Area(
+  '1420500': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '140000', // 神奈川県 (横浜地方気象台)
     class10: '140010', // 東部
@@ -10319,7 +10319,7 @@ const areas = {
   ),
 
 // 1420600: 小田原市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1420600.html
-  '1420600': Area(
+  '1420600': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '140000', // 神奈川県 (横浜地方気象台)
     class10: '140020', // 西部
@@ -10334,7 +10334,7 @@ const areas = {
   ),
 
 // 1420700: 茅ヶ崎市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1420700.html
-  '1420700': Area(
+  '1420700': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '140000', // 神奈川県 (横浜地方気象台)
     class10: '140010', // 東部
@@ -10348,7 +10348,7 @@ const areas = {
     ],
   ),
 // 1420800: 逗子市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1420800.html
-  '1420800': Area(
+  '1420800': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '140000', // 神奈川県 (横浜地方気象台)
     class10: '140010', // 東部
@@ -10362,7 +10362,7 @@ const areas = {
     ],
   ),
 // 1421000: 三浦市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1421000.html
-  '1421000': Area(
+  '1421000': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '140000', // 神奈川県 (横浜地方気象台)
     class10: '140010', // 東部
@@ -10376,7 +10376,7 @@ const areas = {
     ],
   ),
 // 1421100: 秦野市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1421100.html
-  '1421100': Area(
+  '1421100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '140000', // 神奈川県 (横浜地方気象台)
     class10: '140020', // 西部
@@ -10390,7 +10390,7 @@ const areas = {
     ],
   ),
 // 1421200: 厚木市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1421200.html
-  '1421200': Area(
+  '1421200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '140000', // 神奈川県 (横浜地方気象台)
     class10: '140020', // 西部
@@ -10404,7 +10404,7 @@ const areas = {
     ],
   ),
 // 1421300: 大和市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1421300.html
-  '1421300': Area(
+  '1421300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '140000', // 神奈川県 (横浜地方気象台)
     class10: '140010', // 東部
@@ -10418,7 +10418,7 @@ const areas = {
     ],
   ),
 // 1421400: 伊勢原市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1421400.html
-  '1421400': Area(
+  '1421400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '140000', // 神奈川県 (横浜地方気象台)
     class10: '140020', // 西部
@@ -10433,7 +10433,7 @@ const areas = {
   ),
 
 // 1421500: 海老名市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1421500.html
-  '1421500': Area(
+  '1421500': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '140000', // 神奈川県 (横浜地方気象台)
     class10: '140010', // 東部
@@ -10448,7 +10448,7 @@ const areas = {
   ),
 
 // 1421600: 座間市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1421600.html
-  '1421600': Area(
+  '1421600': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '140000', // 神奈川県 (横浜地方気象台)
     class10: '140010', // 東部
@@ -10462,7 +10462,7 @@ const areas = {
     ],
   ),
 // 1421700: 南足柄市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1421700.html
-  '1421700': Area(
+  '1421700': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '140000', // 神奈川県 (横浜地方気象台)
     class10: '140020', // 西部
@@ -10477,7 +10477,7 @@ const areas = {
   ),
 
 // 1421800: 綾瀬市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1421800.html
-  '1421800': Area(
+  '1421800': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '140000', // 神奈川県 (横浜地方気象台)
     class10: '140010', // 東部
@@ -10491,7 +10491,7 @@ const areas = {
     ],
   ),
 // 1430100: 葉山町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1430100.html
-  '1430100': Area(
+  '1430100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '140000', // 神奈川県 (横浜地方気象台)
     class10: '140010', // 東部
@@ -10506,7 +10506,7 @@ const areas = {
   ),
 
 // 1432100: 寒川町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1432100.html
-  '1432100': Area(
+  '1432100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '140000', // 神奈川県 (横浜地方気象台)
     class10: '140010', // 東部
@@ -10521,7 +10521,7 @@ const areas = {
   ),
 
 // 1434100: 大磯町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1434100.html
-  '1434100': Area(
+  '1434100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '140000', // 神奈川県 (横浜地方気象台)
     class10: '140010', // 東部
@@ -10536,7 +10536,7 @@ const areas = {
   ),
 
 // 1434200: 二宮町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1434200.html
-  '1434200': Area(
+  '1434200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '140000', // 神奈川県 (横浜地方気象台)
     class10: '140010', // 東部
@@ -10550,7 +10550,7 @@ const areas = {
     ],
   ),
 // 1436100: 中井町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1436100.html
-  '1436100': Area(
+  '1436100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '140000', // 神奈川県 (横浜地方気象台)
     class10: '140020', // 西部
@@ -10564,7 +10564,7 @@ const areas = {
     ],
   ),
 // 1436200: 大井町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1436200.html
-  '1436200': Area(
+  '1436200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '140000', // 神奈川県 (横浜地方気象台)
     class10: '140020', // 西部
@@ -10579,7 +10579,7 @@ const areas = {
   ),
 
 // 1436300: 松田町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1436300.html
-  '1436300': Area(
+  '1436300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '140000', // 神奈川県 (横浜地方気象台)
     class10: '140020', // 西部
@@ -10588,7 +10588,7 @@ const areas = {
     bbox: [139.098924616778, 35.33668305368, 139.162704189147, 35.446203134567],
   ),
 // 1436400: 山北町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1436400.html
-  '1436400': Area(
+  '1436400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '140000', // 神奈川県 (横浜地方気象台)
     class10: '140020', // 西部
@@ -10603,7 +10603,7 @@ const areas = {
   ),
 
 // 1436600: 開成町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1436600.html
-  '1436600': Area(
+  '1436600': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '140000', // 神奈川県 (横浜地方気象台)
     class10: '140020', // 西部
@@ -10618,7 +10618,7 @@ const areas = {
   ),
 
 // 1438200: 箱根町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1438200.html
-  '1438200': Area(
+  '1438200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '140000', // 神奈川県 (横浜地方気象台)
     class10: '140020', // 西部
@@ -10633,7 +10633,7 @@ const areas = {
   ),
 
 // 1438300: 真鶴町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1438300.html
-  '1438300': Area(
+  '1438300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '140000', // 神奈川県 (横浜地方気象台)
     class10: '140020', // 西部
@@ -10647,7 +10647,7 @@ const areas = {
     ],
   ),
 // 1438400: 湯河原町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1438400.html
-  '1438400': Area(
+  '1438400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '140000', // 神奈川県 (横浜地方気象台)
     class10: '140020', // 西部
@@ -10661,7 +10661,7 @@ const areas = {
     ],
   ),
 // 1440100: 愛川町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1440100.html
-  '1440100': Area(
+  '1440100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '140000', // 神奈川県 (横浜地方気象台)
     class10: '140020', // 西部
@@ -10676,7 +10676,7 @@ const areas = {
   ),
 
 // 1440200: 清川村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1440200.html
-  '1440200': Area(
+  '1440200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '140000', // 神奈川県 (横浜地方気象台)
     class10: '140020', // 西部
@@ -10690,7 +10690,7 @@ const areas = {
     ],
   ),
 // 1510000: 新潟市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1510000.html
-  '1510000': Area(
+  '1510000': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '150000', // 新潟県 (新潟地方気象台)
     class10: '150010', // 下越
@@ -10705,7 +10705,7 @@ const areas = {
   ),
 
 // 1520200: 長岡市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1520200.html
-  '1520200': Area(
+  '1520200': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '150000', // 新潟県 (新潟地方気象台)
     class10: '150020', // 中越
@@ -10719,7 +10719,7 @@ const areas = {
     ],
   ),
 // 1520400: 三条市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1520400.html
-  '1520400': Area(
+  '1520400': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '150000', // 新潟県 (新潟地方気象台)
     class10: '150020', // 中越
@@ -10733,7 +10733,7 @@ const areas = {
     ],
   ),
 // 1520500: 柏崎市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1520500.html
-  '1520500': Area(
+  '1520500': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '150000', // 新潟県 (新潟地方気象台)
     class10: '150020', // 中越
@@ -10748,7 +10748,7 @@ const areas = {
   ),
 
 // 1520600: 新発田市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1520600.html
-  '1520600': Area(
+  '1520600': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '150000', // 新潟県 (新潟地方気象台)
     class10: '150010', // 下越
@@ -10762,7 +10762,7 @@ const areas = {
     ],
   ),
 // 1520800: 小千谷市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1520800.html
-  '1520800': Area(
+  '1520800': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '150000', // 新潟県 (新潟地方気象台)
     class10: '150020', // 中越
@@ -10777,7 +10777,7 @@ const areas = {
   ),
 
 // 1520900: 加茂市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1520900.html
-  '1520900': Area(
+  '1520900': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '150000', // 新潟県 (新潟地方気象台)
     class10: '150020', // 中越
@@ -10792,7 +10792,7 @@ const areas = {
   ),
 
 // 1521000: 十日町市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1521000.html
-  '1521000': Area(
+  '1521000': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '150000', // 新潟県 (新潟地方気象台)
     class10: '150020', // 中越
@@ -10806,7 +10806,7 @@ const areas = {
     ],
   ),
 // 1521100: 見附市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1521100.html
-  '1521100': Area(
+  '1521100': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '150000', // 新潟県 (新潟地方気象台)
     class10: '150020', // 中越
@@ -10821,7 +10821,7 @@ const areas = {
   ),
 
 // 1521200: 村上市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1521200.html
-  '1521200': Area(
+  '1521200': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '150000', // 新潟県 (新潟地方気象台)
     class10: '150010', // 下越
@@ -10836,7 +10836,7 @@ const areas = {
   ),
 
 // 1521300: 燕市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1521300.html
-  '1521300': Area(
+  '1521300': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '150000', // 新潟県 (新潟地方気象台)
     class10: '150010', // 下越
@@ -10850,7 +10850,7 @@ const areas = {
     ],
   ),
 // 1521600: 糸魚川市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1521600.html
-  '1521600': Area(
+  '1521600': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '150000', // 新潟県 (新潟地方気象台)
     class10: '150030', // 上越
@@ -10865,7 +10865,7 @@ const areas = {
   ),
 
 // 1521700: 妙高市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1521700.html
-  '1521700': Area(
+  '1521700': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '150000', // 新潟県 (新潟地方気象台)
     class10: '150030', // 上越
@@ -10879,7 +10879,7 @@ const areas = {
     ],
   ),
 // 1521800: 五泉市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1521800.html
-  '1521800': Area(
+  '1521800': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '150000', // 新潟県 (新潟地方気象台)
     class10: '150010', // 下越
@@ -10894,7 +10894,7 @@ const areas = {
   ),
 
 // 1522200: 上越市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1522200.html
-  '1522200': Area(
+  '1522200': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '150000', // 新潟県 (新潟地方気象台)
     class10: '150030', // 上越
@@ -10909,7 +10909,7 @@ const areas = {
   ),
 
 // 1522300: 阿賀野市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1522300.html
-  '1522300': Area(
+  '1522300': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '150000', // 新潟県 (新潟地方気象台)
     class10: '150010', // 下越
@@ -10923,7 +10923,7 @@ const areas = {
     ],
   ),
 // 1522400: 佐渡市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1522400.html
-  '1522400': Area(
+  '1522400': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '150000', // 新潟県 (新潟地方気象台)
     class10: '150040', // 佐渡
@@ -10938,7 +10938,7 @@ const areas = {
   ),
 
 // 1522500: 魚沼市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1522500.html
-  '1522500': Area(
+  '1522500': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '150000', // 新潟県 (新潟地方気象台)
     class10: '150020', // 中越
@@ -10952,7 +10952,7 @@ const areas = {
     ],
   ),
 // 1522600: 南魚沼市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1522600.html
-  '1522600': Area(
+  '1522600': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '150000', // 新潟県 (新潟地方気象台)
     class10: '150020', // 中越
@@ -10967,7 +10967,7 @@ const areas = {
   ),
 
 // 1522700: 胎内市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1522700.html
-  '1522700': Area(
+  '1522700': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '150000', // 新潟県 (新潟地方気象台)
     class10: '150010', // 下越
@@ -10982,7 +10982,7 @@ const areas = {
   ),
 
 // 1530700: 聖籠町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1530700.html
-  '1530700': Area(
+  '1530700': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '150000', // 新潟県 (新潟地方気象台)
     class10: '150010', // 下越
@@ -10997,7 +10997,7 @@ const areas = {
   ),
 
 // 1534200: 弥彦村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1534200.html
-  '1534200': Area(
+  '1534200': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '150000', // 新潟県 (新潟地方気象台)
     class10: '150010', // 下越
@@ -11011,7 +11011,7 @@ const areas = {
     ],
   ),
 // 1536100: 田上町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1536100.html
-  '1536100': Area(
+  '1536100': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '150000', // 新潟県 (新潟地方気象台)
     class10: '150020', // 中越
@@ -11026,7 +11026,7 @@ const areas = {
   ),
 
 // 1538500: 阿賀町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1538500.html
-  '1538500': Area(
+  '1538500': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '150000', // 新潟県 (新潟地方気象台)
     class10: '150010', // 下越
@@ -11041,7 +11041,7 @@ const areas = {
   ),
 
 // 1540500: 出雲崎町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1540500.html
-  '1540500': Area(
+  '1540500': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '150000', // 新潟県 (新潟地方気象台)
     class10: '150020', // 中越
@@ -11055,7 +11055,7 @@ const areas = {
     ],
   ),
 // 1546100: 湯沢町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1546100.html
-  '1546100': Area(
+  '1546100': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '150000', // 新潟県 (新潟地方気象台)
     class10: '150020', // 中越
@@ -11070,7 +11070,7 @@ const areas = {
   ),
 
 // 1548200: 津南町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1548200.html
-  '1548200': Area(
+  '1548200': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '150000', // 新潟県 (新潟地方気象台)
     class10: '150020', // 中越
@@ -11084,7 +11084,7 @@ const areas = {
     ],
   ),
 // 1550400: 刈羽村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1550400.html
-  '1550400': Area(
+  '1550400': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '150000', // 新潟県 (新潟地方気象台)
     class10: '150020', // 中越
@@ -11099,7 +11099,7 @@ const areas = {
   ),
 
 // 1558100: 関川村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1558100.html
-  '1558100': Area(
+  '1558100': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '150000', // 新潟県 (新潟地方気象台)
     class10: '150010', // 下越
@@ -11114,7 +11114,7 @@ const areas = {
   ),
 
 // 1558600: 粟島浦村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1558600.html
-  '1558600': Area(
+  '1558600': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '150000', // 新潟県 (新潟地方気象台)
     class10: '150010', // 下越
@@ -11128,7 +11128,7 @@ const areas = {
     ],
   ),
 // 1620100: 富山市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1620100.html
-  '1620100': Area(
+  '1620100': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '160000', // 富山県 (富山地方気象台)
     class10: '160010', // 東部
@@ -11142,7 +11142,7 @@ const areas = {
     ],
   ),
 // 1620200: 高岡市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1620200.html
-  '1620200': Area(
+  '1620200': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '160000', // 富山県 (富山地方気象台)
     class10: '160020', // 西部
@@ -11157,7 +11157,7 @@ const areas = {
   ),
 
 // 1620400: 魚津市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1620400.html
-  '1620400': Area(
+  '1620400': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '160000', // 富山県 (富山地方気象台)
     class10: '160010', // 東部
@@ -11171,7 +11171,7 @@ const areas = {
     ],
   ),
 // 1620500: 氷見市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1620500.html
-  '1620500': Area(
+  '1620500': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '160000', // 富山県 (富山地方気象台)
     class10: '160020', // 西部
@@ -11186,7 +11186,7 @@ const areas = {
   ),
 
 // 1620600: 滑川市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1620600.html
-  '1620600': Area(
+  '1620600': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '160000', // 富山県 (富山地方気象台)
     class10: '160010', // 東部
@@ -11201,7 +11201,7 @@ const areas = {
   ),
 
 // 1620700: 黒部市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1620700.html
-  '1620700': Area(
+  '1620700': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '160000', // 富山県 (富山地方気象台)
     class10: '160010', // 東部
@@ -11215,7 +11215,7 @@ const areas = {
     ],
   ),
 // 1620800: 砺波市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1620800.html
-  '1620800': Area(
+  '1620800': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '160000', // 富山県 (富山地方気象台)
     class10: '160020', // 西部
@@ -11229,7 +11229,7 @@ const areas = {
     ],
   ),
 // 1620900: 小矢部市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1620900.html
-  '1620900': Area(
+  '1620900': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '160000', // 富山県 (富山地方気象台)
     class10: '160020', // 西部
@@ -11243,7 +11243,7 @@ const areas = {
     ],
   ),
 // 1621000: 南砺市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1621000.html
-  '1621000': Area(
+  '1621000': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '160000', // 富山県 (富山地方気象台)
     class10: '160020', // 西部
@@ -11258,7 +11258,7 @@ const areas = {
   ),
 
 // 1621100: 射水市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1621100.html
-  '1621100': Area(
+  '1621100': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '160000', // 富山県 (富山地方気象台)
     class10: '160020', // 西部
@@ -11272,7 +11272,7 @@ const areas = {
     ],
   ),
 // 1632100: 舟橋村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1632100.html
-  '1632100': Area(
+  '1632100': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '160000', // 富山県 (富山地方気象台)
     class10: '160010', // 東部
@@ -11287,7 +11287,7 @@ const areas = {
   ),
 
 // 1632200: 上市町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1632200.html
-  '1632200': Area(
+  '1632200': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '160000', // 富山県 (富山地方気象台)
     class10: '160010', // 東部
@@ -11302,7 +11302,7 @@ const areas = {
   ),
 
 // 1632300: 立山町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1632300.html
-  '1632300': Area(
+  '1632300': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '160000', // 富山県 (富山地方気象台)
     class10: '160010', // 東部
@@ -11316,7 +11316,7 @@ const areas = {
     ],
   ),
 // 1634200: 入善町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1634200.html
-  '1634200': Area(
+  '1634200': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '160000', // 富山県 (富山地方気象台)
     class10: '160010', // 東部
@@ -11331,7 +11331,7 @@ const areas = {
   ),
 
 // 1634300: 朝日町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1634300.html
-  '1634300': Area(
+  '1634300': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '160000', // 富山県 (富山地方気象台)
     class10: '160010', // 東部
@@ -11345,7 +11345,7 @@ const areas = {
     ],
   ),
 // 1720100: 金沢市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1720100.html
-  '1720100': Area(
+  '1720100': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '170000', // 石川県 (金沢地方気象台)
     class10: '170010', // 加賀
@@ -11360,7 +11360,7 @@ const areas = {
   ),
 
 // 1720200: 七尾市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1720200.html
-  '1720200': Area(
+  '1720200': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '170000', // 石川県 (金沢地方気象台)
     class10: '170020', // 能登
@@ -11374,7 +11374,7 @@ const areas = {
     ],
   ),
 // 1720300: 小松市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1720300.html
-  '1720300': Area(
+  '1720300': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '170000', // 石川県 (金沢地方気象台)
     class10: '170010', // 加賀
@@ -11389,7 +11389,7 @@ const areas = {
   ),
 
 // 1720400: 輪島市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1720400.html
-  '1720400': Area(
+  '1720400': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '170000', // 石川県 (金沢地方気象台)
     class10: '170020', // 能登
@@ -11404,7 +11404,7 @@ const areas = {
   ),
 
 // 1720500: 珠洲市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1720500.html
-  '1720500': Area(
+  '1720500': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '170000', // 石川県 (金沢地方気象台)
     class10: '170020', // 能登
@@ -11418,7 +11418,7 @@ const areas = {
     ],
   ),
 // 1720600: 加賀市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1720600.html
-  '1720600': Area(
+  '1720600': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '170000', // 石川県 (金沢地方気象台)
     class10: '170010', // 加賀
@@ -11432,7 +11432,7 @@ const areas = {
     ],
   ),
 // 1720700: 羽咋市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1720700.html
-  '1720700': Area(
+  '1720700': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '170000', // 石川県 (金沢地方気象台)
     class10: '170020', // 能登
@@ -11447,7 +11447,7 @@ const areas = {
   ),
 
 // 1720900: かほく市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1720900.html
-  '1720900': Area(
+  '1720900': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '170000', // 石川県 (金沢地方気象台)
     class10: '170010', // 加賀
@@ -11461,7 +11461,7 @@ const areas = {
     ],
   ),
 // 1721000: 白山市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1721000.html
-  '1721000': Area(
+  '1721000': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '170000', // 石川県 (金沢地方気象台)
     class10: '170010', // 加賀
@@ -11476,7 +11476,7 @@ const areas = {
   ),
 
 // 1721100: 能美市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1721100.html
-  '1721100': Area(
+  '1721100': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '170000', // 石川県 (金沢地方気象台)
     class10: '170010', // 加賀
@@ -11490,7 +11490,7 @@ const areas = {
     ],
   ),
 // 1721200: 野々市市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1721200.html
-  '1721200': Area(
+  '1721200': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '170000', // 石川県 (金沢地方気象台)
     class10: '170010', // 加賀
@@ -11505,7 +11505,7 @@ const areas = {
   ),
 
 // 1732400: 川北町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1732400.html
-  '1732400': Area(
+  '1732400': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '170000', // 石川県 (金沢地方気象台)
     class10: '170010', // 加賀
@@ -11520,7 +11520,7 @@ const areas = {
   ),
 
 // 1736100: 津幡町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1736100.html
-  '1736100': Area(
+  '1736100': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '170000', // 石川県 (金沢地方気象台)
     class10: '170010', // 加賀
@@ -11534,7 +11534,7 @@ const areas = {
     ],
   ),
 // 1736500: 内灘町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1736500.html
-  '1736500': Area(
+  '1736500': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '170000', // 石川県 (金沢地方気象台)
     class10: '170010', // 加賀
@@ -11549,7 +11549,7 @@ const areas = {
   ),
 
 // 1738400: 志賀町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1738400.html
-  '1738400': Area(
+  '1738400': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '170000', // 石川県 (金沢地方気象台)
     class10: '170020', // 能登
@@ -11563,7 +11563,7 @@ const areas = {
     ],
   ),
 // 1738600: 宝達志水町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1738600.html
-  '1738600': Area(
+  '1738600': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '170000', // 石川県 (金沢地方気象台)
     class10: '170020', // 能登
@@ -11578,7 +11578,7 @@ const areas = {
   ),
 
 // 1740700: 中能登町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1740700.html
-  '1740700': Area(
+  '1740700': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '170000', // 石川県 (金沢地方気象台)
     class10: '170020', // 能登
@@ -11593,7 +11593,7 @@ const areas = {
   ),
 
 // 1746100: 穴水町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1746100.html
-  '1746100': Area(
+  '1746100': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '170000', // 石川県 (金沢地方気象台)
     class10: '170020', // 能登
@@ -11607,7 +11607,7 @@ const areas = {
     ],
   ),
 // 1746300: 能登町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1746300.html
-  '1746300': Area(
+  '1746300': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '170000', // 石川県 (金沢地方気象台)
     class10: '170020', // 能登
@@ -11621,7 +11621,7 @@ const areas = {
     ],
   ),
 // 1820100: 福井市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1820100.html
-  '1820100': Area(
+  '1820100': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '180000', // 福井県 (福井地方気象台)
     class10: '180010', // 嶺北
@@ -11636,7 +11636,7 @@ const areas = {
   ),
 
 // 1820200: 敦賀市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1820200.html
-  '1820200': Area(
+  '1820200': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '180000', // 福井県 (福井地方気象台)
     class10: '180020', // 嶺南
@@ -11651,7 +11651,7 @@ const areas = {
   ),
 
 // 1820400: 小浜市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1820400.html
-  '1820400': Area(
+  '1820400': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '180000', // 福井県 (福井地方気象台)
     class10: '180020', // 嶺南
@@ -11665,7 +11665,7 @@ const areas = {
     ],
   ),
 // 1820500: 大野市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1820500.html
-  '1820500': Area(
+  '1820500': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '180000', // 福井県 (福井地方気象台)
     class10: '180010', // 嶺北
@@ -11680,7 +11680,7 @@ const areas = {
   ),
 
 // 1820600: 勝山市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1820600.html
-  '1820600': Area(
+  '1820600': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '180000', // 福井県 (福井地方気象台)
     class10: '180010', // 嶺北
@@ -11694,7 +11694,7 @@ const areas = {
     ],
   ),
 // 1820700: 鯖江市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1820700.html
-  '1820700': Area(
+  '1820700': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '180000', // 福井県 (福井地方気象台)
     class10: '180010', // 嶺北
@@ -11709,7 +11709,7 @@ const areas = {
   ),
 
 // 1820800: あわら市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1820800.html
-  '1820800': Area(
+  '1820800': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '180000', // 福井県 (福井地方気象台)
     class10: '180010', // 嶺北
@@ -11723,7 +11723,7 @@ const areas = {
     ],
   ),
 // 1820900: 越前市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1820900.html
-  '1820900': Area(
+  '1820900': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '180000', // 福井県 (福井地方気象台)
     class10: '180010', // 嶺北
@@ -11738,7 +11738,7 @@ const areas = {
   ),
 
 // 1821000: 坂井市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1821000.html
-  '1821000': Area(
+  '1821000': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '180000', // 福井県 (福井地方気象台)
     class10: '180010', // 嶺北
@@ -11753,7 +11753,7 @@ const areas = {
   ),
 
 // 1832200: 永平寺町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1832200.html
-  '1832200': Area(
+  '1832200': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '180000', // 福井県 (福井地方気象台)
     class10: '180010', // 嶺北
@@ -11768,7 +11768,7 @@ const areas = {
   ),
 
 // 1838200: 池田町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1838200.html
-  '1838200': Area(
+  '1838200': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '180000', // 福井県 (福井地方気象台)
     class10: '180010', // 嶺北
@@ -11782,7 +11782,7 @@ const areas = {
     ],
   ),
 // 1840400: 南越前町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1840400.html
-  '1840400': Area(
+  '1840400': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '180000', // 福井県 (福井地方気象台)
     class10: '180010', // 嶺北
@@ -11797,7 +11797,7 @@ const areas = {
   ),
 
 // 1842300: 越前町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1842300.html
-  '1842300': Area(
+  '1842300': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '180000', // 福井県 (福井地方気象台)
     class10: '180010', // 嶺北
@@ -11811,7 +11811,7 @@ const areas = {
     ],
   ),
 // 1844200: 美浜町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1844200.html
-  '1844200': Area(
+  '1844200': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '180000', // 福井県 (福井地方気象台)
     class10: '180020', // 嶺南
@@ -11826,7 +11826,7 @@ const areas = {
   ),
 
 // 1848100: 高浜町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1848100.html
-  '1848100': Area(
+  '1848100': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '180000', // 福井県 (福井地方気象台)
     class10: '180020', // 嶺南
@@ -11841,7 +11841,7 @@ const areas = {
   ),
 
 // 1848300: おおい町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1848300.html
-  '1848300': Area(
+  '1848300': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '180000', // 福井県 (福井地方気象台)
     class10: '180020', // 嶺南
@@ -11855,7 +11855,7 @@ const areas = {
     ],
   ),
 // 1850100: 若狭町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1850100.html
-  '1850100': Area(
+  '1850100': WeatherArea(
     center: '010500', // 北陸地方 (新潟地方気象台)
     office: '180000', // 福井県 (福井地方気象台)
     class10: '180020', // 嶺南
@@ -11869,7 +11869,7 @@ const areas = {
     ],
   ),
 // 1920100: 甲府市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1920100.html
-  '1920100': Area(
+  '1920100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '190000', // 山梨県 (甲府地方気象台)
     class10: '190010', // 中・西部
@@ -11884,7 +11884,7 @@ const areas = {
   ),
 
 // 1920200: 富士吉田市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1920200.html
-  '1920200': Area(
+  '1920200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '190000', // 山梨県 (甲府地方気象台)
     class10: '190020', // 東部・富士五湖
@@ -11898,7 +11898,7 @@ const areas = {
     ],
   ),
 // 1920400: 都留市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1920400.html
-  '1920400': Area(
+  '1920400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '190000', // 山梨県 (甲府地方気象台)
     class10: '190020', // 東部・富士五湖
@@ -11913,7 +11913,7 @@ const areas = {
   ),
 
 // 1920500: 山梨市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1920500.html
-  '1920500': Area(
+  '1920500': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '190000', // 山梨県 (甲府地方気象台)
     class10: '190010', // 中・西部
@@ -11927,7 +11927,7 @@ const areas = {
     ],
   ),
 // 1920600: 大月市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1920600.html
-  '1920600': Area(
+  '1920600': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '190000', // 山梨県 (甲府地方気象台)
     class10: '190020', // 東部・富士五湖
@@ -11942,7 +11942,7 @@ const areas = {
   ),
 
 // 1920700: 韮崎市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1920700.html
-  '1920700': Area(
+  '1920700': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '190000', // 山梨県 (甲府地方気象台)
     class10: '190010', // 中・西部
@@ -11957,7 +11957,7 @@ const areas = {
   ),
 
 // 1920800: 南アルプス市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1920800.html
-  '1920800': Area(
+  '1920800': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '190000', // 山梨県 (甲府地方気象台)
     class10: '190010', // 中・西部
@@ -11971,7 +11971,7 @@ const areas = {
     ],
   ),
 // 1920900: 北杜市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1920900.html
-  '1920900': Area(
+  '1920900': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '190000', // 山梨県 (甲府地方気象台)
     class10: '190010', // 中・西部
@@ -11986,7 +11986,7 @@ const areas = {
   ),
 
 // 1921000: 甲斐市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1921000.html
-  '1921000': Area(
+  '1921000': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '190000', // 山梨県 (甲府地方気象台)
     class10: '190010', // 中・西部
@@ -12000,7 +12000,7 @@ const areas = {
     ],
   ),
 // 1921100: 笛吹市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1921100.html
-  '1921100': Area(
+  '1921100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '190000', // 山梨県 (甲府地方気象台)
     class10: '190010', // 中・西部
@@ -12015,7 +12015,7 @@ const areas = {
   ),
 
 // 1921200: 上野原市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1921200.html
-  '1921200': Area(
+  '1921200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '190000', // 山梨県 (甲府地方気象台)
     class10: '190020', // 東部・富士五湖
@@ -12029,7 +12029,7 @@ const areas = {
     ],
   ),
 // 1921300: 甲州市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1921300.html
-  '1921300': Area(
+  '1921300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '190000', // 山梨県 (甲府地方気象台)
     class10: '190010', // 中・西部
@@ -12043,7 +12043,7 @@ const areas = {
     ],
   ),
 // 1921400: 中央市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1921400.html
-  '1921400': Area(
+  '1921400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '190000', // 山梨県 (甲府地方気象台)
     class10: '190010', // 中・西部
@@ -12058,7 +12058,7 @@ const areas = {
   ),
 
 // 1934600: 市川三郷町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1934600.html
-  '1934600': Area(
+  '1934600': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '190000', // 山梨県 (甲府地方気象台)
     class10: '190010', // 中・西部
@@ -12072,7 +12072,7 @@ const areas = {
     ],
   ),
 // 1936400: 早川町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1936400.html
-  '1936400': Area(
+  '1936400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '190000', // 山梨県 (甲府地方気象台)
     class10: '190010', // 中・西部
@@ -12087,7 +12087,7 @@ const areas = {
   ),
 
 // 1936500: 身延町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1936500.html
-  '1936500': Area(
+  '1936500': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '190000', // 山梨県 (甲府地方気象台)
     class10: '190010', // 中・西部
@@ -12102,7 +12102,7 @@ const areas = {
   ),
 
 // 1936600: 南部町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1936600.html
-  '1936600': Area(
+  '1936600': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '190000', // 山梨県 (甲府地方気象台)
     class10: '190010', // 中・西部
@@ -12116,7 +12116,7 @@ const areas = {
     ],
   ),
 // 1936800: 富士川町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1936800.html
-  '1936800': Area(
+  '1936800': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '190000', // 山梨県 (甲府地方気象台)
     class10: '190010', // 中・西部
@@ -12130,7 +12130,7 @@ const areas = {
     ],
   ),
 // 1938400: 昭和町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1938400.html
-  '1938400': Area(
+  '1938400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '190000', // 山梨県 (甲府地方気象台)
     class10: '190010', // 中・西部
@@ -12145,7 +12145,7 @@ const areas = {
   ),
 
 // 1942200: 道志村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1942200.html
-  '1942200': Area(
+  '1942200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '190000', // 山梨県 (甲府地方気象台)
     class10: '190020', // 東部・富士五湖
@@ -12159,7 +12159,7 @@ const areas = {
     ],
   ),
 // 1942300: 西桂町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1942300.html
-  '1942300': Area(
+  '1942300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '190000', // 山梨県 (甲府地方気象台)
     class10: '190020', // 東部・富士五湖
@@ -12174,7 +12174,7 @@ const areas = {
   ),
 
 // 1942400: 忍野村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1942400.html
-  '1942400': Area(
+  '1942400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '190000', // 山梨県 (甲府地方気象台)
     class10: '190020', // 東部・富士五湖
@@ -12189,7 +12189,7 @@ const areas = {
   ),
 
 // 1942500: 山中湖村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1942500.html
-  '1942500': Area(
+  '1942500': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '190000', // 山梨県 (甲府地方気象台)
     class10: '190020', // 東部・富士五湖
@@ -12203,7 +12203,7 @@ const areas = {
     ],
   ),
 // 1942900: 鳴沢村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1942900.html
-  '1942900': Area(
+  '1942900': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '190000', // 山梨県 (甲府地方気象台)
     class10: '190020', // 東部・富士五湖
@@ -12218,7 +12218,7 @@ const areas = {
   ),
 
 // 1943000: 富士河口湖町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1943000.html
-  '1943000': Area(
+  '1943000': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '190000', // 山梨県 (甲府地方気象台)
     class10: '190020', // 東部・富士五湖
@@ -12232,7 +12232,7 @@ const areas = {
     ],
   ),
 // 1944200: 小菅村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1944200.html
-  '1944200': Area(
+  '1944200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '190000', // 山梨県 (甲府地方気象台)
     class10: '190020', // 東部・富士五湖
@@ -12247,7 +12247,7 @@ const areas = {
   ),
 
 // 1944300: 丹波山村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/1944300.html
-  '1944300': Area(
+  '1944300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '190000', // 山梨県 (甲府地方気象台)
     class10: '190020', // 東部・富士五湖
@@ -12261,7 +12261,7 @@ const areas = {
     ],
   ),
 // 2020100: 長野市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2020100.html
-  '2020100': Area(
+  '2020100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200010', // 北部
@@ -12276,7 +12276,7 @@ const areas = {
   ),
 
 // 2020201: 松本市松本: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2020201.html
-  '2020201': Area(
+  '2020201': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200020', // 中部
@@ -12291,7 +12291,7 @@ const areas = {
   ),
 
 // 2020202: 松本市乗鞍上高地: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2020202.html
-  '2020202': Area(
+  '2020202': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200020', // 中部
@@ -12306,7 +12306,7 @@ const areas = {
   ),
 
 // 2020300: 上田市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2020300.html
-  '2020300': Area(
+  '2020300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200020', // 中部
@@ -12320,7 +12320,7 @@ const areas = {
     ],
   ),
 // 2020400: 岡谷市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2020400.html
-  '2020400': Area(
+  '2020400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200020', // 中部
@@ -12335,7 +12335,7 @@ const areas = {
   ),
 
 // 2020500: 飯田市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2020500.html
-  '2020500': Area(
+  '2020500': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200030', // 南部
@@ -12349,7 +12349,7 @@ const areas = {
     ],
   ),
 // 2020600: 諏訪市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2020600.html
-  '2020600': Area(
+  '2020600': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200020', // 中部
@@ -12364,7 +12364,7 @@ const areas = {
   ),
 
 // 2020700: 須坂市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2020700.html
-  '2020700': Area(
+  '2020700': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200010', // 北部
@@ -12379,7 +12379,7 @@ const areas = {
   ),
 
 // 2020800: 小諸市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2020800.html
-  '2020800': Area(
+  '2020800': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200020', // 中部
@@ -12393,7 +12393,7 @@ const areas = {
     ],
   ),
 // 2020900: 伊那市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2020900.html
-  '2020900': Area(
+  '2020900': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200030', // 南部
@@ -12408,7 +12408,7 @@ const areas = {
   ),
 
 // 2021000: 駒ヶ根市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2021000.html
-  '2021000': Area(
+  '2021000': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200030', // 南部
@@ -12422,7 +12422,7 @@ const areas = {
     ],
   ),
 // 2021100: 中野市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2021100.html
-  '2021100': Area(
+  '2021100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200010', // 北部
@@ -12437,7 +12437,7 @@ const areas = {
   ),
 
 // 2021200: 大町市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2021200.html
-  '2021200': Area(
+  '2021200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200010', // 北部
@@ -12451,7 +12451,7 @@ const areas = {
     ],
   ),
 // 2021300: 飯山市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2021300.html
-  '2021300': Area(
+  '2021300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200010', // 北部
@@ -12466,7 +12466,7 @@ const areas = {
   ),
 
 // 2021400: 茅野市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2021400.html
-  '2021400': Area(
+  '2021400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200020', // 中部
@@ -12481,7 +12481,7 @@ const areas = {
   ),
 
 // 2021501: 塩尻市塩尻: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2021501.html
-  '2021501': Area(
+  '2021501': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200020', // 中部
@@ -12495,7 +12495,7 @@ const areas = {
     ],
   ),
 // 2021502: 塩尻市楢川: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2021502.html
-  '2021502': Area(
+  '2021502': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200030', // 南部
@@ -12510,7 +12510,7 @@ const areas = {
   ),
 
 // 2021700: 佐久市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2021700.html
-  '2021700': Area(
+  '2021700': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200020', // 中部
@@ -12524,7 +12524,7 @@ const areas = {
     ],
   ),
 // 2021800: 千曲市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2021800.html
-  '2021800': Area(
+  '2021800': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200010', // 北部
@@ -12539,7 +12539,7 @@ const areas = {
   ),
 
 // 2021900: 東御市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2021900.html
-  '2021900': Area(
+  '2021900': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200020', // 中部
@@ -12553,7 +12553,7 @@ const areas = {
     ],
   ),
 // 2022000: 安曇野市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2022000.html
-  '2022000': Area(
+  '2022000': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200020', // 中部
@@ -12568,7 +12568,7 @@ const areas = {
   ),
 
 // 2030300: 小海町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2030300.html
-  '2030300': Area(
+  '2030300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200020', // 中部
@@ -12583,7 +12583,7 @@ const areas = {
   ),
 
 // 2030400: 川上村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2030400.html
-  '2030400': Area(
+  '2030400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200020', // 中部
@@ -12597,7 +12597,7 @@ const areas = {
     ],
   ),
 // 2030500: 南牧村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2030500.html
-  '2030500': Area(
+  '2030500': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200020', // 中部
@@ -12611,7 +12611,7 @@ const areas = {
     ],
   ),
 // 2030600: 南相木村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2030600.html
-  '2030600': Area(
+  '2030600': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200020', // 中部
@@ -12626,7 +12626,7 @@ const areas = {
   ),
 
 // 2030700: 北相木村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2030700.html
-  '2030700': Area(
+  '2030700': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200020', // 中部
@@ -12640,7 +12640,7 @@ const areas = {
     ],
   ),
 // 2030900: 佐久穂町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2030900.html
-  '2030900': Area(
+  '2030900': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200020', // 中部
@@ -12654,7 +12654,7 @@ const areas = {
     ],
   ),
 // 2032100: 軽井沢町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2032100.html
-  '2032100': Area(
+  '2032100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200020', // 中部
@@ -12668,7 +12668,7 @@ const areas = {
     ],
   ),
 // 2032300: 御代田町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2032300.html
-  '2032300': Area(
+  '2032300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200020', // 中部
@@ -12683,7 +12683,7 @@ const areas = {
   ),
 
 // 2032400: 立科町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2032400.html
-  '2032400': Area(
+  '2032400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200020', // 中部
@@ -12692,7 +12692,7 @@ const areas = {
     bbox: [138.23386939006, 36.086340252201, 138.344267951205, 36.324364251609],
   ),
 // 2034900: 青木村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2034900.html
-  '2034900': Area(
+  '2034900': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200020', // 中部
@@ -12707,7 +12707,7 @@ const areas = {
   ),
 
 // 2035000: 長和町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2035000.html
-  '2035000': Area(
+  '2035000': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200020', // 中部
@@ -12721,7 +12721,7 @@ const areas = {
     ],
   ),
 // 2036100: 下諏訪町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2036100.html
-  '2036100': Area(
+  '2036100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200020', // 中部
@@ -12736,7 +12736,7 @@ const areas = {
   ),
 
 // 2036200: 富士見町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2036200.html
-  '2036200': Area(
+  '2036200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200020', // 中部
@@ -12751,7 +12751,7 @@ const areas = {
   ),
 
 // 2036300: 原村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2036300.html
-  '2036300': Area(
+  '2036300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200020', // 中部
@@ -12765,7 +12765,7 @@ const areas = {
     ],
   ),
 // 2038200: 辰野町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2038200.html
-  '2038200': Area(
+  '2038200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200030', // 南部
@@ -12780,7 +12780,7 @@ const areas = {
   ),
 
 // 2038300: 箕輪町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2038300.html
-  '2038300': Area(
+  '2038300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200030', // 南部
@@ -12794,7 +12794,7 @@ const areas = {
     ],
   ),
 // 2038400: 飯島町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2038400.html
-  '2038400': Area(
+  '2038400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200030', // 南部
@@ -12809,7 +12809,7 @@ const areas = {
   ),
 
 // 2038500: 南箕輪村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2038500.html
-  '2038500': Area(
+  '2038500': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200030', // 南部
@@ -12823,7 +12823,7 @@ const areas = {
     ],
   ),
 // 2038600: 中川村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2038600.html
-  '2038600': Area(
+  '2038600': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200030', // 南部
@@ -12838,7 +12838,7 @@ const areas = {
   ),
 
 // 2038800: 宮田村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2038800.html
-  '2038800': Area(
+  '2038800': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200030', // 南部
@@ -12853,7 +12853,7 @@ const areas = {
   ),
 
 // 2040200: 松川町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2040200.html
-  '2040200': Area(
+  '2040200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200030', // 南部
@@ -12867,7 +12867,7 @@ const areas = {
     ],
   ),
 // 2040300: 高森町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2040300.html
-  '2040300': Area(
+  '2040300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200030', // 南部
@@ -12882,7 +12882,7 @@ const areas = {
   ),
 
 // 2040400: 阿南町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2040400.html
-  '2040400': Area(
+  '2040400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200030', // 南部
@@ -12896,7 +12896,7 @@ const areas = {
     ],
   ),
 // 2040700: 阿智村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2040700.html
-  '2040700': Area(
+  '2040700': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200030', // 南部
@@ -12911,7 +12911,7 @@ const areas = {
   ),
 
 // 2040900: 平谷村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2040900.html
-  '2040900': Area(
+  '2040900': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200030', // 南部
@@ -12925,7 +12925,7 @@ const areas = {
     ],
   ),
 // 2041000: 根羽村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2041000.html
-  '2041000': Area(
+  '2041000': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200030', // 南部
@@ -12940,7 +12940,7 @@ const areas = {
   ),
 
 // 2041100: 下條村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2041100.html
-  '2041100': Area(
+  '2041100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200030', // 南部
@@ -12954,7 +12954,7 @@ const areas = {
     ],
   ),
 // 2041200: 売木村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2041200.html
-  '2041200': Area(
+  '2041200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200030', // 南部
@@ -12969,7 +12969,7 @@ const areas = {
   ),
 
 // 2041300: 天龍村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2041300.html
-  '2041300': Area(
+  '2041300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200030', // 南部
@@ -12984,7 +12984,7 @@ const areas = {
   ),
 
 // 2041400: 泰阜村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2041400.html
-  '2041400': Area(
+  '2041400': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200030', // 南部
@@ -12998,7 +12998,7 @@ const areas = {
     ],
   ),
 // 2041500: 喬木村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2041500.html
-  '2041500': Area(
+  '2041500': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200030', // 南部
@@ -13012,7 +13012,7 @@ const areas = {
     ],
   ),
 // 2041600: 豊丘村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2041600.html
-  '2041600': Area(
+  '2041600': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200030', // 南部
@@ -13027,7 +13027,7 @@ const areas = {
   ),
 
 // 2041700: 大鹿村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2041700.html
-  '2041700': Area(
+  '2041700': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200030', // 南部
@@ -13042,7 +13042,7 @@ const areas = {
   ),
 
 // 2042200: 上松町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2042200.html
-  '2042200': Area(
+  '2042200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200030', // 南部
@@ -13051,7 +13051,7 @@ const areas = {
     bbox: [137.531257198161, 35.705645612655, 137.80935041489, 35.823060801315],
   ),
 // 2042300: 南木曽町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2042300.html
-  '2042300': Area(
+  '2042300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200030', // 南部
@@ -13066,7 +13066,7 @@ const areas = {
   ),
 
 // 2042500: 木祖村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2042500.html
-  '2042500': Area(
+  '2042500': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200030', // 南部
@@ -13080,7 +13080,7 @@ const areas = {
     ],
   ),
 // 2042900: 王滝村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2042900.html
-  '2042900': Area(
+  '2042900': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200030', // 南部
@@ -13095,7 +13095,7 @@ const areas = {
   ),
 
 // 2043000: 大桑村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2043000.html
-  '2043000': Area(
+  '2043000': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200030', // 南部
@@ -13109,7 +13109,7 @@ const areas = {
     ],
   ),
 // 2043200: 木曽町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2043200.html
-  '2043200': Area(
+  '2043200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200030', // 南部
@@ -13124,7 +13124,7 @@ const areas = {
   ),
 
 // 2044600: 麻績村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2044600.html
-  '2044600': Area(
+  '2044600': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200020', // 中部
@@ -13139,7 +13139,7 @@ const areas = {
   ),
 
 // 2044800: 生坂村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2044800.html
-  '2044800': Area(
+  '2044800': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200020', // 中部
@@ -13153,7 +13153,7 @@ const areas = {
     ],
   ),
 // 2045000: 山形村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2045000.html
-  '2045000': Area(
+  '2045000': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200020', // 中部
@@ -13168,7 +13168,7 @@ const areas = {
   ),
 
 // 2045100: 朝日村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2045100.html
-  '2045100': Area(
+  '2045100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200020', // 中部
@@ -13182,7 +13182,7 @@ const areas = {
     ],
   ),
 // 2045200: 筑北村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2045200.html
-  '2045200': Area(
+  '2045200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200020', // 中部
@@ -13197,7 +13197,7 @@ const areas = {
   ),
 
 // 2048100: 池田町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2048100.html
-  '2048100': Area(
+  '2048100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200010', // 北部
@@ -13212,7 +13212,7 @@ const areas = {
   ),
 
 // 2048200: 松川村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2048200.html
-  '2048200': Area(
+  '2048200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200010', // 北部
@@ -13227,7 +13227,7 @@ const areas = {
   ),
 
 // 2048500: 白馬村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2048500.html
-  '2048500': Area(
+  '2048500': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200010', // 北部
@@ -13241,7 +13241,7 @@ const areas = {
     ],
   ),
 // 2048600: 小谷村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2048600.html
-  '2048600': Area(
+  '2048600': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200010', // 北部
@@ -13255,7 +13255,7 @@ const areas = {
     ],
   ),
 // 2052100: 坂城町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2052100.html
-  '2052100': Area(
+  '2052100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200010', // 北部
@@ -13270,7 +13270,7 @@ const areas = {
   ),
 
 // 2054100: 小布施町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2054100.html
-  '2054100': Area(
+  '2054100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200010', // 北部
@@ -13285,7 +13285,7 @@ const areas = {
   ),
 
 // 2054300: 高山村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2054300.html
-  '2054300': Area(
+  '2054300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200010', // 北部
@@ -13299,7 +13299,7 @@ const areas = {
     ],
   ),
 // 2056100: 山ノ内町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2056100.html
-  '2056100': Area(
+  '2056100': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200010', // 北部
@@ -13314,7 +13314,7 @@ const areas = {
   ),
 
 // 2056200: 木島平村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2056200.html
-  '2056200': Area(
+  '2056200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200010', // 北部
@@ -13329,7 +13329,7 @@ const areas = {
   ),
 
 // 2056300: 野沢温泉村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2056300.html
-  '2056300': Area(
+  '2056300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200010', // 北部
@@ -13343,7 +13343,7 @@ const areas = {
     ],
   ),
 // 2058300: 信濃町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2058300.html
-  '2058300': Area(
+  '2058300': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200010', // 北部
@@ -13358,7 +13358,7 @@ const areas = {
   ),
 
 // 2058800: 小川村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2058800.html
-  '2058800': Area(
+  '2058800': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200010', // 北部
@@ -13373,7 +13373,7 @@ const areas = {
   ),
 
 // 2059000: 飯綱町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2059000.html
-  '2059000': Area(
+  '2059000': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200010', // 北部
@@ -13387,7 +13387,7 @@ const areas = {
     ],
   ),
 // 2060200: 栄村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2060200.html
-  '2060200': Area(
+  '2060200': WeatherArea(
     center: '010300', // 関東甲信地方 (気象庁)
     office: '200000', // 長野県 (長野地方気象台)
     class10: '200010', // 北部
@@ -13402,7 +13402,7 @@ const areas = {
   ),
 
 // 2120100: 岐阜市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2120100.html
-  '2120100': Area(
+  '2120100': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210010', // 美濃地方
@@ -13416,7 +13416,7 @@ const areas = {
     ],
   ),
 // 2120200: 大垣市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2120200.html
-  '2120200': Area(
+  '2120200': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210010', // 美濃地方
@@ -13431,7 +13431,7 @@ const areas = {
   ),
 
 // 2120300: 高山市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2120300.html
-  '2120300': Area(
+  '2120300': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210020', // 飛騨地方
@@ -13446,7 +13446,7 @@ const areas = {
   ),
 
 // 2120400: 多治見市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2120400.html
-  '2120400': Area(
+  '2120400': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210010', // 美濃地方
@@ -13461,7 +13461,7 @@ const areas = {
   ),
 
 // 2120500: 関市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2120500.html
-  '2120500': Area(
+  '2120500': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210010', // 美濃地方
@@ -13476,7 +13476,7 @@ const areas = {
   ),
 
 // 2120600: 中津川市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2120600.html
-  '2120600': Area(
+  '2120600': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210010', // 美濃地方
@@ -13490,7 +13490,7 @@ const areas = {
     ],
   ),
 // 2120700: 美濃市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2120700.html
-  '2120700': Area(
+  '2120700': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210010', // 美濃地方
@@ -13504,7 +13504,7 @@ const areas = {
     ],
   ),
 // 2120800: 瑞浪市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2120800.html
-  '2120800': Area(
+  '2120800': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210010', // 美濃地方
@@ -13519,7 +13519,7 @@ const areas = {
   ),
 
 // 2120900: 羽島市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2120900.html
-  '2120900': Area(
+  '2120900': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210010', // 美濃地方
@@ -13533,7 +13533,7 @@ const areas = {
     ],
   ),
 // 2121000: 恵那市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2121000.html
-  '2121000': Area(
+  '2121000': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210010', // 美濃地方
@@ -13548,7 +13548,7 @@ const areas = {
   ),
 
 // 2121100: 美濃加茂市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2121100.html
-  '2121100': Area(
+  '2121100': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210010', // 美濃地方
@@ -13563,7 +13563,7 @@ const areas = {
   ),
 
 // 2121200: 土岐市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2121200.html
-  '2121200': Area(
+  '2121200': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210010', // 美濃地方
@@ -13578,7 +13578,7 @@ const areas = {
   ),
 
 // 2121300: 各務原市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2121300.html
-  '2121300': Area(
+  '2121300': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210010', // 美濃地方
@@ -13592,7 +13592,7 @@ const areas = {
     ],
   ),
 // 2121400: 可児市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2121400.html
-  '2121400': Area(
+  '2121400': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210010', // 美濃地方
@@ -13607,7 +13607,7 @@ const areas = {
   ),
 
 // 2121500: 山県市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2121500.html
-  '2121500': Area(
+  '2121500': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210010', // 美濃地方
@@ -13622,7 +13622,7 @@ const areas = {
   ),
 
 // 2121600: 瑞穂市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2121600.html
-  '2121600': Area(
+  '2121600': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210010', // 美濃地方
@@ -13637,7 +13637,7 @@ const areas = {
   ),
 
 // 2121700: 飛騨市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2121700.html
-  '2121700': Area(
+  '2121700': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210020', // 飛騨地方
@@ -13651,7 +13651,7 @@ const areas = {
     ],
   ),
 // 2121800: 本巣市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2121800.html
-  '2121800': Area(
+  '2121800': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210010', // 美濃地方
@@ -13666,7 +13666,7 @@ const areas = {
   ),
 
 // 2121900: 郡上市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2121900.html
-  '2121900': Area(
+  '2121900': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210010', // 美濃地方
@@ -13681,7 +13681,7 @@ const areas = {
   ),
 
 // 2122000: 下呂市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2122000.html
-  '2122000': Area(
+  '2122000': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210020', // 飛騨地方
@@ -13695,7 +13695,7 @@ const areas = {
     ],
   ),
 // 2122100: 海津市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2122100.html
-  '2122100': Area(
+  '2122100': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210010', // 美濃地方
@@ -13710,7 +13710,7 @@ const areas = {
   ),
 
 // 2130200: 岐南町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2130200.html
-  '2130200': Area(
+  '2130200': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210010', // 美濃地方
@@ -13725,7 +13725,7 @@ const areas = {
   ),
 
 // 2130300: 笠松町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2130300.html
-  '2130300': Area(
+  '2130300': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210010', // 美濃地方
@@ -13739,7 +13739,7 @@ const areas = {
     ],
   ),
 // 2134100: 養老町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2134100.html
-  '2134100': Area(
+  '2134100': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210010', // 美濃地方
@@ -13754,7 +13754,7 @@ const areas = {
   ),
 
 // 2136100: 垂井町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2136100.html
-  '2136100': Area(
+  '2136100': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210010', // 美濃地方
@@ -13769,7 +13769,7 @@ const areas = {
   ),
 
 // 2136200: 関ケ原町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2136200.html
-  '2136200': Area(
+  '2136200': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210010', // 美濃地方
@@ -13783,7 +13783,7 @@ const areas = {
     ],
   ),
 // 2138100: 神戸町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2138100.html
-  '2138100': Area(
+  '2138100': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210010', // 美濃地方
@@ -13798,7 +13798,7 @@ const areas = {
   ),
 
 // 2138200: 輪之内町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2138200.html
-  '2138200': Area(
+  '2138200': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210010', // 美濃地方
@@ -13812,7 +13812,7 @@ const areas = {
     ],
   ),
 // 2138300: 安八町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2138300.html
-  '2138300': Area(
+  '2138300': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210010', // 美濃地方
@@ -13827,7 +13827,7 @@ const areas = {
   ),
 
 // 2140100: 揖斐川町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2140100.html
-  '2140100': Area(
+  '2140100': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210010', // 美濃地方
@@ -13842,7 +13842,7 @@ const areas = {
   ),
 
 // 2140300: 大野町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2140300.html
-  '2140300': Area(
+  '2140300': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210010', // 美濃地方
@@ -13857,7 +13857,7 @@ const areas = {
   ),
 
 // 2140400: 池田町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2140400.html
-  '2140400': Area(
+  '2140400': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210010', // 美濃地方
@@ -13871,7 +13871,7 @@ const areas = {
     ],
   ),
 // 2142100: 北方町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2142100.html
-  '2142100': Area(
+  '2142100': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210010', // 美濃地方
@@ -13886,7 +13886,7 @@ const areas = {
   ),
 
 // 2150100: 坂祝町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2150100.html
-  '2150100': Area(
+  '2150100': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210010', // 美濃地方
@@ -13901,7 +13901,7 @@ const areas = {
   ),
 
 // 2150200: 富加町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2150200.html
-  '2150200': Area(
+  '2150200': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210010', // 美濃地方
@@ -13916,7 +13916,7 @@ const areas = {
   ),
 
 // 2150300: 川辺町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2150300.html
-  '2150300': Area(
+  '2150300': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210010', // 美濃地方
@@ -13930,7 +13930,7 @@ const areas = {
     ],
   ),
 // 2150400: 七宗町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2150400.html
-  '2150400': Area(
+  '2150400': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210010', // 美濃地方
@@ -13945,7 +13945,7 @@ const areas = {
   ),
 
 // 2150500: 八百津町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2150500.html
-  '2150500': Area(
+  '2150500': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210010', // 美濃地方
@@ -13959,7 +13959,7 @@ const areas = {
     ],
   ),
 // 2150600: 白川町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2150600.html
-  '2150600': Area(
+  '2150600': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210010', // 美濃地方
@@ -13974,7 +13974,7 @@ const areas = {
   ),
 
 // 2150700: 東白川村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2150700.html
-  '2150700': Area(
+  '2150700': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210010', // 美濃地方
@@ -13989,7 +13989,7 @@ const areas = {
   ),
 
 // 2152100: 御嵩町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2152100.html
-  '2152100': Area(
+  '2152100': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210010', // 美濃地方
@@ -14004,7 +14004,7 @@ const areas = {
   ),
 
 // 2160400: 白川村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2160400.html
-  '2160400': Area(
+  '2160400': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '210000', // 岐阜県 (岐阜地方気象台)
     class10: '210020', // 飛騨地方
@@ -14019,7 +14019,7 @@ const areas = {
   ),
 
 // 2210001: 静岡市南部: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2210001.html
-  '2210001': Area(
+  '2210001': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '220000', // 静岡県 (静岡地方気象台)
     class10: '220010', // 中部
@@ -14033,7 +14033,7 @@ const areas = {
     ],
   ),
 // 2210002: 静岡市北部: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2210002.html
-  '2210002': Area(
+  '2210002': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '220000', // 静岡県 (静岡地方気象台)
     class10: '220010', // 中部
@@ -14048,7 +14048,7 @@ const areas = {
   ),
 
 // 2213001: 浜松市南部: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2213001.html
-  '2213001': Area(
+  '2213001': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '220000', // 静岡県 (静岡地方気象台)
     class10: '220040', // 西部
@@ -14063,7 +14063,7 @@ const areas = {
   ),
 
 // 2213002: 浜松市北部: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2213002.html
-  '2213002': Area(
+  '2213002': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '220000', // 静岡県 (静岡地方気象台)
     class10: '220040', // 西部
@@ -14078,7 +14078,7 @@ const areas = {
   ),
 
 // 2220300: 沼津市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2220300.html
-  '2220300': Area(
+  '2220300': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '220000', // 静岡県 (静岡地方気象台)
     class10: '220030', // 東部
@@ -14092,7 +14092,7 @@ const areas = {
     ],
   ),
 // 2220500: 熱海市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2220500.html
-  '2220500': Area(
+  '2220500': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '220000', // 静岡県 (静岡地方気象台)
     class10: '220020', // 伊豆
@@ -14107,7 +14107,7 @@ const areas = {
   ),
 
 // 2220600: 三島市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2220600.html
-  '2220600': Area(
+  '2220600': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '220000', // 静岡県 (静岡地方気象台)
     class10: '220030', // 東部
@@ -14122,7 +14122,7 @@ const areas = {
   ),
 
 // 2220700: 富士宮市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2220700.html
-  '2220700': Area(
+  '2220700': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '220000', // 静岡県 (静岡地方気象台)
     class10: '220030', // 東部
@@ -14137,7 +14137,7 @@ const areas = {
   ),
 
 // 2220800: 伊東市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2220800.html
-  '2220800': Area(
+  '2220800': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '220000', // 静岡県 (静岡地方気象台)
     class10: '220020', // 伊豆
@@ -14152,7 +14152,7 @@ const areas = {
   ),
 
 // 2220900: 島田市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2220900.html
-  '2220900': Area(
+  '2220900': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '220000', // 静岡県 (静岡地方気象台)
     class10: '220010', // 中部
@@ -14166,7 +14166,7 @@ const areas = {
     ],
   ),
 // 2221000: 富士市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2221000.html
-  '2221000': Area(
+  '2221000': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '220000', // 静岡県 (静岡地方気象台)
     class10: '220030', // 東部
@@ -14181,7 +14181,7 @@ const areas = {
   ),
 
 // 2221100: 磐田市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2221100.html
-  '2221100': Area(
+  '2221100': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '220000', // 静岡県 (静岡地方気象台)
     class10: '220040', // 西部
@@ -14195,7 +14195,7 @@ const areas = {
     ],
   ),
 // 2221200: 焼津市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2221200.html
-  '2221200': Area(
+  '2221200': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '220000', // 静岡県 (静岡地方気象台)
     class10: '220010', // 中部
@@ -14210,7 +14210,7 @@ const areas = {
   ),
 
 // 2221300: 掛川市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2221300.html
-  '2221300': Area(
+  '2221300': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '220000', // 静岡県 (静岡地方気象台)
     class10: '220040', // 西部
@@ -14225,7 +14225,7 @@ const areas = {
   ),
 
 // 2221400: 藤枝市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2221400.html
-  '2221400': Area(
+  '2221400': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '220000', // 静岡県 (静岡地方気象台)
     class10: '220010', // 中部
@@ -14239,7 +14239,7 @@ const areas = {
     ],
   ),
 // 2221500: 御殿場市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2221500.html
-  '2221500': Area(
+  '2221500': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '220000', // 静岡県 (静岡地方気象台)
     class10: '220030', // 東部
@@ -14253,7 +14253,7 @@ const areas = {
     ],
   ),
 // 2221600: 袋井市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2221600.html
-  '2221600': Area(
+  '2221600': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '220000', // 静岡県 (静岡地方気象台)
     class10: '220040', // 西部
@@ -14268,7 +14268,7 @@ const areas = {
   ),
 
 // 2221900: 下田市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2221900.html
-  '2221900': Area(
+  '2221900': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '220000', // 静岡県 (静岡地方気象台)
     class10: '220020', // 伊豆
@@ -14282,7 +14282,7 @@ const areas = {
     ],
   ),
 // 2222000: 裾野市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2222000.html
-  '2222000': Area(
+  '2222000': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '220000', // 静岡県 (静岡地方気象台)
     class10: '220030', // 東部
@@ -14292,7 +14292,7 @@ const areas = {
   ),
 
 // 2222100: 湖西市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2222100.html
-  '2222100': Area(
+  '2222100': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '220000', // 静岡県 (静岡地方気象台)
     class10: '220040', // 西部
@@ -14307,7 +14307,7 @@ const areas = {
   ),
 
 // 2222200: 伊豆市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2222200.html
-  '2222200': Area(
+  '2222200': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '220000', // 静岡県 (静岡地方気象台)
     class10: '220020', // 伊豆
@@ -14321,7 +14321,7 @@ const areas = {
     ],
   ),
 // 2222300: 御前崎市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2222300.html
-  '2222300': Area(
+  '2222300': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '220000', // 静岡県 (静岡地方気象台)
     class10: '220040', // 西部
@@ -14336,7 +14336,7 @@ const areas = {
   ),
 
 // 2222400: 菊川市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2222400.html
-  '2222400': Area(
+  '2222400': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '220000', // 静岡県 (静岡地方気象台)
     class10: '220040', // 西部
@@ -14350,7 +14350,7 @@ const areas = {
     ],
   ),
 // 2222500: 伊豆の国市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2222500.html
-  '2222500': Area(
+  '2222500': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '220000', // 静岡県 (静岡地方気象台)
     class10: '220020', // 伊豆
@@ -14365,7 +14365,7 @@ const areas = {
   ),
 
 // 2222600: 牧之原市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2222600.html
-  '2222600': Area(
+  '2222600': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '220000', // 静岡県 (静岡地方気象台)
     class10: '220010', // 中部
@@ -14379,7 +14379,7 @@ const areas = {
     ],
   ),
 // 2230100: 東伊豆町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2230100.html
-  '2230100': Area(
+  '2230100': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '220000', // 静岡県 (静岡地方気象台)
     class10: '220020', // 伊豆
@@ -14394,7 +14394,7 @@ const areas = {
   ),
 
 // 2230200: 河津町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2230200.html
-  '2230200': Area(
+  '2230200': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '220000', // 静岡県 (静岡地方気象台)
     class10: '220020', // 伊豆
@@ -14408,7 +14408,7 @@ const areas = {
     ],
   ),
 // 2230400: 南伊豆町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2230400.html
-  '2230400': Area(
+  '2230400': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '220000', // 静岡県 (静岡地方気象台)
     class10: '220020', // 伊豆
@@ -14423,7 +14423,7 @@ const areas = {
   ),
 
 // 2230500: 松崎町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2230500.html
-  '2230500': Area(
+  '2230500': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '220000', // 静岡県 (静岡地方気象台)
     class10: '220020', // 伊豆
@@ -14438,7 +14438,7 @@ const areas = {
   ),
 
 // 2230600: 西伊豆町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2230600.html
-  '2230600': Area(
+  '2230600': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '220000', // 静岡県 (静岡地方気象台)
     class10: '220020', // 伊豆
@@ -14452,7 +14452,7 @@ const areas = {
     ],
   ),
 // 2232500: 函南町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2232500.html
-  '2232500': Area(
+  '2232500': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '220000', // 静岡県 (静岡地方気象台)
     class10: '220020', // 伊豆
@@ -14467,7 +14467,7 @@ const areas = {
   ),
 
 // 2234100: 清水町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2234100.html
-  '2234100': Area(
+  '2234100': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '220000', // 静岡県 (静岡地方気象台)
     class10: '220030', // 東部
@@ -14481,7 +14481,7 @@ const areas = {
     ],
   ),
 // 2234200: 長泉町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2234200.html
-  '2234200': Area(
+  '2234200': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '220000', // 静岡県 (静岡地方気象台)
     class10: '220030', // 東部
@@ -14496,7 +14496,7 @@ const areas = {
   ),
 
 // 2234400: 小山町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2234400.html
-  '2234400': Area(
+  '2234400': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '220000', // 静岡県 (静岡地方気象台)
     class10: '220030', // 東部
@@ -14511,7 +14511,7 @@ const areas = {
   ),
 
 // 2242400: 吉田町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2242400.html
-  '2242400': Area(
+  '2242400': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '220000', // 静岡県 (静岡地方気象台)
     class10: '220010', // 中部
@@ -14525,7 +14525,7 @@ const areas = {
     ],
   ),
 // 2242900: 川根本町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2242900.html
-  '2242900': Area(
+  '2242900': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '220000', // 静岡県 (静岡地方気象台)
     class10: '220010', // 中部
@@ -14540,7 +14540,7 @@ const areas = {
   ),
 
 // 2246100: 森町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2246100.html
-  '2246100': Area(
+  '2246100': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '220000', // 静岡県 (静岡地方気象台)
     class10: '220040', // 西部
@@ -14554,7 +14554,7 @@ const areas = {
     ],
   ),
 // 2310000: 名古屋市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2310000.html
-  '2310000': Area(
+  '2310000': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -14569,7 +14569,7 @@ const areas = {
   ),
 
 // 2320100: 豊橋市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2320100.html
-  '2320100': Area(
+  '2320100': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230020', // 東部
@@ -14584,7 +14584,7 @@ const areas = {
   ),
 
 // 2320200: 岡崎市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2320200.html
-  '2320200': Area(
+  '2320200': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -14599,7 +14599,7 @@ const areas = {
   ),
 
 // 2320300: 一宮市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2320300.html
-  '2320300': Area(
+  '2320300': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -14614,7 +14614,7 @@ const areas = {
   ),
 
 // 2320400: 瀬戸市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2320400.html
-  '2320400': Area(
+  '2320400': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -14629,7 +14629,7 @@ const areas = {
   ),
 
 // 2320500: 半田市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2320500.html
-  '2320500': Area(
+  '2320500': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -14644,7 +14644,7 @@ const areas = {
   ),
 
 // 2320600: 春日井市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2320600.html
-  '2320600': Area(
+  '2320600': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -14659,7 +14659,7 @@ const areas = {
   ),
 
 // 2320700: 豊川市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2320700.html
-  '2320700': Area(
+  '2320700': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230020', // 東部
@@ -14674,7 +14674,7 @@ const areas = {
   ),
 
 // 2320800: 津島市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2320800.html
-  '2320800': Area(
+  '2320800': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -14688,7 +14688,7 @@ const areas = {
     ],
   ),
 // 2320900: 碧南市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2320900.html
-  '2320900': Area(
+  '2320900': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -14703,7 +14703,7 @@ const areas = {
   ),
 
 // 2321000: 刈谷市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2321000.html
-  '2321000': Area(
+  '2321000': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -14718,7 +14718,7 @@ const areas = {
   ),
 
 // 2321101: 豊田市西部: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2321101.html
-  '2321101': Area(
+  '2321101': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -14733,7 +14733,7 @@ const areas = {
   ),
 
 // 2321102: 豊田市東部: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2321102.html
-  '2321102': Area(
+  '2321102': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230020', // 東部
@@ -14748,7 +14748,7 @@ const areas = {
   ),
 
 // 2321200: 安城市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2321200.html
-  '2321200': Area(
+  '2321200': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -14762,7 +14762,7 @@ const areas = {
     ],
   ),
 // 2321300: 西尾市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2321300.html
-  '2321300': Area(
+  '2321300': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -14777,7 +14777,7 @@ const areas = {
   ),
 
 // 2321400: 蒲郡市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2321400.html
-  '2321400': Area(
+  '2321400': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230020', // 東部
@@ -14792,7 +14792,7 @@ const areas = {
   ),
 
 // 2321500: 犬山市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2321500.html
-  '2321500': Area(
+  '2321500': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -14806,7 +14806,7 @@ const areas = {
     ],
   ),
 // 2321600: 常滑市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2321600.html
-  '2321600': Area(
+  '2321600': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -14821,7 +14821,7 @@ const areas = {
   ),
 
 // 2321700: 江南市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2321700.html
-  '2321700': Area(
+  '2321700': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -14836,7 +14836,7 @@ const areas = {
   ),
 
 // 2321900: 小牧市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2321900.html
-  '2321900': Area(
+  '2321900': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -14850,7 +14850,7 @@ const areas = {
     ],
   ),
 // 2322000: 稲沢市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2322000.html
-  '2322000': Area(
+  '2322000': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -14864,7 +14864,7 @@ const areas = {
     ],
   ),
 // 2322100: 新城市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2322100.html
-  '2322100': Area(
+  '2322100': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230020', // 東部
@@ -14878,7 +14878,7 @@ const areas = {
     ],
   ),
 // 2322200: 東海市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2322200.html
-  '2322200': Area(
+  '2322200': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -14893,7 +14893,7 @@ const areas = {
   ),
 
 // 2322300: 大府市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2322300.html
-  '2322300': Area(
+  '2322300': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -14907,7 +14907,7 @@ const areas = {
     ],
   ),
 // 2322400: 知多市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2322400.html
-  '2322400': Area(
+  '2322400': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -14922,7 +14922,7 @@ const areas = {
   ),
 
 // 2322500: 知立市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2322500.html
-  '2322500': Area(
+  '2322500': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -14937,7 +14937,7 @@ const areas = {
   ),
 
 // 2322600: 尾張旭市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2322600.html
-  '2322600': Area(
+  '2322600': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -14952,7 +14952,7 @@ const areas = {
   ),
 
 // 2322700: 高浜市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2322700.html
-  '2322700': Area(
+  '2322700': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -14967,7 +14967,7 @@ const areas = {
   ),
 
 // 2322800: 岩倉市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2322800.html
-  '2322800': Area(
+  '2322800': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -14981,7 +14981,7 @@ const areas = {
     ],
   ),
 // 2322900: 豊明市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2322900.html
-  '2322900': Area(
+  '2322900': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -14996,7 +14996,7 @@ const areas = {
   ),
 
 // 2323000: 日進市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2323000.html
-  '2323000': Area(
+  '2323000': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -15011,7 +15011,7 @@ const areas = {
   ),
 
 // 2323100: 田原市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2323100.html
-  '2323100': Area(
+  '2323100': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230020', // 東部
@@ -15026,7 +15026,7 @@ const areas = {
   ),
 
 // 2323200: 愛西市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2323200.html
-  '2323200': Area(
+  '2323200': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -15040,7 +15040,7 @@ const areas = {
     ],
   ),
 // 2323300: 清須市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2323300.html
-  '2323300': Area(
+  '2323300': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -15055,7 +15055,7 @@ const areas = {
   ),
 
 // 2323400: 北名古屋市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2323400.html
-  '2323400': Area(
+  '2323400': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -15070,7 +15070,7 @@ const areas = {
   ),
 
 // 2323500: 弥富市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2323500.html
-  '2323500': Area(
+  '2323500': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -15085,7 +15085,7 @@ const areas = {
   ),
 
 // 2323600: みよし市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2323600.html
-  '2323600': Area(
+  '2323600': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -15099,7 +15099,7 @@ const areas = {
     ],
   ),
 // 2323700: あま市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2323700.html
-  '2323700': Area(
+  '2323700': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -15114,7 +15114,7 @@ const areas = {
   ),
 
 // 2323800: 長久手市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2323800.html
-  '2323800': Area(
+  '2323800': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -15129,7 +15129,7 @@ const areas = {
   ),
 
 // 2330200: 東郷町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2330200.html
-  '2330200': Area(
+  '2330200': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -15143,7 +15143,7 @@ const areas = {
     ],
   ),
 // 2334200: 豊山町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2334200.html
-  '2334200': Area(
+  '2334200': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -15158,7 +15158,7 @@ const areas = {
   ),
 
 // 2336100: 大口町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2336100.html
-  '2336100': Area(
+  '2336100': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -15173,7 +15173,7 @@ const areas = {
   ),
 
 // 2336200: 扶桑町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2336200.html
-  '2336200': Area(
+  '2336200': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -15187,7 +15187,7 @@ const areas = {
     ],
   ),
 // 2342400: 大治町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2342400.html
-  '2342400': Area(
+  '2342400': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -15202,7 +15202,7 @@ const areas = {
   ),
 
 // 2342500: 蟹江町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2342500.html
-  '2342500': Area(
+  '2342500': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -15216,7 +15216,7 @@ const areas = {
     ],
   ),
 // 2342700: 飛島村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2342700.html
-  '2342700': Area(
+  '2342700': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -15231,7 +15231,7 @@ const areas = {
   ),
 
 // 2344100: 阿久比町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2344100.html
-  '2344100': Area(
+  '2344100': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -15246,7 +15246,7 @@ const areas = {
   ),
 
 // 2344200: 東浦町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2344200.html
-  '2344200': Area(
+  '2344200': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -15261,7 +15261,7 @@ const areas = {
   ),
 
 // 2344500: 南知多町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2344500.html
-  '2344500': Area(
+  '2344500': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -15275,7 +15275,7 @@ const areas = {
     ],
   ),
 // 2344600: 美浜町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2344600.html
-  '2344600': Area(
+  '2344600': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -15290,7 +15290,7 @@ const areas = {
   ),
 
 // 2344700: 武豊町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2344700.html
-  '2344700': Area(
+  '2344700': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -15304,7 +15304,7 @@ const areas = {
     ],
   ),
 // 2350100: 幸田町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2350100.html
-  '2350100': Area(
+  '2350100': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230010', // 西部
@@ -15319,7 +15319,7 @@ const areas = {
   ),
 
 // 2356100: 設楽町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2356100.html
-  '2356100': Area(
+  '2356100': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230020', // 東部
@@ -15334,7 +15334,7 @@ const areas = {
   ),
 
 // 2356200: 東栄町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2356200.html
-  '2356200': Area(
+  '2356200': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230020', // 東部
@@ -15348,7 +15348,7 @@ const areas = {
     ],
   ),
 // 2356300: 豊根村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2356300.html
-  '2356300': Area(
+  '2356300': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '230000', // 愛知県 (名古屋地方気象台)
     class10: '230020', // 東部
@@ -15363,7 +15363,7 @@ const areas = {
   ),
 
 // 2420100: 津市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2420100.html
-  '2420100': Area(
+  '2420100': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '240000', // 三重県 (津地方気象台)
     class10: '240010', // 北中部
@@ -15377,7 +15377,7 @@ const areas = {
     ],
   ),
 // 2420200: 四日市市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2420200.html
-  '2420200': Area(
+  '2420200': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '240000', // 三重県 (津地方気象台)
     class10: '240010', // 北中部
@@ -15392,7 +15392,7 @@ const areas = {
   ),
 
 // 2420300: 伊勢市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2420300.html
-  '2420300': Area(
+  '2420300': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '240000', // 三重県 (津地方気象台)
     class10: '240020', // 南部
@@ -15407,7 +15407,7 @@ const areas = {
   ),
 
 // 2420400: 松阪市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2420400.html
-  '2420400': Area(
+  '2420400': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '240000', // 三重県 (津地方気象台)
     class10: '240010', // 北中部
@@ -15421,7 +15421,7 @@ const areas = {
     ],
   ),
 // 2420500: 桑名市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2420500.html
-  '2420500': Area(
+  '2420500': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '240000', // 三重県 (津地方気象台)
     class10: '240010', // 北中部
@@ -15436,7 +15436,7 @@ const areas = {
   ),
 
 // 2420700: 鈴鹿市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2420700.html
-  '2420700': Area(
+  '2420700': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '240000', // 三重県 (津地方気象台)
     class10: '240010', // 北中部
@@ -15450,7 +15450,7 @@ const areas = {
     ],
   ),
 // 2420800: 名張市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2420800.html
-  '2420800': Area(
+  '2420800': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '240000', // 三重県 (津地方気象台)
     class10: '240010', // 北中部
@@ -15465,7 +15465,7 @@ const areas = {
   ),
 
 // 2420900: 尾鷲市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2420900.html
-  '2420900': Area(
+  '2420900': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '240000', // 三重県 (津地方気象台)
     class10: '240020', // 南部
@@ -15480,7 +15480,7 @@ const areas = {
   ),
 
 // 2421000: 亀山市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2421000.html
-  '2421000': Area(
+  '2421000': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '240000', // 三重県 (津地方気象台)
     class10: '240010', // 北中部
@@ -15495,7 +15495,7 @@ const areas = {
   ),
 
 // 2421100: 鳥羽市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2421100.html
-  '2421100': Area(
+  '2421100': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '240000', // 三重県 (津地方気象台)
     class10: '240020', // 南部
@@ -15510,7 +15510,7 @@ const areas = {
   ),
 
 // 2421200: 熊野市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2421200.html
-  '2421200': Area(
+  '2421200': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '240000', // 三重県 (津地方気象台)
     class10: '240020', // 南部
@@ -15524,7 +15524,7 @@ const areas = {
     ],
   ),
 // 2421400: いなべ市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2421400.html
-  '2421400': Area(
+  '2421400': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '240000', // 三重県 (津地方気象台)
     class10: '240010', // 北中部
@@ -15539,7 +15539,7 @@ const areas = {
   ),
 
 // 2421500: 志摩市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2421500.html
-  '2421500': Area(
+  '2421500': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '240000', // 三重県 (津地方気象台)
     class10: '240020', // 南部
@@ -15553,7 +15553,7 @@ const areas = {
     ],
   ),
 // 2421600: 伊賀市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2421600.html
-  '2421600': Area(
+  '2421600': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '240000', // 三重県 (津地方気象台)
     class10: '240010', // 北中部
@@ -15568,7 +15568,7 @@ const areas = {
   ),
 
 // 2430300: 木曽岬町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2430300.html
-  '2430300': Area(
+  '2430300': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '240000', // 三重県 (津地方気象台)
     class10: '240010', // 北中部
@@ -15583,7 +15583,7 @@ const areas = {
   ),
 
 // 2432400: 東員町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2432400.html
-  '2432400': Area(
+  '2432400': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '240000', // 三重県 (津地方気象台)
     class10: '240010', // 北中部
@@ -15597,7 +15597,7 @@ const areas = {
     ],
   ),
 // 2434100: 菰野町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2434100.html
-  '2434100': Area(
+  '2434100': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '240000', // 三重県 (津地方気象台)
     class10: '240010', // 北中部
@@ -15612,7 +15612,7 @@ const areas = {
   ),
 
 // 2434300: 朝日町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2434300.html
-  '2434300': Area(
+  '2434300': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '240000', // 三重県 (津地方気象台)
     class10: '240010', // 北中部
@@ -15626,7 +15626,7 @@ const areas = {
     ],
   ),
 // 2434400: 川越町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2434400.html
-  '2434400': Area(
+  '2434400': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '240000', // 三重県 (津地方気象台)
     class10: '240010', // 北中部
@@ -15641,7 +15641,7 @@ const areas = {
   ),
 
 // 2444100: 多気町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2444100.html
-  '2444100': Area(
+  '2444100': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '240000', // 三重県 (津地方気象台)
     class10: '240010', // 北中部
@@ -15656,7 +15656,7 @@ const areas = {
   ),
 
 // 2444200: 明和町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2444200.html
-  '2444200': Area(
+  '2444200': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '240000', // 三重県 (津地方気象台)
     class10: '240010', // 北中部
@@ -15670,7 +15670,7 @@ const areas = {
     ],
   ),
 // 2444300: 大台町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2444300.html
-  '2444300': Area(
+  '2444300': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '240000', // 三重県 (津地方気象台)
     class10: '240020', // 南部
@@ -15685,7 +15685,7 @@ const areas = {
   ),
 
 // 2446100: 玉城町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2446100.html
-  '2446100': Area(
+  '2446100': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '240000', // 三重県 (津地方気象台)
     class10: '240020', // 南部
@@ -15699,7 +15699,7 @@ const areas = {
     ],
   ),
 // 2447000: 度会町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2447000.html
-  '2447000': Area(
+  '2447000': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '240000', // 三重県 (津地方気象台)
     class10: '240020', // 南部
@@ -15714,7 +15714,7 @@ const areas = {
   ),
 
 // 2447100: 大紀町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2447100.html
-  '2447100': Area(
+  '2447100': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '240000', // 三重県 (津地方気象台)
     class10: '240020', // 南部
@@ -15729,7 +15729,7 @@ const areas = {
   ),
 
 // 2447200: 南伊勢町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2447200.html
-  '2447200': Area(
+  '2447200': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '240000', // 三重県 (津地方気象台)
     class10: '240020', // 南部
@@ -15743,7 +15743,7 @@ const areas = {
     ],
   ),
 // 2454300: 紀北町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2454300.html
-  '2454300': Area(
+  '2454300': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '240000', // 三重県 (津地方気象台)
     class10: '240020', // 南部
@@ -15758,7 +15758,7 @@ const areas = {
   ),
 
 // 2456100: 御浜町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2456100.html
-  '2456100': Area(
+  '2456100': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '240000', // 三重県 (津地方気象台)
     class10: '240020', // 南部
@@ -15772,7 +15772,7 @@ const areas = {
     ],
   ),
 // 2456200: 紀宝町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2456200.html
-  '2456200': Area(
+  '2456200': WeatherArea(
     center: '010400', // 東海地方 (名古屋地方気象台)
     office: '240000', // 三重県 (津地方気象台)
     class10: '240020', // 南部
@@ -15787,7 +15787,7 @@ const areas = {
   ),
 
 // 2520101: 大津市南部: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2520101.html
-  '2520101': Area(
+  '2520101': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '250000', // 滋賀県 (彦根地方気象台)
     class10: '250010', // 南部
@@ -15802,7 +15802,7 @@ const areas = {
   ),
 
 // 2520102: 大津市北部: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2520102.html
-  '2520102': Area(
+  '2520102': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '250000', // 滋賀県 (彦根地方気象台)
     class10: '250020', // 北部
@@ -15816,7 +15816,7 @@ const areas = {
     ],
   ),
 // 2520200: 彦根市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2520200.html
-  '2520200': Area(
+  '2520200': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '250000', // 滋賀県 (彦根地方気象台)
     class10: '250020', // 北部
@@ -15831,7 +15831,7 @@ const areas = {
   ),
 
 // 2520300: 長浜市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2520300.html
-  '2520300': Area(
+  '2520300': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '250000', // 滋賀県 (彦根地方気象台)
     class10: '250020', // 北部
@@ -15846,7 +15846,7 @@ const areas = {
   ),
 
 // 2520400: 近江八幡市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2520400.html
-  '2520400': Area(
+  '2520400': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '250000', // 滋賀県 (彦根地方気象台)
     class10: '250010', // 南部
@@ -15860,7 +15860,7 @@ const areas = {
     ],
   ),
 // 2520600: 草津市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2520600.html
-  '2520600': Area(
+  '2520600': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '250000', // 滋賀県 (彦根地方気象台)
     class10: '250010', // 南部
@@ -15875,7 +15875,7 @@ const areas = {
   ),
 
 // 2520700: 守山市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2520700.html
-  '2520700': Area(
+  '2520700': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '250000', // 滋賀県 (彦根地方気象台)
     class10: '250010', // 南部
@@ -15889,7 +15889,7 @@ const areas = {
     ],
   ),
 // 2520800: 栗東市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2520800.html
-  '2520800': Area(
+  '2520800': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '250000', // 滋賀県 (彦根地方気象台)
     class10: '250010', // 南部
@@ -15904,7 +15904,7 @@ const areas = {
   ),
 
 // 2520900: 甲賀市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2520900.html
-  '2520900': Area(
+  '2520900': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '250000', // 滋賀県 (彦根地方気象台)
     class10: '250010', // 南部
@@ -15919,7 +15919,7 @@ const areas = {
   ),
 
 // 2521000: 野洲市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2521000.html
-  '2521000': Area(
+  '2521000': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '250000', // 滋賀県 (彦根地方気象台)
     class10: '250010', // 南部
@@ -15933,7 +15933,7 @@ const areas = {
     ],
   ),
 // 2521100: 湖南市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2521100.html
-  '2521100': Area(
+  '2521100': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '250000', // 滋賀県 (彦根地方気象台)
     class10: '250010', // 南部
@@ -15948,7 +15948,7 @@ const areas = {
   ),
 
 // 2521200: 高島市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2521200.html
-  '2521200': Area(
+  '2521200': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '250000', // 滋賀県 (彦根地方気象台)
     class10: '250020', // 北部
@@ -15962,7 +15962,7 @@ const areas = {
     ],
   ),
 // 2521300: 東近江市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2521300.html
-  '2521300': Area(
+  '2521300': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '250000', // 滋賀県 (彦根地方気象台)
     class10: '250010', // 南部
@@ -15977,7 +15977,7 @@ const areas = {
   ),
 
 // 2521400: 米原市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2521400.html
-  '2521400': Area(
+  '2521400': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '250000', // 滋賀県 (彦根地方気象台)
     class10: '250020', // 北部
@@ -15992,7 +15992,7 @@ const areas = {
   ),
 
 // 2538300: 日野町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2538300.html
-  '2538300': Area(
+  '2538300': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '250000', // 滋賀県 (彦根地方気象台)
     class10: '250010', // 南部
@@ -16006,7 +16006,7 @@ const areas = {
     ],
   ),
 // 2538400: 竜王町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2538400.html
-  '2538400': Area(
+  '2538400': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '250000', // 滋賀県 (彦根地方気象台)
     class10: '250010', // 南部
@@ -16021,7 +16021,7 @@ const areas = {
   ),
 
 // 2542500: 愛荘町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2542500.html
-  '2542500': Area(
+  '2542500': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '250000', // 滋賀県 (彦根地方気象台)
     class10: '250020', // 北部
@@ -16035,7 +16035,7 @@ const areas = {
     ],
   ),
 // 2544100: 豊郷町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2544100.html
-  '2544100': Area(
+  '2544100': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '250000', // 滋賀県 (彦根地方気象台)
     class10: '250020', // 北部
@@ -16050,7 +16050,7 @@ const areas = {
   ),
 
 // 2544200: 甲良町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2544200.html
-  '2544200': Area(
+  '2544200': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '250000', // 滋賀県 (彦根地方気象台)
     class10: '250020', // 北部
@@ -16064,7 +16064,7 @@ const areas = {
     ],
   ),
 // 2544300: 多賀町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2544300.html
-  '2544300': Area(
+  '2544300': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '250000', // 滋賀県 (彦根地方気象台)
     class10: '250020', // 北部
@@ -16079,7 +16079,7 @@ const areas = {
   ),
 
 // 2610000: 京都市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2610000.html
-  '2610000': Area(
+  '2610000': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '260000', // 京都府 (京都地方気象台)
     class10: '260010', // 南部
@@ -16093,7 +16093,7 @@ const areas = {
     ],
   ),
 // 2620100: 福知山市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2620100.html
-  '2620100': Area(
+  '2620100': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '260000', // 京都府 (京都地方気象台)
     class10: '260020', // 北部
@@ -16108,7 +16108,7 @@ const areas = {
   ),
 
 // 2620200: 舞鶴市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2620200.html
-  '2620200': Area(
+  '2620200': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '260000', // 京都府 (京都地方気象台)
     class10: '260020', // 北部
@@ -16123,7 +16123,7 @@ const areas = {
   ),
 
 // 2620300: 綾部市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2620300.html
-  '2620300': Area(
+  '2620300': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '260000', // 京都府 (京都地方気象台)
     class10: '260020', // 北部
@@ -16138,7 +16138,7 @@ const areas = {
   ),
 
 // 2620400: 宇治市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2620400.html
-  '2620400': Area(
+  '2620400': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '260000', // 京都府 (京都地方気象台)
     class10: '260010', // 南部
@@ -16152,7 +16152,7 @@ const areas = {
     ],
   ),
 // 2620500: 宮津市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2620500.html
-  '2620500': Area(
+  '2620500': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '260000', // 京都府 (京都地方気象台)
     class10: '260020', // 北部
@@ -16167,7 +16167,7 @@ const areas = {
   ),
 
 // 2620600: 亀岡市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2620600.html
-  '2620600': Area(
+  '2620600': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '260000', // 京都府 (京都地方気象台)
     class10: '260010', // 南部
@@ -16181,7 +16181,7 @@ const areas = {
     ],
   ),
 // 2620700: 城陽市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2620700.html
-  '2620700': Area(
+  '2620700': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '260000', // 京都府 (京都地方気象台)
     class10: '260010', // 南部
@@ -16196,7 +16196,7 @@ const areas = {
   ),
 
 // 2620800: 向日市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2620800.html
-  '2620800': Area(
+  '2620800': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '260000', // 京都府 (京都地方気象台)
     class10: '260010', // 南部
@@ -16211,7 +16211,7 @@ const areas = {
   ),
 
 // 2620900: 長岡京市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2620900.html
-  '2620900': Area(
+  '2620900': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '260000', // 京都府 (京都地方気象台)
     class10: '260010', // 南部
@@ -16220,7 +16220,7 @@ const areas = {
     bbox: [135.643159728339, 34.9021580541509, 135.7173825026, 34.946678054049],
   ),
 // 2621000: 八幡市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2621000.html
-  '2621000': Area(
+  '2621000': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '260000', // 京都府 (京都地方気象台)
     class10: '260010', // 南部
@@ -16235,7 +16235,7 @@ const areas = {
   ),
 
 // 2621100: 京田辺市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2621100.html
-  '2621100': Area(
+  '2621100': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '260000', // 京都府 (京都地方気象台)
     class10: '260010', // 南部
@@ -16249,7 +16249,7 @@ const areas = {
     ],
   ),
 // 2621200: 京丹後市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2621200.html
-  '2621200': Area(
+  '2621200': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '260000', // 京都府 (京都地方気象台)
     class10: '260020', // 北部
@@ -16264,7 +16264,7 @@ const areas = {
   ),
 
 // 2621300: 南丹市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2621300.html
-  '2621300': Area(
+  '2621300': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '260000', // 京都府 (京都地方気象台)
     class10: '260010', // 南部
@@ -16279,7 +16279,7 @@ const areas = {
   ),
 
 // 2621400: 木津川市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2621400.html
-  '2621400': Area(
+  '2621400': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '260000', // 京都府 (京都地方気象台)
     class10: '260010', // 南部
@@ -16293,7 +16293,7 @@ const areas = {
     ],
   ),
 // 2630300: 大山崎町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2630300.html
-  '2630300': Area(
+  '2630300': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '260000', // 京都府 (京都地方気象台)
     class10: '260010', // 南部
@@ -16307,7 +16307,7 @@ const areas = {
     ],
   ),
 // 2632200: 久御山町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2632200.html
-  '2632200': Area(
+  '2632200': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '260000', // 京都府 (京都地方気象台)
     class10: '260010', // 南部
@@ -16322,7 +16322,7 @@ const areas = {
   ),
 
 // 2634300: 井手町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2634300.html
-  '2634300': Area(
+  '2634300': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '260000', // 京都府 (京都地方気象台)
     class10: '260010', // 南部
@@ -16336,7 +16336,7 @@ const areas = {
     ],
   ),
 // 2634400: 宇治田原町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2634400.html
-  '2634400': Area(
+  '2634400': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '260000', // 京都府 (京都地方気象台)
     class10: '260010', // 南部
@@ -16351,7 +16351,7 @@ const areas = {
   ),
 
 // 2636400: 笠置町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2636400.html
-  '2636400': Area(
+  '2636400': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '260000', // 京都府 (京都地方気象台)
     class10: '260010', // 南部
@@ -16366,7 +16366,7 @@ const areas = {
   ),
 
 // 2636500: 和束町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2636500.html
-  '2636500': Area(
+  '2636500': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '260000', // 京都府 (京都地方気象台)
     class10: '260010', // 南部
@@ -16380,7 +16380,7 @@ const areas = {
     ],
   ),
 // 2636600: 精華町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2636600.html
-  '2636600': Area(
+  '2636600': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '260000', // 京都府 (京都地方気象台)
     class10: '260010', // 南部
@@ -16395,7 +16395,7 @@ const areas = {
   ),
 
 // 2636700: 南山城村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2636700.html
-  '2636700': Area(
+  '2636700': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '260000', // 京都府 (京都地方気象台)
     class10: '260010', // 南部
@@ -16409,7 +16409,7 @@ const areas = {
     ],
   ),
 // 2640700: 京丹波町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2640700.html
-  '2640700': Area(
+  '2640700': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '260000', // 京都府 (京都地方気象台)
     class10: '260010', // 南部
@@ -16424,7 +16424,7 @@ const areas = {
   ),
 
 // 2646300: 伊根町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2646300.html
-  '2646300': Area(
+  '2646300': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '260000', // 京都府 (京都地方気象台)
     class10: '260020', // 北部
@@ -16439,7 +16439,7 @@ const areas = {
   ),
 
 // 2646500: 与謝野町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2646500.html
-  '2646500': Area(
+  '2646500': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '260000', // 京都府 (京都地方気象台)
     class10: '260020', // 北部
@@ -16454,7 +16454,7 @@ const areas = {
   ),
 
 // 2710000: 大阪市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2710000.html
-  '2710000': Area(
+  '2710000': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -16468,7 +16468,7 @@ const areas = {
     ],
   ),
 // 2714000: 堺市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2714000.html
-  '2714000': Area(
+  '2714000': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -16483,7 +16483,7 @@ const areas = {
   ),
 
 // 2720200: 岸和田市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2720200.html
-  '2720200': Area(
+  '2720200': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -16498,7 +16498,7 @@ const areas = {
   ),
 
 // 2720300: 豊中市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2720300.html
-  '2720300': Area(
+  '2720300': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -16512,7 +16512,7 @@ const areas = {
     ],
   ),
 // 2720400: 池田市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2720400.html
-  '2720400': Area(
+  '2720400': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -16527,7 +16527,7 @@ const areas = {
   ),
 
 // 2720500: 吹田市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2720500.html
-  '2720500': Area(
+  '2720500': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -16541,7 +16541,7 @@ const areas = {
     ],
   ),
 // 2720600: 泉大津市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2720600.html
-  '2720600': Area(
+  '2720600': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -16556,7 +16556,7 @@ const areas = {
   ),
 
 // 2720700: 高槻市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2720700.html
-  '2720700': Area(
+  '2720700': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -16571,7 +16571,7 @@ const areas = {
   ),
 
 // 2720800: 貝塚市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2720800.html
-  '2720800': Area(
+  '2720800': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -16586,7 +16586,7 @@ const areas = {
   ),
 
 // 2720900: 守口市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2720900.html
-  '2720900': Area(
+  '2720900': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -16601,7 +16601,7 @@ const areas = {
   ),
 
 // 2721000: 枚方市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2721000.html
-  '2721000': Area(
+  '2721000': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -16615,7 +16615,7 @@ const areas = {
     ],
   ),
 // 2721100: 茨木市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2721100.html
-  '2721100': Area(
+  '2721100': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -16630,7 +16630,7 @@ const areas = {
   ),
 
 // 2721200: 八尾市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2721200.html
-  '2721200': Area(
+  '2721200': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -16645,7 +16645,7 @@ const areas = {
   ),
 
 // 2721300: 泉佐野市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2721300.html
-  '2721300': Area(
+  '2721300': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -16659,7 +16659,7 @@ const areas = {
     ],
   ),
 // 2721400: 富田林市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2721400.html
-  '2721400': Area(
+  '2721400': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -16674,7 +16674,7 @@ const areas = {
   ),
 
 // 2721500: 寝屋川市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2721500.html
-  '2721500': Area(
+  '2721500': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -16688,7 +16688,7 @@ const areas = {
     ],
   ),
 // 2721600: 河内長野市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2721600.html
-  '2721600': Area(
+  '2721600': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -16703,7 +16703,7 @@ const areas = {
   ),
 
 // 2721700: 松原市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2721700.html
-  '2721700': Area(
+  '2721700': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -16717,7 +16717,7 @@ const areas = {
     ],
   ),
 // 2721800: 大東市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2721800.html
-  '2721800': Area(
+  '2721800': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -16731,7 +16731,7 @@ const areas = {
     ],
   ),
 // 2721900: 和泉市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2721900.html
-  '2721900': Area(
+  '2721900': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -16746,7 +16746,7 @@ const areas = {
   ),
 
 // 2722000: 箕面市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2722000.html
-  '2722000': Area(
+  '2722000': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -16761,7 +16761,7 @@ const areas = {
   ),
 
 // 2722100: 柏原市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2722100.html
-  '2722100': Area(
+  '2722100': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -16775,7 +16775,7 @@ const areas = {
     ],
   ),
 // 2722200: 羽曳野市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2722200.html
-  '2722200': Area(
+  '2722200': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -16790,7 +16790,7 @@ const areas = {
   ),
 
 // 2722300: 門真市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2722300.html
-  '2722300': Area(
+  '2722300': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -16804,7 +16804,7 @@ const areas = {
     ],
   ),
 // 2722400: 摂津市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2722400.html
-  '2722400': Area(
+  '2722400': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -16819,7 +16819,7 @@ const areas = {
   ),
 
 // 2722500: 高石市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2722500.html
-  '2722500': Area(
+  '2722500': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -16834,7 +16834,7 @@ const areas = {
   ),
 
 // 2722600: 藤井寺市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2722600.html
-  '2722600': Area(
+  '2722600': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -16848,7 +16848,7 @@ const areas = {
     ],
   ),
 // 2722700: 東大阪市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2722700.html
-  '2722700': Area(
+  '2722700': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -16863,7 +16863,7 @@ const areas = {
   ),
 
 // 2722800: 泉南市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2722800.html
-  '2722800': Area(
+  '2722800': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -16877,7 +16877,7 @@ const areas = {
     ],
   ),
 // 2722900: 四條畷市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2722900.html
-  '2722900': Area(
+  '2722900': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -16892,7 +16892,7 @@ const areas = {
   ),
 
 // 2723000: 交野市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2723000.html
-  '2723000': Area(
+  '2723000': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -16907,7 +16907,7 @@ const areas = {
   ),
 
 // 2723100: 大阪狭山市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2723100.html
-  '2723100': Area(
+  '2723100': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -16921,7 +16921,7 @@ const areas = {
     ],
   ),
 // 2723200: 阪南市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2723200.html
-  '2723200': Area(
+  '2723200': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -16936,7 +16936,7 @@ const areas = {
   ),
 
 // 2730100: 島本町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2730100.html
-  '2730100': Area(
+  '2730100': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -16950,7 +16950,7 @@ const areas = {
     ],
   ),
 // 2732100: 豊能町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2732100.html
-  '2732100': Area(
+  '2732100': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -16965,7 +16965,7 @@ const areas = {
   ),
 
 // 2732200: 能勢町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2732200.html
-  '2732200': Area(
+  '2732200': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -16980,7 +16980,7 @@ const areas = {
   ),
 
 // 2734100: 忠岡町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2734100.html
-  '2734100': Area(
+  '2734100': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -16994,7 +16994,7 @@ const areas = {
     ],
   ),
 // 2736100: 熊取町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2736100.html
-  '2736100': Area(
+  '2736100': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -17009,7 +17009,7 @@ const areas = {
   ),
 
 // 2736200: 田尻町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2736200.html
-  '2736200': Area(
+  '2736200': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -17024,7 +17024,7 @@ const areas = {
   ),
 
 // 2736600: 岬町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2736600.html
-  '2736600': Area(
+  '2736600': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -17038,7 +17038,7 @@ const areas = {
     ],
   ),
 // 2738100: 太子町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2738100.html
-  '2738100': Area(
+  '2738100': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -17053,7 +17053,7 @@ const areas = {
   ),
 
 // 2738200: 河南町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2738200.html
-  '2738200': Area(
+  '2738200': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -17067,7 +17067,7 @@ const areas = {
     ],
   ),
 // 2738300: 千早赤阪村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2738300.html
-  '2738300': Area(
+  '2738300': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '270000', // 大阪府 (大阪管区気象台)
     class10: '270000', // 大阪府
@@ -17082,7 +17082,7 @@ const areas = {
   ),
 
 // 2810000: 神戸市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2810000.html
-  '2810000': Area(
+  '2810000': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '280000', // 兵庫県 (神戸地方気象台)
     class10: '280010', // 南部
@@ -17097,7 +17097,7 @@ const areas = {
   ),
 
 // 2820100: 姫路市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2820100.html
-  '2820100': Area(
+  '2820100': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '280000', // 兵庫県 (神戸地方気象台)
     class10: '280010', // 南部
@@ -17112,7 +17112,7 @@ const areas = {
   ),
 
 // 2820200: 尼崎市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2820200.html
-  '2820200': Area(
+  '2820200': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '280000', // 兵庫県 (神戸地方気象台)
     class10: '280010', // 南部
@@ -17126,7 +17126,7 @@ const areas = {
     ],
   ),
 // 2820300: 明石市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2820300.html
-  '2820300': Area(
+  '2820300': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '280000', // 兵庫県 (神戸地方気象台)
     class10: '280010', // 南部
@@ -17141,7 +17141,7 @@ const areas = {
   ),
 
 // 2820400: 西宮市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2820400.html
-  '2820400': Area(
+  '2820400': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '280000', // 兵庫県 (神戸地方気象台)
     class10: '280010', // 南部
@@ -17155,7 +17155,7 @@ const areas = {
     ],
   ),
 // 2820500: 洲本市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2820500.html
-  '2820500': Area(
+  '2820500': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '280000', // 兵庫県 (神戸地方気象台)
     class10: '280010', // 南部
@@ -17170,7 +17170,7 @@ const areas = {
   ),
 
 // 2820600: 芦屋市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2820600.html
-  '2820600': Area(
+  '2820600': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '280000', // 兵庫県 (神戸地方気象台)
     class10: '280010', // 南部
@@ -17185,7 +17185,7 @@ const areas = {
   ),
 
 // 2820700: 伊丹市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2820700.html
-  '2820700': Area(
+  '2820700': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '280000', // 兵庫県 (神戸地方気象台)
     class10: '280010', // 南部
@@ -17199,7 +17199,7 @@ const areas = {
     ],
   ),
 // 2820800: 相生市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2820800.html
-  '2820800': Area(
+  '2820800': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '280000', // 兵庫県 (神戸地方気象台)
     class10: '280010', // 南部
@@ -17214,7 +17214,7 @@ const areas = {
   ),
 
 // 2820900: 豊岡市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2820900.html
-  '2820900': Area(
+  '2820900': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '280000', // 兵庫県 (神戸地方気象台)
     class10: '280020', // 北部
@@ -17228,7 +17228,7 @@ const areas = {
     ],
   ),
 // 2821000: 加古川市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2821000.html
-  '2821000': Area(
+  '2821000': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '280000', // 兵庫県 (神戸地方気象台)
     class10: '280010', // 南部
@@ -17243,7 +17243,7 @@ const areas = {
   ),
 
 // 2821200: 赤穂市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2821200.html
-  '2821200': Area(
+  '2821200': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '280000', // 兵庫県 (神戸地方気象台)
     class10: '280010', // 南部
@@ -17258,7 +17258,7 @@ const areas = {
   ),
 
 // 2821300: 西脇市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2821300.html
-  '2821300': Area(
+  '2821300': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '280000', // 兵庫県 (神戸地方気象台)
     class10: '280010', // 南部
@@ -17272,7 +17272,7 @@ const areas = {
     ],
   ),
 // 2821400: 宝塚市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2821400.html
-  '2821400': Area(
+  '2821400': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '280000', // 兵庫県 (神戸地方気象台)
     class10: '280010', // 南部
@@ -17286,7 +17286,7 @@ const areas = {
     ],
   ),
 // 2821500: 三木市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2821500.html
-  '2821500': Area(
+  '2821500': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '280000', // 兵庫県 (神戸地方気象台)
     class10: '280010', // 南部
@@ -17301,7 +17301,7 @@ const areas = {
   ),
 
 // 2821600: 高砂市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2821600.html
-  '2821600': Area(
+  '2821600': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '280000', // 兵庫県 (神戸地方気象台)
     class10: '280010', // 南部
@@ -17315,7 +17315,7 @@ const areas = {
     ],
   ),
 // 2821700: 川西市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2821700.html
-  '2821700': Area(
+  '2821700': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '280000', // 兵庫県 (神戸地方気象台)
     class10: '280010', // 南部
@@ -17330,7 +17330,7 @@ const areas = {
   ),
 
 // 2821800: 小野市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2821800.html
-  '2821800': Area(
+  '2821800': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '280000', // 兵庫県 (神戸地方気象台)
     class10: '280010', // 南部
@@ -17345,7 +17345,7 @@ const areas = {
   ),
 
 // 2821900: 三田市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2821900.html
-  '2821900': Area(
+  '2821900': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '280000', // 兵庫県 (神戸地方気象台)
     class10: '280010', // 南部
@@ -17359,7 +17359,7 @@ const areas = {
     ],
   ),
 // 2822000: 加西市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2822000.html
-  '2822000': Area(
+  '2822000': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '280000', // 兵庫県 (神戸地方気象台)
     class10: '280010', // 南部
@@ -17374,7 +17374,7 @@ const areas = {
   ),
 
 // 2822100: 丹波篠山市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2822100.html
-  '2822100': Area(
+  '2822100': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '280000', // 兵庫県 (神戸地方気象台)
     class10: '280010', // 南部
@@ -17388,7 +17388,7 @@ const areas = {
     ],
   ),
 // 2822200: 養父市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2822200.html
-  '2822200': Area(
+  '2822200': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '280000', // 兵庫県 (神戸地方気象台)
     class10: '280020', // 北部
@@ -17403,7 +17403,7 @@ const areas = {
   ),
 
 // 2822300: 丹波市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2822300.html
-  '2822300': Area(
+  '2822300': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '280000', // 兵庫県 (神戸地方気象台)
     class10: '280010', // 南部
@@ -17418,7 +17418,7 @@ const areas = {
   ),
 
 // 2822400: 南あわじ市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2822400.html
-  '2822400': Area(
+  '2822400': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '280000', // 兵庫県 (神戸地方気象台)
     class10: '280010', // 南部
@@ -17433,7 +17433,7 @@ const areas = {
   ),
 
 // 2822500: 朝来市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2822500.html
-  '2822500': Area(
+  '2822500': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '280000', // 兵庫県 (神戸地方気象台)
     class10: '280020', // 北部
@@ -17448,7 +17448,7 @@ const areas = {
   ),
 
 // 2822600: 淡路市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2822600.html
-  '2822600': Area(
+  '2822600': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '280000', // 兵庫県 (神戸地方気象台)
     class10: '280010', // 南部
@@ -17462,7 +17462,7 @@ const areas = {
     ],
   ),
 // 2822700: 宍粟市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2822700.html
-  '2822700': Area(
+  '2822700': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '280000', // 兵庫県 (神戸地方気象台)
     class10: '280010', // 南部
@@ -17477,7 +17477,7 @@ const areas = {
   ),
 
 // 2822800: 加東市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2822800.html
-  '2822800': Area(
+  '2822800': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '280000', // 兵庫県 (神戸地方気象台)
     class10: '280010', // 南部
@@ -17487,7 +17487,7 @@ const areas = {
   ),
 
 // 2822900: たつの市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2822900.html
-  '2822900': Area(
+  '2822900': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '280000', // 兵庫県 (神戸地方気象台)
     class10: '280010', // 南部
@@ -17502,7 +17502,7 @@ const areas = {
   ),
 
 // 2830100: 猪名川町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2830100.html
-  '2830100': Area(
+  '2830100': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '280000', // 兵庫県 (神戸地方気象台)
     class10: '280010', // 南部
@@ -17516,7 +17516,7 @@ const areas = {
     ],
   ),
 // 2836500: 多可町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2836500.html
-  '2836500': Area(
+  '2836500': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '280000', // 兵庫県 (神戸地方気象台)
     class10: '280010', // 南部
@@ -17531,7 +17531,7 @@ const areas = {
   ),
 
 // 2838100: 稲美町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2838100.html
-  '2838100': Area(
+  '2838100': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '280000', // 兵庫県 (神戸地方気象台)
     class10: '280010', // 南部
@@ -17546,7 +17546,7 @@ const areas = {
   ),
 
 // 2838200: 播磨町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2838200.html
-  '2838200': Area(
+  '2838200': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '280000', // 兵庫県 (神戸地方気象台)
     class10: '280010', // 南部
@@ -17560,7 +17560,7 @@ const areas = {
     ],
   ),
 // 2844200: 市川町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2844200.html
-  '2844200': Area(
+  '2844200': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '280000', // 兵庫県 (神戸地方気象台)
     class10: '280010', // 南部
@@ -17575,7 +17575,7 @@ const areas = {
   ),
 
 // 2844300: 福崎町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2844300.html
-  '2844300': Area(
+  '2844300': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '280000', // 兵庫県 (神戸地方気象台)
     class10: '280010', // 南部
@@ -17590,7 +17590,7 @@ const areas = {
   ),
 
 // 2844600: 神河町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2844600.html
-  '2844600': Area(
+  '2844600': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '280000', // 兵庫県 (神戸地方気象台)
     class10: '280010', // 南部
@@ -17604,7 +17604,7 @@ const areas = {
     ],
   ),
 // 2846400: 太子町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2846400.html
-  '2846400': Area(
+  '2846400': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '280000', // 兵庫県 (神戸地方気象台)
     class10: '280010', // 南部
@@ -17619,7 +17619,7 @@ const areas = {
   ),
 
 // 2848100: 上郡町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2848100.html
-  '2848100': Area(
+  '2848100': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '280000', // 兵庫県 (神戸地方気象台)
     class10: '280010', // 南部
@@ -17634,7 +17634,7 @@ const areas = {
   ),
 
 // 2850100: 佐用町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2850100.html
-  '2850100': Area(
+  '2850100': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '280000', // 兵庫県 (神戸地方気象台)
     class10: '280010', // 南部
@@ -17648,7 +17648,7 @@ const areas = {
     ],
   ),
 // 2858500: 香美町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2858500.html
-  '2858500': Area(
+  '2858500': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '280000', // 兵庫県 (神戸地方気象台)
     class10: '280020', // 北部
@@ -17663,7 +17663,7 @@ const areas = {
   ),
 
 // 2858600: 新温泉町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2858600.html
-  '2858600': Area(
+  '2858600': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '280000', // 兵庫県 (神戸地方気象台)
     class10: '280020', // 北部
@@ -17677,7 +17677,7 @@ const areas = {
     ],
   ),
 // 2920100: 奈良市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2920100.html
-  '2920100': Area(
+  '2920100': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '290000', // 奈良県 (奈良地方気象台)
     class10: '290010', // 北部
@@ -17692,7 +17692,7 @@ const areas = {
   ),
 
 // 2920200: 大和高田市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2920200.html
-  '2920200': Area(
+  '2920200': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '290000', // 奈良県 (奈良地方気象台)
     class10: '290010', // 北部
@@ -17707,7 +17707,7 @@ const areas = {
   ),
 
 // 2920300: 大和郡山市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2920300.html
-  '2920300': Area(
+  '2920300': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '290000', // 奈良県 (奈良地方気象台)
     class10: '290010', // 北部
@@ -17721,7 +17721,7 @@ const areas = {
     ],
   ),
 // 2920400: 天理市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2920400.html
-  '2920400': Area(
+  '2920400': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '290000', // 奈良県 (奈良地方気象台)
     class10: '290010', // 北部
@@ -17735,7 +17735,7 @@ const areas = {
     ],
   ),
 // 2920500: 橿原市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2920500.html
-  '2920500': Area(
+  '2920500': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '290000', // 奈良県 (奈良地方気象台)
     class10: '290010', // 北部
@@ -17750,7 +17750,7 @@ const areas = {
   ),
 
 // 2920600: 桜井市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2920600.html
-  '2920600': Area(
+  '2920600': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '290000', // 奈良県 (奈良地方気象台)
     class10: '290010', // 北部
@@ -17764,7 +17764,7 @@ const areas = {
     ],
   ),
 // 2920701: 五條市北部: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2920701.html
-  '2920701': Area(
+  '2920701': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '290000', // 奈良県 (奈良地方気象台)
     class10: '290010', // 北部
@@ -17779,7 +17779,7 @@ const areas = {
   ),
 
 // 2920702: 五條市南部: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2920702.html
-  '2920702': Area(
+  '2920702': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '290000', // 奈良県 (奈良地方気象台)
     class10: '290020', // 南部
@@ -17794,7 +17794,7 @@ const areas = {
   ),
 
 // 2920800: 御所市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2920800.html
-  '2920800': Area(
+  '2920800': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '290000', // 奈良県 (奈良地方気象台)
     class10: '290010', // 北部
@@ -17808,7 +17808,7 @@ const areas = {
     ],
   ),
 // 2920900: 生駒市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2920900.html
-  '2920900': Area(
+  '2920900': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '290000', // 奈良県 (奈良地方気象台)
     class10: '290010', // 北部
@@ -17823,7 +17823,7 @@ const areas = {
   ),
 
 // 2921000: 香芝市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2921000.html
-  '2921000': Area(
+  '2921000': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '290000', // 奈良県 (奈良地方気象台)
     class10: '290010', // 北部
@@ -17837,7 +17837,7 @@ const areas = {
     ],
   ),
 // 2921100: 葛城市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2921100.html
-  '2921100': Area(
+  '2921100': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '290000', // 奈良県 (奈良地方気象台)
     class10: '290010', // 北部
@@ -17852,7 +17852,7 @@ const areas = {
   ),
 
 // 2921200: 宇陀市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2921200.html
-  '2921200': Area(
+  '2921200': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '290000', // 奈良県 (奈良地方気象台)
     class10: '290010', // 北部
@@ -17867,7 +17867,7 @@ const areas = {
   ),
 
 // 2932200: 山添村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2932200.html
-  '2932200': Area(
+  '2932200': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '290000', // 奈良県 (奈良地方気象台)
     class10: '290010', // 北部
@@ -17881,7 +17881,7 @@ const areas = {
     ],
   ),
 // 2934200: 平群町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2934200.html
-  '2934200': Area(
+  '2934200': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '290000', // 奈良県 (奈良地方気象台)
     class10: '290010', // 北部
@@ -17896,7 +17896,7 @@ const areas = {
   ),
 
 // 2934300: 三郷町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2934300.html
-  '2934300': Area(
+  '2934300': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '290000', // 奈良県 (奈良地方気象台)
     class10: '290010', // 北部
@@ -17910,7 +17910,7 @@ const areas = {
     ],
   ),
 // 2934400: 斑鳩町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2934400.html
-  '2934400': Area(
+  '2934400': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '290000', // 奈良県 (奈良地方気象台)
     class10: '290010', // 北部
@@ -17925,7 +17925,7 @@ const areas = {
   ),
 
 // 2934500: 安堵町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2934500.html
-  '2934500': Area(
+  '2934500': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '290000', // 奈良県 (奈良地方気象台)
     class10: '290010', // 北部
@@ -17940,7 +17940,7 @@ const areas = {
   ),
 
 // 2936100: 川西町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2936100.html
-  '2936100': Area(
+  '2936100': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '290000', // 奈良県 (奈良地方気象台)
     class10: '290010', // 北部
@@ -17954,7 +17954,7 @@ const areas = {
     ],
   ),
 // 2936200: 三宅町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2936200.html
-  '2936200': Area(
+  '2936200': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '290000', // 奈良県 (奈良地方気象台)
     class10: '290010', // 北部
@@ -17963,7 +17963,7 @@ const areas = {
     bbox: [135.752547781555, 34.5615147210276, 135.7940530606, 34.581476946404],
   ),
 // 2936300: 田原本町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2936300.html
-  '2936300': Area(
+  '2936300': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '290000', // 奈良県 (奈良地方気象台)
     class10: '290010', // 北部
@@ -17977,7 +17977,7 @@ const areas = {
     ],
   ),
 // 2938500: 曽爾村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2938500.html
-  '2938500': Area(
+  '2938500': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '290000', // 奈良県 (奈良地方気象台)
     class10: '290020', // 南部
@@ -17992,7 +17992,7 @@ const areas = {
   ),
 
 // 2938600: 御杖村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2938600.html
-  '2938600': Area(
+  '2938600': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '290000', // 奈良県 (奈良地方気象台)
     class10: '290020', // 南部
@@ -18006,7 +18006,7 @@ const areas = {
     ],
   ),
 // 2940100: 高取町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2940100.html
-  '2940100': Area(
+  '2940100': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '290000', // 奈良県 (奈良地方気象台)
     class10: '290010', // 北部
@@ -18020,7 +18020,7 @@ const areas = {
     ],
   ),
 // 2940200: 明日香村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2940200.html
-  '2940200': Area(
+  '2940200': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '290000', // 奈良県 (奈良地方気象台)
     class10: '290010', // 北部
@@ -18035,7 +18035,7 @@ const areas = {
   ),
 
 // 2942400: 上牧町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2942400.html
-  '2942400': Area(
+  '2942400': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '290000', // 奈良県 (奈良地方気象台)
     class10: '290010', // 北部
@@ -18049,7 +18049,7 @@ const areas = {
     ],
   ),
 // 2942500: 王寺町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2942500.html
-  '2942500': Area(
+  '2942500': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '290000', // 奈良県 (奈良地方気象台)
     class10: '290010', // 北部
@@ -18063,7 +18063,7 @@ const areas = {
     ],
   ),
 // 2942600: 広陵町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2942600.html
-  '2942600': Area(
+  '2942600': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '290000', // 奈良県 (奈良地方気象台)
     class10: '290010', // 北部
@@ -18077,7 +18077,7 @@ const areas = {
     ],
   ),
 // 2942700: 河合町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2942700.html
-  '2942700': Area(
+  '2942700': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '290000', // 奈良県 (奈良地方気象台)
     class10: '290010', // 北部
@@ -18091,7 +18091,7 @@ const areas = {
     ],
   ),
 // 2944100: 吉野町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2944100.html
-  '2944100': Area(
+  '2944100': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '290000', // 奈良県 (奈良地方気象台)
     class10: '290010', // 北部
@@ -18105,7 +18105,7 @@ const areas = {
     ],
   ),
 // 2944200: 大淀町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2944200.html
-  '2944200': Area(
+  '2944200': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '290000', // 奈良県 (奈良地方気象台)
     class10: '290010', // 北部
@@ -18119,7 +18119,7 @@ const areas = {
     ],
   ),
 // 2944300: 下市町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2944300.html
-  '2944300': Area(
+  '2944300': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '290000', // 奈良県 (奈良地方気象台)
     class10: '290010', // 北部
@@ -18133,7 +18133,7 @@ const areas = {
     ],
   ),
 // 2944400: 黒滝村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2944400.html
-  '2944400': Area(
+  '2944400': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '290000', // 奈良県 (奈良地方気象台)
     class10: '290020', // 南部
@@ -18147,7 +18147,7 @@ const areas = {
     ],
   ),
 // 2944600: 天川村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2944600.html
-  '2944600': Area(
+  '2944600': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '290000', // 奈良県 (奈良地方気象台)
     class10: '290020', // 南部
@@ -18161,7 +18161,7 @@ const areas = {
     ],
   ),
 // 2944700: 野迫川村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2944700.html
-  '2944700': Area(
+  '2944700': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '290000', // 奈良県 (奈良地方気象台)
     class10: '290020', // 南部
@@ -18176,7 +18176,7 @@ const areas = {
   ),
 
 // 2944900: 十津川村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2944900.html
-  '2944900': Area(
+  '2944900': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '290000', // 奈良県 (奈良地方気象台)
     class10: '290020', // 南部
@@ -18190,7 +18190,7 @@ const areas = {
     ],
   ),
 // 2945000: 下北山村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2945000.html
-  '2945000': Area(
+  '2945000': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '290000', // 奈良県 (奈良地方気象台)
     class10: '290020', // 南部
@@ -18205,7 +18205,7 @@ const areas = {
   ),
 
 // 2945100: 上北山村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2945100.html
-  '2945100': Area(
+  '2945100': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '290000', // 奈良県 (奈良地方気象台)
     class10: '290020', // 南部
@@ -18219,7 +18219,7 @@ const areas = {
     ],
   ),
 // 2945200: 川上村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2945200.html
-  '2945200': Area(
+  '2945200': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '290000', // 奈良県 (奈良地方気象台)
     class10: '290020', // 南部
@@ -18234,7 +18234,7 @@ const areas = {
   ),
 
 // 2945300: 東吉野村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/2945300.html
-  '2945300': Area(
+  '2945300': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '290000', // 奈良県 (奈良地方気象台)
     class10: '290020', // 南部
@@ -18249,7 +18249,7 @@ const areas = {
   ),
 
 // 3020100: 和歌山市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3020100.html
-  '3020100': Area(
+  '3020100': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '300000', // 和歌山県 (和歌山地方気象台)
     class10: '300010', // 北部
@@ -18263,7 +18263,7 @@ const areas = {
     ],
   ),
 // 3020200: 海南市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3020200.html
-  '3020200': Area(
+  '3020200': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '300000', // 和歌山県 (和歌山地方気象台)
     class10: '300010', // 北部
@@ -18277,7 +18277,7 @@ const areas = {
     ],
   ),
 // 3020300: 橋本市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3020300.html
-  '3020300': Area(
+  '3020300': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '300000', // 和歌山県 (和歌山地方気象台)
     class10: '300010', // 北部
@@ -18292,7 +18292,7 @@ const areas = {
   ),
 
 // 3020400: 有田市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3020400.html
-  '3020400': Area(
+  '3020400': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '300000', // 和歌山県 (和歌山地方気象台)
     class10: '300010', // 北部
@@ -18306,7 +18306,7 @@ const areas = {
     ],
   ),
 // 3020500: 御坊市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3020500.html
-  '3020500': Area(
+  '3020500': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '300000', // 和歌山県 (和歌山地方気象台)
     class10: '300010', // 北部
@@ -18321,7 +18321,7 @@ const areas = {
   ),
 
 // 3020601: 田辺市田辺: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3020601.html
-  '3020601': Area(
+  '3020601': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '300000', // 和歌山県 (和歌山地方気象台)
     class10: '300020', // 南部
@@ -18336,7 +18336,7 @@ const areas = {
   ),
 
 // 3020602: 田辺市龍神: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3020602.html
-  '3020602': Area(
+  '3020602': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '300000', // 和歌山県 (和歌山地方気象台)
     class10: '300020', // 南部
@@ -18351,7 +18351,7 @@ const areas = {
   ),
 
 // 3020603: 田辺市中辺路: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3020603.html
-  '3020603': Area(
+  '3020603': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '300000', // 和歌山県 (和歌山地方気象台)
     class10: '300020', // 南部
@@ -18365,7 +18365,7 @@ const areas = {
     ],
   ),
 // 3020604: 田辺市大塔: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3020604.html
-  '3020604': Area(
+  '3020604': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '300000', // 和歌山県 (和歌山地方気象台)
     class10: '300020', // 南部
@@ -18380,7 +18380,7 @@ const areas = {
   ),
 
 // 3020605: 田辺市本宮: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3020605.html
-  '3020605': Area(
+  '3020605': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '300000', // 和歌山県 (和歌山地方気象台)
     class10: '300020', // 南部
@@ -18394,7 +18394,7 @@ const areas = {
     ],
   ),
 // 3020700: 新宮市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3020700.html
-  '3020700': Area(
+  '3020700': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '300000', // 和歌山県 (和歌山地方気象台)
     class10: '300020', // 南部
@@ -18409,7 +18409,7 @@ const areas = {
   ),
 
 // 3020800: 紀の川市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3020800.html
-  '3020800': Area(
+  '3020800': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '300000', // 和歌山県 (和歌山地方気象台)
     class10: '300010', // 北部
@@ -18424,7 +18424,7 @@ const areas = {
   ),
 
 // 3020900: 岩出市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3020900.html
-  '3020900': Area(
+  '3020900': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '300000', // 和歌山県 (和歌山地方気象台)
     class10: '300010', // 北部
@@ -18439,7 +18439,7 @@ const areas = {
   ),
 
 // 3030400: 紀美野町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3030400.html
-  '3030400': Area(
+  '3030400': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '300000', // 和歌山県 (和歌山地方気象台)
     class10: '300010', // 北部
@@ -18453,7 +18453,7 @@ const areas = {
     ],
   ),
 // 3034100: かつらぎ町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3034100.html
-  '3034100': Area(
+  '3034100': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '300000', // 和歌山県 (和歌山地方気象台)
     class10: '300010', // 北部
@@ -18468,7 +18468,7 @@ const areas = {
   ),
 
 // 3034300: 九度山町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3034300.html
-  '3034300': Area(
+  '3034300': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '300000', // 和歌山県 (和歌山地方気象台)
     class10: '300010', // 北部
@@ -18483,7 +18483,7 @@ const areas = {
   ),
 
 // 3034400: 高野町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3034400.html
-  '3034400': Area(
+  '3034400': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '300000', // 和歌山県 (和歌山地方気象台)
     class10: '300010', // 北部
@@ -18497,7 +18497,7 @@ const areas = {
     ],
   ),
 // 3036100: 湯浅町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3036100.html
-  '3036100': Area(
+  '3036100': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '300000', // 和歌山県 (和歌山地方気象台)
     class10: '300010', // 北部
@@ -18512,7 +18512,7 @@ const areas = {
   ),
 
 // 3036200: 広川町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3036200.html
-  '3036200': Area(
+  '3036200': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '300000', // 和歌山県 (和歌山地方気象台)
     class10: '300010', // 北部
@@ -18526,7 +18526,7 @@ const areas = {
     ],
   ),
 // 3036600: 有田川町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3036600.html
-  '3036600': Area(
+  '3036600': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '300000', // 和歌山県 (和歌山地方気象台)
     class10: '300010', // 北部
@@ -18541,7 +18541,7 @@ const areas = {
   ),
 
 // 3038100: 美浜町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3038100.html
-  '3038100': Area(
+  '3038100': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '300000', // 和歌山県 (和歌山地方気象台)
     class10: '300010', // 北部
@@ -18555,7 +18555,7 @@ const areas = {
     ],
   ),
 // 3038200: 日高町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3038200.html
-  '3038200': Area(
+  '3038200': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '300000', // 和歌山県 (和歌山地方気象台)
     class10: '300010', // 北部
@@ -18570,7 +18570,7 @@ const areas = {
   ),
 
 // 3038300: 由良町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3038300.html
-  '3038300': Area(
+  '3038300': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '300000', // 和歌山県 (和歌山地方気象台)
     class10: '300010', // 北部
@@ -18585,7 +18585,7 @@ const areas = {
   ),
 
 // 3039000: 印南町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3039000.html
-  '3039000': Area(
+  '3039000': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '300000', // 和歌山県 (和歌山地方気象台)
     class10: '300010', // 北部
@@ -18599,7 +18599,7 @@ const areas = {
     ],
   ),
 // 3039100: みなべ町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3039100.html
-  '3039100': Area(
+  '3039100': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '300000', // 和歌山県 (和歌山地方気象台)
     class10: '300010', // 北部
@@ -18614,7 +18614,7 @@ const areas = {
   ),
 
 // 3039200: 日高川町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3039200.html
-  '3039200': Area(
+  '3039200': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '300000', // 和歌山県 (和歌山地方気象台)
     class10: '300010', // 北部
@@ -18628,7 +18628,7 @@ const areas = {
     ],
   ),
 // 3040100: 白浜町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3040100.html
-  '3040100': Area(
+  '3040100': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '300000', // 和歌山県 (和歌山地方気象台)
     class10: '300020', // 南部
@@ -18643,7 +18643,7 @@ const areas = {
   ),
 
 // 3040400: 上富田町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3040400.html
-  '3040400': Area(
+  '3040400': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '300000', // 和歌山県 (和歌山地方気象台)
     class10: '300020', // 南部
@@ -18658,7 +18658,7 @@ const areas = {
   ),
 
 // 3040600: すさみ町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3040600.html
-  '3040600': Area(
+  '3040600': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '300000', // 和歌山県 (和歌山地方気象台)
     class10: '300020', // 南部
@@ -18672,7 +18672,7 @@ const areas = {
     ],
   ),
 // 3042100: 那智勝浦町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3042100.html
-  '3042100': Area(
+  '3042100': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '300000', // 和歌山県 (和歌山地方気象台)
     class10: '300020', // 南部
@@ -18686,7 +18686,7 @@ const areas = {
     ],
   ),
 // 3042200: 太地町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3042200.html
-  '3042200': Area(
+  '3042200': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '300000', // 和歌山県 (和歌山地方気象台)
     class10: '300020', // 南部
@@ -18700,7 +18700,7 @@ const areas = {
     ],
   ),
 // 3042400: 古座川町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3042400.html
-  '3042400': Area(
+  '3042400': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '300000', // 和歌山県 (和歌山地方気象台)
     class10: '300020', // 南部
@@ -18715,7 +18715,7 @@ const areas = {
   ),
 
 // 3042700: 北山村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3042700.html
-  '3042700': Area(
+  '3042700': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '300000', // 和歌山県 (和歌山地方気象台)
     class10: '300020', // 南部
@@ -18729,7 +18729,7 @@ const areas = {
     ],
   ),
 // 3042800: 串本町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3042800.html
-  '3042800': Area(
+  '3042800': WeatherArea(
     center: '010600', // 近畿地方 (大阪管区気象台)
     office: '300000', // 和歌山県 (和歌山地方気象台)
     class10: '300020', // 南部
@@ -18744,7 +18744,7 @@ const areas = {
   ),
 
 // 3120101: 鳥取市北部: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3120101.html
-  '3120101': Area(
+  '3120101': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '310000', // 鳥取県 (鳥取地方気象台)
     class10: '310010', // 東部
@@ -18758,7 +18758,7 @@ const areas = {
     ],
   ),
 // 3120102: 鳥取市南部: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3120102.html
-  '3120102': Area(
+  '3120102': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '310000', // 鳥取県 (鳥取地方気象台)
     class10: '310010', // 東部
@@ -18773,7 +18773,7 @@ const areas = {
   ),
 
 // 3120200: 米子市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3120200.html
-  '3120200': Area(
+  '3120200': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '310000', // 鳥取県 (鳥取地方気象台)
     class10: '310020', // 中・西部
@@ -18787,7 +18787,7 @@ const areas = {
     ],
   ),
 // 3120300: 倉吉市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3120300.html
-  '3120300': Area(
+  '3120300': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '310000', // 鳥取県 (鳥取地方気象台)
     class10: '310020', // 中・西部
@@ -18797,7 +18797,7 @@ const areas = {
   ),
 
 // 3120400: 境港市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3120400.html
-  '3120400': Area(
+  '3120400': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '310000', // 鳥取県 (鳥取地方気象台)
     class10: '310020', // 中・西部
@@ -18812,7 +18812,7 @@ const areas = {
   ),
 
 // 3130200: 岩美町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3130200.html
-  '3130200': Area(
+  '3130200': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '310000', // 鳥取県 (鳥取地方気象台)
     class10: '310010', // 東部
@@ -18826,7 +18826,7 @@ const areas = {
     ],
   ),
 // 3132500: 若桜町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3132500.html
-  '3132500': Area(
+  '3132500': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '310000', // 鳥取県 (鳥取地方気象台)
     class10: '310010', // 東部
@@ -18841,7 +18841,7 @@ const areas = {
   ),
 
 // 3132800: 智頭町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3132800.html
-  '3132800': Area(
+  '3132800': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '310000', // 鳥取県 (鳥取地方気象台)
     class10: '310010', // 東部
@@ -18855,7 +18855,7 @@ const areas = {
     ],
   ),
 // 3132900: 八頭町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3132900.html
-  '3132900': Area(
+  '3132900': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '310000', // 鳥取県 (鳥取地方気象台)
     class10: '310010', // 東部
@@ -18870,7 +18870,7 @@ const areas = {
   ),
 
 // 3136400: 三朝町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3136400.html
-  '3136400': Area(
+  '3136400': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '310000', // 鳥取県 (鳥取地方気象台)
     class10: '310020', // 中・西部
@@ -18884,7 +18884,7 @@ const areas = {
     ],
   ),
 // 3137000: 湯梨浜町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3137000.html
-  '3137000': Area(
+  '3137000': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '310000', // 鳥取県 (鳥取地方気象台)
     class10: '310020', // 中・西部
@@ -18899,7 +18899,7 @@ const areas = {
   ),
 
 // 3137100: 琴浦町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3137100.html
-  '3137100': Area(
+  '3137100': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '310000', // 鳥取県 (鳥取地方気象台)
     class10: '310020', // 中・西部
@@ -18913,7 +18913,7 @@ const areas = {
     ],
   ),
 // 3137200: 北栄町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3137200.html
-  '3137200': Area(
+  '3137200': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '310000', // 鳥取県 (鳥取地方気象台)
     class10: '310020', // 中・西部
@@ -18928,7 +18928,7 @@ const areas = {
   ),
 
 // 3138400: 日吉津村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3138400.html
-  '3138400': Area(
+  '3138400': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '310000', // 鳥取県 (鳥取地方気象台)
     class10: '310020', // 中・西部
@@ -18942,7 +18942,7 @@ const areas = {
     ],
   ),
 // 3138600: 大山町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3138600.html
-  '3138600': Area(
+  '3138600': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '310000', // 鳥取県 (鳥取地方気象台)
     class10: '310020', // 中・西部
@@ -18957,7 +18957,7 @@ const areas = {
   ),
 
 // 3138900: 南部町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3138900.html
-  '3138900': Area(
+  '3138900': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '310000', // 鳥取県 (鳥取地方気象台)
     class10: '310020', // 中・西部
@@ -18971,7 +18971,7 @@ const areas = {
     ],
   ),
 // 3139000: 伯耆町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3139000.html
-  '3139000': Area(
+  '3139000': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '310000', // 鳥取県 (鳥取地方気象台)
     class10: '310020', // 中・西部
@@ -18986,7 +18986,7 @@ const areas = {
   ),
 
 // 3140100: 日南町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3140100.html
-  '3140100': Area(
+  '3140100': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '310000', // 鳥取県 (鳥取地方気象台)
     class10: '310020', // 中・西部
@@ -19001,7 +19001,7 @@ const areas = {
   ),
 
 // 3140200: 日野町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3140200.html
-  '3140200': Area(
+  '3140200': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '310000', // 鳥取県 (鳥取地方気象台)
     class10: '310020', // 中・西部
@@ -19015,7 +19015,7 @@ const areas = {
     ],
   ),
 // 3140300: 江府町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3140300.html
-  '3140300': Area(
+  '3140300': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '310000', // 鳥取県 (鳥取地方気象台)
     class10: '310020', // 中・西部
@@ -19029,7 +19029,7 @@ const areas = {
     ],
   ),
 // 3220100: 松江市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3220100.html
-  '3220100': Area(
+  '3220100': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '320000', // 島根県 (松江地方気象台)
     class10: '320010', // 東部
@@ -19043,7 +19043,7 @@ const areas = {
     ],
   ),
 // 3220200: 浜田市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3220200.html
-  '3220200': Area(
+  '3220200': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '320000', // 島根県 (松江地方気象台)
     class10: '320020', // 西部
@@ -19058,7 +19058,7 @@ const areas = {
   ),
 
 // 3220300: 出雲市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3220300.html
-  '3220300': Area(
+  '3220300': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '320000', // 島根県 (松江地方気象台)
     class10: '320010', // 東部
@@ -19072,7 +19072,7 @@ const areas = {
     ],
   ),
 // 3220400: 益田市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3220400.html
-  '3220400': Area(
+  '3220400': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '320000', // 島根県 (松江地方気象台)
     class10: '320020', // 西部
@@ -19087,7 +19087,7 @@ const areas = {
   ),
 
 // 3220500: 大田市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3220500.html
-  '3220500': Area(
+  '3220500': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '320000', // 島根県 (松江地方気象台)
     class10: '320020', // 西部
@@ -19101,7 +19101,7 @@ const areas = {
     ],
   ),
 // 3220600: 安来市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3220600.html
-  '3220600': Area(
+  '3220600': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '320000', // 島根県 (松江地方気象台)
     class10: '320010', // 東部
@@ -19116,7 +19116,7 @@ const areas = {
   ),
 
 // 3220700: 江津市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3220700.html
-  '3220700': Area(
+  '3220700': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '320000', // 島根県 (松江地方気象台)
     class10: '320020', // 西部
@@ -19130,7 +19130,7 @@ const areas = {
     ],
   ),
 // 3220900: 雲南市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3220900.html
-  '3220900': Area(
+  '3220900': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '320000', // 島根県 (松江地方気象台)
     class10: '320010', // 東部
@@ -19145,7 +19145,7 @@ const areas = {
   ),
 
 // 3234300: 奥出雲町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3234300.html
-  '3234300': Area(
+  '3234300': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '320000', // 島根県 (松江地方気象台)
     class10: '320010', // 東部
@@ -19159,7 +19159,7 @@ const areas = {
     ],
   ),
 // 3238600: 飯南町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3238600.html
-  '3238600': Area(
+  '3238600': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '320000', // 島根県 (松江地方気象台)
     class10: '320010', // 東部
@@ -19174,7 +19174,7 @@ const areas = {
   ),
 
 // 3244100: 川本町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3244100.html
-  '3244100': Area(
+  '3244100': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '320000', // 島根県 (松江地方気象台)
     class10: '320020', // 西部
@@ -19189,7 +19189,7 @@ const areas = {
   ),
 
 // 3244800: 美郷町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3244800.html
-  '3244800': Area(
+  '3244800': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '320000', // 島根県 (松江地方気象台)
     class10: '320020', // 西部
@@ -19203,7 +19203,7 @@ const areas = {
     ],
   ),
 // 3244900: 邑南町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3244900.html
-  '3244900': Area(
+  '3244900': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '320000', // 島根県 (松江地方気象台)
     class10: '320020', // 西部
@@ -19217,7 +19217,7 @@ const areas = {
     ],
   ),
 // 3250100: 津和野町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3250100.html
-  '3250100': Area(
+  '3250100': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '320000', // 島根県 (松江地方気象台)
     class10: '320020', // 西部
@@ -19231,7 +19231,7 @@ const areas = {
     ],
   ),
 // 3250500: 吉賀町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3250500.html
-  '3250500': Area(
+  '3250500': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '320000', // 島根県 (松江地方気象台)
     class10: '320020', // 西部
@@ -19246,7 +19246,7 @@ const areas = {
   ),
 
 // 3252500: 海士町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3252500.html
-  '3252500': Area(
+  '3252500': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '320000', // 島根県 (松江地方気象台)
     class10: '320030', // 隠岐
@@ -19260,7 +19260,7 @@ const areas = {
     ],
   ),
 // 3252600: 西ノ島町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3252600.html
-  '3252600': Area(
+  '3252600': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '320000', // 島根県 (松江地方気象台)
     class10: '320030', // 隠岐
@@ -19275,7 +19275,7 @@ const areas = {
   ),
 
 // 3252700: 知夫村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3252700.html
-  '3252700': Area(
+  '3252700': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '320000', // 島根県 (松江地方気象台)
     class10: '320030', // 隠岐
@@ -19289,7 +19289,7 @@ const areas = {
     ],
   ),
 // 3252800: 隠岐の島町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3252800.html
-  '3252800': Area(
+  '3252800': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '320000', // 島根県 (松江地方気象台)
     class10: '320030', // 隠岐
@@ -19299,7 +19299,7 @@ const areas = {
   ),
 
 // 3310000: 岡山市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3310000.html
-  '3310000': Area(
+  '3310000': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '330000', // 岡山県 (岡山地方気象台)
     class10: '330010', // 南部
@@ -19313,7 +19313,7 @@ const areas = {
     ],
   ),
 // 3320200: 倉敷市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3320200.html
-  '3320200': Area(
+  '3320200': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '330000', // 岡山県 (岡山地方気象台)
     class10: '330010', // 南部
@@ -19327,7 +19327,7 @@ const areas = {
     ],
   ),
 // 3320300: 津山市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3320300.html
-  '3320300': Area(
+  '3320300': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '330000', // 岡山県 (岡山地方気象台)
     class10: '330020', // 北部
@@ -19342,7 +19342,7 @@ const areas = {
   ),
 
 // 3320400: 玉野市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3320400.html
-  '3320400': Area(
+  '3320400': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '330000', // 岡山県 (岡山地方気象台)
     class10: '330010', // 南部
@@ -19356,7 +19356,7 @@ const areas = {
     ],
   ),
 // 3320500: 笠岡市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3320500.html
-  '3320500': Area(
+  '3320500': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '330000', // 岡山県 (岡山地方気象台)
     class10: '330010', // 南部
@@ -19371,7 +19371,7 @@ const areas = {
   ),
 
 // 3320700: 井原市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3320700.html
-  '3320700': Area(
+  '3320700': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '330000', // 岡山県 (岡山地方気象台)
     class10: '330010', // 南部
@@ -19385,7 +19385,7 @@ const areas = {
     ],
   ),
 // 3320800: 総社市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3320800.html
-  '3320800': Area(
+  '3320800': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '330000', // 岡山県 (岡山地方気象台)
     class10: '330010', // 南部
@@ -19400,7 +19400,7 @@ const areas = {
   ),
 
 // 3320900: 高梁市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3320900.html
-  '3320900': Area(
+  '3320900': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '330000', // 岡山県 (岡山地方気象台)
     class10: '330010', // 南部
@@ -19414,7 +19414,7 @@ const areas = {
     ],
   ),
 // 3321000: 新見市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3321000.html
-  '3321000': Area(
+  '3321000': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '330000', // 岡山県 (岡山地方気象台)
     class10: '330020', // 北部
@@ -19429,7 +19429,7 @@ const areas = {
   ),
 
 // 3321100: 備前市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3321100.html
-  '3321100': Area(
+  '3321100': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '330000', // 岡山県 (岡山地方気象台)
     class10: '330010', // 南部
@@ -19443,7 +19443,7 @@ const areas = {
     ],
   ),
 // 3321200: 瀬戸内市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3321200.html
-  '3321200': Area(
+  '3321200': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '330000', // 岡山県 (岡山地方気象台)
     class10: '330010', // 南部
@@ -19458,7 +19458,7 @@ const areas = {
   ),
 
 // 3321300: 赤磐市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3321300.html
-  '3321300': Area(
+  '3321300': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '330000', // 岡山県 (岡山地方気象台)
     class10: '330010', // 南部
@@ -19473,7 +19473,7 @@ const areas = {
   ),
 
 // 3321400: 真庭市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3321400.html
-  '3321400': Area(
+  '3321400': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '330000', // 岡山県 (岡山地方気象台)
     class10: '330020', // 北部
@@ -19487,7 +19487,7 @@ const areas = {
     ],
   ),
 // 3321500: 美作市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3321500.html
-  '3321500': Area(
+  '3321500': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '330000', // 岡山県 (岡山地方気象台)
     class10: '330020', // 北部
@@ -19501,7 +19501,7 @@ const areas = {
     ],
   ),
 // 3321600: 浅口市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3321600.html
-  '3321600': Area(
+  '3321600': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '330000', // 岡山県 (岡山地方気象台)
     class10: '330010', // 南部
@@ -19515,7 +19515,7 @@ const areas = {
     ],
   ),
 // 3334600: 和気町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3334600.html
-  '3334600': Area(
+  '3334600': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '330000', // 岡山県 (岡山地方気象台)
     class10: '330010', // 南部
@@ -19530,7 +19530,7 @@ const areas = {
   ),
 
 // 3342300: 早島町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3342300.html
-  '3342300': Area(
+  '3342300': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '330000', // 岡山県 (岡山地方気象台)
     class10: '330010', // 南部
@@ -19544,7 +19544,7 @@ const areas = {
     ],
   ),
 // 3344500: 里庄町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3344500.html
-  '3344500': Area(
+  '3344500': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '330000', // 岡山県 (岡山地方気象台)
     class10: '330010', // 南部
@@ -19559,7 +19559,7 @@ const areas = {
   ),
 
 // 3346100: 矢掛町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3346100.html
-  '3346100': Area(
+  '3346100': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '330000', // 岡山県 (岡山地方気象台)
     class10: '330010', // 南部
@@ -19568,7 +19568,7 @@ const areas = {
     bbox: [133.5188302716, 34.5735574948826, 133.64937722408, 34.7066374949245],
   ),
 // 3358600: 新庄村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3358600.html
-  '3358600': Area(
+  '3358600': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '330000', // 岡山県 (岡山地方気象台)
     class10: '330020', // 北部
@@ -19583,7 +19583,7 @@ const areas = {
   ),
 
 // 3360600: 鏡野町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3360600.html
-  '3360600': Area(
+  '3360600': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '330000', // 岡山県 (岡山地方気象台)
     class10: '330020', // 北部
@@ -19598,7 +19598,7 @@ const areas = {
   ),
 
 // 3362200: 勝央町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3362200.html
-  '3362200': Area(
+  '3362200': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '330000', // 岡山県 (岡山地方気象台)
     class10: '330020', // 北部
@@ -19612,7 +19612,7 @@ const areas = {
     ],
   ),
 // 3362300: 奈義町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3362300.html
-  '3362300': Area(
+  '3362300': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '330000', // 岡山県 (岡山地方気象台)
     class10: '330020', // 北部
@@ -19627,7 +19627,7 @@ const areas = {
   ),
 
 // 3364300: 西粟倉村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3364300.html
-  '3364300': Area(
+  '3364300': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '330000', // 岡山県 (岡山地方気象台)
     class10: '330020', // 北部
@@ -19642,7 +19642,7 @@ const areas = {
   ),
 
 // 3366300: 久米南町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3366300.html
-  '3366300': Area(
+  '3366300': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '330000', // 岡山県 (岡山地方気象台)
     class10: '330020', // 北部
@@ -19657,7 +19657,7 @@ const areas = {
   ),
 
 // 3366600: 美咲町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3366600.html
-  '3366600': Area(
+  '3366600': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '330000', // 岡山県 (岡山地方気象台)
     class10: '330020', // 北部
@@ -19672,7 +19672,7 @@ const areas = {
   ),
 
 // 3368100: 吉備中央町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3368100.html
-  '3368100': Area(
+  '3368100': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '330000', // 岡山県 (岡山地方気象台)
     class10: '330010', // 南部
@@ -19687,7 +19687,7 @@ const areas = {
   ),
 
 // 3410100: 広島市中区: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3410100.html
-  '3410100': Area(
+  '3410100': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '340000', // 広島県 (広島地方気象台)
     class10: '340010', // 南部
@@ -19696,7 +19696,7 @@ const areas = {
     bbox: [132.420473917038, 34.3530632246881, 132.47086027, 34.41533389],
   ),
 // 3410200: 広島市東区: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3410200.html
-  '3410200': Area(
+  '3410200': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '340000', // 広島県 (広島地方気象台)
     class10: '340010', // 南部
@@ -19706,7 +19706,7 @@ const areas = {
   ),
 
 // 3410300: 広島市南区: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3410300.html
-  '3410300': Area(
+  '3410300': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '340000', // 広島県 (広島地方気象台)
     class10: '340010', // 南部
@@ -19716,7 +19716,7 @@ const areas = {
   ),
 
 // 3410400: 広島市西区: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3410400.html
-  '3410400': Area(
+  '3410400': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '340000', // 広島県 (広島地方気象台)
     class10: '340010', // 南部
@@ -19726,7 +19726,7 @@ const areas = {
   ),
 
 // 3410500: 広島市安佐南区: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3410500.html
-  '3410500': Area(
+  '3410500': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '340000', // 広島県 (広島地方気象台)
     class10: '340010', // 南部
@@ -19736,7 +19736,7 @@ const areas = {
   ),
 
 // 3410600: 広島市安佐北区: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3410600.html
-  '3410600': Area(
+  '3410600': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '340000', // 広島県 (広島地方気象台)
     class10: '340010', // 南部
@@ -19746,7 +19746,7 @@ const areas = {
   ),
 
 // 3410700: 広島市安芸区: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3410700.html
-  '3410700': Area(
+  '3410700': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '340000', // 広島県 (広島地方気象台)
     class10: '340010', // 南部
@@ -19755,7 +19755,7 @@ const areas = {
     bbox: [132.510313898355, 34.3126650003447, 132.66709306, 34.4572902791231],
   ),
 // 3410800: 広島市佐伯区: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3410800.html
-  '3410800': Area(
+  '3410800': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '340000', // 広島県 (広島地方気象台)
     class10: '340010', // 南部
@@ -19765,7 +19765,7 @@ const areas = {
   ),
 
 // 3420200: 呉市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3420200.html
-  '3420200': Area(
+  '3420200': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '340000', // 広島県 (広島地方気象台)
     class10: '340010', // 南部
@@ -19779,7 +19779,7 @@ const areas = {
     ],
   ),
 // 3420300: 竹原市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3420300.html
-  '3420300': Area(
+  '3420300': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '340000', // 広島県 (広島地方気象台)
     class10: '340010', // 南部
@@ -19794,7 +19794,7 @@ const areas = {
   ),
 
 // 3420400: 三原市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3420400.html
-  '3420400': Area(
+  '3420400': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '340000', // 広島県 (広島地方気象台)
     class10: '340010', // 南部
@@ -19809,7 +19809,7 @@ const areas = {
   ),
 
 // 3420500: 尾道市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3420500.html
-  '3420500': Area(
+  '3420500': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '340000', // 広島県 (広島地方気象台)
     class10: '340010', // 南部
@@ -19823,7 +19823,7 @@ const areas = {
     ],
   ),
 // 3420700: 福山市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3420700.html
-  '3420700': Area(
+  '3420700': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '340000', // 広島県 (広島地方気象台)
     class10: '340010', // 南部
@@ -19837,7 +19837,7 @@ const areas = {
     ],
   ),
 // 3420800: 府中市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3420800.html
-  '3420800': Area(
+  '3420800': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '340000', // 広島県 (広島地方気象台)
     class10: '340010', // 南部
@@ -19852,7 +19852,7 @@ const areas = {
   ),
 
 // 3420900: 三次市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3420900.html
-  '3420900': Area(
+  '3420900': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '340000', // 広島県 (広島地方気象台)
     class10: '340020', // 北部
@@ -19866,7 +19866,7 @@ const areas = {
     ],
   ),
 // 3421000: 庄原市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3421000.html
-  '3421000': Area(
+  '3421000': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '340000', // 広島県 (広島地方気象台)
     class10: '340020', // 北部
@@ -19881,7 +19881,7 @@ const areas = {
   ),
 
 // 3421100: 大竹市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3421100.html
-  '3421100': Area(
+  '3421100': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '340000', // 広島県 (広島地方気象台)
     class10: '340010', // 南部
@@ -19896,7 +19896,7 @@ const areas = {
   ),
 
 // 3421200: 東広島市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3421200.html
-  '3421200': Area(
+  '3421200': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '340000', // 広島県 (広島地方気象台)
     class10: '340010', // 南部
@@ -19910,7 +19910,7 @@ const areas = {
     ],
   ),
 // 3421300: 廿日市市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3421300.html
-  '3421300': Area(
+  '3421300': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '340000', // 広島県 (広島地方気象台)
     class10: '340010', // 南部
@@ -19924,7 +19924,7 @@ const areas = {
     ],
   ),
 // 3421400: 安芸高田市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3421400.html
-  '3421400': Area(
+  '3421400': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '340000', // 広島県 (広島地方気象台)
     class10: '340020', // 北部
@@ -19939,7 +19939,7 @@ const areas = {
   ),
 
 // 3421500: 江田島市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3421500.html
-  '3421500': Area(
+  '3421500': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '340000', // 広島県 (広島地方気象台)
     class10: '340010', // 南部
@@ -19953,7 +19953,7 @@ const areas = {
     ],
   ),
 // 3430200: 府中町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3430200.html
-  '3430200': Area(
+  '3430200': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '340000', // 広島県 (広島地方気象台)
     class10: '340010', // 南部
@@ -19968,7 +19968,7 @@ const areas = {
   ),
 
 // 3430400: 海田町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3430400.html
-  '3430400': Area(
+  '3430400': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '340000', // 広島県 (広島地方気象台)
     class10: '340010', // 南部
@@ -19983,7 +19983,7 @@ const areas = {
   ),
 
 // 3430700: 熊野町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3430700.html
-  '3430700': Area(
+  '3430700': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '340000', // 広島県 (広島地方気象台)
     class10: '340010', // 南部
@@ -19997,7 +19997,7 @@ const areas = {
     ],
   ),
 // 3430900: 坂町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3430900.html
-  '3430900': Area(
+  '3430900': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '340000', // 広島県 (広島地方気象台)
     class10: '340010', // 南部
@@ -20011,7 +20011,7 @@ const areas = {
     ],
   ),
 // 3436800: 安芸太田町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3436800.html
-  '3436800': Area(
+  '3436800': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '340000', // 広島県 (広島地方気象台)
     class10: '340020', // 北部
@@ -20026,7 +20026,7 @@ const areas = {
   ),
 
 // 3436900: 北広島町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3436900.html
-  '3436900': Area(
+  '3436900': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '340000', // 広島県 (広島地方気象台)
     class10: '340020', // 北部
@@ -20040,7 +20040,7 @@ const areas = {
     ],
   ),
 // 3443100: 大崎上島町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3443100.html
-  '3443100': Area(
+  '3443100': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '340000', // 広島県 (広島地方気象台)
     class10: '340010', // 南部
@@ -20055,7 +20055,7 @@ const areas = {
   ),
 
 // 3446200: 世羅町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3446200.html
-  '3446200': Area(
+  '3446200': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '340000', // 広島県 (広島地方気象台)
     class10: '340010', // 南部
@@ -20069,7 +20069,7 @@ const areas = {
     ],
   ),
 // 3454500: 神石高原町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3454500.html
-  '3454500': Area(
+  '3454500': WeatherArea(
     center: '010700', // 中国地方（山口県を除く） (広島地方気象台)
     office: '340000', // 広島県 (広島地方気象台)
     class10: '340010', // 南部
@@ -20084,7 +20084,7 @@ const areas = {
   ),
 
 // 3520100: 下関市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3520100.html
-  '3520100': Area(
+  '3520100': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '350000', // 山口県 (下関地方気象台)
     class10: '350010', // 西部
@@ -20099,7 +20099,7 @@ const areas = {
   ),
 
 // 3520200: 宇部市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3520200.html
-  '3520200': Area(
+  '3520200': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '350000', // 山口県 (下関地方気象台)
     class10: '350010', // 西部
@@ -20113,7 +20113,7 @@ const areas = {
     ],
   ),
 // 3520300: 山口市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3520300.html
-  '3520300': Area(
+  '3520300': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '350000', // 山口県 (下関地方気象台)
     class10: '350020', // 中部
@@ -20128,7 +20128,7 @@ const areas = {
   ),
 
 // 3520400: 萩市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3520400.html
-  '3520400': Area(
+  '3520400': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '350000', // 山口県 (下関地方気象台)
     class10: '350040', // 北部
@@ -20142,7 +20142,7 @@ const areas = {
     ],
   ),
 // 3520600: 防府市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3520600.html
-  '3520600': Area(
+  '3520600': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '350000', // 山口県 (下関地方気象台)
     class10: '350020', // 中部
@@ -20157,7 +20157,7 @@ const areas = {
   ),
 
 // 3520700: 下松市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3520700.html
-  '3520700': Area(
+  '3520700': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '350000', // 山口県 (下関地方気象台)
     class10: '350020', // 中部
@@ -20171,7 +20171,7 @@ const areas = {
     ],
   ),
 // 3520800: 岩国市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3520800.html
-  '3520800': Area(
+  '3520800': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '350000', // 山口県 (下関地方気象台)
     class10: '350030', // 東部
@@ -20186,7 +20186,7 @@ const areas = {
   ),
 
 // 3521000: 光市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3521000.html
-  '3521000': Area(
+  '3521000': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '350000', // 山口県 (下関地方気象台)
     class10: '350030', // 東部
@@ -20200,7 +20200,7 @@ const areas = {
     ],
   ),
 // 3521100: 長門市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3521100.html
-  '3521100': Area(
+  '3521100': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '350000', // 山口県 (下関地方気象台)
     class10: '350040', // 北部
@@ -20215,7 +20215,7 @@ const areas = {
   ),
 
 // 3521200: 柳井市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3521200.html
-  '3521200': Area(
+  '3521200': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '350000', // 山口県 (下関地方気象台)
     class10: '350030', // 東部
@@ -20230,7 +20230,7 @@ const areas = {
   ),
 
 // 3521300: 美祢市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3521300.html
-  '3521300': Area(
+  '3521300': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '350000', // 山口県 (下関地方気象台)
     class10: '350040', // 北部
@@ -20244,7 +20244,7 @@ const areas = {
     ],
   ),
 // 3521500: 周南市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3521500.html
-  '3521500': Area(
+  '3521500': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '350000', // 山口県 (下関地方気象台)
     class10: '350020', // 中部
@@ -20259,7 +20259,7 @@ const areas = {
   ),
 
 // 3521600: 山陽小野田市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3521600.html
-  '3521600': Area(
+  '3521600': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '350000', // 山口県 (下関地方気象台)
     class10: '350010', // 西部
@@ -20273,7 +20273,7 @@ const areas = {
     ],
   ),
 // 3530500: 周防大島町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3530500.html
-  '3530500': Area(
+  '3530500': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '350000', // 山口県 (下関地方気象台)
     class10: '350030', // 東部
@@ -20288,7 +20288,7 @@ const areas = {
   ),
 
 // 3532100: 和木町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3532100.html
-  '3532100': Area(
+  '3532100': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '350000', // 山口県 (下関地方気象台)
     class10: '350030', // 東部
@@ -20302,7 +20302,7 @@ const areas = {
     ],
   ),
 // 3534100: 上関町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3534100.html
-  '3534100': Area(
+  '3534100': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '350000', // 山口県 (下関地方気象台)
     class10: '350030', // 東部
@@ -20317,7 +20317,7 @@ const areas = {
   ),
 
 // 3534300: 田布施町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3534300.html
-  '3534300': Area(
+  '3534300': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '350000', // 山口県 (下関地方気象台)
     class10: '350030', // 東部
@@ -20332,7 +20332,7 @@ const areas = {
   ),
 
 // 3534400: 平生町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3534400.html
-  '3534400': Area(
+  '3534400': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '350000', // 山口県 (下関地方気象台)
     class10: '350030', // 東部
@@ -20346,7 +20346,7 @@ const areas = {
     ],
   ),
 // 3550200: 阿武町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3550200.html
-  '3550200': Area(
+  '3550200': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '350000', // 山口県 (下関地方気象台)
     class10: '350040', // 北部
@@ -20360,7 +20360,7 @@ const areas = {
     ],
   ),
 // 3620100: 徳島市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3620100.html
-  '3620100': Area(
+  '3620100': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '360000', // 徳島県 (徳島地方気象台)
     class10: '360010', // 北部
@@ -20375,7 +20375,7 @@ const areas = {
   ),
 
 // 3620200: 鳴門市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3620200.html
-  '3620200': Area(
+  '3620200': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '360000', // 徳島県 (徳島地方気象台)
     class10: '360010', // 北部
@@ -20389,7 +20389,7 @@ const areas = {
     ],
   ),
 // 3620300: 小松島市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3620300.html
-  '3620300': Area(
+  '3620300': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '360000', // 徳島県 (徳島地方気象台)
     class10: '360010', // 北部
@@ -20404,7 +20404,7 @@ const areas = {
   ),
 
 // 3620400: 阿南市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3620400.html
-  '3620400': Area(
+  '3620400': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '360000', // 徳島県 (徳島地方気象台)
     class10: '360020', // 南部
@@ -20419,7 +20419,7 @@ const areas = {
   ),
 
 // 3620500: 吉野川市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3620500.html
-  '3620500': Area(
+  '3620500': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '360000', // 徳島県 (徳島地方気象台)
     class10: '360010', // 北部
@@ -20433,7 +20433,7 @@ const areas = {
     ],
   ),
 // 3620600: 阿波市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3620600.html
-  '3620600': Area(
+  '3620600': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '360000', // 徳島県 (徳島地方気象台)
     class10: '360010', // 北部
@@ -20448,7 +20448,7 @@ const areas = {
   ),
 
 // 3620701: 美馬市脇・美馬・穴吹: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3620701.html
-  '3620701': Area(
+  '3620701': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '360000', // 徳島県 (徳島地方気象台)
     class10: '360010', // 北部
@@ -20462,7 +20462,7 @@ const areas = {
     ],
   ),
 // 3620702: 美馬市木屋平: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3620702.html
-  '3620702': Area(
+  '3620702': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '360000', // 徳島県 (徳島地方気象台)
     class10: '360010', // 北部
@@ -20477,7 +20477,7 @@ const areas = {
   ),
 
 // 3620800: 三好市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3620800.html
-  '3620800': Area(
+  '3620800': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '360000', // 徳島県 (徳島地方気象台)
     class10: '360010', // 北部
@@ -20491,7 +20491,7 @@ const areas = {
     ],
   ),
 // 3630100: 勝浦町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3630100.html
-  '3630100': Area(
+  '3630100': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '360000', // 徳島県 (徳島地方気象台)
     class10: '360020', // 南部
@@ -20506,7 +20506,7 @@ const areas = {
   ),
 
 // 3630200: 上勝町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3630200.html
-  '3630200': Area(
+  '3630200': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '360000', // 徳島県 (徳島地方気象台)
     class10: '360020', // 南部
@@ -20521,7 +20521,7 @@ const areas = {
   ),
 
 // 3632100: 佐那河内村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3632100.html
-  '3632100': Area(
+  '3632100': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '360000', // 徳島県 (徳島地方気象台)
     class10: '360010', // 北部
@@ -20535,7 +20535,7 @@ const areas = {
     ],
   ),
 // 3634100: 石井町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3634100.html
-  '3634100': Area(
+  '3634100': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '360000', // 徳島県 (徳島地方気象台)
     class10: '360010', // 北部
@@ -20549,7 +20549,7 @@ const areas = {
     ],
   ),
 // 3634200: 神山町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3634200.html
-  '3634200': Area(
+  '3634200': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '360000', // 徳島県 (徳島地方気象台)
     class10: '360010', // 北部
@@ -20564,7 +20564,7 @@ const areas = {
   ),
 
 // 3636800: 那賀町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3636800.html
-  '3636800': Area(
+  '3636800': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '360000', // 徳島県 (徳島地方気象台)
     class10: '360020', // 南部
@@ -20579,7 +20579,7 @@ const areas = {
   ),
 
 // 3638300: 牟岐町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3638300.html
-  '3638300': Area(
+  '3638300': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '360000', // 徳島県 (徳島地方気象台)
     class10: '360020', // 南部
@@ -20593,7 +20593,7 @@ const areas = {
     ],
   ),
 // 3638700: 美波町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3638700.html
-  '3638700': Area(
+  '3638700': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '360000', // 徳島県 (徳島地方気象台)
     class10: '360020', // 南部
@@ -20608,7 +20608,7 @@ const areas = {
   ),
 
 // 3638800: 海陽町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3638800.html
-  '3638800': Area(
+  '3638800': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '360000', // 徳島県 (徳島地方気象台)
     class10: '360020', // 南部
@@ -20622,7 +20622,7 @@ const areas = {
     ],
   ),
 // 3640100: 松茂町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3640100.html
-  '3640100': Area(
+  '3640100': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '360000', // 徳島県 (徳島地方気象台)
     class10: '360010', // 北部
@@ -20637,7 +20637,7 @@ const areas = {
   ),
 
 // 3640200: 北島町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3640200.html
-  '3640200': Area(
+  '3640200': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '360000', // 徳島県 (徳島地方気象台)
     class10: '360010', // 北部
@@ -20651,7 +20651,7 @@ const areas = {
     ],
   ),
 // 3640300: 藍住町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3640300.html
-  '3640300': Area(
+  '3640300': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '360000', // 徳島県 (徳島地方気象台)
     class10: '360010', // 北部
@@ -20666,7 +20666,7 @@ const areas = {
   ),
 
 // 3640400: 板野町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3640400.html
-  '3640400': Area(
+  '3640400': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '360000', // 徳島県 (徳島地方気象台)
     class10: '360010', // 北部
@@ -20681,7 +20681,7 @@ const areas = {
   ),
 
 // 3640500: 上板町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3640500.html
-  '3640500': Area(
+  '3640500': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '360000', // 徳島県 (徳島地方気象台)
     class10: '360010', // 北部
@@ -20695,7 +20695,7 @@ const areas = {
     ],
   ),
 // 3646801: つるぎ町半田・貞光: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3646801.html
-  '3646801': Area(
+  '3646801': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '360000', // 徳島県 (徳島地方気象台)
     class10: '360010', // 北部
@@ -20709,7 +20709,7 @@ const areas = {
     ],
   ),
 // 3646802: つるぎ町一宇: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3646802.html
-  '3646802': Area(
+  '3646802': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '360000', // 徳島県 (徳島地方気象台)
     class10: '360010', // 北部
@@ -20723,7 +20723,7 @@ const areas = {
     ],
   ),
 // 3648900: 東みよし町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3648900.html
-  '3648900': Area(
+  '3648900': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '360000', // 徳島県 (徳島地方気象台)
     class10: '360010', // 北部
@@ -20738,7 +20738,7 @@ const areas = {
   ),
 
 // 3720100: 高松市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3720100.html
-  '3720100': Area(
+  '3720100': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '370000', // 香川県 (高松地方気象台)
     class10: '370000', // 香川県
@@ -20752,7 +20752,7 @@ const areas = {
     ],
   ),
 // 3720200: 丸亀市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3720200.html
-  '3720200': Area(
+  '3720200': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '370000', // 香川県 (高松地方気象台)
     class10: '370000', // 香川県
@@ -20767,7 +20767,7 @@ const areas = {
   ),
 
 // 3720300: 坂出市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3720300.html
-  '3720300': Area(
+  '3720300': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '370000', // 香川県 (高松地方気象台)
     class10: '370000', // 香川県
@@ -20781,7 +20781,7 @@ const areas = {
     ],
   ),
 // 3720400: 善通寺市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3720400.html
-  '3720400': Area(
+  '3720400': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '370000', // 香川県 (高松地方気象台)
     class10: '370000', // 香川県
@@ -20796,7 +20796,7 @@ const areas = {
   ),
 
 // 3720500: 観音寺市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3720500.html
-  '3720500': Area(
+  '3720500': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '370000', // 香川県 (高松地方気象台)
     class10: '370000', // 香川県
@@ -20811,7 +20811,7 @@ const areas = {
   ),
 
 // 3720600: さぬき市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3720600.html
-  '3720600': Area(
+  '3720600': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '370000', // 香川県 (高松地方気象台)
     class10: '370000', // 香川県
@@ -20826,7 +20826,7 @@ const areas = {
   ),
 
 // 3720700: 東かがわ市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3720700.html
-  '3720700': Area(
+  '3720700': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '370000', // 香川県 (高松地方気象台)
     class10: '370000', // 香川県
@@ -20840,7 +20840,7 @@ const areas = {
     ],
   ),
 // 3720800: 三豊市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3720800.html
-  '3720800': Area(
+  '3720800': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '370000', // 香川県 (高松地方気象台)
     class10: '370000', // 香川県
@@ -20855,7 +20855,7 @@ const areas = {
   ),
 
 // 3732200: 土庄町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3732200.html
-  '3732200': Area(
+  '3732200': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '370000', // 香川県 (高松地方気象台)
     class10: '370000', // 香川県
@@ -20869,7 +20869,7 @@ const areas = {
     ],
   ),
 // 3732400: 小豆島町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3732400.html
-  '3732400': Area(
+  '3732400': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '370000', // 香川県 (高松地方気象台)
     class10: '370000', // 香川県
@@ -20884,7 +20884,7 @@ const areas = {
   ),
 
 // 3734100: 三木町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3734100.html
-  '3734100': Area(
+  '3734100': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '370000', // 香川県 (高松地方気象台)
     class10: '370000', // 香川県
@@ -20898,7 +20898,7 @@ const areas = {
     ],
   ),
 // 3736400: 直島町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3736400.html
-  '3736400': Area(
+  '3736400': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '370000', // 香川県 (高松地方気象台)
     class10: '370000', // 香川県
@@ -20913,7 +20913,7 @@ const areas = {
   ),
 
 // 3738600: 宇多津町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3738600.html
-  '3738600': Area(
+  '3738600': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '370000', // 香川県 (高松地方気象台)
     class10: '370000', // 香川県
@@ -20928,7 +20928,7 @@ const areas = {
   ),
 
 // 3738700: 綾川町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3738700.html
-  '3738700': Area(
+  '3738700': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '370000', // 香川県 (高松地方気象台)
     class10: '370000', // 香川県
@@ -20943,7 +20943,7 @@ const areas = {
   ),
 
 // 3740300: 琴平町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3740300.html
-  '3740300': Area(
+  '3740300': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '370000', // 香川県 (高松地方気象台)
     class10: '370000', // 香川県
@@ -20957,7 +20957,7 @@ const areas = {
     ],
   ),
 // 3740400: 多度津町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3740400.html
-  '3740400': Area(
+  '3740400': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '370000', // 香川県 (高松地方気象台)
     class10: '370000', // 香川県
@@ -20971,7 +20971,7 @@ const areas = {
     ],
   ),
 // 3740600: まんのう町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3740600.html
-  '3740600': Area(
+  '3740600': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '370000', // 香川県 (高松地方気象台)
     class10: '370000', // 香川県
@@ -20986,7 +20986,7 @@ const areas = {
   ),
 
 // 3820100: 松山市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3820100.html
-  '3820100': Area(
+  '3820100': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '380000', // 愛媛県 (松山地方気象台)
     class10: '380010', // 中予
@@ -21000,7 +21000,7 @@ const areas = {
     ],
   ),
 // 3820200: 今治市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3820200.html
-  '3820200': Area(
+  '3820200': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '380000', // 愛媛県 (松山地方気象台)
     class10: '380020', // 東予
@@ -21015,7 +21015,7 @@ const areas = {
   ),
 
 // 3820300: 宇和島市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3820300.html
-  '3820300': Area(
+  '3820300': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '380000', // 愛媛県 (松山地方気象台)
     class10: '380030', // 南予
@@ -21029,7 +21029,7 @@ const areas = {
     ],
   ),
 // 3820400: 八幡浜市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3820400.html
-  '3820400': Area(
+  '3820400': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '380000', // 愛媛県 (松山地方気象台)
     class10: '380030', // 南予
@@ -21044,7 +21044,7 @@ const areas = {
   ),
 
 // 3820500: 新居浜市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3820500.html
-  '3820500': Area(
+  '3820500': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '380000', // 愛媛県 (松山地方気象台)
     class10: '380020', // 東予
@@ -21059,7 +21059,7 @@ const areas = {
   ),
 
 // 3820600: 西条市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3820600.html
-  '3820600': Area(
+  '3820600': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '380000', // 愛媛県 (松山地方気象台)
     class10: '380020', // 東予
@@ -21073,7 +21073,7 @@ const areas = {
     ],
   ),
 // 3820700: 大洲市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3820700.html
-  '3820700': Area(
+  '3820700': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '380000', // 愛媛県 (松山地方気象台)
     class10: '380030', // 南予
@@ -21087,7 +21087,7 @@ const areas = {
     ],
   ),
 // 3821000: 伊予市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3821000.html
-  '3821000': Area(
+  '3821000': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '380000', // 愛媛県 (松山地方気象台)
     class10: '380010', // 中予
@@ -21102,7 +21102,7 @@ const areas = {
   ),
 
 // 3821300: 四国中央市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3821300.html
-  '3821300': Area(
+  '3821300': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '380000', // 愛媛県 (松山地方気象台)
     class10: '380020', // 東予
@@ -21116,7 +21116,7 @@ const areas = {
     ],
   ),
 // 3821400: 西予市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3821400.html
-  '3821400': Area(
+  '3821400': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '380000', // 愛媛県 (松山地方気象台)
     class10: '380030', // 南予
@@ -21131,7 +21131,7 @@ const areas = {
   ),
 
 // 3821500: 東温市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3821500.html
-  '3821500': Area(
+  '3821500': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '380000', // 愛媛県 (松山地方気象台)
     class10: '380010', // 中予
@@ -21145,7 +21145,7 @@ const areas = {
     ],
   ),
 // 3835600: 上島町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3835600.html
-  '3835600': Area(
+  '3835600': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '380000', // 愛媛県 (松山地方気象台)
     class10: '380020', // 東予
@@ -21160,7 +21160,7 @@ const areas = {
   ),
 
 // 3838600: 久万高原町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3838600.html
-  '3838600': Area(
+  '3838600': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '380000', // 愛媛県 (松山地方気象台)
     class10: '380010', // 中予
@@ -21175,7 +21175,7 @@ const areas = {
   ),
 
 // 3840100: 松前町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3840100.html
-  '3840100': Area(
+  '3840100': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '380000', // 愛媛県 (松山地方気象台)
     class10: '380010', // 中予
@@ -21189,7 +21189,7 @@ const areas = {
     ],
   ),
 // 3840200: 砥部町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3840200.html
-  '3840200': Area(
+  '3840200': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '380000', // 愛媛県 (松山地方気象台)
     class10: '380010', // 中予
@@ -21204,7 +21204,7 @@ const areas = {
   ),
 
 // 3842200: 内子町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3842200.html
-  '3842200': Area(
+  '3842200': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '380000', // 愛媛県 (松山地方気象台)
     class10: '380030', // 南予
@@ -21218,7 +21218,7 @@ const areas = {
     ],
   ),
 // 3844200: 伊方町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3844200.html
-  '3844200': Area(
+  '3844200': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '380000', // 愛媛県 (松山地方気象台)
     class10: '380030', // 南予
@@ -21233,7 +21233,7 @@ const areas = {
   ),
 
 // 3848400: 松野町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3848400.html
-  '3848400': Area(
+  '3848400': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '380000', // 愛媛県 (松山地方気象台)
     class10: '380030', // 南予
@@ -21247,7 +21247,7 @@ const areas = {
     ],
   ),
 // 3848800: 鬼北町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3848800.html
-  '3848800': Area(
+  '3848800': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '380000', // 愛媛県 (松山地方気象台)
     class10: '380030', // 南予
@@ -21262,7 +21262,7 @@ const areas = {
   ),
 
 // 3850600: 愛南町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3850600.html
-  '3850600': Area(
+  '3850600': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '380000', // 愛媛県 (松山地方気象台)
     class10: '380030', // 南予
@@ -21276,7 +21276,7 @@ const areas = {
     ],
   ),
 // 3920100: 高知市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3920100.html
-  '3920100': Area(
+  '3920100': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '390000', // 高知県 (高知地方気象台)
     class10: '390010', // 中部
@@ -21291,7 +21291,7 @@ const areas = {
   ),
 
 // 3920200: 室戸市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3920200.html
-  '3920200': Area(
+  '3920200': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '390000', // 高知県 (高知地方気象台)
     class10: '390020', // 東部
@@ -21306,7 +21306,7 @@ const areas = {
   ),
 
 // 3920300: 安芸市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3920300.html
-  '3920300': Area(
+  '3920300': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '390000', // 高知県 (高知地方気象台)
     class10: '390020', // 東部
@@ -21320,7 +21320,7 @@ const areas = {
     ],
   ),
 // 3920400: 南国市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3920400.html
-  '3920400': Area(
+  '3920400': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '390000', // 高知県 (高知地方気象台)
     class10: '390010', // 中部
@@ -21334,7 +21334,7 @@ const areas = {
     ],
   ),
 // 3920500: 土佐市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3920500.html
-  '3920500': Area(
+  '3920500': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '390000', // 高知県 (高知地方気象台)
     class10: '390010', // 中部
@@ -21349,7 +21349,7 @@ const areas = {
   ),
 
 // 3920600: 須崎市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3920600.html
-  '3920600': Area(
+  '3920600': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '390000', // 高知県 (高知地方気象台)
     class10: '390010', // 中部
@@ -21363,7 +21363,7 @@ const areas = {
     ],
   ),
 // 3920800: 宿毛市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3920800.html
-  '3920800': Area(
+  '3920800': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '390000', // 高知県 (高知地方気象台)
     class10: '390030', // 西部
@@ -21378,7 +21378,7 @@ const areas = {
   ),
 
 // 3920900: 土佐清水市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3920900.html
-  '3920900': Area(
+  '3920900': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '390000', // 高知県 (高知地方気象台)
     class10: '390030', // 西部
@@ -21392,7 +21392,7 @@ const areas = {
     ],
   ),
 // 3921000: 四万十市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3921000.html
-  '3921000': Area(
+  '3921000': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '390000', // 高知県 (高知地方気象台)
     class10: '390030', // 西部
@@ -21407,7 +21407,7 @@ const areas = {
   ),
 
 // 3921100: 香南市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3921100.html
-  '3921100': Area(
+  '3921100': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '390000', // 高知県 (高知地方気象台)
     class10: '390010', // 中部
@@ -21421,7 +21421,7 @@ const areas = {
     ],
   ),
 // 3921200: 香美市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3921200.html
-  '3921200': Area(
+  '3921200': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '390000', // 高知県 (高知地方気象台)
     class10: '390010', // 中部
@@ -21436,7 +21436,7 @@ const areas = {
   ),
 
 // 3930100: 東洋町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3930100.html
-  '3930100': Area(
+  '3930100': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '390000', // 高知県 (高知地方気象台)
     class10: '390020', // 東部
@@ -21450,7 +21450,7 @@ const areas = {
     ],
   ),
 // 3930200: 奈半利町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3930200.html
-  '3930200': Area(
+  '3930200': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '390000', // 高知県 (高知地方気象台)
     class10: '390020', // 東部
@@ -21465,7 +21465,7 @@ const areas = {
   ),
 
 // 3930300: 田野町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3930300.html
-  '3930300': Area(
+  '3930300': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '390000', // 高知県 (高知地方気象台)
     class10: '390020', // 東部
@@ -21480,7 +21480,7 @@ const areas = {
   ),
 
 // 3930400: 安田町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3930400.html
-  '3930400': Area(
+  '3930400': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '390000', // 高知県 (高知地方気象台)
     class10: '390020', // 東部
@@ -21494,7 +21494,7 @@ const areas = {
     ],
   ),
 // 3930500: 北川村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3930500.html
-  '3930500': Area(
+  '3930500': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '390000', // 高知県 (高知地方気象台)
     class10: '390020', // 東部
@@ -21509,7 +21509,7 @@ const areas = {
   ),
 
 // 3930600: 馬路村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3930600.html
-  '3930600': Area(
+  '3930600': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '390000', // 高知県 (高知地方気象台)
     class10: '390020', // 東部
@@ -21523,7 +21523,7 @@ const areas = {
     ],
   ),
 // 3930700: 芸西村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3930700.html
-  '3930700': Area(
+  '3930700': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '390000', // 高知県 (高知地方気象台)
     class10: '390020', // 東部
@@ -21538,7 +21538,7 @@ const areas = {
   ),
 
 // 3934100: 本山町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3934100.html
-  '3934100': Area(
+  '3934100': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '390000', // 高知県 (高知地方気象台)
     class10: '390010', // 中部
@@ -21552,7 +21552,7 @@ const areas = {
     ],
   ),
 // 3934400: 大豊町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3934400.html
-  '3934400': Area(
+  '3934400': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '390000', // 高知県 (高知地方気象台)
     class10: '390010', // 中部
@@ -21567,7 +21567,7 @@ const areas = {
   ),
 
 // 3936300: 土佐町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3936300.html
-  '3936300': Area(
+  '3936300': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '390000', // 高知県 (高知地方気象台)
     class10: '390010', // 中部
@@ -21582,7 +21582,7 @@ const areas = {
   ),
 
 // 3936400: 大川村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3936400.html
-  '3936400': Area(
+  '3936400': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '390000', // 高知県 (高知地方気象台)
     class10: '390010', // 中部
@@ -21596,7 +21596,7 @@ const areas = {
     ],
   ),
 // 3938600: いの町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3938600.html
-  '3938600': Area(
+  '3938600': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '390000', // 高知県 (高知地方気象台)
     class10: '390010', // 中部
@@ -21611,7 +21611,7 @@ const areas = {
   ),
 
 // 3938700: 仁淀川町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3938700.html
-  '3938700': Area(
+  '3938700': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '390000', // 高知県 (高知地方気象台)
     class10: '390010', // 中部
@@ -21625,7 +21625,7 @@ const areas = {
     ],
   ),
 // 3940100: 中土佐町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3940100.html
-  '3940100': Area(
+  '3940100': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '390000', // 高知県 (高知地方気象台)
     class10: '390030', // 西部
@@ -21640,7 +21640,7 @@ const areas = {
   ),
 
 // 3940200: 佐川町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3940200.html
-  '3940200': Area(
+  '3940200': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '390000', // 高知県 (高知地方気象台)
     class10: '390010', // 中部
@@ -21649,7 +21649,7 @@ const areas = {
     bbox: [133.194553800218, 33.440288613129, 133.3432349936, 33.5586724948398],
   ),
 // 3940300: 越知町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3940300.html
-  '3940300': Area(
+  '3940300': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '390000', // 高知県 (高知地方気象台)
     class10: '390010', // 中部
@@ -21664,7 +21664,7 @@ const areas = {
   ),
 
 // 3940500: 檮原町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3940500.html
-  '3940500': Area(
+  '3940500': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '390000', // 高知県 (高知地方気象台)
     class10: '390030', // 西部
@@ -21678,7 +21678,7 @@ const areas = {
     ],
   ),
 // 3941000: 日高村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3941000.html
-  '3941000': Area(
+  '3941000': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '390000', // 高知県 (高知地方気象台)
     class10: '390010', // 中部
@@ -21693,7 +21693,7 @@ const areas = {
   ),
 
 // 3941100: 津野町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3941100.html
-  '3941100': Area(
+  '3941100': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '390000', // 高知県 (高知地方気象台)
     class10: '390030', // 西部
@@ -21708,7 +21708,7 @@ const areas = {
   ),
 
 // 3941200: 四万十町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3941200.html
-  '3941200': Area(
+  '3941200': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '390000', // 高知県 (高知地方気象台)
     class10: '390030', // 西部
@@ -21722,7 +21722,7 @@ const areas = {
     ],
   ),
 // 3942400: 大月町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3942400.html
-  '3942400': Area(
+  '3942400': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '390000', // 高知県 (高知地方気象台)
     class10: '390030', // 西部
@@ -21736,7 +21736,7 @@ const areas = {
     ],
   ),
 // 3942700: 三原村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3942700.html
-  '3942700': Area(
+  '3942700': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '390000', // 高知県 (高知地方気象台)
     class10: '390030', // 西部
@@ -21751,7 +21751,7 @@ const areas = {
   ),
 
 // 3942800: 黒潮町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/3942800.html
-  '3942800': Area(
+  '3942800': WeatherArea(
     center: '010800', // 四国地方 (高松地方気象台)
     office: '390000', // 高知県 (高知地方気象台)
     class10: '390030', // 西部
@@ -21765,7 +21765,7 @@ const areas = {
     ],
   ),
 // 4010000: 北九州市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4010000.html
-  '4010000': Area(
+  '4010000': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400020', // 北九州地方
@@ -21780,7 +21780,7 @@ const areas = {
   ),
 
 // 4013000: 福岡市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4013000.html
-  '4013000': Area(
+  '4013000': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400010', // 福岡地方
@@ -21794,7 +21794,7 @@ const areas = {
     ],
   ),
 // 4020200: 大牟田市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4020200.html
-  '4020200': Area(
+  '4020200': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400040', // 筑後地方
@@ -21809,7 +21809,7 @@ const areas = {
   ),
 
 // 4020300: 久留米市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4020300.html
-  '4020300': Area(
+  '4020300': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400040', // 筑後地方
@@ -21824,7 +21824,7 @@ const areas = {
   ),
 
 // 4020400: 直方市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4020400.html
-  '4020400': Area(
+  '4020400': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400030', // 筑豊地方
@@ -21838,7 +21838,7 @@ const areas = {
     ],
   ),
 // 4020500: 飯塚市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4020500.html
-  '4020500': Area(
+  '4020500': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400030', // 筑豊地方
@@ -21852,7 +21852,7 @@ const areas = {
     ],
   ),
 // 4020600: 田川市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4020600.html
-  '4020600': Area(
+  '4020600': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400030', // 筑豊地方
@@ -21867,7 +21867,7 @@ const areas = {
   ),
 
 // 4020700: 柳川市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4020700.html
-  '4020700': Area(
+  '4020700': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400040', // 筑後地方
@@ -21881,7 +21881,7 @@ const areas = {
     ],
   ),
 // 4021000: 八女市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4021000.html
-  '4021000': Area(
+  '4021000': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400040', // 筑後地方
@@ -21896,7 +21896,7 @@ const areas = {
   ),
 
 // 4021100: 筑後市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4021100.html
-  '4021100': Area(
+  '4021100': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400040', // 筑後地方
@@ -21911,7 +21911,7 @@ const areas = {
   ),
 
 // 4021200: 大川市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4021200.html
-  '4021200': Area(
+  '4021200': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400040', // 筑後地方
@@ -21925,7 +21925,7 @@ const areas = {
     ],
   ),
 // 4021300: 行橋市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4021300.html
-  '4021300': Area(
+  '4021300': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400020', // 北九州地方
@@ -21939,7 +21939,7 @@ const areas = {
     ],
   ),
 // 4021400: 豊前市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4021400.html
-  '4021400': Area(
+  '4021400': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400020', // 北九州地方
@@ -21954,7 +21954,7 @@ const areas = {
   ),
 
 // 4021500: 中間市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4021500.html
-  '4021500': Area(
+  '4021500': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400020', // 北九州地方
@@ -21968,7 +21968,7 @@ const areas = {
     ],
   ),
 // 4021600: 小郡市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4021600.html
-  '4021600': Area(
+  '4021600': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400040', // 筑後地方
@@ -21983,7 +21983,7 @@ const areas = {
   ),
 
 // 4021700: 筑紫野市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4021700.html
-  '4021700': Area(
+  '4021700': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400010', // 福岡地方
@@ -21998,7 +21998,7 @@ const areas = {
   ),
 
 // 4021800: 春日市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4021800.html
-  '4021800': Area(
+  '4021800': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400010', // 福岡地方
@@ -22012,7 +22012,7 @@ const areas = {
     ],
   ),
 // 4021900: 大野城市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4021900.html
-  '4021900': Area(
+  '4021900': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400010', // 福岡地方
@@ -22027,7 +22027,7 @@ const areas = {
   ),
 
 // 4022000: 宗像市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4022000.html
-  '4022000': Area(
+  '4022000': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400010', // 福岡地方
@@ -22041,7 +22041,7 @@ const areas = {
     ],
   ),
 // 4022100: 太宰府市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4022100.html
-  '4022100': Area(
+  '4022100': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400010', // 福岡地方
@@ -22056,7 +22056,7 @@ const areas = {
   ),
 
 // 4022300: 古賀市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4022300.html
-  '4022300': Area(
+  '4022300': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400010', // 福岡地方
@@ -22070,7 +22070,7 @@ const areas = {
     ],
   ),
 // 4022400: 福津市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4022400.html
-  '4022400': Area(
+  '4022400': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400010', // 福岡地方
@@ -22085,7 +22085,7 @@ const areas = {
   ),
 
 // 4022500: うきは市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4022500.html
-  '4022500': Area(
+  '4022500': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400040', // 筑後地方
@@ -22100,7 +22100,7 @@ const areas = {
   ),
 
 // 4022600: 宮若市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4022600.html
-  '4022600': Area(
+  '4022600': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400030', // 筑豊地方
@@ -22114,7 +22114,7 @@ const areas = {
     ],
   ),
 // 4022700: 嘉麻市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4022700.html
-  '4022700': Area(
+  '4022700': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400030', // 筑豊地方
@@ -22128,7 +22128,7 @@ const areas = {
     ],
   ),
 // 4022800: 朝倉市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4022800.html
-  '4022800': Area(
+  '4022800': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400040', // 筑後地方
@@ -22143,7 +22143,7 @@ const areas = {
   ),
 
 // 4022900: みやま市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4022900.html
-  '4022900': Area(
+  '4022900': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400040', // 筑後地方
@@ -22157,7 +22157,7 @@ const areas = {
     ],
   ),
 // 4023000: 糸島市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4023000.html
-  '4023000': Area(
+  '4023000': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400010', // 福岡地方
@@ -22172,7 +22172,7 @@ const areas = {
   ),
 
 // 4023100: 那珂川市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4023100.html
-  '4023100': Area(
+  '4023100': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400010', // 福岡地方
@@ -22186,7 +22186,7 @@ const areas = {
     ],
   ),
 // 4034100: 宇美町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4034100.html
-  '4034100': Area(
+  '4034100': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400010', // 福岡地方
@@ -22200,7 +22200,7 @@ const areas = {
     ],
   ),
 // 4034200: 篠栗町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4034200.html
-  '4034200': Area(
+  '4034200': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400010', // 福岡地方
@@ -22215,7 +22215,7 @@ const areas = {
   ),
 
 // 4034300: 志免町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4034300.html
-  '4034300': Area(
+  '4034300': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400010', // 福岡地方
@@ -22229,7 +22229,7 @@ const areas = {
     ],
   ),
 // 4034400: 須恵町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4034400.html
-  '4034400': Area(
+  '4034400': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400010', // 福岡地方
@@ -22244,7 +22244,7 @@ const areas = {
   ),
 
 // 4034500: 新宮町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4034500.html
-  '4034500': Area(
+  '4034500': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400010', // 福岡地方
@@ -22258,7 +22258,7 @@ const areas = {
     ],
   ),
 // 4034800: 久山町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4034800.html
-  '4034800': Area(
+  '4034800': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400010', // 福岡地方
@@ -22273,7 +22273,7 @@ const areas = {
   ),
 
 // 4034900: 粕屋町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4034900.html
-  '4034900': Area(
+  '4034900': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400010', // 福岡地方
@@ -22288,7 +22288,7 @@ const areas = {
   ),
 
 // 4038100: 芦屋町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4038100.html
-  '4038100': Area(
+  '4038100': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400020', // 北九州地方
@@ -22302,7 +22302,7 @@ const areas = {
     ],
   ),
 // 4038200: 水巻町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4038200.html
-  '4038200': Area(
+  '4038200': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400020', // 北九州地方
@@ -22316,7 +22316,7 @@ const areas = {
     ],
   ),
 // 4038300: 岡垣町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4038300.html
-  '4038300': Area(
+  '4038300': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400020', // 北九州地方
@@ -22331,7 +22331,7 @@ const areas = {
   ),
 
 // 4038400: 遠賀町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4038400.html
-  '4038400': Area(
+  '4038400': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400020', // 北九州地方
@@ -22345,7 +22345,7 @@ const areas = {
     ],
   ),
 // 4040100: 小竹町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4040100.html
-  '4040100': Area(
+  '4040100': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400030', // 筑豊地方
@@ -22360,7 +22360,7 @@ const areas = {
   ),
 
 // 4040200: 鞍手町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4040200.html
-  '4040200': Area(
+  '4040200': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400030', // 筑豊地方
@@ -22374,7 +22374,7 @@ const areas = {
     ],
   ),
 // 4042100: 桂川町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4042100.html
-  '4042100': Area(
+  '4042100': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400030', // 筑豊地方
@@ -22389,7 +22389,7 @@ const areas = {
   ),
 
 // 4044700: 筑前町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4044700.html
-  '4044700': Area(
+  '4044700': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400040', // 筑後地方
@@ -22404,7 +22404,7 @@ const areas = {
   ),
 
 // 4044800: 東峰村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4044800.html
-  '4044800': Area(
+  '4044800': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400040', // 筑後地方
@@ -22418,7 +22418,7 @@ const areas = {
     ],
   ),
 // 4050300: 大刀洗町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4050300.html
-  '4050300': Area(
+  '4050300': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400040', // 筑後地方
@@ -22432,7 +22432,7 @@ const areas = {
     ],
   ),
 // 4052200: 大木町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4052200.html
-  '4052200': Area(
+  '4052200': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400040', // 筑後地方
@@ -22447,7 +22447,7 @@ const areas = {
   ),
 
 // 4054400: 広川町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4054400.html
-  '4054400': Area(
+  '4054400': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400040', // 筑後地方
@@ -22461,7 +22461,7 @@ const areas = {
     ],
   ),
 // 4060100: 香春町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4060100.html
-  '4060100': Area(
+  '4060100': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400030', // 筑豊地方
@@ -22476,7 +22476,7 @@ const areas = {
   ),
 
 // 4060200: 添田町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4060200.html
-  '4060200': Area(
+  '4060200': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400030', // 筑豊地方
@@ -22491,7 +22491,7 @@ const areas = {
   ),
 
 // 4060400: 糸田町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4060400.html
-  '4060400': Area(
+  '4060400': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400030', // 筑豊地方
@@ -22505,7 +22505,7 @@ const areas = {
     ],
   ),
 // 4060500: 川崎町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4060500.html
-  '4060500': Area(
+  '4060500': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400030', // 筑豊地方
@@ -22519,7 +22519,7 @@ const areas = {
     ],
   ),
 // 4060800: 大任町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4060800.html
-  '4060800': Area(
+  '4060800': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400030', // 筑豊地方
@@ -22534,7 +22534,7 @@ const areas = {
   ),
 
 // 4060900: 赤村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4060900.html
-  '4060900': Area(
+  '4060900': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400030', // 筑豊地方
@@ -22548,7 +22548,7 @@ const areas = {
     ],
   ),
 // 4061000: 福智町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4061000.html
-  '4061000': Area(
+  '4061000': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400030', // 筑豊地方
@@ -22563,7 +22563,7 @@ const areas = {
   ),
 
 // 4062100: 苅田町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4062100.html
-  '4062100': Area(
+  '4062100': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400020', // 北九州地方
@@ -22578,7 +22578,7 @@ const areas = {
   ),
 
 // 4062500: みやこ町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4062500.html
-  '4062500': Area(
+  '4062500': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400020', // 北九州地方
@@ -22592,7 +22592,7 @@ const areas = {
     ],
   ),
 // 4064200: 吉富町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4064200.html
-  '4064200': Area(
+  '4064200': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400020', // 北九州地方
@@ -22607,7 +22607,7 @@ const areas = {
   ),
 
 // 4064600: 上毛町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4064600.html
-  '4064600': Area(
+  '4064600': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400020', // 北九州地方
@@ -22621,7 +22621,7 @@ const areas = {
     ],
   ),
 // 4064700: 築上町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4064700.html
-  '4064700': Area(
+  '4064700': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '400000', // 福岡県 (福岡管区気象台)
     class10: '400020', // 北九州地方
@@ -22636,7 +22636,7 @@ const areas = {
   ),
 
 // 4120100: 佐賀市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4120100.html
-  '4120100': Area(
+  '4120100': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '410000', // 佐賀県 (佐賀地方気象台)
     class10: '410010', // 南部
@@ -22650,7 +22650,7 @@ const areas = {
     ],
   ),
 // 4120200: 唐津市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4120200.html
-  '4120200': Area(
+  '4120200': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '410000', // 佐賀県 (佐賀地方気象台)
     class10: '410020', // 北部
@@ -22664,7 +22664,7 @@ const areas = {
     ],
   ),
 // 4120300: 鳥栖市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4120300.html
-  '4120300': Area(
+  '4120300': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '410000', // 佐賀県 (佐賀地方気象台)
     class10: '410010', // 南部
@@ -22679,7 +22679,7 @@ const areas = {
   ),
 
 // 4120400: 多久市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4120400.html
-  '4120400': Area(
+  '4120400': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '410000', // 佐賀県 (佐賀地方気象台)
     class10: '410010', // 南部
@@ -22694,7 +22694,7 @@ const areas = {
   ),
 
 // 4120500: 伊万里市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4120500.html
-  '4120500': Area(
+  '4120500': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '410000', // 佐賀県 (佐賀地方気象台)
     class10: '410020', // 北部
@@ -22709,7 +22709,7 @@ const areas = {
   ),
 
 // 4120600: 武雄市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4120600.html
-  '4120600': Area(
+  '4120600': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '410000', // 佐賀県 (佐賀地方気象台)
     class10: '410010', // 南部
@@ -22723,7 +22723,7 @@ const areas = {
     ],
   ),
 // 4120700: 鹿島市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4120700.html
-  '4120700': Area(
+  '4120700': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '410000', // 佐賀県 (佐賀地方気象台)
     class10: '410010', // 南部
@@ -22738,7 +22738,7 @@ const areas = {
   ),
 
 // 4120800: 小城市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4120800.html
-  '4120800': Area(
+  '4120800': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '410000', // 佐賀県 (佐賀地方気象台)
     class10: '410010', // 南部
@@ -22752,7 +22752,7 @@ const areas = {
     ],
   ),
 // 4120900: 嬉野市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4120900.html
-  '4120900': Area(
+  '4120900': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '410000', // 佐賀県 (佐賀地方気象台)
     class10: '410010', // 南部
@@ -22767,7 +22767,7 @@ const areas = {
   ),
 
 // 4121000: 神埼市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4121000.html
-  '4121000': Area(
+  '4121000': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '410000', // 佐賀県 (佐賀地方気象台)
     class10: '410010', // 南部
@@ -22782,7 +22782,7 @@ const areas = {
   ),
 
 // 4132700: 吉野ヶ里町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4132700.html
-  '4132700': Area(
+  '4132700': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '410000', // 佐賀県 (佐賀地方気象台)
     class10: '410010', // 南部
@@ -22796,7 +22796,7 @@ const areas = {
     ],
   ),
 // 4134100: 基山町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4134100.html
-  '4134100': Area(
+  '4134100': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '410000', // 佐賀県 (佐賀地方気象台)
     class10: '410010', // 南部
@@ -22810,7 +22810,7 @@ const areas = {
     ],
   ),
 // 4134500: 上峰町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4134500.html
-  '4134500': Area(
+  '4134500': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '410000', // 佐賀県 (佐賀地方気象台)
     class10: '410010', // 南部
@@ -22825,7 +22825,7 @@ const areas = {
   ),
 
 // 4134600: みやき町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4134600.html
-  '4134600': Area(
+  '4134600': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '410000', // 佐賀県 (佐賀地方気象台)
     class10: '410010', // 南部
@@ -22839,7 +22839,7 @@ const areas = {
     ],
   ),
 // 4138700: 玄海町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4138700.html
-  '4138700': Area(
+  '4138700': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '410000', // 佐賀県 (佐賀地方気象台)
     class10: '410020', // 北部
@@ -22854,7 +22854,7 @@ const areas = {
   ),
 
 // 4140100: 有田町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4140100.html
-  '4140100': Area(
+  '4140100': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '410000', // 佐賀県 (佐賀地方気象台)
     class10: '410020', // 北部
@@ -22869,7 +22869,7 @@ const areas = {
   ),
 
 // 4142300: 大町町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4142300.html
-  '4142300': Area(
+  '4142300': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '410000', // 佐賀県 (佐賀地方気象台)
     class10: '410010', // 南部
@@ -22883,7 +22883,7 @@ const areas = {
     ],
   ),
 // 4142400: 江北町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4142400.html
-  '4142400': Area(
+  '4142400': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '410000', // 佐賀県 (佐賀地方気象台)
     class10: '410010', // 南部
@@ -22897,7 +22897,7 @@ const areas = {
     ],
   ),
 // 4142500: 白石町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4142500.html
-  '4142500': Area(
+  '4142500': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '410000', // 佐賀県 (佐賀地方気象台)
     class10: '410010', // 南部
@@ -22911,7 +22911,7 @@ const areas = {
     ],
   ),
 // 4144100: 太良町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4144100.html
-  '4144100': Area(
+  '4144100': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '410000', // 佐賀県 (佐賀地方気象台)
     class10: '410010', // 南部
@@ -22926,7 +22926,7 @@ const areas = {
   ),
 
 // 4220100: 長崎市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4220100.html
-  '4220100': Area(
+  '4220100': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '420000', // 長崎県 (長崎地方気象台)
     class10: '420010', // 南部
@@ -22940,7 +22940,7 @@ const areas = {
     ],
   ),
 // 4220201: 佐世保市（宇久地域を除く）: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4220201.html
-  '4220201': Area(
+  '4220201': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '420000', // 長崎県 (長崎地方気象台)
     class10: '420020', // 北部
@@ -22954,7 +22954,7 @@ const areas = {
     ],
   ),
 // 4220202: 佐世保市（宇久地域）: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4220202.html
-  '4220202': Area(
+  '4220202': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '420000', // 長崎県 (長崎地方気象台)
     class10: '420040', // 五島
@@ -22969,7 +22969,7 @@ const areas = {
   ),
 
 // 4220300: 島原市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4220300.html
-  '4220300': Area(
+  '4220300': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '420000', // 長崎県 (長崎地方気象台)
     class10: '420010', // 南部
@@ -22983,7 +22983,7 @@ const areas = {
     ],
   ),
 // 4220400: 諫早市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4220400.html
-  '4220400': Area(
+  '4220400': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '420000', // 長崎県 (長崎地方気象台)
     class10: '420010', // 南部
@@ -22998,7 +22998,7 @@ const areas = {
   ),
 
 // 4220500: 大村市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4220500.html
-  '4220500': Area(
+  '4220500': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '420000', // 長崎県 (長崎地方気象台)
     class10: '420010', // 南部
@@ -23012,7 +23012,7 @@ const areas = {
     ],
   ),
 // 4220700: 平戸市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4220700.html
-  '4220700': Area(
+  '4220700': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '420000', // 長崎県 (長崎地方気象台)
     class10: '420020', // 北部
@@ -23022,7 +23022,7 @@ const areas = {
   ),
 
 // 4220800: 松浦市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4220800.html
-  '4220800': Area(
+  '4220800': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '420000', // 長崎県 (長崎地方気象台)
     class10: '420020', // 北部
@@ -23036,7 +23036,7 @@ const areas = {
     ],
   ),
 // 4220901: 対馬市下対馬: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4220901.html
-  '4220901': Area(
+  '4220901': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '420000', // 長崎県 (長崎地方気象台)
     class10: '420030', // 壱岐・対馬
@@ -23051,7 +23051,7 @@ const areas = {
   ),
 
 // 4220902: 対馬市上対馬: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4220902.html
-  '4220902': Area(
+  '4220902': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '420000', // 長崎県 (長崎地方気象台)
     class10: '420030', // 壱岐・対馬
@@ -23066,7 +23066,7 @@ const areas = {
   ),
 
 // 4221000: 壱岐市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4221000.html
-  '4221000': Area(
+  '4221000': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '420000', // 長崎県 (長崎地方気象台)
     class10: '420030', // 壱岐・対馬
@@ -23080,7 +23080,7 @@ const areas = {
     ],
   ),
 // 4221100: 五島市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4221100.html
-  '4221100': Area(
+  '4221100': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '420000', // 長崎県 (長崎地方気象台)
     class10: '420040', // 五島
@@ -23094,7 +23094,7 @@ const areas = {
     ],
   ),
 // 4221201: 西海市（江島・平島を除く）: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4221201.html
-  '4221201': Area(
+  '4221201': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '420000', // 長崎県 (長崎地方気象台)
     class10: '420010', // 南部
@@ -23109,7 +23109,7 @@ const areas = {
   ),
 
 // 4221202: 西海市（江島・平島）: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4221202.html
-  '4221202': Area(
+  '4221202': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '420000', // 長崎県 (長崎地方気象台)
     class10: '420040', // 五島
@@ -23123,7 +23123,7 @@ const areas = {
     ],
   ),
 // 4221300: 雲仙市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4221300.html
-  '4221300': Area(
+  '4221300': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '420000', // 長崎県 (長崎地方気象台)
     class10: '420010', // 南部
@@ -23138,7 +23138,7 @@ const areas = {
   ),
 
 // 4221400: 南島原市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4221400.html
-  '4221400': Area(
+  '4221400': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '420000', // 長崎県 (長崎地方気象台)
     class10: '420010', // 南部
@@ -23152,7 +23152,7 @@ const areas = {
     ],
   ),
 // 4230700: 長与町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4230700.html
-  '4230700': Area(
+  '4230700': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '420000', // 長崎県 (長崎地方気象台)
     class10: '420010', // 南部
@@ -23167,7 +23167,7 @@ const areas = {
   ),
 
 // 4230800: 時津町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4230800.html
-  '4230800': Area(
+  '4230800': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '420000', // 長崎県 (長崎地方気象台)
     class10: '420010', // 南部
@@ -23182,7 +23182,7 @@ const areas = {
   ),
 
 // 4232100: 東彼杵町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4232100.html
-  '4232100': Area(
+  '4232100': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '420000', // 長崎県 (長崎地方気象台)
     class10: '420020', // 北部
@@ -23197,7 +23197,7 @@ const areas = {
   ),
 
 // 4232200: 川棚町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4232200.html
-  '4232200': Area(
+  '4232200': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '420000', // 長崎県 (長崎地方気象台)
     class10: '420020', // 北部
@@ -23211,7 +23211,7 @@ const areas = {
     ],
   ),
 // 4232300: 波佐見町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4232300.html
-  '4232300': Area(
+  '4232300': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '420000', // 長崎県 (長崎地方気象台)
     class10: '420020', // 北部
@@ -23226,7 +23226,7 @@ const areas = {
   ),
 
 // 4238300: 小値賀町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4238300.html
-  '4238300': Area(
+  '4238300': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '420000', // 長崎県 (長崎地方気象台)
     class10: '420040', // 五島
@@ -23241,7 +23241,7 @@ const areas = {
   ),
 
 // 4239100: 佐々町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4239100.html
-  '4239100': Area(
+  '4239100': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '420000', // 長崎県 (長崎地方気象台)
     class10: '420020', // 北部
@@ -23255,7 +23255,7 @@ const areas = {
     ],
   ),
 // 4241100: 新上五島町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4241100.html
-  '4241100': Area(
+  '4241100': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '420000', // 長崎県 (長崎地方気象台)
     class10: '420040', // 五島
@@ -23270,7 +23270,7 @@ const areas = {
   ),
 
 // 4310000: 熊本市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4310000.html
-  '4310000': Area(
+  '4310000': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430010', // 熊本地方
@@ -23284,7 +23284,7 @@ const areas = {
     ],
   ),
 // 4320200: 八代市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4320200.html
-  '4320200': Area(
+  '4320200': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430010', // 熊本地方
@@ -23299,7 +23299,7 @@ const areas = {
   ),
 
 // 4320300: 人吉市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4320300.html
-  '4320300': Area(
+  '4320300': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430040', // 球磨地方
@@ -23314,7 +23314,7 @@ const areas = {
   ),
 
 // 4320400: 荒尾市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4320400.html
-  '4320400': Area(
+  '4320400': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430010', // 熊本地方
@@ -23324,7 +23324,7 @@ const areas = {
   ),
 
 // 4320500: 水俣市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4320500.html
-  '4320500': Area(
+  '4320500': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430030', // 天草・芦北地方
@@ -23338,7 +23338,7 @@ const areas = {
     ],
   ),
 // 4320600: 玉名市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4320600.html
-  '4320600': Area(
+  '4320600': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430010', // 熊本地方
@@ -23352,7 +23352,7 @@ const areas = {
     ],
   ),
 // 4320800: 山鹿市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4320800.html
-  '4320800': Area(
+  '4320800': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430010', // 熊本地方
@@ -23367,7 +23367,7 @@ const areas = {
   ),
 
 // 4321000: 菊池市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4321000.html
-  '4321000': Area(
+  '4321000': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430010', // 熊本地方
@@ -23381,7 +23381,7 @@ const areas = {
     ],
   ),
 // 4321100: 宇土市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4321100.html
-  '4321100': Area(
+  '4321100': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430010', // 熊本地方
@@ -23396,7 +23396,7 @@ const areas = {
   ),
 
 // 4321200: 上天草市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4321200.html
-  '4321200': Area(
+  '4321200': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430030', // 天草・芦北地方
@@ -23411,7 +23411,7 @@ const areas = {
   ),
 
 // 4321300: 宇城市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4321300.html
-  '4321300': Area(
+  '4321300': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430010', // 熊本地方
@@ -23425,7 +23425,7 @@ const areas = {
     ],
   ),
 // 4321400: 阿蘇市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4321400.html
-  '4321400': Area(
+  '4321400': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430020', // 阿蘇地方
@@ -23439,7 +23439,7 @@ const areas = {
     ],
   ),
 // 4321500: 天草市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4321500.html
-  '4321500': Area(
+  '4321500': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430030', // 天草・芦北地方
@@ -23454,7 +23454,7 @@ const areas = {
   ),
 
 // 4321600: 合志市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4321600.html
-  '4321600': Area(
+  '4321600': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430010', // 熊本地方
@@ -23468,7 +23468,7 @@ const areas = {
     ],
   ),
 // 4334800: 美里町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4334800.html
-  '4334800': Area(
+  '4334800': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430010', // 熊本地方
@@ -23483,7 +23483,7 @@ const areas = {
   ),
 
 // 4336400: 玉東町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4336400.html
-  '4336400': Area(
+  '4336400': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430010', // 熊本地方
@@ -23498,7 +23498,7 @@ const areas = {
   ),
 
 // 4336700: 南関町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4336700.html
-  '4336700': Area(
+  '4336700': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430010', // 熊本地方
@@ -23512,7 +23512,7 @@ const areas = {
     ],
   ),
 // 4336800: 長洲町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4336800.html
-  '4336800': Area(
+  '4336800': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430010', // 熊本地方
@@ -23527,7 +23527,7 @@ const areas = {
   ),
 
 // 4336900: 和水町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4336900.html
-  '4336900': Area(
+  '4336900': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430010', // 熊本地方
@@ -23541,7 +23541,7 @@ const areas = {
     ],
   ),
 // 4340300: 大津町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4340300.html
-  '4340300': Area(
+  '4340300': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430010', // 熊本地方
@@ -23556,7 +23556,7 @@ const areas = {
   ),
 
 // 4340400: 菊陽町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4340400.html
-  '4340400': Area(
+  '4340400': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430010', // 熊本地方
@@ -23571,7 +23571,7 @@ const areas = {
   ),
 
 // 4342300: 南小国町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4342300.html
-  '4342300': Area(
+  '4342300': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430020', // 阿蘇地方
@@ -23585,7 +23585,7 @@ const areas = {
     ],
   ),
 // 4342400: 小国町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4342400.html
-  '4342400': Area(
+  '4342400': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430020', // 阿蘇地方
@@ -23600,7 +23600,7 @@ const areas = {
   ),
 
 // 4342500: 産山村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4342500.html
-  '4342500': Area(
+  '4342500': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430020', // 阿蘇地方
@@ -23614,7 +23614,7 @@ const areas = {
     ],
   ),
 // 4342800: 高森町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4342800.html
-  '4342800': Area(
+  '4342800': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430020', // 阿蘇地方
@@ -23629,7 +23629,7 @@ const areas = {
   ),
 
 // 4343200: 西原村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4343200.html
-  '4343200': Area(
+  '4343200': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430010', // 熊本地方
@@ -23644,7 +23644,7 @@ const areas = {
   ),
 
 // 4343300: 南阿蘇村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4343300.html
-  '4343300': Area(
+  '4343300': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430020', // 阿蘇地方
@@ -23658,7 +23658,7 @@ const areas = {
     ],
   ),
 // 4344100: 御船町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4344100.html
-  '4344100': Area(
+  '4344100': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430010', // 熊本地方
@@ -23672,7 +23672,7 @@ const areas = {
     ],
   ),
 // 4344200: 嘉島町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4344200.html
-  '4344200': Area(
+  '4344200': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430010', // 熊本地方
@@ -23687,7 +23687,7 @@ const areas = {
   ),
 
 // 4344300: 益城町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4344300.html
-  '4344300': Area(
+  '4344300': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430010', // 熊本地方
@@ -23702,7 +23702,7 @@ const areas = {
   ),
 
 // 4344400: 甲佐町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4344400.html
-  '4344400': Area(
+  '4344400': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430010', // 熊本地方
@@ -23716,7 +23716,7 @@ const areas = {
     ],
   ),
 // 4344700: 山都町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4344700.html
-  '4344700': Area(
+  '4344700': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430010', // 熊本地方
@@ -23731,7 +23731,7 @@ const areas = {
   ),
 
 // 4346800: 氷川町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4346800.html
-  '4346800': Area(
+  '4346800': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430010', // 熊本地方
@@ -23745,7 +23745,7 @@ const areas = {
     ],
   ),
 // 4348200: 芦北町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4348200.html
-  '4348200': Area(
+  '4348200': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430030', // 天草・芦北地方
@@ -23760,7 +23760,7 @@ const areas = {
   ),
 
 // 4348400: 津奈木町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4348400.html
-  '4348400': Area(
+  '4348400': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430030', // 天草・芦北地方
@@ -23774,7 +23774,7 @@ const areas = {
     ],
   ),
 // 4350100: 錦町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4350100.html
-  '4350100': Area(
+  '4350100': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430040', // 球磨地方
@@ -23789,7 +23789,7 @@ const areas = {
   ),
 
 // 4350500: 多良木町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4350500.html
-  '4350500': Area(
+  '4350500': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430040', // 球磨地方
@@ -23804,7 +23804,7 @@ const areas = {
   ),
 
 // 4350600: 湯前町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4350600.html
-  '4350600': Area(
+  '4350600': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430040', // 球磨地方
@@ -23819,7 +23819,7 @@ const areas = {
   ),
 
 // 4350700: 水上村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4350700.html
-  '4350700': Area(
+  '4350700': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430040', // 球磨地方
@@ -23833,7 +23833,7 @@ const areas = {
     ],
   ),
 // 4351000: 相良村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4351000.html
-  '4351000': Area(
+  '4351000': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430040', // 球磨地方
@@ -23848,7 +23848,7 @@ const areas = {
   ),
 
 // 4351100: 五木村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4351100.html
-  '4351100': Area(
+  '4351100': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430040', // 球磨地方
@@ -23862,7 +23862,7 @@ const areas = {
     ],
   ),
 // 4351200: 山江村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4351200.html
-  '4351200': Area(
+  '4351200': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430040', // 球磨地方
@@ -23877,7 +23877,7 @@ const areas = {
   ),
 
 // 4351300: 球磨村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4351300.html
-  '4351300': Area(
+  '4351300': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430040', // 球磨地方
@@ -23891,7 +23891,7 @@ const areas = {
     ],
   ),
 // 4351400: あさぎり町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4351400.html
-  '4351400': Area(
+  '4351400': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430040', // 球磨地方
@@ -23906,7 +23906,7 @@ const areas = {
   ),
 
 // 4353100: 苓北町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4353100.html
-  '4353100': Area(
+  '4353100': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '430000', // 熊本県 (熊本地方気象台)
     class10: '430030', // 天草・芦北地方
@@ -23921,7 +23921,7 @@ const areas = {
   ),
 
 // 4420100: 大分市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4420100.html
-  '4420100': Area(
+  '4420100': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '440000', // 大分県 (大分地方気象台)
     class10: '440010', // 中部
@@ -23935,7 +23935,7 @@ const areas = {
     ],
   ),
 // 4420200: 別府市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4420200.html
-  '4420200': Area(
+  '4420200': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '440000', // 大分県 (大分地方気象台)
     class10: '440010', // 中部
@@ -23950,7 +23950,7 @@ const areas = {
   ),
 
 // 4420300: 中津市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4420300.html
-  '4420300': Area(
+  '4420300': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '440000', // 大分県 (大分地方気象台)
     class10: '440020', // 北部
@@ -23965,7 +23965,7 @@ const areas = {
   ),
 
 // 4420400: 日田市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4420400.html
-  '4420400': Area(
+  '4420400': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '440000', // 大分県 (大分地方気象台)
     class10: '440030', // 西部
@@ -23980,7 +23980,7 @@ const areas = {
   ),
 
 // 4420500: 佐伯市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4420500.html
-  '4420500': Area(
+  '4420500': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '440000', // 大分県 (大分地方気象台)
     class10: '440040', // 南部
@@ -23994,7 +23994,7 @@ const areas = {
     ],
   ),
 // 4420600: 臼杵市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4420600.html
-  '4420600': Area(
+  '4420600': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '440000', // 大分県 (大分地方気象台)
     class10: '440010', // 中部
@@ -24009,7 +24009,7 @@ const areas = {
   ),
 
 // 4420700: 津久見市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4420700.html
-  '4420700': Area(
+  '4420700': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '440000', // 大分県 (大分地方気象台)
     class10: '440010', // 中部
@@ -24023,7 +24023,7 @@ const areas = {
     ],
   ),
 // 4420800: 竹田市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4420800.html
-  '4420800': Area(
+  '4420800': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '440000', // 大分県 (大分地方気象台)
     class10: '440030', // 西部
@@ -24038,7 +24038,7 @@ const areas = {
   ),
 
 // 4420900: 豊後高田市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4420900.html
-  '4420900': Area(
+  '4420900': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '440000', // 大分県 (大分地方気象台)
     class10: '440020', // 北部
@@ -24053,7 +24053,7 @@ const areas = {
   ),
 
 // 4421000: 杵築市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4421000.html
-  '4421000': Area(
+  '4421000': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '440000', // 大分県 (大分地方気象台)
     class10: '440010', // 中部
@@ -24067,7 +24067,7 @@ const areas = {
     ],
   ),
 // 4421100: 宇佐市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4421100.html
-  '4421100': Area(
+  '4421100': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '440000', // 大分県 (大分地方気象台)
     class10: '440020', // 北部
@@ -24082,7 +24082,7 @@ const areas = {
   ),
 
 // 4421200: 豊後大野市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4421200.html
-  '4421200': Area(
+  '4421200': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '440000', // 大分県 (大分地方気象台)
     class10: '440040', // 南部
@@ -24096,7 +24096,7 @@ const areas = {
     ],
   ),
 // 4421300: 由布市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4421300.html
-  '4421300': Area(
+  '4421300': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '440000', // 大分県 (大分地方気象台)
     class10: '440010', // 中部
@@ -24111,7 +24111,7 @@ const areas = {
   ),
 
 // 4421400: 国東市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4421400.html
-  '4421400': Area(
+  '4421400': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '440000', // 大分県 (大分地方気象台)
     class10: '440020', // 北部
@@ -24126,7 +24126,7 @@ const areas = {
   ),
 
 // 4432200: 姫島村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4432200.html
-  '4432200': Area(
+  '4432200': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '440000', // 大分県 (大分地方気象台)
     class10: '440020', // 北部
@@ -24140,7 +24140,7 @@ const areas = {
     ],
   ),
 // 4434100: 日出町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4434100.html
-  '4434100': Area(
+  '4434100': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '440000', // 大分県 (大分地方気象台)
     class10: '440010', // 中部
@@ -24154,7 +24154,7 @@ const areas = {
     ],
   ),
 // 4446100: 九重町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4446100.html
-  '4446100': Area(
+  '4446100': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '440000', // 大分県 (大分地方気象台)
     class10: '440030', // 西部
@@ -24169,7 +24169,7 @@ const areas = {
   ),
 
 // 4446200: 玖珠町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4446200.html
-  '4446200': Area(
+  '4446200': WeatherArea(
     center: '010900', // 九州北部地方（山口県を含む） (福岡管区気象台)
     office: '440000', // 大分県 (大分地方気象台)
     class10: '440030', // 西部
@@ -24184,7 +24184,7 @@ const areas = {
   ),
 
 // 4520100: 宮崎市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4520100.html
-  '4520100': Area(
+  '4520100': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '450000', // 宮崎県 (宮崎地方気象台)
     class10: '450010', // 南部平野部
@@ -24198,7 +24198,7 @@ const areas = {
     ],
   ),
 // 4520200: 都城市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4520200.html
-  '4520200': Area(
+  '4520200': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '450000', // 宮崎県 (宮崎地方気象台)
     class10: '450030', // 南部山沿い
@@ -24212,7 +24212,7 @@ const areas = {
     ],
   ),
 // 4520300: 延岡市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4520300.html
-  '4520300': Area(
+  '4520300': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '450000', // 宮崎県 (宮崎地方気象台)
     class10: '450020', // 北部平野部
@@ -24227,7 +24227,7 @@ const areas = {
   ),
 
 // 4520400: 日南市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4520400.html
-  '4520400': Area(
+  '4520400': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '450000', // 宮崎県 (宮崎地方気象台)
     class10: '450010', // 南部平野部
@@ -24242,7 +24242,7 @@ const areas = {
   ),
 
 // 4520500: 小林市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4520500.html
-  '4520500': Area(
+  '4520500': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '450000', // 宮崎県 (宮崎地方気象台)
     class10: '450030', // 南部山沿い
@@ -24256,7 +24256,7 @@ const areas = {
     ],
   ),
 // 4520600: 日向市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4520600.html
-  '4520600': Area(
+  '4520600': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '450000', // 宮崎県 (宮崎地方気象台)
     class10: '450020', // 北部平野部
@@ -24270,7 +24270,7 @@ const areas = {
     ],
   ),
 // 4520700: 串間市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4520700.html
-  '4520700': Area(
+  '4520700': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '450000', // 宮崎県 (宮崎地方気象台)
     class10: '450010', // 南部平野部
@@ -24285,7 +24285,7 @@ const areas = {
   ),
 
 // 4520800: 西都市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4520800.html
-  '4520800': Area(
+  '4520800': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '450000', // 宮崎県 (宮崎地方気象台)
     class10: '450020', // 北部平野部
@@ -24300,7 +24300,7 @@ const areas = {
   ),
 
 // 4520900: えびの市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4520900.html
-  '4520900': Area(
+  '4520900': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '450000', // 宮崎県 (宮崎地方気象台)
     class10: '450030', // 南部山沿い
@@ -24314,7 +24314,7 @@ const areas = {
     ],
   ),
 // 4534100: 三股町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4534100.html
-  '4534100': Area(
+  '4534100': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '450000', // 宮崎県 (宮崎地方気象台)
     class10: '450030', // 南部山沿い
@@ -24328,7 +24328,7 @@ const areas = {
     ],
   ),
 // 4536100: 高原町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4536100.html
-  '4536100': Area(
+  '4536100': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '450000', // 宮崎県 (宮崎地方気象台)
     class10: '450030', // 南部山沿い
@@ -24343,7 +24343,7 @@ const areas = {
   ),
 
 // 4538200: 国富町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4538200.html
-  '4538200': Area(
+  '4538200': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '450000', // 宮崎県 (宮崎地方気象台)
     class10: '450010', // 南部平野部
@@ -24357,7 +24357,7 @@ const areas = {
     ],
   ),
 // 4538300: 綾町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4538300.html
-  '4538300': Area(
+  '4538300': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '450000', // 宮崎県 (宮崎地方気象台)
     class10: '450010', // 南部平野部
@@ -24372,7 +24372,7 @@ const areas = {
   ),
 
 // 4540100: 高鍋町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4540100.html
-  '4540100': Area(
+  '4540100': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '450000', // 宮崎県 (宮崎地方気象台)
     class10: '450020', // 北部平野部
@@ -24387,7 +24387,7 @@ const areas = {
   ),
 
 // 4540200: 新富町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4540200.html
-  '4540200': Area(
+  '4540200': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '450000', // 宮崎県 (宮崎地方気象台)
     class10: '450020', // 北部平野部
@@ -24401,7 +24401,7 @@ const areas = {
     ],
   ),
 // 4540300: 西米良村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4540300.html
-  '4540300': Area(
+  '4540300': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '450000', // 宮崎県 (宮崎地方気象台)
     class10: '450040', // 北部山沿い
@@ -24415,7 +24415,7 @@ const areas = {
     ],
   ),
 // 4540400: 木城町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4540400.html
-  '4540400': Area(
+  '4540400': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '450000', // 宮崎県 (宮崎地方気象台)
     class10: '450020', // 北部平野部
@@ -24429,7 +24429,7 @@ const areas = {
     ],
   ),
 // 4540500: 川南町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4540500.html
-  '4540500': Area(
+  '4540500': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '450000', // 宮崎県 (宮崎地方気象台)
     class10: '450020', // 北部平野部
@@ -24443,7 +24443,7 @@ const areas = {
     ],
   ),
 // 4540600: 都農町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4540600.html
-  '4540600': Area(
+  '4540600': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '450000', // 宮崎県 (宮崎地方気象台)
     class10: '450020', // 北部平野部
@@ -24457,7 +24457,7 @@ const areas = {
     ],
   ),
 // 4542100: 門川町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4542100.html
-  '4542100': Area(
+  '4542100': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '450000', // 宮崎県 (宮崎地方気象台)
     class10: '450020', // 北部平野部
@@ -24471,7 +24471,7 @@ const areas = {
     ],
   ),
 // 4542900: 諸塚村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4542900.html
-  '4542900': Area(
+  '4542900': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '450000', // 宮崎県 (宮崎地方気象台)
     class10: '450040', // 北部山沿い
@@ -24485,7 +24485,7 @@ const areas = {
     ],
   ),
 // 4543000: 椎葉村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4543000.html
-  '4543000': Area(
+  '4543000': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '450000', // 宮崎県 (宮崎地方気象台)
     class10: '450040', // 北部山沿い
@@ -24500,7 +24500,7 @@ const areas = {
   ),
 
 // 4543100: 美郷町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4543100.html
-  '4543100': Area(
+  '4543100': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '450000', // 宮崎県 (宮崎地方気象台)
     class10: '450040', // 北部山沿い
@@ -24514,7 +24514,7 @@ const areas = {
     ],
   ),
 // 4544100: 高千穂町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4544100.html
-  '4544100': Area(
+  '4544100': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '450000', // 宮崎県 (宮崎地方気象台)
     class10: '450040', // 北部山沿い
@@ -24529,7 +24529,7 @@ const areas = {
   ),
 
 // 4544200: 日之影町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4544200.html
-  '4544200': Area(
+  '4544200': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '450000', // 宮崎県 (宮崎地方気象台)
     class10: '450040', // 北部山沿い
@@ -24544,7 +24544,7 @@ const areas = {
   ),
 
 // 4544300: 五ヶ瀬町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4544300.html
-  '4544300': Area(
+  '4544300': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '450000', // 宮崎県 (宮崎地方気象台)
     class10: '450040', // 北部山沿い
@@ -24558,7 +24558,7 @@ const areas = {
     ],
   ),
 // 4620100: 鹿児島市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4620100.html
-  '4620100': Area(
+  '4620100': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460100', // 鹿児島県（奄美地方除く） (鹿児島地方気象台)
     class10: '460010', // 薩摩地方
@@ -24573,7 +24573,7 @@ const areas = {
   ),
 
 // 4620300: 鹿屋市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4620300.html
-  '4620300': Area(
+  '4620300': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460100', // 鹿児島県（奄美地方除く） (鹿児島地方気象台)
     class10: '460020', // 大隅地方
@@ -24587,7 +24587,7 @@ const areas = {
     ],
   ),
 // 4620400: 枕崎市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4620400.html
-  '4620400': Area(
+  '4620400': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460100', // 鹿児島県（奄美地方除く） (鹿児島地方気象台)
     class10: '460010', // 薩摩地方
@@ -24602,7 +24602,7 @@ const areas = {
   ),
 
 // 4620600: 阿久根市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4620600.html
-  '4620600': Area(
+  '4620600': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460100', // 鹿児島県（奄美地方除く） (鹿児島地方気象台)
     class10: '460010', // 薩摩地方
@@ -24617,7 +24617,7 @@ const areas = {
   ),
 
 // 4620800: 出水市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4620800.html
-  '4620800': Area(
+  '4620800': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460100', // 鹿児島県（奄美地方除く） (鹿児島地方気象台)
     class10: '460010', // 薩摩地方
@@ -24631,7 +24631,7 @@ const areas = {
     ],
   ),
 // 4621000: 指宿市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4621000.html
-  '4621000': Area(
+  '4621000': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460100', // 鹿児島県（奄美地方除く） (鹿児島地方気象台)
     class10: '460010', // 薩摩地方
@@ -24646,7 +24646,7 @@ const areas = {
   ),
 
 // 4621300: 西之表市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4621300.html
-  '4621300': Area(
+  '4621300': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460100', // 鹿児島県（奄美地方除く） (鹿児島地方気象台)
     class10: '460030', // 種子島・屋久島地方
@@ -24660,7 +24660,7 @@ const areas = {
     ],
   ),
 // 4621400: 垂水市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4621400.html
-  '4621400': Area(
+  '4621400': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460100', // 鹿児島県（奄美地方除く） (鹿児島地方気象台)
     class10: '460020', // 大隅地方
@@ -24675,7 +24675,7 @@ const areas = {
   ),
 
 // 4621501: 薩摩川内市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4621501.html
-  '4621501': Area(
+  '4621501': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460100', // 鹿児島県（奄美地方除く） (鹿児島地方気象台)
     class10: '460010', // 薩摩地方
@@ -24689,7 +24689,7 @@ const areas = {
     ],
   ),
 // 4621502: 薩摩川内市甑島: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4621502.html
-  '4621502': Area(
+  '4621502': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460100', // 鹿児島県（奄美地方除く） (鹿児島地方気象台)
     class10: '460010', // 薩摩地方
@@ -24704,7 +24704,7 @@ const areas = {
   ),
 
 // 4621600: 日置市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4621600.html
-  '4621600': Area(
+  '4621600': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460100', // 鹿児島県（奄美地方除く） (鹿児島地方気象台)
     class10: '460010', // 薩摩地方
@@ -24719,7 +24719,7 @@ const areas = {
   ),
 
 // 4621700: 曽於市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4621700.html
-  '4621700': Area(
+  '4621700': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460100', // 鹿児島県（奄美地方除く） (鹿児島地方気象台)
     class10: '460020', // 大隅地方
@@ -24733,7 +24733,7 @@ const areas = {
     ],
   ),
 // 4621800: 霧島市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4621800.html
-  '4621800': Area(
+  '4621800': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460100', // 鹿児島県（奄美地方除く） (鹿児島地方気象台)
     class10: '460010', // 薩摩地方
@@ -24748,7 +24748,7 @@ const areas = {
   ),
 
 // 4621900: いちき串木野市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4621900.html
-  '4621900': Area(
+  '4621900': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460100', // 鹿児島県（奄美地方除く） (鹿児島地方気象台)
     class10: '460010', // 薩摩地方
@@ -24762,7 +24762,7 @@ const areas = {
     ],
   ),
 // 4622000: 南さつま市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4622000.html
-  '4622000': Area(
+  '4622000': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460100', // 鹿児島県（奄美地方除く） (鹿児島地方気象台)
     class10: '460010', // 薩摩地方
@@ -24777,7 +24777,7 @@ const areas = {
   ),
 
 // 4622100: 志布志市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4622100.html
-  '4622100': Area(
+  '4622100': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460100', // 鹿児島県（奄美地方除く） (鹿児島地方気象台)
     class10: '460020', // 大隅地方
@@ -24792,7 +24792,7 @@ const areas = {
   ),
 
 // 4622200: 奄美市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4622200.html
-  '4622200': Area(
+  '4622200': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460040', // 奄美地方 (名瀬測候所)
     class10: '460040', // 奄美地方
@@ -24806,7 +24806,7 @@ const areas = {
     ],
   ),
 // 4622300: 南九州市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4622300.html
-  '4622300': Area(
+  '4622300': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460100', // 鹿児島県（奄美地方除く） (鹿児島地方気象台)
     class10: '460010', // 薩摩地方
@@ -24821,7 +24821,7 @@ const areas = {
   ),
 
 // 4622400: 伊佐市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4622400.html
-  '4622400': Area(
+  '4622400': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460100', // 鹿児島県（奄美地方除く） (鹿児島地方気象台)
     class10: '460010', // 薩摩地方
@@ -24836,7 +24836,7 @@ const areas = {
   ),
 
 // 4622500: 姶良市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4622500.html
-  '4622500': Area(
+  '4622500': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460100', // 鹿児島県（奄美地方除く） (鹿児島地方気象台)
     class10: '460010', // 薩摩地方
@@ -24850,7 +24850,7 @@ const areas = {
     ],
   ),
 // 4630300: 三島村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4630300.html
-  '4630300': Area(
+  '4630300': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460100', // 鹿児島県（奄美地方除く） (鹿児島地方気象台)
     class10: '460030', // 種子島・屋久島地方
@@ -24865,7 +24865,7 @@ const areas = {
   ),
 
 // 4630400: 十島村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4630400.html
-  '4630400': Area(
+  '4630400': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460040', // 奄美地方 (名瀬測候所)
     class10: '460040', // 奄美地方
@@ -24879,7 +24879,7 @@ const areas = {
     ],
   ),
 // 4639200: さつま町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4639200.html
-  '4639200': Area(
+  '4639200': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460100', // 鹿児島県（奄美地方除く） (鹿児島地方気象台)
     class10: '460010', // 薩摩地方
@@ -24894,7 +24894,7 @@ const areas = {
   ),
 
 // 4640400: 長島町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4640400.html
-  '4640400': Area(
+  '4640400': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460100', // 鹿児島県（奄美地方除く） (鹿児島地方気象台)
     class10: '460010', // 薩摩地方
@@ -24909,7 +24909,7 @@ const areas = {
   ),
 
 // 4645200: 湧水町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4645200.html
-  '4645200': Area(
+  '4645200': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460100', // 鹿児島県（奄美地方除く） (鹿児島地方気象台)
     class10: '460010', // 薩摩地方
@@ -24924,7 +24924,7 @@ const areas = {
   ),
 
 // 4646800: 大崎町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4646800.html
-  '4646800': Area(
+  '4646800': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460100', // 鹿児島県（奄美地方除く） (鹿児島地方気象台)
     class10: '460020', // 大隅地方
@@ -24938,7 +24938,7 @@ const areas = {
     ],
   ),
 // 4648200: 東串良町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4648200.html
-  '4648200': Area(
+  '4648200': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460100', // 鹿児島県（奄美地方除く） (鹿児島地方気象台)
     class10: '460020', // 大隅地方
@@ -24953,7 +24953,7 @@ const areas = {
   ),
 
 // 4649000: 錦江町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4649000.html
-  '4649000': Area(
+  '4649000': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460100', // 鹿児島県（奄美地方除く） (鹿児島地方気象台)
     class10: '460020', // 大隅地方
@@ -24967,7 +24967,7 @@ const areas = {
     ],
   ),
 // 4649100: 南大隅町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4649100.html
-  '4649100': Area(
+  '4649100': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460100', // 鹿児島県（奄美地方除く） (鹿児島地方気象台)
     class10: '460020', // 大隅地方
@@ -24982,7 +24982,7 @@ const areas = {
   ),
 
 // 4649200: 肝付町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4649200.html
-  '4649200': Area(
+  '4649200': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460100', // 鹿児島県（奄美地方除く） (鹿児島地方気象台)
     class10: '460020', // 大隅地方
@@ -24997,7 +24997,7 @@ const areas = {
   ),
 
 // 4650100: 中種子町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4650100.html
-  '4650100': Area(
+  '4650100': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460100', // 鹿児島県（奄美地方除く） (鹿児島地方気象台)
     class10: '460030', // 種子島・屋久島地方
@@ -25011,7 +25011,7 @@ const areas = {
     ],
   ),
 // 4650200: 南種子町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4650200.html
-  '4650200': Area(
+  '4650200': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460100', // 鹿児島県（奄美地方除く） (鹿児島地方気象台)
     class10: '460030', // 種子島・屋久島地方
@@ -25026,7 +25026,7 @@ const areas = {
   ),
 
 // 4650500: 屋久島町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4650500.html
-  '4650500': Area(
+  '4650500': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460100', // 鹿児島県（奄美地方除く） (鹿児島地方気象台)
     class10: '460030', // 種子島・屋久島地方
@@ -25040,7 +25040,7 @@ const areas = {
     ],
   ),
 // 4652300: 大和村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4652300.html
-  '4652300': Area(
+  '4652300': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460040', // 奄美地方 (名瀬測候所)
     class10: '460040', // 奄美地方
@@ -25055,7 +25055,7 @@ const areas = {
   ),
 
 // 4652400: 宇検村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4652400.html
-  '4652400': Area(
+  '4652400': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460040', // 奄美地方 (名瀬測候所)
     class10: '460040', // 奄美地方
@@ -25069,7 +25069,7 @@ const areas = {
     ],
   ),
 // 4652500: 瀬戸内町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4652500.html
-  '4652500': Area(
+  '4652500': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460040', // 奄美地方 (名瀬測候所)
     class10: '460040', // 奄美地方
@@ -25084,7 +25084,7 @@ const areas = {
   ),
 
 // 4652700: 龍郷町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4652700.html
-  '4652700': Area(
+  '4652700': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460040', // 奄美地方 (名瀬測候所)
     class10: '460040', // 奄美地方
@@ -25099,7 +25099,7 @@ const areas = {
   ),
 
 // 4652900: 喜界町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4652900.html
-  '4652900': Area(
+  '4652900': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460040', // 奄美地方 (名瀬測候所)
     class10: '460040', // 奄美地方
@@ -25113,7 +25113,7 @@ const areas = {
     ],
   ),
 // 4653000: 徳之島町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4653000.html
-  '4653000': Area(
+  '4653000': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460040', // 奄美地方 (名瀬測候所)
     class10: '460040', // 奄美地方
@@ -25128,7 +25128,7 @@ const areas = {
   ),
 
 // 4653100: 天城町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4653100.html
-  '4653100': Area(
+  '4653100': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460040', // 奄美地方 (名瀬測候所)
     class10: '460040', // 奄美地方
@@ -25142,7 +25142,7 @@ const areas = {
     ],
   ),
 // 4653200: 伊仙町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4653200.html
-  '4653200': Area(
+  '4653200': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460040', // 奄美地方 (名瀬測候所)
     class10: '460040', // 奄美地方
@@ -25157,7 +25157,7 @@ const areas = {
   ),
 
 // 4653300: 和泊町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4653300.html
-  '4653300': Area(
+  '4653300': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460040', // 奄美地方 (名瀬測候所)
     class10: '460040', // 奄美地方
@@ -25172,7 +25172,7 @@ const areas = {
   ),
 
 // 4653400: 知名町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4653400.html
-  '4653400': Area(
+  '4653400': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460040', // 奄美地方 (名瀬測候所)
     class10: '460040', // 奄美地方
@@ -25186,7 +25186,7 @@ const areas = {
     ],
   ),
 // 4653500: 与論町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4653500.html
-  '4653500': Area(
+  '4653500': WeatherArea(
     center: '011000', // 九州南部・奄美地方 (鹿児島地方気象台)
     office: '460040', // 奄美地方 (名瀬測候所)
     class10: '460040', // 奄美地方
@@ -25201,7 +25201,7 @@ const areas = {
   ),
 
 // 4720100: 那覇市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4720100.html
-  '4720100': Area(
+  '4720100': WeatherArea(
     center: '011100', // 沖縄地方 (沖縄気象台)
     office: '471000', // 沖縄本島地方 (沖縄気象台)
     class10: '471010', // 本島中南部
@@ -25215,7 +25215,7 @@ const areas = {
     ],
   ),
 // 4720500: 宜野湾市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4720500.html
-  '4720500': Area(
+  '4720500': WeatherArea(
     center: '011100', // 沖縄地方 (沖縄気象台)
     office: '471000', // 沖縄本島地方 (沖縄気象台)
     class10: '471010', // 本島中南部
@@ -25230,7 +25230,7 @@ const areas = {
   ),
 
 // 4720700: 石垣市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4720700.html
-  '4720700': Area(
+  '4720700': WeatherArea(
     center: '011100', // 沖縄地方 (沖縄気象台)
     office: '474000', // 八重山地方 (石垣島地方気象台)
     class10: '474010', // 石垣島地方
@@ -25245,7 +25245,7 @@ const areas = {
   ),
 
 // 4720800: 浦添市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4720800.html
-  '4720800': Area(
+  '4720800': WeatherArea(
     center: '011100', // 沖縄地方 (沖縄気象台)
     office: '471000', // 沖縄本島地方 (沖縄気象台)
     class10: '471010', // 本島中南部
@@ -25259,7 +25259,7 @@ const areas = {
     ],
   ),
 // 4720900: 名護市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4720900.html
-  '4720900': Area(
+  '4720900': WeatherArea(
     center: '011100', // 沖縄地方 (沖縄気象台)
     office: '471000', // 沖縄本島地方 (沖縄気象台)
     class10: '471020', // 本島北部
@@ -25273,7 +25273,7 @@ const areas = {
     ],
   ),
 // 4721000: 糸満市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4721000.html
-  '4721000': Area(
+  '4721000': WeatherArea(
     center: '011100', // 沖縄地方 (沖縄気象台)
     office: '471000', // 沖縄本島地方 (沖縄気象台)
     class10: '471010', // 本島中南部
@@ -25287,7 +25287,7 @@ const areas = {
     ],
   ),
 // 4721100: 沖縄市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4721100.html
-  '4721100': Area(
+  '4721100': WeatherArea(
     center: '011100', // 沖縄地方 (沖縄気象台)
     office: '471000', // 沖縄本島地方 (沖縄気象台)
     class10: '471010', // 本島中南部
@@ -25302,7 +25302,7 @@ const areas = {
   ),
 
 // 4721200: 豊見城市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4721200.html
-  '4721200': Area(
+  '4721200': WeatherArea(
     center: '011100', // 沖縄地方 (沖縄気象台)
     office: '471000', // 沖縄本島地方 (沖縄気象台)
     class10: '471010', // 本島中南部
@@ -25317,7 +25317,7 @@ const areas = {
   ),
 
 // 4721300: うるま市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4721300.html
-  '4721300': Area(
+  '4721300': WeatherArea(
     center: '011100', // 沖縄地方 (沖縄気象台)
     office: '471000', // 沖縄本島地方 (沖縄気象台)
     class10: '471010', // 本島中南部
@@ -25331,7 +25331,7 @@ const areas = {
     ],
   ),
 // 4721400: 宮古島市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4721400.html
-  '4721400': Area(
+  '4721400': WeatherArea(
     center: '011100', // 沖縄地方 (沖縄気象台)
     office: '473000', // 宮古島地方 (宮古島地方気象台)
     class10: '473000', // 宮古島地方
@@ -25346,7 +25346,7 @@ const areas = {
   ),
 
 // 4721500: 南城市: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4721500.html
-  '4721500': Area(
+  '4721500': WeatherArea(
     center: '011100', // 沖縄地方 (沖縄気象台)
     office: '471000', // 沖縄本島地方 (沖縄気象台)
     class10: '471010', // 本島中南部
@@ -25360,7 +25360,7 @@ const areas = {
     ],
   ),
 // 4730100: 国頭村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4730100.html
-  '4730100': Area(
+  '4730100': WeatherArea(
     center: '011100', // 沖縄地方 (沖縄気象台)
     office: '471000', // 沖縄本島地方 (沖縄気象台)
     class10: '471020', // 本島北部
@@ -25375,7 +25375,7 @@ const areas = {
   ),
 
 // 4730200: 大宜味村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4730200.html
-  '4730200': Area(
+  '4730200': WeatherArea(
     center: '011100', // 沖縄地方 (沖縄気象台)
     office: '471000', // 沖縄本島地方 (沖縄気象台)
     class10: '471020', // 本島北部
@@ -25390,7 +25390,7 @@ const areas = {
   ),
 
 // 4730300: 東村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4730300.html
-  '4730300': Area(
+  '4730300': WeatherArea(
     center: '011100', // 沖縄地方 (沖縄気象台)
     office: '471000', // 沖縄本島地方 (沖縄気象台)
     class10: '471020', // 本島北部
@@ -25404,7 +25404,7 @@ const areas = {
     ],
   ),
 // 4730600: 今帰仁村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4730600.html
-  '4730600': Area(
+  '4730600': WeatherArea(
     center: '011100', // 沖縄地方 (沖縄気象台)
     office: '471000', // 沖縄本島地方 (沖縄気象台)
     class10: '471020', // 本島北部
@@ -25419,7 +25419,7 @@ const areas = {
   ),
 
 // 4730800: 本部町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4730800.html
-  '4730800': Area(
+  '4730800': WeatherArea(
     center: '011100', // 沖縄地方 (沖縄気象台)
     office: '471000', // 沖縄本島地方 (沖縄気象台)
     class10: '471020', // 本島北部
@@ -25433,7 +25433,7 @@ const areas = {
     ],
   ),
 // 4731100: 恩納村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4731100.html
-  '4731100': Area(
+  '4731100': WeatherArea(
     center: '011100', // 沖縄地方 (沖縄気象台)
     office: '471000', // 沖縄本島地方 (沖縄気象台)
     class10: '471020', // 本島北部
@@ -25448,7 +25448,7 @@ const areas = {
   ),
 
 // 4731300: 宜野座村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4731300.html
-  '4731300': Area(
+  '4731300': WeatherArea(
     center: '011100', // 沖縄地方 (沖縄気象台)
     office: '471000', // 沖縄本島地方 (沖縄気象台)
     class10: '471020', // 本島北部
@@ -25463,7 +25463,7 @@ const areas = {
   ),
 
 // 4731400: 金武町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4731400.html
-  '4731400': Area(
+  '4731400': WeatherArea(
     center: '011100', // 沖縄地方 (沖縄気象台)
     office: '471000', // 沖縄本島地方 (沖縄気象台)
     class10: '471020', // 本島北部
@@ -25477,7 +25477,7 @@ const areas = {
     ],
   ),
 // 4731500: 伊江村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4731500.html
-  '4731500': Area(
+  '4731500': WeatherArea(
     center: '011100', // 沖縄地方 (沖縄気象台)
     office: '471000', // 沖縄本島地方 (沖縄気象台)
     class10: '471020', // 本島北部
@@ -25492,7 +25492,7 @@ const areas = {
   ),
 
 // 4732400: 読谷村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4732400.html
-  '4732400': Area(
+  '4732400': WeatherArea(
     center: '011100', // 沖縄地方 (沖縄気象台)
     office: '471000', // 沖縄本島地方 (沖縄気象台)
     class10: '471010', // 本島中南部
@@ -25507,7 +25507,7 @@ const areas = {
   ),
 
 // 4732500: 嘉手納町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4732500.html
-  '4732500': Area(
+  '4732500': WeatherArea(
     center: '011100', // 沖縄地方 (沖縄気象台)
     office: '471000', // 沖縄本島地方 (沖縄気象台)
     class10: '471010', // 本島中南部
@@ -25516,7 +25516,7 @@ const areas = {
     bbox: [127.738349376623, 26.3400680541974, 127.78862917, 26.4079616669974],
   ),
 // 4732600: 北谷町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4732600.html
-  '4732600': Area(
+  '4732600': WeatherArea(
     center: '011100', // 沖縄地方 (沖縄気象台)
     office: '471000', // 沖縄本島地方 (沖縄気象台)
     class10: '471010', // 本島中南部
@@ -25531,7 +25531,7 @@ const areas = {
   ),
 
 // 4732700: 北中城村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4732700.html
-  '4732700': Area(
+  '4732700': WeatherArea(
     center: '011100', // 沖縄地方 (沖縄気象台)
     office: '471000', // 沖縄本島地方 (沖縄気象台)
     class10: '471010', // 本島中南部
@@ -25545,7 +25545,7 @@ const areas = {
     ],
   ),
 // 4732800: 中城村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4732800.html
-  '4732800': Area(
+  '4732800': WeatherArea(
     center: '011100', // 沖縄地方 (沖縄気象台)
     office: '471000', // 沖縄本島地方 (沖縄気象台)
     class10: '471010', // 本島中南部
@@ -25560,7 +25560,7 @@ const areas = {
   ),
 
 // 4732900: 西原町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4732900.html
-  '4732900': Area(
+  '4732900': WeatherArea(
     center: '011100', // 沖縄地方 (沖縄気象台)
     office: '471000', // 沖縄本島地方 (沖縄気象台)
     class10: '471010', // 本島中南部
@@ -25575,7 +25575,7 @@ const areas = {
   ),
 
 // 4734800: 与那原町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4734800.html
-  '4734800': Area(
+  '4734800': WeatherArea(
     center: '011100', // 沖縄地方 (沖縄気象台)
     office: '471000', // 沖縄本島地方 (沖縄気象台)
     class10: '471010', // 本島中南部
@@ -25589,7 +25589,7 @@ const areas = {
     ],
   ),
 // 4735000: 南風原町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4735000.html
-  '4735000': Area(
+  '4735000': WeatherArea(
     center: '011100', // 沖縄地方 (沖縄気象台)
     office: '471000', // 沖縄本島地方 (沖縄気象台)
     class10: '471010', // 本島中南部
@@ -25604,7 +25604,7 @@ const areas = {
   ),
 
 // 4735300: 渡嘉敷村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4735300.html
-  '4735300': Area(
+  '4735300': WeatherArea(
     center: '011100', // 沖縄地方 (沖縄気象台)
     office: '471000', // 沖縄本島地方 (沖縄気象台)
     class10: '471010', // 本島中南部
@@ -25619,7 +25619,7 @@ const areas = {
   ),
 
 // 4735400: 座間味村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4735400.html
-  '4735400': Area(
+  '4735400': WeatherArea(
     center: '011100', // 沖縄地方 (沖縄気象台)
     office: '471000', // 沖縄本島地方 (沖縄気象台)
     class10: '471010', // 本島中南部
@@ -25633,7 +25633,7 @@ const areas = {
     ],
   ),
 // 4735500: 粟国村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4735500.html
-  '4735500': Area(
+  '4735500': WeatherArea(
     center: '011100', // 沖縄地方 (沖縄気象台)
     office: '471000', // 沖縄本島地方 (沖縄気象台)
     class10: '471010', // 本島中南部
@@ -25648,7 +25648,7 @@ const areas = {
   ),
 
 // 4735600: 渡名喜村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4735600.html
-  '4735600': Area(
+  '4735600': WeatherArea(
     center: '011100', // 沖縄地方 (沖縄気象台)
     office: '471000', // 沖縄本島地方 (沖縄気象台)
     class10: '471010', // 本島中南部
@@ -25662,7 +25662,7 @@ const areas = {
     ],
   ),
 // 4735700: 南大東村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4735700.html
-  '4735700': Area(
+  '4735700': WeatherArea(
     center: '011100', // 沖縄地方 (沖縄気象台)
     office: '472000', // 大東島地方 (南大東島地方気象台)
     class10: '472000', // 大東島地方
@@ -25677,7 +25677,7 @@ const areas = {
   ),
 
 // 4735800: 北大東村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4735800.html
-  '4735800': Area(
+  '4735800': WeatherArea(
     center: '011100', // 沖縄地方 (沖縄気象台)
     office: '472000', // 大東島地方 (南大東島地方気象台)
     class10: '472000', // 大東島地方
@@ -25692,7 +25692,7 @@ const areas = {
   ),
 
 // 4735900: 伊平屋村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4735900.html
-  '4735900': Area(
+  '4735900': WeatherArea(
     center: '011100', // 沖縄地方 (沖縄気象台)
     office: '471000', // 沖縄本島地方 (沖縄気象台)
     class10: '471020', // 本島北部
@@ -25706,7 +25706,7 @@ const areas = {
     ],
   ),
 // 4736000: 伊是名村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4736000.html
-  '4736000': Area(
+  '4736000': WeatherArea(
     center: '011100', // 沖縄地方 (沖縄気象台)
     office: '471000', // 沖縄本島地方 (沖縄気象台)
     class10: '471020', // 本島北部
@@ -25721,7 +25721,7 @@ const areas = {
   ),
 
 // 4736100: 久米島町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4736100.html
-  '4736100': Area(
+  '4736100': WeatherArea(
     center: '011100', // 沖縄地方 (沖縄気象台)
     office: '471000', // 沖縄本島地方 (沖縄気象台)
     class10: '471030', // 久米島
@@ -25736,7 +25736,7 @@ const areas = {
   ),
 
 // 4736200: 八重瀬町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4736200.html
-  '4736200': Area(
+  '4736200': WeatherArea(
     center: '011100', // 沖縄地方 (沖縄気象台)
     office: '471000', // 沖縄本島地方 (沖縄気象台)
     class10: '471010', // 本島中南部
@@ -25750,7 +25750,7 @@ const areas = {
     ],
   ),
 // 4737500: 多良間村: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4737500.html
-  '4737500': Area(
+  '4737500': WeatherArea(
     center: '011100', // 沖縄地方 (沖縄気象台)
     office: '473000', // 宮古島地方 (宮古島地方気象台)
     class10: '473000', // 宮古島地方
@@ -25765,7 +25765,7 @@ const areas = {
   ),
 
 // 4738100: 竹富町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4738100.html
-  '4738100': Area(
+  '4738100': WeatherArea(
     center: '011100', // 沖縄地方 (沖縄気象台)
     office: '474000', // 八重山地方 (石垣島地方気象台)
     class10: '474010', // 石垣島地方
@@ -25779,7 +25779,7 @@ const areas = {
     ],
   ),
 // 4738200: 与那国町: https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/4738200.html
-  '4738200': Area(
+  '4738200': WeatherArea(
     center: '011100', // 沖縄地方 (沖縄気象台)
     office: '474000', // 八重山地方 (石垣島地方気象台)
     class10: '474020', // 与那国島地方
