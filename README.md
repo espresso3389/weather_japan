@@ -27,6 +27,21 @@ final weather = await Weather.fromLocation(
 
 For Flutter applications, you can use [path_provider](https://pub.dev/packages/path_provider) to obtain path suitable for such data. Normally, [getTemporaryDirectory](https://pub.dev/documentation/path_provider/latest/path_provider/getTemporaryDirectory.html) can be a good choice.
 
+## Replacing Download/Cache Mechanism
+
+You can replaces the download/cache mechanism by supplying `download` parameter to [Weather.fromLocation](https://pub.dev/documentation/weather_japan/latest/weather_japan/Weather/fromLocation.html) function:
+
+```dart
+// Illustrates download/cache mechanism using flutter_cache_manager
+final weather = await Weather.fromLocation(
+    lat: 33.1787095, lng: 129.6762743,
+    download: (url) async {
+        final file = await DefaultCacheManager().getSingleFile(url);
+        return await file.readAsString();
+    });
+```
+
+
 ## Dataset Licenses
 
 Basically, the datasets/contents are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/):

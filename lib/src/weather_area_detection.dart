@@ -14,11 +14,19 @@ import 'weather_areas.dart';
 /// During the process, the function may download area data and they can be cached
 /// if you explicitly specify [cacheDirectory];
 /// otherwise the function will download them each time it requires the data.
-Future<WeatherArea?> findArea(
-    {required double lng, required double lat, String? cacheDirectory}) async {
+///
+/// If you specify [download], download/cache mechanism is completely replaced
+/// by the function. The function is called every time the library needs to download
+/// area data.
+Future<WeatherArea?> findArea({
+  required double lng,
+  required double lat,
+  String? cacheDirectory,
+  DownloadTextFromUrl? download,
+}) async {
   for (final kv
       in areas.entries.where((kv) => kv.value.isPointInsideArea(lng, lat))) {
-    final topoJson = await _topoJsonFromCode(kv.key, cacheDirectory);
+    final topoJson = await _topoJsonFromCode(kv.key, cacheDirectory, download);
     for (final obj in topoJson.visitAllObjects()) {
       if (obj is TopoJsonPolygon && obj.isPointInside(lng, lat)) {
         return kv.value;
@@ -28,18 +36,35 @@ Future<WeatherArea?> findArea(
   return null;
 }
 
-Future<TopoJson> _topoJsonFromCode(String code, String? cacheDirectory) async =>
+typedef DownloadTextFromUrl = Future<String> Function(String url);
+
+Future<TopoJson> _topoJsonFromCode(
+  String code,
+  String? cacheDirectory,
+  DownloadTextFromUrl? download,
+) async =>
     TopoJson.fromJson(
       await _loadJson(
           code,
           'https://geoshape.ex.nii.ac.jp/jma/resource/AreaInformationCity_weather/20220324/$code',
-          cacheDirectory),
+          cacheDirectory,
+          download),
     );
 
 final _lock = Lock();
 
-Future<dynamic> _loadJson(String code, String url, String? cacheDirectory) =>
-    _lock.synchronized(() async {
+Future<dynamic> _loadJson(
+  String code,
+  String url,
+  String? cacheDirectory,
+  DownloadTextFromUrl? download,
+) async {
+  if (download != null) {
+    return jsonDecode(await download(url));
+  }
+
+  return await _lock.synchronized(
+    () async {
       final file = await _getCacheFile(code, cacheDirectory);
 
       if (file == null || !await file.exists()) {
@@ -53,7 +78,9 @@ Future<dynamic> _loadJson(String code, String url, String? cacheDirectory) =>
       } else {
         return jsonDecode(await file.readAsString());
       }
-    });
+    },
+  );
+}
 
 Future<io.File?> _getCacheFile(String code, String? cacheDirectory) async {
   if (cacheDirectory == null) {
